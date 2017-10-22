@@ -1,0 +1,349 @@
+/*CSS3 按钮 */
+.look-over {
+    min-width: 100px;
+    max-width: 120px;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    padding: 4px;
+    margin: 0 auto 30px;
+    border: none;
+    background: none;
+    color: inherit;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.look-one {
+    background: #ff464e;
+    color: #fff;
+}
+.look-two {
+    background: #ffff00;
+    color: #2d1f20;
+}
+.button-wapasha {
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+.button-wapasha:hover {
+    background: #2D1F20;
+    color: #ff464e;
+}
+.button-wapasha::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    z-index: -9;
+    line-height: 45px;
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transform: scale3d(0.6, 0.6, 1);
+    transform: scale3d(0.6, 0.6, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button-wapasha:hover::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+}
+
+
+/*转盘*/
+#dowebok {
+    position: relative;
+    width: 100%;
+    height: 518px;
+    overflow: hidden;
+    margin: 0 auto 18px;
+}
+.plate {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    background: url(../images/lyplate.png) no-repeat ;
+    background-size: 100%;
+}
+#plateBtn {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    margin-left: 20%;
+    width: 60%;
+    height: 60%;
+    background: url(../images/rotate-static.png)no-repeat center;
+    background-size: 60%;
+    text-indent: -9999px;
+}
+#result {
+    display: none;
+    position: absolute;
+    top: 34%;
+    margin: 0 5%;
+    padding: 36px 0;
+    width: 90%;
+    background-color: rgba(0,0,0,0.75);
+}
+#resultTxt {
+    padding: 0 10px;
+    font: 16px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+}
+#resultTxt em {
+    color: #ffea76;
+    font-style: normal;
+    display: inherit;
+}
+#resultBtn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    text-indent: -100px;
+    background: url(../images/close.png);
+    overflow: hidden;
+}
+
+/*切换*/
+.announcement {
+    width: 90%;
+    height: 257px;
+    margin: 0 auto;
+}
+.announcement-title {
+    border-bottom: 1px #e82d36 solid;
+    overflow: hidden;
+    text-align: center;
+}
+.announcement-title li {
+    display: inline-block;
+    color: #fff;
+    padding-top: 12px;
+    height: 36px;
+    font: bold 18px/18px 'Microsoft YaHei';
+    cursor: pointer;
+    -webkit-transition: color .3s;   /* Safari 和 Chrome */
+    -moz-transition: color .3s;  /* Firefox 4 */
+}
+.announcement-title li:hover {
+    -webkit-animation:fadeIn 1s .2s ease both;
+    -moz-animation:fadeIn 1s .2s ease both;
+}
+.announcement-title li:first-child {
+    margin-right: 14px;
+}
+.announcement .on {
+    background: url(../images/on.jpg) center bottom no-repeat;
+    color: #e82d36;
+}
+
+.announcement-con {
+    height: 200px;
+    overflow: hidden;
+}
+.announcement-con-list {
+    position: relative;
+    display: none;
+    height: 200px;
+}
+
+.annBoxes {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+.annBoxes li p {
+    float: left;
+    color: #fff;
+    font-size: 12px;
+    overflow: hidden;
+}
+.annBoxes li {
+    clear: both;
+    text-align: center;
+    height: 39px;
+    overflow: hidden;
+    line-height: 39px;
+    color: #fff;
+    border-bottom: 1px #382a2b solid;
+}
+.annBoxes .ann-time {
+    width: 24%;
+}
+.annBoxes .ann-name {
+    width: 30%;
+    padding: 0 2%;
+}
+.annBoxes .ann-word {
+    width: 38%;
+    padding: 0 2%;
+}
+
+.annBoxes .ann-name-f {
+    width: 24%;
+}
+.annBoxes .ann-word-f {
+    width: 52%;
+}
+
+/* 弹窗 */
+    .fea-reveal-modal-bg { 
+        position: fixed !important; 
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.8);
+        z-index: 100;
+        display: none;
+        top: 0;
+        left: 0; 
+        width: 
+        }
+    .fea-reveal-modal {
+        max-width: 640px;
+        min-width: 320px;
+        width: 100%;
+        position: fixed !important;
+        position: absolute;
+        visibility: hidden;
+        top: 12% !important; 
+        z-index: 101;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+        -box-shadow: 0 0 10px rgba(0,0,0,.4);
+        }
+        .fea-reveal-modal img {
+            width: 100%;
+        }
+    .fea-reveal-modal .close-reveal-modal {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        right: 0;
+        text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+        font-weight: bold;
+        cursor: pointer;
+        } 
+
+        .fea-reveal-modal img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .list_lh {
+            height: 200px;
+            overflow: hidden;
+        }
+
+
+        .regulation2 {
+            width: 100%;
+        }
+        .get-boxes {
+            display: inline-block;
+            padding: 36px 0 16px;
+            background: #fff;
+            width: 90%;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .get-boxes .myitem {
+            width: 90%;
+            margin: 0 5%;
+            margin-bottom: 14px;
+            position: relative;
+        }
+        .get-boxes .myitem input {
+            padding: 10px;
+            outline: 0;
+            font-size: 14px;
+            line-height: 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 3px;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            appearance: none;
+            -webkit-transition: border .2s ease;
+            transition: border .2s ease;
+        }
+        .get-boxes .myitem input:hover {
+            border: 1px #e82d36 solid;
+        }
+        .getbtn {
+            display: block;
+            height: 42px;
+            background-color: #e82d36;
+            border: 0;
+            padding: 0 10px;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 42px;
+            text-align: center;
+            outline: 0;
+            cursor: pointer;
+        }
+        .getxx {
+            top: -7px;
+            right: 9% !important;
+        }
+        .getxx img {
+            width: 40%;
+            margin-top: 15px;
+        }
+
+        @media screen and (min-width:320px) and (max-width:375px){
+            #dowebok {
+                height: 320px;
+                max-width: 320px;
+            }
+        }
+        @media screen and (min-width:375px) and (max-width:414px){
+            #dowebok {
+                height: 360px;
+                max-width: 360px;
+            }
+        }
+        @media screen and (min-width:415px) and (max-width:640px){
+            #dowebok {
+                height: 500px;
+                max-width: 500px;
+            }
+            #plateBtn {
+                top: 10%;
+            }
+        }
+        @media screen and (min-width:640px) and (max-width:1920px){
+            #dowebok {
+                height: 518px;
+                width: 81%;
+            }
+            #result {
+                top: 34%;
+                padding: 60px 0;
+            }
+        }

@@ -1,0 +1,75 @@
+<div class="row">
+
+    <div class="col-sm-3 text-center ">
+
+
+        <img src="{$member['avatar']}" width="150" height="150"
+             class="img-circle user-avatar"/>
+
+    </div>
+    <div class="col-sm-9">
+        <h1 class="tutor-name mar-t-1 text-center  " data-tutor_id="84794273">{$member['username']}</h1>
+        <!--{if $is_followed}-->
+        <button class="button_followed btn btn-danger p-mar-b-2 pull-right mar-r-2"
+                onclick="attentto_user($member['uid'])" id="attenttouser_{$member['uid']}"><i
+                class="icon icon-heart"></i>取消关注
+        </button>
+        <!--{else}-->
+
+        <button class="btn btn-danger button_attention p-mar-b-2 pull-right mar-r-2"
+                onclick="attentto_user($member['uid'])" id="attenttouser_{$member['uid']}"><i
+                class="icon icon-heart"></i>关注
+        </button>
+        <!--{/if}-->
+        <p class="tutor-title text-center mar-t-05 clear" id="tutorTitle">{$member['signature']}</p>
+
+        <div class="user-statics mar-t-05 text-center text-danger">
+            <ul class="tutor-detail tutorDetail">
+                <li class="detail">
+                    <span class="icon icon-comment"></span>
+
+                    <span class="highlight">{$member['answers']}</span>回答
+
+                </li>
+                <li class="detail"><span class="icon icon-question-sign"></span>
+                    <span class="highlight">{$member['questions']}</span>提问
+                </li>
+                <li class="detail"><span class="icon icon-heart"></span>
+
+                    <span class="highlight">{$member['followers']}</span>粉丝
+
+                </li>
+
+
+            </ul>
+        </div>
+
+
+        <p class="text-center">
+            <span class="mar-r-1">经验值：{$user['credit1']}</span>
+            <span class="mar-r-1">财富值：{$user['credit2']}</span>
+            <span>身份：{$user['usergroup']}</span>
+        </p>
+
+        <div class="text-center clearfix">
+            <p>
+                <label>擅长：</label>
+                <!--{if $member['category']}-->
+                <!--{loop $member['category'] $category}-->
+                <i class="expert-field"><a target="_blank" href="{url category/view/$category['cid']}">{$category['categoryname']}</a></i>
+                <!--{/loop}-->
+                <!--{else}-->
+                博主很懒，没有添加擅长领域
+                <!--{/if}-->
+            </p>
+        </div>
+        <form class="form-horizontal" name="askform" action="{url question/add/$member['uid']}" method="POST">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="对他擅长领域提问吧~" name="word"/>
+                <span class="input-group-btn">  <button type="submit" name="post" class="btn btn-danger">向TA提问</button> </span>
+            </div>
+
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 个人中心</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="http://{[$Domain]}">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+</div>
+
+<!---个人中心 kaishi--->
+<div class="grxx">
+     <div class="grxx1">
+          <span>
+		  <img style="vertical-align:middle;" id="preview" onload="onPreviewLoad(this)" src="{[if $dataArr.U_HeadImg]}{[$dataArr.U_HeadImg]}{[else]}{[$DIR]}images/tx.jpg{[/if]}" alt="" width='30' height='30' style="border-radius:3px;">
+		  </span>
+          <span class="tx" style="display:none;"><img src="images/moren_tx.png" width="100%" height="100%" alt=""></span>
+          <span>{[$dataArr.U_UserName]}</span>
+          <span>您好！</span>
+          <span style="background-color:#f60; color:#fff; padding:0px 5px; font-size:12px; font-family:'宋体';border-radius:5px; height:20px; line-height:20px; margin-top:10px;">信誉：{[$dataArr.U_Credit]}</span>
+     </div>
+     <div class="grxx2"> 
+         <p>可用余额：{[$dataArr.U_Balance]}元<a href="index.php?m=member&c=money&p=main">(立即充值)</a></p>
+         <p style="float:right;">可用积分：{[$dataArr.U_Integral]}分 </p>
+     </div>
+</div>
+
+<div class="grzx_menu">
+     <ul>
+         <li class="li1">账户管理</li>
+         <li class="li2"><a href="index.php?m=member&c=money&p=main"><i></i>余额管理</a></li>
+         <li class="li2"><a href="index.php?m=autho&p=main"><i></i>认证信息</a></li>
+         <li class="li2"><a href="index.php?m=safety&c=pass&p=main"><i></i>密码修改</a></li>
+		 <li class="li2"  style="border-bottom:0px;"><a href="index.php?m=member&c=mydata&p=main"><i></i>我的资料</a></li>
+     </ul>
+     <ul>
+         <li class="li1">信息管理</li>
+         <li class="li2"><a href="index.php?m=release&c=releaseList&p=main"><i></i>发布的信息</a></li>
+         <li class="li2"><a href="index.php?m=order&p=main"><i></i>我的订单</a></li>
+         <li class="li2"><a href="index.php?m=message&p=main"><i></i>消息盒子</a></li>
+         <li class="li2"  style="border-bottom:0px;"><a href="index.php?m=collection&p=main"><i></i>收藏的信息</a></li>
+     </ul>
+	 <ul>
+         <li class="li1">任务管理</li>
+         <li class="li2"  style="border-bottom:0px;"><a href="index.php?m=affiliate&p=main"><i></i>推荐送积分</a></li>
+     </ul>
+	 <ul>
+         <li class="li1">订阅管理</li>
+         <li class="li2"><a href="index.php?m=subscribe&p=main"><i></i>我的订阅</a></li>
+     </ul>
+</div>
+<div style="height:10px;"></div>
+
+</form>
+</body>
+</html>

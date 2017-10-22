@@ -1,0 +1,8 @@
+{[foreach from=$dataArr item=v key=k]}
+		 <div class="lmlm_fbtime">发布时间：{[$v.P_Time|date_format:"%Y-%m-%d"]}</div>
+         <dl class="lmlm_fbnr">
+         <dd><a href="index.php?m=goods&p=main&id={[$v.P_ID]}" class="picture"><img src="{[$v.Img]}"></a></dd>
+         <dt><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">{[$v.P_Name]}</a></dt>
+         <p>￥30100 <span>交易成功</span></p> 
+         </dl>
+{[/foreach]}

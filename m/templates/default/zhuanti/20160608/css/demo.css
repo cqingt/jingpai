@@ -1,0 +1,273 @@
+/*CSS Reset*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+  margin: 0;
+  padding: 0; }
+body {
+  font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #666;
+  background: #45055d;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th {
+  text-align: left; }
+
+fieldset,
+img {
+  border: 0;
+  vertical-align: top; }
+
+li {
+  list-style: none; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0; }
+
+button {
+  -webkit-appearance: none;
+  border: 0;
+  background: none; }
+
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none; }
+
+:focus {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+em, i {
+  font-style: normal; }
+
+
+.top img  {
+  width: 100%;
+
+}
+.btn-activity {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  border-bottom: 1px #fff solid;
+}
+.number {
+  text-align: center;
+  color: #FFF;
+  font-size: 28px;
+  margin-top: -4px;
+}
+
+.formbox {
+  padding: 0 15px;
+  background: -webkit-linear-gradient(top, #560576 0%,#4D056A 100%);
+}
+.formbox .frow {
+  margin-bottom: 14px;
+}
+.formbox .frow input {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  font-size: 18px;
+  background: #8f61a2;
+  border: 1px #8f61a2 solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 15px;
+    color: #fed9dc;
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #e4bff2; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #e4bff2; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #e4bff2; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #e4bff2; 
+} 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
+.formbox .last input:first-child {
+  width: 60% !important;
+    float: left;
+  margin-right: 2%;
+}
+.formbox .last .button {
+  width: 38% !important;
+  font-size: 16px !important;
+  padding: 0 !important;
+  float: left;
+  background: #9b1eb5 !important;
+  border: 0 !important;
+  height: 46px;
+  line-height: 46px;
+}
+.formbox .submit {
+  clear: both;
+}
+.formbox .submit input {
+  width: 100%;
+  border: 0;
+  background: #ffe541;
+  color: #420459;
+  font-size: 22px;
+  height: 46px;
+  margin: 16px 0 0;
+  border-top: 1px #ffe541 solid;
+    border-left: 2px #ffe541 solid;
+      border-bottom: 3px #ffe541 solid;
+        border-right: 2px #ffe541 solid;
+  border-radius: 6px;
+}
+.formbox h2 {
+  line-height: 40px;
+  font-size: 13px;
+  color: #f7a7a7;
+  text-align: center;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+-webkit-appearance: none;
+
+}
+
+textarea {  -webkit-appearance: none;}   
+.popup .content {
+  position: fixed;
+  top: 6%;
+  left: 5%;
+  z-index: 9;
+  display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 26px 0 20px;
+  width: 90%;
+  background: #fbf0f0;
+  border-radius: 6px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/icons.jpg) no-repeat center;
+  background-size: 80%;
+}
+
+.mask-layer {
+  position: fixed;
+  top: 0;
+  z-index: 8;
+  display: none;
+  width: 100% !important;
+  height: 100%;
+  background: rgba(0,0,0,.3)
+}
+.content img,
+.photo img  {
+  width: 100%;
+}
+
+.formbox.two h1,
+.formbox.two label {
+  color: #fff;
+  margin-bottom: 6px;
+}
+.select {
+  margin-top: 4px;
+}
+.select select {
+  height: 46px;
+  width: 32%;
+  background: #8f61a2;
+  border: 1px #8f61a2 solid;
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+}
+.nt input {
+  margin-top: 0 !important;
+}
+.formbox h5 {
+  color: #fff;
+  margin-top: 6px;
+  text-align: center;
+}

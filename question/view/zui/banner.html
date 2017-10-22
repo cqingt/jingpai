@@ -1,0 +1,22 @@
+<div class="questions-banner" style="background: url(<?php echo SITE_HOME_URL;?>images/home-banner.jpg)">
+    <div class="wrapper">
+        <div class="world-friend">
+            <h2>已有<strong>{$statistics['solves']}</strong>位藏友得到了帮助</h2>
+            <ul>
+                <!--{eval $question = $this->fromcache("nosolvelist");}-->
+                <!--{loop $question $val}-->
+                <li><a href="{url q-$val['id']}" target="_blank">{$val['title']}</a></li>
+                <!--{/loop}-->
+            </ul>
+            <span>
+                <!--{if 0==$user['uid']}-->
+				<a class="issue" href="{url add}"><i class="icon-panel icon-issue"></i><strong>我要提问</strong></a>
+				<a class="answer" href="{url c-all}"><i class="icon-panel icon-answer"></i><strong>我来回答</strong></a>
+                <!--{else}-->
+				<a class="issue" href="{url user/ask/1}"><i class="icon-panel icon-issue"></i><strong>我的提问</strong></a>
+				<a class="answer" href="{url user/answer/1}"><i class="icon-panel icon-answer"></i><strong>我的回答</strong></a>
+                <!--{/if}-->
+			</span>
+        </div>
+    </div>
+</div>

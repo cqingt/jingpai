@@ -1,0 +1,116 @@
+/* reset */
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input { padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, table, th, td , span{ font-size: 1em; font-style: normal; font-weight: normal;}
+strong { font-weight: bold;}
+ul, ol { list-style: none outside none;}
+fieldset, img { border: medium none; vertical-align: middle;}
+caption, th {  text-align: left;}
+table { border-collapse: collapse; border-spacing: 0;}
+input, select, textarea { font: 12px/20px Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; padding: 0; margin: 0;}
+i, cite, em { font-style: normal;}
+input,button,select,textarea{ outline:none}
+html {min-height:101%; }
+a { color: #333; text-decoration: none; outline: medium none; -webkit-transition-property:color; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+a:link, a:visited, a:active { text-decoration: none;}
+ 
+.art-top,
+.art-from,
+.art-footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.art-from {
+	width: 90%;
+    overflow: hidden;
+    padding: 0 5%;
+	background: #f4f4f2;
+}
+.art-from h2 {
+	font-size: 18px;
+	line-height: 60px;
+	color: #cc0000;
+}
+.art-footer {
+	background: #fff;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.photo img,
+.art-footer img,
+.art-from img {
+	width: 100%;
+}
+
+.art-from .formtips {
+	clear: both;
+	font-family: "microsoft yahei";
+	font-size: 12px;
+	margin-top: 4px;
+	display: block;
+	padding-left: 4px;
+}
+.art-from .form {
+	overflow: hidden;
+}
+.art-from .case {
+	margin: 0 auto 20px;
+}
+.art-from .case input,
+.art-from .case textarea {
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	width: 100%;
+	padding: 0 10px;
+	border: 1px #bfbfbf solid;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.art-from .case input {
+	height: 38px;
+}
+.art-from .case textarea {
+	padding-top: 8px;
+	height: 190px;
+	line-height: 24px;
+}
+.art-from .case .button {
+	width: 100%;
+	line-height: 40px;
+	height: 44px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 30px;
+	background: #cc0000;
+}
+.art-from h5 {
+	font-family: "microsoft yahei";
+	margin:0 auto 24px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #333;
+}
+.art-apply {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	background: #d63333;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+textarea {  -webkit-appearance: none;}   
+a,input{
+border:none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+outline:none；
+}

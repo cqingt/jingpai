@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>领奖界面</title>
+<link href="Template/manage/user/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script language="javascript" type="text/javascript" src="static/js/My97DatePicker/WdatePicker.js"></script>
+
+</head>
+
+<style>
+.pic-group{
+	margin: 0px;
+	padding: 0px;
+}
+.pic-group li{
+	position: relative;
+	float: left;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 4px;
+}
+.pic-group li{display:block}
+.pic-group img{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.17);
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}.pic-group .btn-file{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block
+}.pic-group .btn-file input[type=file]{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .01;
+	filter: alpha(opacity=1);
+	cursor: pointer;
+	z-index: 1
+}
+.wj_tjcg { width:80%; border-radius:5px; background:#fff; height:74px; text-align:center; margin:0 auto; padding-top:40px;}
+.wj_dhlx{ width:80%; border-radius:5px; background:#fff; height:114px; text-align:center; margin:10px auto 0 auto; }
+
+.wj_telep { height:57px; border-bottom:#b7b7b7 1px solid; font-size:24px; line-height:57px; color:#333;}
+.wj_telep a { text-decoration:none; color:#333;}
+.wj_telep1 { height:56px;  font-size:18px; line-height:56px; color:#007aff;}
+
+.wj_cancel { width:49%; height:56px; border-right:#b7b7b7 1px solid; float:left;}
+.wj_cance2 { width:50%; height:56px; float:left;}
+.wj_telep1 a { color:#007aff; text-decoration:none;}
+.wj_telep1 a:hover { color:#007aff;}
+
+p.txk_box{width:100%; height:100%; background-color:#f00; text-align:center;vertical-align:middle;line-height:68px;display:table-cell;}
+p.txk_box img{max-width:100%; max-height:100%; scale:expression((this.offsetWidth > this.offsetHeight)?(this.style.width = this.offsetWidth >= 100% ? "100%" : "auto"):(this.style.height = this.offsetHeight >= 100% ? "100%" : "auto")); display:inline !important;vertical-align:middle;_margin-top: expression(( 100% - this.height ) / 2);}
+.delete_img_but ul{width:96%; margin:0px auto; padding:0px;}
+.delete_img_but ul li.delete{width:48%; height:50px; background-color:#e33a3d; float:left; border-radius:3px; color:#fff; text-align:center; line-height:50px; font-size:16px;}
+.delete_img_but ul li.back{width:48%; height:50px; background-color:#f5f5f5; margin-left:3%; float:left; border-radius:3px; color:#333; text-align:center; line-height:50px; font-size:16px; border:1px solid #ddd;}
+
+</style>
+
+
+<body>
+<!--删除照片弹出框 开始-->
+<div id="delete_img" class="wj_dhlx" style=" z-index:1000; position:absolute; left:10%; background-color:#fff;border-radius:5px; height:auto; overflow:hidden; padding-bottom:20px; display:none;">
+    <div class="wj_telep"><a href="javascript:;" style="font-size:16px;">删除图片</a></div>
+    <div style="text-align:center; padding:20px;">
+        <p class="txk_box"><img></p>
+        <span>要删除这张图片吗？</span>
+    </div>
+    <div class="delete_img_but">
+        <ul>
+            <li class="delete">删除</li>
+            <li class="back" onClick="document.getElementById('delete_img').style.display='none'">返回</li>
+    </ul></div>
+
+</div>
+<!--删除照片弹出框 结束 -->
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td height="30" bgcolor="#ecf9ff"><span class="title">领奖操作</span></td>
+    <td bgcolor="#ecf9ff"></td>
+  </tr>
+</table>
+<form  method="post" action="index.php?m=award&c=insert&p=manage" name="myform" id="myfrom">
+<input type="hidden" name="id" value="{[$dataArr.id]}">
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td width="13%" height="30" align="center"><strong>微信图片</strong></td>
+      <td width="20%" height="30"><a href="{[$dataArr.img]}" target="_blank"><img src="{[$dataArr.img]}" width="30px;" height="30px;"/></a></td>
+      <td width="13%" height="30" align="center"><strong>微信昵称</strong></td>
+      <td width="20%" height="30" style="text-align:left; padding-left:5px;">{[$dataArr.nickname]}</td>
+      <td width="13%" height="30" align="center"><strong>集福总数</strong></td>
+      <td width="21%" height="30" style="text-align:left; padding-left:5px;">{[$dataArr.fu2]}</td>
+    </tr>
+     <tr>
+       <td width="13%" height="30" align="center"><strong>领奖状态</strong></td>
+       <td width="20%" height="30" style="text-align:left; padding-left:5px;">{[if $dataArr.status>0]}已领奖{[elseif $dataArr.status==0]}未领奖{[else]}取消领奖{[/if]}</td>
+       <td width="13%" height="30" align="center"><strong>公 众 号</strong></td>
+       <td width="20%" height="30" style="text-align:left; padding-left:5px;">{[if $dataArr.guanzhu]}已关注{[else]}未关注{[/if]}</td>
+       <td width="13%" height="30" align="center"><strong>确认时间</strong></td>
+       <td width="21%" height="30" style="text-align:left; padding-left:5px;">{[$dataArr.time|date_format:"%Y-%m-%d %H:%M:%S"]}</td>
+     </tr>
+     <tr>
+       <td width="13%" height="30" align="center"><strong>姓　　名</strong></td>
+       <td width="20%" height="30" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       	{[$dataArr.name]}
+       {[else]}
+       	<input type="text" name="name" id="name" style="width:80px;"/>
+       {[/if]}
+       </td>
+       <td width="13%" height="30" align="center"><strong>生　　日</strong></td>
+       <td width="20%" height="30" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       	{[$dataArr.birthday|date_format:"%Y-%m-%d"]}
+       {[else]}
+      	<input name="birthday" type="text" id="birthday" onclick="WdatePicker()" value="" readonly="readonly" style="width:80px;">
+       {[/if]}
+       </td>
+       <td width="13%" height="30" align="center"><strong>手 机 号</strong></td>
+       <td width="21%" height="30" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       	{[$dataArr.mobile]}
+       {[else]}
+       	<input type="text" name="mobile" id="mobile" value="{[$dataArr.mobile]}" style="width:80px;"/>
+       {[/if]}
+       </td>
+     </tr>
+     <tr>
+       <td width="13%" height="30" align="center"><strong>性　　别</strong></td>
+       <td width="20%" height="30" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       		{[if $dataArr.sex==1]}男{[else]}女{[/if]}
+       {[else]}
+           <input name="sex" type="radio" id="radio" value="1" checked="checked" />男 
+           <input type="radio" name="sex" id="radio2" value="2" />女
+       {[/if]}
+       </td>
+       <td width="13%" height="30" align="center"><strong>职　　业</strong></td>
+       <td width="20%" height="30" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       	{[$dataArr.jop]}
+       {[else]}
+       	<input type="text" name="jop" id="jop" style="width:80px;"/></td>
+       {[/if]}
+       <td width="13%" height="30" align="center"><strong>领奖方式</strong></td>
+       <td width="21%" height="30" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       	{[if $dataArr.type==1]}特快专递{[elseif $dataArr.type==2]}上门取货{[else]}-{[/if]}
+       {[else]}
+       <select name="type" id="type">
+         <option value="1">特快专递</option>
+         <option value="2">上门取货</option>
+       </select>
+       {[/if]}
+       </td>
+     </tr>
+     <tr>
+       <td width="13%" height="30" align="center"><strong>收货地址</strong></td>
+       <td height="30" colspan="5" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       		{[$dataArr.province]}{[$dataArr.city]}{[$dataArr.address]}
+       {[else]}
+       <select name="province" id="province" onchange="getCity(this.value,'0');">
+         <option>省</option>
+       </select>
+         <select name="city" id="city" >
+           <option>市</option>
+        </select>
+        <input type="text" name="address" id="address" style="width:200px;"/>
+        {[/if]}
+        </td>
+      </tr>
+      <tr>
+       <td width="13%" height="100" align="center"><strong>备注信息</strong></td>
+       <td height="100" colspan="5" style="text-align:left; padding-left:5px;">
+       {[if $dataArr.status!=0]}
+       	{[$dataArr.content]}
+       {[else]}
+       <textarea name="content" id="content" cols="45" rows="5"></textarea>
+       {[/if]}
+       </td>
+      </tr>
+
+	  
+
+    <tr>
+      <td height="28" colspan="6" align="center">
+      {[if $dataArr.status==0]}
+        <div style="width:180px; margin:0 auto 0 auto;">
+          <input type="button" value="确认领奖" class="a70-26" style="margin-top:5px; margin-bottom:5px;" onclick="return checkFrom();">
+          <input type="button" value="取消领奖" class="a70-26" style="margin-top:5px; margin-bottom:5px; margin-left:10px;" onclick="window.location.href='index.php?m=award&c=noJiang&p=manage&id={[$dataArr.id]}'">
+          </div>
+      {[else]}
+      	<span style="font-family:'微软雅黑'; font-size:20px; color:#F00; font-weight:bold">{[if $dataArr.status==1]}已领奖{[else]}已取消领奖{[/if]} </span>
+      {[/if]}
+        </td>
+    </tr>
+  </table>
+</form>
+</div>
+</body>
+</html>
+
+
+
+<script>
+function checkFrom(){
+	if($('#name').val()==''){
+		alert('姓名不能为空!');	
+		return false;
+	}
+	
+	if($('#mobile').val()==''){
+		alert('手机不能为空!');	
+		return false;
+	}
+	
+	if($('#province').val()=='' || $('#city').val()==''){
+		alert('请选择区域!');	
+		return false;
+	}
+	
+	if($('#address').val()==''){
+		alert('请填写详细地址!');	
+		return false;
+	}
+	
+	$('#myfrom').submit();
+}
+
+function getCity(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#city').html('<option value="">市</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#province').html('<option value="">省</option>' + str);	
+	});
+}
+
+$(function(){
+	getProvince(1,'{[$dataArr.province]}');
+	//getCity('{[$dataArr.P_Province]}','{[$dataArr.P_City]}');
+})
+</script>

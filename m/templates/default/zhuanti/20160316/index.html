@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机端 航天纪念币等值兑换</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" dtype="text/css" href="css/style.css">
+	<script src="http://resource.96567.com/js/jquery.js"></script>
+
+
+</head>
+<body>
+
+<!-- Main area -->
+<section class="section">
+
+<div class="banner">
+	 <img src="images/banner.jpg" alt="">
+	 <a href="###" alt="我要兑换"><img src="images/one.jpg" alt="" /></a>
+	 <img src="images/two.jpg" alt="" />
+	 <img src="images/zero-1.jpg" alt="" />
+	 <img src="images/zero-2.jpg" alt="" />
+	 <img src="images/zero-3.jpg" alt="" />
+</div>
+
+<div class="tile-box">
+	 <div class="wrap">
+	 	  <div class="description">
+	 	       <h1>一枚如此高逼格的纪念币之前只能在银行兑换且数量极少，一旦流入市场价格马上翻倍</h1>
+	 	       <h2>今天，收藏天下如银行一般，<em>开放等值兑换</em></h2>
+	 	       <p>与其寒冬银行外排队苦</p>
+	 	       <p>不如稳坐家中点击兑换</p>
+	 	  </div>
+	 	  <div class="userinfo">
+	 	  	   <div class="hp-input">
+	 	  	   	    <label for="用户名：">用户名：</label><input type="text" value="" name="" />
+	 	  	   </div>
+	 	  	   <div class="hp-input">
+	 	  	   	    <label for="密码：">密码：</label><input type="text" value="" name="" />
+	 	  	   </div>
+	 	  	   <div class="hp-input">
+	 	  	   	    <label for="手机：">手机：</label><input type="text" value="" name="" />
+	 	  	   </div>
+	 	  	   <a class="participation" href="javascipt:;">参与等值兑换</a>
+	 	  </div>
+	 </div>
+</div>
+<script >
+    $(".participation").bind("click", function(event) { 
+        $(".userinfo").hide(); $(".add-wrap").show(); 
+    });
+</script>
+<div class="add-wrap">
+     <div class="dialog_body">
+     <h1 class="congratulation">恭喜您注册成功√</h1>
+     <p class="congr-p">请填写收货信息静等收取抗战胜利70周年纪念币</p>
+     <div class="eject_con address">
+      <div class="adds">
+        <form method="post" action="index.php?act=member_address&amp;op=address" id="address_form" target="_parent">
+          <input type="hidden" name="form_submit" value="ok">
+          <input type="hidden" name="id" value="38262">
+          <span class="dialog_title_icon">收货信息：</span>
+          <dl>
+            <dt><i class="required">*</i>收货人：</dt>
+            <dd>
+              <input type="text" class="text w100" name="true_name" value="">
+              <p class="hint">请填写您的真实姓名</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><i class="required">*</i>所在地区：</dt>
+            <dd>
+              <div id="region">
+                <select style="" class="valid">
+                        <option>-请选择-</option>
+                        <option value="1">北京</option><option value="2">天津</option><option value="3">河北省</option><option value="4">山西省</option><option value="5">内蒙古自治区</option><option value="6">辽宁省</option><option value="7">吉林省</option><option value="8">黑龙江省</option><option value="9">上海</option><option value="10">江苏省</option><option value="11">浙江省</option><option value="12">安徽省</option><option value="13">福建省</option><option value="14">江西省</option><option value="15">山东省</option><option value="16">河南省</option><option value="17">湖北省</option><option value="18">湖南省</option><option value="19">广东省</option><option value="20">广西壮族自治区</option><option value="21">海南省</option><option value="22">重庆</option><option value="23">四川省</option><option value="24">贵州省</option><option value="25">云南省</option><option value="26">西藏自治区</option><option value="27">陕西省</option><option value="28">甘肃省</option><option value="29">青海省</option><option value="30">宁夏回族自治区</option><option value="31">新疆维吾尔自治区</option><option value="32">台湾省</option><option value="33">香港特别行政区</option><option value="34">澳门特别行政区</option><option value="35">海外</option>
+                </select>
+                <select class="valid">
+                        <option>-请选择-</option><option value="36">北京市</option>
+                </select>
+                <select class="valid"><option>-请选择-</option>
+                        <option value="37">东城区</option><option value="38">西城区</option><option value="41">朝阳区</option><option value="42">丰台区</option><option value="43">石景山区</option><option value="44">海淀区</option><option value="45">门头沟区</option><option value="46">房山区</option><option value="47">通州区</option><option value="48">顺义区</option><option value="49">昌平区</option><option value="50">大兴区</option><option value="51">怀柔区</option><option value="52">平谷区</option><option value="53">密云县</option><option value="54">延庆县</option><option value="566">其他</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt><i class="required">*</i>街道地址：</dt>
+            <dd>
+              <input class="text w300 valid" type="text" name="address" value="">
+              <p class="hint">不必重复填写地区</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt><i class="required">*</i>手机号码：</dt>
+            <dd>
+              <input type="tel" class="text w200 valid" name="mob_phone" value="">
+            </dd>
+          </dl>
+            <label class="submit-border">
+              <input type="submit" class="submit" value="完成领取">
+            </label>
+            <p class="add-p">因纪念币本身价值很高快递费用20元需会员自理</p>
+        </form>
+      </div>
+     </div>
+</div>
+<div style="clear:both; display:block;"></div>
+
+
+</section>
+<!-- Main area End -->
+
+</body>
+</html>

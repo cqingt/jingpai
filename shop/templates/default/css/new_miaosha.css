@@ -1,0 +1,104 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%; }
+em,i{font-style:normal;}
+fieldset,img{border:0;}
+ul,ol,li{list-style:none;}
+a{ text-decoration:none;outline:none;}
+a:hover{ text-decoration:none;}
+
+.djh_ms_main{width:1210px; margin:0px auto;}
+.djh_ms_mainbox{background:url(../images/miaosha/djh_ms_bg.jpg) repeat-y left ; height:auto; overflow:hidden;}
+			  
+.Network li{width: 929px;overflow:hidden;float:right;margin-right: 0px;}
+.lml_gdfl{ position:absolute; width:168px; height:213px; top:100px; left:50px; _top:0px;overflow:hidden; background:#fff; border:1px solid #e4393c; padding:20px;box-shadow: 2px 2px 2px rgba(0,0,0,0.2);}
+.NetworkFast .title{ font-size:36px; color:#333; line-height:36px; border-left:3px solid #e4393c; padding-left:20px;}
+.NetworkFast ul{ margin-left:1px; padding-top:15px; padding-left:20px; border-left:1px solid #ddd; }
+
+.NetworkFast{position:fixed; z-index:50; }
+.NetworkFast li{  width:60px; padding:0px 5px; height:20px; line-height:20px; margin:10px 0px 10px 0px; font-size:14px; color:#666; cursor:pointer;}
+.NetworkFast li a{ color:#666;}
+.NetworkFast .imgDiv{display:none;}
+.NetworkFast .liNow{background:#e4393c; color:#FFF;}
+.NetworkFast .liNow span{background:#e4393c; color:#FFF; display: block; float: right;}
+.NetworkFast .liNow a{color:#FFF;} 
+.NetworkFast .liNow .imgDiv{display:block;}
+.NetworkFast li.liNow {}
+
+		  
+		  
+		  
+.djh_ms_menu{width:193px; background-color:#fff; float:left; border:1px solid #e4393c; padding:30px 0px 40px; padding-left:40px; padding-right:25px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);}
+.djh_ms_menu p{ border-left:3px solid #e4393c; font-family:"微软雅黑"; font-size:32px; color:#333; line-height:36px; height:36px; text-align:center;}
+.djh_ms_menu ul{ margin-left:1px; border-left:1px solid #ccc; overflow:hidden; padding:12px 0px 30px; padding-left:24px;}
+.djh_ms_menu ul li{line-height:24px; width:130px; height:24px; font-size:18px; font-family:"微软雅黑"; color:#777; padding-left:30px; margin:8px 0px; }
+.djh_ms_menu ul li a{ color:#777; text-decoration:none; width:130px; height:24px; display:block;}
+.djh_ms_menu ul li a:hover{ color:#fff; text-decoration:none; width:130px; height:24px; display:block;}
+.djh_ms_menu ul li span{ font-size:12px; color:#999; padding-left:16px; font-family:"宋体";}
+.djh_ms_menu ul li.hover{line-height:24px; width:165px; height:24px; font-size:18px; font-family:"微软雅黑"; color:#fff; background-color:#e4393c; padding-left:30px; margin:8px 0px;  }
+.djh_ms_menu ul li.hover span{ font-size:12px; color:#fff; padding-left:16px; font-family:"宋体";}
+
+.djh_ms_con{/* width: 990px; */overflow:hidden;float:right;margin-right: 0;}
+.djh_ms_con p.title01{background:url(../images/miaosha/clock_red.jpg) no-repeat left; font-family:'微软雅黑'; line-height: 62px; font-size:42px; font-weight:700; color:#d62628; padding-left:70px;}
+.djh_ms_con p.title02{background:url(../images/miaosha/clock_hui.jpg) no-repeat left;font-family:'微软雅黑';line-height: 62px;font-size:42px;font-weight:700;color:#999;margin-left: 8px;padding-left: 70px;}
+.djh_ms_con p.chuo{background:url(../images/miaosha/ms-end.png) no-repeat;width: 112px;height: 112px;position:absolute;z-index:1;right: 10px;top: 10px;}
+.djh_ms_con dl{width: 294px;height: 492px;border: 1px solid #ddd;margin-top: 11px;position:relative;float: left;overflow: hidden;margin-left: 11px;}
+.djh_ms_con dl dd{padding: 20px 28px 10px;float:left;height: 240px;overflow: hidden;}
+.djh_ms_con dl dt{float:left;padding: 4px 18px;}
+.djh_ms_con dl dt span.over{background:url(../images/miaosha/ms_time02.jpg) no-repeat; font-size:12px; color:#fff; width:113px; height:22px; display:block; text-align:center; line-height:22px;}
+.djh_ms_con dl dt span.time{background: url(../images/miaosha/ms-time.jpg) no-repeat left center;font-size:12px;color: #666;width:210px;display: block;height: 20px;line-height: 20px;padding-left: 20px;}
+.djh_ms_con dl dt div.name{height: 40px;overflow: hidden;font-size: 14px;font-family:'微软雅黑';color:#332f2f;line-height: 20px;padding-top:12px;margin-bottom: 10px;}
+.djh_ms_con dl dt div.name a{ color:#332f2f; text-decoration:none;}
+.djh_ms_con dl dt div.name a:hover{ color:#e4393c; text-decoration:none;}
+.djh_ms_con dl dt div.jiage{border-top: 1px dashed #ccc;overflow:hidden;font-family:'微软雅黑';margin: 6px 0px 12px;}
+.djh_ms_con dl dt div.jiage div{ line-height:30px;}
+.djh_ms_con dl dt div.jiage .one{float:left;font-size:14px;color:#e4393c;width: 100px;line-height:30px;}
+.djh_ms_con dl dt div.jiage .two{float:left;font-size:14px;color: #666;width: 74px;text-align:center;line-height:30px;}
+.djh_ms_con dl dt div.jiage .three{float:left;font-size: 25px;color:#e4393c;width: 118px;font-weight:700;line-height:30px;}
+.djh_ms_con dl dt div.jiage .four{float:left;font-size:14px;color:#3e3e3e;width: 67px;line-height:30px;}
+.djh_ms_con dl dt div.but{background:url(../images/miaosha/ms_but01.jpg) no-repeat;height: 42px;border-radius: 8px;}
+.djh_ms_con dl dt div.but_over{background:url(../images/miaosha/ms_but02.jpg) no-repeat;height: 42px;border-radius: 8px;}
+.djh_ms_con dl dt span.sheng{font-family:微软雅黑;font-size: 14px;color:#d6262b;line-height: 42px;display: block;float:left;width:132px;text-align:center;}
+.djh_ms_con dl dt span.ljms{font-family:微软雅黑;font-size: 20px;color:#fff;font-weight:700;line-height: 42px;display: block;float:left;width: 117px;text-align:center;}
+.djh_ms_con dl dt span.ljms a{font-family:微软雅黑;font-size: 20px;color:#fff;font-weight:700;line-height: 42px;display: block;float:left;width: 130px;height: 42px;text-align:center;}
+.djh_ms_con dl dt span.ljms a:hover{font-family:微软雅黑;font-size: 20px;color:#fff;font-weight:700;line-height:42px;display: block;float:left;width: 130px;height: 42px;text-align:center;}
+.djh_dang_box{overflow:hidden;padding-bottom:30px;}
+.warm-prompt {
+	margin-left: -10px;
+	width: 194px;
+}
+.warm-prompt .icon-w-smile {
+	display: block;
+	background:url(../images/miaosha/icon-smile.jpg) no-repeat; 
+	width: 18px;
+	height: 17px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+}
+.warm-prompt h4 {
+	color: #e4393c;
+	font-weight: bold;
+}
+.warm-prompt p {
+	color: #555;
+	border-left: none;
+	text-align: left;
+}
+.warm-prompt h4,
+.warm-prompt p {
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.djh_ms_con dl {
+	position: relative;
+}
+
+.icon-by {
+	position: absolute;
+	top:0;
+	left:0;
+	background:url(../images/icon-Pinkage.png) no-repeat;
+	width:84px;
+	height: 103px
+}

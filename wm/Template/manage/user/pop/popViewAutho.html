@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>认证信息审核</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<style type="text/css">
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="index.php?m=manageAutho&c=authoAction&p=manage">
+
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="table">
+      <tr class="con">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>认证类型：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[if $dataArr.U_Type==1]}个人认证{[else]}企业认证{[/if]}</td>
+      </tr>
+{[if $dataArr.U_Type==2]}      
+      <tr class="con con_a">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>公司名称：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Company]}</td>
+      </tr>
+      <tr class="con">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>营业执照号：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_CompanyID]} [<a href="{[$dataArr.U_yeImg]}" target="_blank">查看</a>]		</td>
+      </tr>
+{[/if]}      
+      <tr class="con con_a">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>{[if $dataArr.U_Type==2]}负责人{[else]}姓名{[/if]}：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Name]}</td>
+      </tr>
+      <tr class="con">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>电话：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Mobile]}</td>
+      </tr>
+      <tr class="con con_a">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>身份证号：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_sfID]} [<a href="{[$dataArr.U_sfImg]}" target="_blank">查看</a>]</td>
+      </tr>
+      <tr class="con">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>开户行：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Bank]}</td>
+      </tr>
+      <tr class="con con_a">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>银行帐号：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Account]}</td>
+      </tr>
+      <tr class="con">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>开户行地址：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Adress]}</td>
+      </tr>
+      <tr class="con con_a">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>申请认证时间：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">{[$dataArr.U_Time|date_format:"%Y-%m-%d %H:%M:%S"]}
+        <input name="status" type="hidden" id="status" value="0" />
+        <input name="uid" type="hidden" id="uid" value="{[$dataArr.U_ID]}" />
+        </td>
+      </tr>
+      <tr class="con">
+        <td width="20%" height="28" align="right" style="text-align:right; padding-left:10px;"><strong>备注：</strong></td>
+        <td width="80%" height="28" align="left" style="text-align:left; padding-left:10px;">
+        {[if $dataArr.U_Status]}
+        	{[$dataArr.U_Remark]}
+        {[else]}
+       		<textarea name="U_Remark" id="U_Remark" cols="60" rows="3"></textarea>
+        {[/if]}
+        </td>
+      </tr>
+      <tr class="con con_a">
+        <td height="28" colspan="2" align="right" style="text-align:center;">
+        {[if !$dataArr.U_Status]}
+        	<input type="button" name="button" id="button" value="通过审核" onclick="javascript:submitFrom(1);"/>
+        	<input type="button" name="button2" id="button2" value="删除认证" onclick="javascript:submitFrom(0);"/>
+        {[else]}
+        	<span style="font-family:'微软雅黑'; font-size:16px; color:#063; font-weight:bold">{[$dataArr.U_rzTime|date_format:"%Y-%m-%d %H:%M:%S"]}通过审核</span>
+        {[/if]}
+        </td>
+      </tr>
+    </table>
+</form>
+<script>
+function submitFrom(val){
+	$('#status').val(val);
+	$('#form1').submit();
+}
+</script>
+</body>
+</html>

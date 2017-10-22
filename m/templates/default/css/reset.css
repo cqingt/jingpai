@@ -1,0 +1,172 @@
+@charset "utf-8";
+html{color:#000}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+span,
+a{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,
+img,
+iframe{border:0}
+:focus{outline:0}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var{font-weight:normal;font-style:normal}
+ol,
+ul{list-style:none}
+li{list-style:none}
+caption,
+th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after{content:''}
+abbr,
+acronym{border:0;font-variant:normal}
+/* to preserve line-height and selector appearance */
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+/*input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit; vertical-align:middle;}*/
+/*to enable resizing for IE*/
+input,
+textarea,
+select{*font-size:100%}
+/*because legend doesn't inherit in IE */
+legend{color:#000}
+/*clear float*/
+.clearfix{zoom:1}
+.clearfix:after{display:block;clear:both;content:'\20'}
+.fleft{float:left}
+.fright{float:right}
+:not(input){
+    -webkit-user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-touch-callout:none;
+    -webkit-text-size-adjust:none;
+}
+.content {/* margin-top:40px; */}
+.content table {
+	width: 100% !important;
+
+}
+
+.mercon h1 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Microsoft YaHei;
+    color: #7a0606;
+    font-weight: bold;
+}
+.mercon h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #854234;
+    margin: 16px 0 8px;
+    font-weight: bold;
+    font-family: Microsoft YaHei;
+}
+.mercon h4 {
+	text-align:left;
+	font-size: 20px;
+	margin-top: 10px;
+	color: #e43a3d;
+	font-weight: bold;
+	font-family: Microsoft YaHei;
+	line-height: 38px;
+	border-bottom: 2px #e43a3d solid;
+}
+.mercon p {
+	color: #444;
+	font-size: 12px;
+	margin-top: 0;
+	font-family: serif;
+	line-height:22px;
+}
+.mercon table {
+	width: 100% !important;
+}
+.mercon td {
+	color: #444;
+	font-size: 12px;
+	line-height: 22px;
+	display: block;
+	width: 100%;
+}
+.mercon img {
+	margin-top: 14px !important;
+	width: 100% !important;
+}
+.xq_banner {
+}
+.xq_banner li {
+	font-size: 18px !important;
+	line-height: 30px !important;
+}
+.gjs_strong01 {
+	font-size: 16px !important;
+	margin-bottom: 2px;
+	line-height: 26px !important;
+}
+.gjs_box img {
+	width: 100% !important;
+}
+.gjs_name {
+	font-size: 16px !important;
+	padding: 10px 0 16px !important;
+}
+.stamp_box {
+	background: #fff;
+}
+
+.fixed-tab-pannel {
+	background: #fff;
+	padding-top: 20px
+}
+#fixed-tab-pannel {
+	background: #fff;
+	padding: 0 15px 15px !important;
+}
+
+.accounts {
+	width: auto !important;
+}
+.accounts ul li {
+	width: 100% !important;
+	    box-sizing: border-box;
+	margin:20px 0 10px !important;
+	text-align: left !important;
+    font-size: 14px !important;
+    height: auto  !important;
+    line-height: 24px !important;
+}

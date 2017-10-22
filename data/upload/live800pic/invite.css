@@ -1,0 +1,22 @@
+﻿#InviteWindow {
+	POSITION: absolute; WIDTH: 418px; BACKGROUND: url(http://www.96567.com/images/live800pic/BG.png); HEIGHT: 152px; VISIBILITY: hidden; TOP: 0px; LEFT: 0px;
+}
+#InviteWindow #invite_title {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 100px; PADDING-TOP: 10px; display:none;
+}
+#InviteWindow #invite_text {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 50px; text-align:left;
+}
+
+#invite_btn SPAN {
+	DISPLAY: none
+}
+#invite_btn .cancel {
+	border: 0px;
+	 POSITION: absolute;  WIDTH: 107px; BACKGROUND: url(http://www.96567.com/images/live800pic/btn2_05.jpg) no-repeat 0px 0px; HEIGHT: 30px;
+	bottom: 9px;
+left: 297px;
+}
+#invite_btn .accept {
+	BORDER-BOTTOM: 1px; POSITION: absolute; BORDER-LEFT: 1px; WIDTH: 107px; BACKGROUND: url(http://www.96567.com/images/live800pic/btn1_03.jpg); margin-top:-40px;HEIGHT: 30px; BORDER-TOP: 1px;RIGHT: 128px;bottom: 9px; BORDER-RIGHT: 1px
+}

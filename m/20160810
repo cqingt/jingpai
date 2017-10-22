@@ -1,0 +1,51 @@
+Array
+(
+    [member_id] => 525148
+    [member_name] => 18701134009
+    [member_truename] => 
+    [member_avatar] => 
+    [member_sex] => 
+    [member_birthday] => 
+    [member_passwd] => 6636c45d282c3a35c81fbadef69b3eae
+    [member_paypwd] => 
+    [member_email] => 
+    [member_email_bind] => 0
+    [member_mobile] => JnQlSHkmdCVIeWIxQVIc*PHMs*dioa*XUAyaFBecnktdDdJdSZs*JUhi*czRc*KjVdczRc*KjVdYWYtKSppRjNg*Nig=
+    [member_mobile_bind] => 1
+    [member_qq] => 
+    [member_ww] => 
+    [member_login_num] => 1
+    [member_time] => 1470813748
+    [member_login_time] => 1470813748
+    [member_old_login_time] => 1470813748
+    [member_login_ip] => 223.104.38.204
+    [member_old_login_ip] => 223.104.38.204
+    [member_qqopenid] => 
+    [member_qqinfo] => 
+    [member_sinaopenid] => 
+    [member_sinainfo] => 
+    [member_points] => 0
+    [cangdou] => 0.00
+    [available_predeposit] => 0.00
+    [freeze_predeposit] => 0.00
+    [available_rc_balance] => 0.00
+    [freeze_rc_balance] => 0.00
+    [inform_allow] => 1
+    [is_buy] => 1
+    [is_allowtalk] => 1
+    [member_state] => 1
+    [member_snsvisitnum] => 0
+    [member_areaid] => 
+    [member_cityid] => 
+    [member_provinceid] => 
+    [member_areainfo] => 
+    [member_privacy] => 
+    [member_quicklink] => 
+    [member_exppoints] => 0
+    [inviter_id] => 
+    [openid] => 
+    [is_open] => 0
+    [ec_salt] => 
+    [member_from] => 免费领取世界财富钞(m)
+    [share_num] => 0
+)

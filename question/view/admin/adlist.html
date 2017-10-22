@@ -1,0 +1,317 @@
+<!--{template header,admin}-->
+<link href="{SITE_URL}css/image_upload/wallform.css" rel="stylesheet">
+<link href="{SITE_URL}css/upwindow/reveal.css" rel="stylesheet">
+<div class="page">
+	<div class="fixed-bar">
+		<div class="item-title">
+			<h3>广告管理</h3>
+		</div>
+	</div>
+	<div class="fixed-empty"></div>
+	<!--{if isset($message)}-->
+	<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+	<table  class="table">
+		<tr>
+			<td class="{$type}">{$message}</td>
+		</tr>
+	</table>
+	<!--{/if}-->
+	{if $type == 1}
+	<div class="close_float tabmenu">
+		<ul class="tab pngFix">
+			<li class="">
+				<a href="javascript:void(0)">轮播图设置</a>
+			</li>
+			<li class="ui-tabs-selected">
+				<a href="javascript:void(0)">专题设置</a>
+			</li>
+		</ul>
+	</div>
+	{else}
+	<div class="close_float tabmenu">
+		<ul class="tab pngFix">
+			<li class="ui-tabs-selected">
+				<a href="javascript:void(0)">轮播图设置</a>
+			</li>
+			<li class="">
+				<a href="javascript:void(0)">专题设置</a>
+			</li>
+		</ul>
+	</div>
+	{/if}
+	<div id="tab1" {if $type == 1}style="display:none"{/if}>
+		<a href="javascript:void(0)" class="btnn" style="float:right;"><span class='addForm'>新增轮播图</span></a>
+		<div style="display:none;">
+			<table class="table tb-type2">
+				<tbody>
+					<tr style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" align="center">
+						<td class="altbg2">新增轮播图：<br>
+						(最大宽度:1180px)<br>
+						</td>
+						<td class="altbg1">
+							<form id="imageform" method="post" enctype="multipart/form-data" action="index.php?admin_ad/imageUpload.html">
+								<div id="up_status" style="display:none"><img src="http://localhost/paimai//question/css/image_upload/loader.gif" alt="uploading"></div>
+								<div id="up_btn" class="btn btn-info">
+									<span>添加图片</span>
+									<input id="photoimg" name="photoimg" type="file">
+								</div>
+							</form>
+							<p>最大1M，支持jpg，gif，png格式。</p>
+							<div id="preview"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<center>
+				<button class="btn btn-info" onclick="shuffling_figure()">保存</button>
+			</center>
+		</div>
+		<form action="index.php?admin_ad/default{$setting['seo_suffix']}" name="carouselForm" method="post">
+			<table class="table tb-type2">
+				<tr class="header">
+					<td width="10%"><input class="checkbox" value="chkall" id="chkall" onclick="checkall('cid[]')" type="checkbox" name="chkall"><label for="chkall">全选</label>
+					</td>
+					<td width="20%">名称</td>
+					<td width="30%">标题</td>
+					<td width="20%">跳转链接</td>
+					<td width="10%">上次操作时间</td>
+					<td width="10%">操作</td>
+				</tr>
+				<!--{eval $i=0;}-->
+				<!--{if isset($ad_list)} {loop $ad_list $v}-->
+				<!--{if $v['type'] == 0}-->
+				<!--{eval $i++;}-->
+				<tr>
+					<td class="altbg2">
+						<input class="checkbox" type="checkbox" value="{$v['id']}" name="cid[]">
+					</td>
+					<td class="altbg2"><a href="javascript:void(0)" img_src="{$v['src']}" title="点击显示图片" data-reveal-id="myModal">轮播图{$i}</a></td>
+					<td class="altbg2">{$v['title']}</td>
+					<td class="altbg2"><a href="{$v['url']}">{$v['url']}</a></td>
+					<td class="altbg2">{$v['time']}</td>
+					<td class="altbg2"><a href="index.php?admin_ad/edit/{$v['id']}">编辑</a></td>
+				</tr>
+				<!--{/if}-->
+				<!--{/loop}-->
+				<!--{/if}-->
+			</table>
+			<input type="hidden" name="type" value="0">
+			<center><a href="javascript:document.carouselForm.submit()" class="btnn"><span>删除</span></a></center>
+		</form>
+	</div>
+	<div id="tab2" {if $type == 0}style="display:none;"{/if}>
+		<a href="javascript:void(0)" class="btnn" style="float:right;"><span class="addForm">新增活动专题</span></a>
+		<div style="display:none;">
+			<table class="table tb-type2">
+				<tbody>
+					<tr style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;" align="center">
+						<td class="altbg2">新增活动专题：<br>
+						(最大宽度:256px)<br>
+						</td>
+						<td class="altbg1">
+							<form id="imageform1" method="post" enctype="multipart/form-data" action="index.php?admin_ad/imageUpload1.html">
+								<div id="up_status1" style="display:none"><img src="http://localhost/paimai//question/css/image_upload/loader.gif" alt="uploading"></div>
+								<div id="up_btn1" class="btn btn-info">
+									<span>添加图片</span>
+									<input id="photoimg1" name="photoimg" type="file">
+								</div>
+							</form>
+							<p>最大1M，支持jpg，gif，png格式。</p>
+							<div id="preview1"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<center>
+				<button class="btn btn-info" onclick="special()">保存</button>
+			</center>
+		</div>
+		<form action="index.php?admin_ad/default{$setting['seo_suffix']}" name="specialForm" method="post">
+			<table class="table tb-type2">
+				<tr class="header">
+					<td width="10%"><input class="checkbox" value="chkall" id="chkall1" onclick="checkall1('sid[]')" type="checkbox" name="chkall"><label for="chkall1">全选</label>
+					</td>
+					<td width="20%">名称</td>
+					<td width="30%">标题</td>
+					<td width="20%">跳转链接</td>
+					<td width="10%">上次操作时间</td>
+					<td width="10%">操作</td>
+				</tr>
+				<!--{eval $i=0;}-->
+				<!--{if isset($ad_list)} {loop $ad_list $v}-->
+				<!--{if 1==$v['type']}-->
+				<!--{eval $i++;}-->
+				<tr>
+					<td class="altbg2">
+						<input class="checkbox" type="checkbox" value="{$v['id']}" name="sid[]">
+					</td>
+					<td class="altbg2"><a href="javascript:void(0)" data-reveal-id-1="myModal" img_src="{$v['src']}" title="点击显示图片">活动专题{$i}</a></td>
+					<td class="altbg2">{$v['title']}</td>
+					<td class="altbg2"><a href="{$v['url']}">{$v['url']}</a></td>
+					<td class="altbg2">{$v['time']}</td>
+					<td class="altbg2"><a href="index.php?admin_ad/edit/{$v['id']}{$setting['seo_suffix']}">编辑</a></td>
+				</tr>
+				<!--{/if}-->
+				<!--{/loop}-->
+				<!--{/if}-->
+			</table>
+			<input type="hidden" name="type" value="1">
+			<center><a href="javascript:document.specialForm.submit()" class="btnn"><span>删除</span></a></center>
+		</form>
+	</div>
+	<div id="myModal" class="reveal-modal">
+	</div>
+</div>
+<script type="text/javascript" src="{SITE_URL}css/image_upload/jquery.wallform.js"></script>
+<script type="text/javascript" src="{SITE_URL}css/upwindow/jquery.reveal.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//tab切换
+		$('.tabmenu > ul > li').first().click(function(){
+			$('#tab1').show();
+			$('#tab2').hide();
+			$(this).attr('class','ui-tabs-selected');
+			$(this).next().attr('class','');
+		});
+		$('.tabmenu > ul > li').last().click(function(){
+			$('#tab1').hide();
+			$('#tab2').show();
+			$(this).attr('class','ui-tabs-selected');
+			$(this).prev().attr('class','');
+		});
+		//图片上传
+		$('#photoimg').off('click').on('change', function(){
+            var status = $("#up_status");
+            var btn = $("#up_btn");
+            $("#imageform").ajaxForm({
+                target: '#preview',
+                beforeSubmit:function(){
+                    status.show();
+                    btn.hide();
+                },
+                success:function(){
+                    status.hide();
+                    btn.show();
+                },
+                error:function(){
+                    status.hide();
+                    btn.show();
+                }
+            }).submit();
+        });
+		$('#photoimg1').off('click').on('change', function(){
+            var status = $("#up_status1");
+            var btn = $("#up_btn1");
+            $("#imageform1").ajaxForm({
+                target: '#preview1',
+                beforeSubmit:function(){
+                    status.show();
+                    btn.hide();
+                },
+                success:function(){
+                    status.hide();
+                    btn.show();
+                },
+                error:function(){
+                    status.hide();
+                    btn.show();
+                }
+            }).submit();
+        });
+		//新增
+		$('.addForm').click(function(){
+			var num = $('.addForm').index(this);
+			if( $(this).html() == '收起'){
+				$(this).parent().next().slideUp('slow');
+				if(num == 0){
+					var str = '新增轮播图';
+				}else{
+					var str = '新增活动专题';
+				}
+				$(this).html(str);
+			}else{
+				$(this).parent().next().slideDown('slow');
+				$(this).html('收起');
+			}
+		});
+	});
+	//全选
+	function checkall1(checkname) {
+		var chkall = $("#chkall1:checked").val();
+		if (chkall && (chkall === 'chkall')) {
+			$("input[name^='" + checkname + "']").each(function() {
+				$(this).prop("checked", "checked");
+			});
+		} else {
+			$("input[name^='" + checkname + "']").each(function() {
+				$(this).removeProp("checked");
+			});
+		}
+	}
+	//新增轮播图
+    function shuffling_figure()
+    {
+        var src = $('#preview').find('img');
+        var url = $('#preview').find('input[name=url]');
+		var title = $('#preview').find('input[name=title]');
+        var len = src.length;
+        var str = '';
+        var strr = '';
+		var strrr = '';
+        for( var i = 0 ; i < len ; i++ )
+        {
+            str+= ','+src.eq(i).attr('src');
+            strr+= ','+url.eq(i).val();
+			strrr+= ','+title.eq(i).val();
+        }
+        str = str.substr(1);
+        strr = strr.substr(1);
+        strrr = strrr.substr(1);
+        $.ajax({
+            url : 'index.php?admin_ad/insertShuffling',
+            type: 'get',
+            data: 'src='+str+'&url='+strr+'&title='+strrr,
+            success: function(msg) {
+                if(msg == 0) {
+                    alert('新增失败');
+                } else {
+                    window.location.href='index.php?admin_ad/default&type=0';
+                }
+            }
+        })
+    }
+	
+	//新增活动专题
+    function special()
+    {
+        var src = $('#preview1').find('img');
+        var url = $('#preview1').find('input[name=url]');
+		var title = $('#preview1').find('input[name=title]');
+        var len = src.length;
+        var str = '';
+        var strr = '';
+		var strrr = '';
+        for( var i = 0 ; i < len ; i++ )
+        {
+            str+= ','+src.eq(i).attr('src');
+            strr+= ','+url.eq(i).val();
+			strrr+= ','+title.eq(i).val();
+        }
+        str = str.substr(1);
+        strr = strr.substr(1);
+        strrr = strrr.substr(1);
+        $.ajax({
+            url : 'index.php?admin_ad/special',
+            type: 'get',
+            data: 'src='+str+'&url='+strr+'&title='+strrr,
+            success: function(msg) {
+                if(msg == 0) {
+                    alert('新增失败');
+                } else {
+                    window.location.href='index.php?admin_ad/default&type=1';
+                }
+            }
+        })
+    }
+</script>
+<!--{template footer,admin}-->

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body{font:12px/1.5 tahoma,arial,\5b8b\4f53; color:#555; font-family:"微软雅黑"; background:#ffffff;}
+em,i{font-style:normal;}
+fieldset,img{border:0;}
+ul,ol,li{list-style:none;}
+a{ color:#555; text-decoration:none;}
+
+.ptzs_content{ width:100%; margin:0 auto; overflow:hidden; position:relative}
+.ptzs_content ul li{ height:200px;}
+.ptzs_content ul li.li01{ background:url(../images/ptzs_01.jpg) no-repeat top center;}
+.ptzs_content ul li.li02{ background:url(../images/ptzs_02.jpg) no-repeat top center;}
+.ptzs_content ul li.li03{ background:url(../images/ptzs_03.jpg) no-repeat top center;}
+.ptzs_content ul li.li04{ background:url(../images/ptzs_04.jpg) no-repeat top center;}
+.ptzs_content ul li.li05{ background:url(../images/ptzs_05.jpg) no-repeat top center;}
+.ptzs_content ul li.li06{ background:url(../images/ptzs_06.jpg) no-repeat top center;}
+.ptzs_content ul li.li07{ background:url(../images/ptzs_07.jpg) no-repeat top center;}
+.ptzs_content ul li.li08{ background:url(../images/ptzs_08.jpg) no-repeat top center;}
+.ptzs_content ul li.li09{ background:url(../images/ptzs_09.jpg) no-repeat top center;}
+.ptzs_content ul li.li10{ background:url(../images/ptzs_10.jpg) no-repeat top center;}
+.ptzs_content ul li.li11{ background:url(../images/ptzs_11.jpg) no-repeat top center;}
+.ptzs_content ul li.li12{ background:url(../images/ptzs_12.jpg) no-repeat top center;}
+.ptzs_content ul li.li13{ background:url(../images/ptzs_13.jpg) no-repeat top center;}
+.ptzs_content ul li.li14{ background:url(../images/ptzs_14.jpg) no-repeat top center;}
+.ptzs_content ul li.li15{ background:url(../images/ptzs_15.jpg) no-repeat top center;}
+.ptzs_content ul li.li16{ background:url(../images/ptzs_16.jpg) no-repeat top center;}
+.ptzs_content ul li.li17{ background:url(../images/ptzs_17.jpg) no-repeat top center;}
+.ptzs_content ul li.li18{ background:url(../images/ptzs_18.jpg) no-repeat top center;}
+.ptzs_content ul li.li19{ background:url(../images/ptzs_19.jpg) no-repeat top center; height:160px;}
+.ptzs_content ul li.li20{ background:url(../images/ptzs_20.jpg) no-repeat top center; height:130px; margin-bottom:98px;}
+
+.sszhFloat{ display:none; position:fixed; bottom:0; left:0; width:100%; height:98px; background:#df2222;}
+.footer{ width:100%; background:url(../images/ptzs_21.jpg) no-repeat top center; height:98px; position:fixed; bottom:0; z-index:99;}
+.ljrz{ width:990px; height:60px; margin:19px auto; text-align:right}

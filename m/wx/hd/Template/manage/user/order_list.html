@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>中奖订单 - {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="static/js/My97DatePicker/WdatePicker.js"></script>
+
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr  style="height:50xp;">
+  	<td bgcolor="#ecf9ff" height = '50px'><span class="title">中奖订单</span><span style="text-align: right;"><input type="button" value="导出" onclick="window.location.href='index.php?m=order&p=manage&c=daochu{[$url]}'"></span></td>
+
+  </tr>
+</table>
+<form action="index.php?m=order&p=manage" method="get" id="form1" name="form1">
+<input type="hidden" name="m" value="order">
+<input type="hidden" name="p" value="manage">
+<input type="hidden" name="a" value="search">
+<table width="100%" height="84" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="6%" rowspan="2" style=" text-align:center; font-family:'微软雅黑'; font-size:20px; font-weight:bold; color:#0fa6d6">订单<br>搜索</td>
+    <td width="33%" height="28">
+		订单编号：
+      <input name="k" type="text" id="k" value="{[$keyword]}" style="width:200px;"></td> 
+	  <td width="10%" height="28">
+		<select name="type" id="type" style="width:90px">
+			<option value="-1">收货方式</option>
+            <option value="1" {[if $type == '1']}selected{[/if]}>特快专递</option>
+			<option value="2" {[if $type == '2']}selected{[/if]}>上门取货</option>
+		</select>
+	  </td>  
+   <td width="10%" height="28">
+    
+   <select name="O_PayShipping" id="O_PayShipping" style="width:90px">
+			<option value="-1">发货状态</option>
+            <option value="0" {[if $O_PayShipping == '0']}selected{[/if]}>未发货</option>
+			<option value="1" {[if $O_PayShipping == '1']}selected{[/if]}>已发货</option>
+			<option value="2" {[if $O_PayShipping == '2']}selected{[/if]}>已收货</option>
+   </select>
+   </td>
+    <td colspan="2" rowspan="2"><input type="image" name="imageField" id="imageField" src="Template/manage/user/images/search.jpg" onclick="showLayout();"></td>
+	
+    </tr>
+  <tr>
+   
+   
+    <td width="33%" height="28">
+      下单时间：
+      <input name="startTime" type="text" id="startTime" onclick="WdatePicker()" value="{[$startTime]}" readonly="readonly" style="width:90px; margin-right:5px;">-<input name="endTime" type="text" id="endTime" onclick="WdatePicker()" value="{[$endTime]}" readonly="readonly" style="width:90px; margin-left:5px;">
+    </td>
+    </tr>
+</tbody></table>
+</form>
+
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr class="title">
+        <td width="10%"  style=" text-align:center;">订单编号</td>
+        <td width="15%" style=" text-align:center;">下单时间</td>
+        <td width="30%" style=" text-align:center;">收货人</td>
+		<td width="15%" style=" text-align:center;">订单状态</td>
+		<td width="10%" style=" text-align:center;">收货方式</td>
+		<td width="8%" style=" text-align:center;">操作</td>
+      </tr>
+      {[foreach from=$dataArr item=v key=k]}
+    <tr class="con">
+      <td width="10%"  style="text-indent:1em;">{[$v.order_sn]}</td>
+      <td width="15%"  style="text-align:left;text-indent:1em;">{[$v.time|date_format:"%Y-%m-%d %H:%M:%S"]}</td>
+      <td width="30%"  style="text-align:left;padding-left:5px;">{[$v.name]}<br />{[$v.province]}&nbsp;{[$v.city]}&nbsp;{[$v.address]}</td>
+	  <td width="15%" align="center" style="text-align:left;text-indent:1em; padding-top:10px;">{[if $v.status == 1]}已发货{[elseif $v.status == 0]}未发货{[elseif $v.status == 2]}已收货{[/if]}</td>
+	  <td width="10%" align="center" style="text-indent:1em;">{[if $v.type == 1]}特快专递{[elseif $v.type==2]}上门取货{[/if]}</td>
+	  <td width="8%" align="center" style="text-indent:1em;">
+		<a href="javascript:ordershow('{[$v.oid]}');">查看</a>
+	  </td>
+
+
+      </tr>
+
+      {[/foreach]}
+</table>
+
+<div id="page" style="text-align:center;">
+{[$pageStr]}
+</div>
+
+</div>
+</body>
+</html>
+<script>
+function ordershow(OID){
+	$.open({
+		url : 'index.php?m=order&p=manage&c=orderShow&OID=' + OID,
+		width : 900,
+		height : 600,
+		callback : function(action){
+	　　　　if(action == 'close'){
+	　　　　	window.location.reload();
+	　　　　}
+		}
+	});
+}
+</script>

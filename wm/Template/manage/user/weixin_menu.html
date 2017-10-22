@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>菜单管理 - {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+</head>
+
+<body>
+<div id="layout" style="position: absolute; width:100%; height:100%; background:rgba(255,255, 255, 0.8) none repeat scroll 0 0 !important;
+filter:Alpha(opacity=80); background:#fff; top:0px; left:0px;display:none"><img src="static/images/laod_wait.gif" style="padding-left:42%;padding-top:20%"/></div>
+<div class="list_main_r">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td bgcolor="#ecf9ff"><span class="title">菜单设置</span></td>
+    <td bgcolor="#ecf9ff">
+    <input type="button" value="生成菜单" class="a90-30" onClick="createMenu();showLayout();" style="margin-top:10px;margin-right:20px;">
+    <input type="button" value="添加菜单" class="a90-30" onClick="addMenu(0);" style="margin-top:10px;margin-right:20px;">
+	</td>
+  </tr>
+</table>
+<div id="showContent">
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="myTab2_Content">
+      <tr class="title">
+        <td width="5%"  style=" text-align:center;">ID</td>
+        <td width="15%" style=" text-align:center;">菜单名称</td>
+        <td width="10%" style=" text-align:center;">菜单级别</td>
+        <td width="25%" style=" text-align:center;">转向链接</td>
+        <td width="15%" style=" text-align:center;">回复关键词</td>
+        <td width="15%" style=" text-align:center;">所属类别</td>
+        <td width="15%" style=" text-align:center;">详细操作</td>
+      </tr>
+	{[foreach from=$menuArr item=v key=k]}
+      <tr class="con">
+        <td width="5%"  style="text-indent:1em;">{[$v.M_ID]}</td>
+        <td width="15%"  style="text-align:left;text-indent:1em;">{[$v.M_Name]}</td>
+        <td width="10%" align="center">一级菜单</td>
+        <td width="25%" style="text-align:left;text-indent:1em;">{[if $v.M_Url]}{[$v.M_Url]}{[/if]}</td>
+        <td width="15%" style="text-align:left;text-indent:1em;">{[if $v.M_Key]}{[$v.M_Key]}{[/if]}</td>
+        <td width="15%" style="text-indent:1em;"></td>
+        <td width="15%" style="text-align:center;">
+          <a href="index.php?m=manageWeixin&c=delMenu&p=manage&cid={[$v.M_ID]}" onclick="javascript:return delConfirm(this);">删除</a>
+          <a href="javascript:addMenu({[$v.M_ID]});">修改</a>
+        </td>
+      </tr>
+      	{[foreach from=$v.Menu item=v1 key=k1 name=smallMenu]}
+          <tr class="con">
+            <td width="5%"  style="text-indent:1em;">{[$v1.M_ID]}</td>
+            <td width="15%"  style="text-align:left;text-indent:3em;">{[if $smarty.foreach.smallMenu.last]}└{[else]}├{[/if]}{[$v1.M_Name]}</td>
+            <td width="10%">子菜单</td>
+            <td width="25%"  style="text-align:left;text-indent:1em;">{[if $v1.M_Url]}{[$v1.M_Url]}{[/if]}</td>
+            <td width="15%"  style="text-align:left;text-indent:1em;">{[if $v1.M_Key]}{[$v1.M_Key]}{[/if]}</td>
+            <td width="15%"  style="text-indent:1em;">{[$v.M_Type]}</td>
+            <td width="15%" style="text-align:center;">
+            <a href="index.php?m=manageWeixin&c=delMenu&p=manage&cid={[$v1.M_ID]}" onclick="javascript:return delConfirm(this);">删除</a>
+            <a href="javascript:addMenu({[$v1.M_ID]});">修改</a>
+            </td>
+          </tr>
+      	{[/foreach]}
+    {[/foreach]}
+</table>
+</div>
+</div>
+<script>
+function addMenu(cid){
+	$.open({
+		url : 'index.php?m=manageWeixin&c=popWeixinMenu&p=manage&cid=' + cid,
+		width : 400,
+		height : 230,
+		callback : function(action){
+	　　　　if(action == 'close'){
+	　　　　	window.location.reload();
+	　　　　}
+		}
+	});
+}
+
+//生成菜单
+function createMenu(){
+	$.get('index.php?m=manageWeixin&c=createMenu&p=manage',function(data){
+		if(data.errcode){
+			$.alert('生成失败,当前返回状态为:' + data.errmsg);	
+		}else{
+			$.alert('生成生成,当前返回状态为:' + data.errmsg);	
+		}
+		window.location.reload();
+	},'JSON')
+	
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<br />
+<b>Warning</b>:  readfile(http://shop.96567.com/images/201107/goods_img/675_P_1309973350922.jpg) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in <b>E:\wwwroot\96567\www.96567.com\_suolanbo_123\includes\get.php</b> on line <b>25</b><br />

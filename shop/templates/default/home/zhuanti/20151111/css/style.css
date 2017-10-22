@@ -1,0 +1,450 @@
+@charset "utf-8";
+/*MUX begin*/
+/*reset begin*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "microsoft yahei", HelveticaNeue, Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+h1,h2,h3,h4,form,pre{margin: 0;}
+ul{
+	padding: 0;
+	 margin: 0;
+}
+li{list-style: none;}
+form,button,input{
+	padding: 0; 
+	margin: 0;
+	border: none;
+	background: none;
+}
+a:active,a:hover{outline：none;}
+a{
+	cursor: pointer; 
+	text-decoration: none; 
+}
+a:hover{text-decoration: none;}
+strong{font-weight:normal;}
+em,i,cite{ font-style:normal;}
+img{
+	vertical-align:top; 
+	border:none;
+}
+/*reset end*/
+
+/*structure begin*/
+.rec {
+	width: 100%;
+	width:expression(document.body.clientWidth <= 1000? "1000px": "auto");
+	min-width:1000px;
+}
+.wrap{
+	max-width: 1000px;
+    margin: 0 auto;
+}
+/* hdWrap begin */
+.hdWrap {
+    background: url(../images/banner.jpg) no-repeat center center;
+    height: 299px;
+    text-align: center;
+    padding-top: 410px;
+}
+.oneWrap {
+	background: url(../images/one.jpg) no-repeat center center;
+	height: 286px;
+}
+.couponWrap {
+	background: #fcdb01;
+	width: 1440px;
+    margin: 0 auto;
+}
+.couponWrap .immpo {
+	position: relative;
+}
+.immediately {
+	position: absolute;
+	display: block;
+	top: 230px;
+	left: 636px;
+	width: 218px;
+	height: 80px;
+}
+
+.keyWrap {
+	background: url(../images/key_bj.jpg) no-repeat top center;
+	height: 50px;
+}
+.keyWrap a {
+	display: block;
+	text-align: center;
+	font:24px/50px 'microsoft yahei';
+	color: #fff;
+	font-style: italic;
+}
+
+.threeWrap {
+    background: url(../images/three.jpg) no-repeat top center;
+    height: 359px;
+}
+
+.partWrap {
+	background: #670dd6;
+	height: 190px;
+	padding-top: 30px;
+}
+.partWrap .part-box {
+	border: 1px #9844ff solid;
+	width: 893px;
+	padding: 0 30px 0 27px;
+	margin: 0 auto;
+	height: 138px;
+}
+
+.part-img,
+.part-text,
+.part1-wi,
+.part2-wi {
+	float: left;
+	font: 14px/24px 'microsoft yahei';
+	color: #fff;
+}
+.part1,
+.part2 {
+	float: left;
+	height: 138px;
+}
+.part-img {
+	margin-top: 30px;
+	border-right: 1px #8a2bff solid;
+}
+.part-text {
+	margin-top: 30px;
+	padding-left: 21px;
+	border-left: 1px #430c86 solid;
+	height: 68px;
+	padding-top: 12px;
+}
+.part1-wi {
+	margin-top: 17px;
+	margin-left: 20px;
+}
+.part2-wi {
+	margin-top: 17px;
+	margin-left: 30px;
+}
+.part1 {
+	width: 480px;
+	border-right: 1px #9844ff solid;
+}
+.part2 {
+    padding-left: 30px;
+}
+
+.awardWrap {
+    background: url(../images/award.jpg) no-repeat top center;
+    height: 508px;
+}
+
+.Winning-box {
+	float: left;
+	width: 394px;
+	height: 505px;
+	margin-left: 25px;
+	border: 3px #fff solid;
+	border-top: 0;
+}
+.investment_title {
+	height: 43px;
+	background: #fff;
+	width: 394px;
+}
+.investment_title li{
+	font: 18px/43px 'microsoft yahei'; 
+	padding: 0 22px; 
+	float:left; 
+	cursor:pointer; 
+	color: #670dd6; 
+	height: 49px;
+}
+.investment_title li.on{
+	background:url(../images/on.jpg) no-repeat center 43px; 
+	color:#dd2230; 
+	font-weight: bold;
+}
+.investment_con{ clear:both;}
+.investment_con_list{ display:none; padding: 0 20px;}
+
+/* Gun Dong Start */
+.award-title {
+    margin-top: 22px;
+    line-height: 36px;
+    height: 30px;
+    border-bottom: 1px #8a2bff solid;
+}
+.award-title p {
+	font: 14px/24px 'microsoft yahei'; 
+	float: left;
+}
+.award-title .p1 {
+	width: 84px;
+}
+.award-title .p2 {
+	width: 96px;
+}
+.award-title .p3 {
+	width: 100px;
+}
+.slide_module { width: 354px; height: 400px; border-top: 1px #430c86 solid; overflow: hidden; margin: 0 auto; position: relative; top: 0px; }
+.slide_module ul { width: 354px; position: absolute; top: 0; left: 0; }
+.slide_module li { width: 394px; float: left; }
+.slide_module li p {
+	font: 12px/36px 'microsoft yahei'; 
+	float: left;
+	height: 36px;
+	overflow: hidden;
+}
+.slide_module li .p1 {
+	width: 70px;
+	margin-right: 15px;
+}
+.slide_module li .p2 {
+    width: 80px;
+    margin-right: 14px;
+}
+.slide_module li .p3 {
+	width: 155px;
+	text-overflow:ellipsis;
+}
+.slide_module a { display: block; }
+.investment_con_list .you {
+	text-align: center;
+	margin-top: 10%;
+    font: 16px/36px 'microsoft yahei'; 
+    -webkit-animation:fadeInRight 1s .2s ease both;
+    -moz-animation:fadeInRight 1s .2s ease both;
+    animation:fadeInRight 1s .2s ease both;
+}
+@-webkit-keyframes fadeInRight{
+     0%{opacity:0;
+          -webkit-transform:translateX(20px)}
+          100%{opacity:1;
+          -webkit-transform:translateX(0)}
+     }
+@-moz-keyframes fadeInRight{
+     0%{opacity:0;
+          -moz-transform:translateX(20px)}
+          100%{opacity:1;
+          -moz-transform:translateX(0)}
+     }
+@keyframes fadeInRight{
+     0%{opacity:0;
+          transform:translateX(20px)}
+          100%{opacity:1;
+          transform:translateX(0)}
+     }
+.winning-record {
+	font: 14px/26px 'microsoft yahei'; 
+	height: 400px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.winning-record p {
+	float: left;
+	font: 12px/36px 'microsoft yahei';
+}
+.winning-record .p1 {
+    width: 80px;
+    clear: both;
+}
+.winning-record .p2 {
+    width: 150px;
+    height: 36px;
+    overflow: hidden;
+}
+.winning-record .p3 {
+    width: 100px;
+    height: 36px;
+    overflow: hidden;
+}
+.winning-record .p3 a {
+	color: #fff;
+}
+.winning-record .p3 a:hover {
+	color: #fff;
+}
+.inv-title .p1 {
+	width: 80px;
+}
+.inv-title .p2 {
+	width: 150px;
+}
+.inv-title .p3 {
+    width: 100px;
+}
+/* Gun Dong End */
+
+.forWrap {
+	background: url(../images/for.jpg) no-repeat top center;
+	height: 142px;
+}
+
+.shopWrap {
+	background: url(../images/shop.jpg) no-repeat top center;
+	height: 366px;
+}
+.shopWrap ul {
+	margin-left: 15px;
+	overflow: hidden;
+}
+.shopWrap ul li {
+    float: left;
+    margin-left: 10px;
+}
+.shopWrap ul li a {
+	color: #fff;
+	font: 14px/24px 'microsoft yahei'; 
+}
+.shopWrap .a1 {
+	width: 230px;
+	height: 230px;
+	overflow: hidden;
+	display: block;
+}
+.shopWrap .a1 img {
+	width: 100%;
+}
+.shopWrap ul li .a2 {
+	width: 230px;
+	display: block;
+	height: 48px;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.shopWrap ul li p {
+	width: 230px;
+	margin-top: 16px;
+	font: 46px/24px 'microsoft yahei';
+}
+.shopWrap ul li p i {
+	font-size: 16px;
+}
+
+.fiveWrap {
+	background: url(../images/five.jpg) no-repeat top center;
+	height: 304px;
+}
+
+.sixWrap {
+	background: #040233;
+	padding: 42px 0 80px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.exempt {
+	overflow: hidden;
+	margin-left: 25px;
+	padding-bottom: 25px;
+}
+.exempt li {
+	float: left;
+    width: 465px;
+    height: 320px;
+    margin: 0 20px 20px 0;
+}
+.exempt .shop-img {
+	float: left;
+	display: block;
+    width: 299px;
+    height: 320px;
+    overflow: hidden;
+    background: #fff;
+}
+.exempt .shop-img img {
+	width: 100%;
+	width: 240px;
+	height: 240px;
+	margin: 40px 29px;
+}
+
+.exempt .exe-box {
+	float: left;
+	width: 166px;
+	height: 320px;
+	background: #ededed;
+}
+.exempt .exe-box h1,
+.exempt .exe-box h4,
+.exempt .exe-box p {
+	margin: 0 20px;
+}
+.exempt .exe-box h1 {
+	font:bold 20px/52px 'microsoft yahei';
+	height: 52px;
+	margin-top: 22px;
+	overflow: hidden;
+}
+.exempt .exe-box h4 {
+    font: 14px/22px 'microsoft yahei';
+    height: 66px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.exempt .exe-box h4 a {
+	color: #666;
+}
+.exempt .exe-box h1 a {
+	color: #040233;
+}
+.exempt .p-rmb {
+    height: 82px;
+    overflow: hidden;
+}
+.exempt .p-rmb .r1 {
+	margin-top: 15px;
+	color: #7b7b7b;
+    font: 14px/22px 'microsoft yahei';
+    text-decoration: line-through;
+}
+.exempt .p-rmb .r2 {
+	margin-top: 10px;
+	color: #dd2230;
+    font: 28px/24px 'microsoft yahei';
+}
+.exempt .p-rmb .r2 i {
+	color: #dd2230;
+	display: block;
+	float: left;
+	margin-right: 4px;
+    font: 14px/26px 'microsoft yahei';
+}
+.exempt .p-rmb .r2
+.exempt .exe-box p {
+
+
+}
+.me-exempt {
+	font: 22px/60px 'microsoft yahei';
+	text-indent: 14px;
+	color: #fff;
+	text-align: center;
+	margin-top: 15px;
+	background: url(../images/exempt.jpg) no-repeat center bottom;
+	display: block;
+	height: 70px;
+}
+
+.sixWrap .footer {
+	text-align: center;
+}
+
+/* 2015/11/23  */
+.hdWrap a {
+	display: block;
+	width: 600px;
+	height: 96px;
+	margin: 0 auto;
+}

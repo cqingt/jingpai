@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+	font-family: 'Microsoft YaHei';
+}
+body {
+	background: #edeeed;
+	max-width: 740px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+a, :focus {
+	text-decoration:none;
+	outline:none;
+}
+img, object, embed {
+	border:0;
+	outline:none;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight:normal;
+	font-style:normal
+}
+button, input, select, textarea {
+	font-size:100%;
+	outline:none;
+	vertical-align:middle;
+}
+em, i {
+	font-style:normal;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+td, th, ul, ol {
+	list-style:none;
+}
+caption, th {
+	text-align:left
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	font-size:100%
+}
+ 
+.header img {
+	width: 100%;
+}
+.formInfo {
+	width: 86%;
+	margin: 10px auto 20px;
+	padding: 24px 0;
+	background: #d4171b;
+	border: 10px #ea2d31 solid;
+}
+.formInfo dl {
+	width: 100%;
+	clear: both;
+	float: left;
+    height: 50px;
+    position: relative;
+}
+.formInfo dl p {
+	font-size: 12px;
+	color: #ffcf00;
+    line-height: 20px;}
+.clearfix:before, .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.formInfo dt {
+    display: inline-block;
+    float: left;
+	width: 30%;
+    height: 34px;
+    line-height: 34px;
+    text-align: right;
+    font-size: 14px;
+    color: #fff;
+}
+.formInfo em.red {
+    line-height: 30px;
+}
+.formInfo dd .text {
+	width: 80%;
+    height: 14px;
+    line-height: 14px;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    background: #d4171b;
+    color: #fff;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.formInfo dd {
+	width: 65%;
+	float: left;
+}
+.formInfo dd .tip {
+	position: relative;
+	width: 30%;
+	float: left;
+}
+.formInfo dd .btn-code {
+    float: left;
+    width: 42%;
+    margin-left: 8%;
+    top: 0;
+    border: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center;
+    padding: 7px 0px;
+    background: #e89a44;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+}
+.lol-submit {
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+	clear: both;
+    display: inline-block;
+    padding: 2px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 40px;
+    background: #fdec58;
+    -webkit-box-shadow: 0px 3px 0px #e89a44;
+    box-shadow: 0px 7px 0px #facb00;
+    color: #d91d4e;
+}
+
+.verification {
+	position: relative;
+}
+.synopsis {
+	margin-top: 10px;
+	padding: 20px 0;
+	background:#ea2d31;
+}
+.syn-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+.syn-text img {
+    width: 84%;
+    margin: 8px 8% 0;
+}
+.syn-text p {
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	text-indent: 2em;
+	padding: 0 22px;
+}
+.get {
+	text-align: center;
+	padding-bottom: 37px;
+}
+.get .getbox {
+	border: 1px #d6cfce dashed;
+	margin: 12px;
+	padding: 18px;
+	text-align: left;
+}
+.get .getbox img {
+	width: 40%;
+}
+.get .getbox p {
+	font-size: 14px;
+	color: #686868;
+	line-height: 24px;
+}
+.get .btn {
+	display:inline-block;*
+	display:inline; *
+	zoom:1;
+	/* margin-bottom: 66px; */
+	margin-top: 20px;
+}
+.get .btn img {
+	text-align: center;
+	width: 60%;
+}
+.register-box h2,
+.register-box h4 {
+	text-align: center;
+}
+.register-box h2 {
+	color: #d4171b;
+	font-size: 22px;
+	font-weight: bold;
+}
+.register-box h4 {
+	font-size: 16px;
+	line-height: 30px;
+	color: #444;
+}
+
+
+.add-wrap {
+	display: none;
+}
+.address {
+	margin: 10px auto 18px;
+	padding: 10px;
+}
+.address .submit-border {
+	margin: 18px 0 6px 28%;
+}
+.congratulation {
+	font-size: 20px;
+	color: #d4171b;
+	text-align: center;
+}
+.congr-p {
+	color: #444;
+	font-size: 13px;
+	text-align: center;
+}
+.hint { color: #BBB; line-height: 20px; }
+/* 通用弹出式窗口样式 */
+.eject_con { background-color: #FFF; overflow: hidden;}
+.eject_con h3 { font: 14px/36px "microsoft yahei"; text-align: center; height: 36px; margin-top: 10px;}
+.eject_con dl { font-size: 0; *word-spacing:-1px/*IE6、7*/; line-height: 20px; clear: both; padding: 0; margin: 0; overflow: hidden;}
+.eject_con dl dt,
+.eject_con dl dd { font-size: 12px; line-height: 32px; vertical-align: top; letter-spacing: normal; word-spacing: normal; text-align: right; display: inline-block; width: 27%; padding: 10px 1% 0 0; margin: 0; *display: inline/*IE6,7*/; *zoom: 1;}
+.eject_con dl dt i.required { font: 12px/16px Tahoma; color: #F30; vertical-align: middle; margin-right: 4px;}
+.eject_con dl dd { text-align: left; width: 72%; padding: 10px 0 0 0; }
+.eject_con-list { margin-top: 4px;}
+.eject_con-list li { line-height: 24px;}
+.eject_con-list li .radio { vertical-align: middle; margin-right: 4px;}
+.eject_con .bottom { background-color:#F9F9F9; text-align: center; border-top: 1px solid #EAEAEA; margin-top:12px; }
+.eject_con .alert { margin: 5px;}
+.ncmc-delivery { background-color: #F5F5F5; min-height: 250px; padding: 10px 5px 10px 20px; margin: 10px; position: relative; z-index: 1;}
+.ncmc-delivery ul { width: 570px; height: 200px;}
+.ncmc-delivery ul li { height: 20px; padding: 9px; margin: 1px;}
+.ncmc-delivery ul li.select { background:#FFF; border: solid 1px #ff966e; margin: 0;}
+.ncmc-delivery .delivery-map { background-color: #FFF; width: 250px; height: 250px; position: absolute; z-index: 1; top: 10px; right: 10px;}
+.ncmc-delivery .pagination { clear: both;}
+.ncmc-delivery .pagination ul { width: auto; height: auto;}
+.ncmc-delivery .pagination ul li { height: auto; padding: 0;}
+.ncmc-delivery .pagination ul li span { font-size: 12px; padding: 2px;}
+
+ 
+/* 表单项属性
+------------------------------------------- */
+input[type="text"], input[type="password"], input.text, input.password { font: 12px/20px Arial; color: #777; background-color: #FFF; vertical-align: top; display: inline-block; height: 20px; padding: 4px; border: solid 1px #CCC; outline: 0 none;}
+input[type="text"]:focus, input[type="password"]:focus, input.text:focus, input.password:focus, textarea:focus { color: #333; border-color: #75B9F0; box-shadow: 0 0 0 2px rgba(82, 168, 236, 0.15); outline: 0 none;}
+input[type="text"].error, input[type="password"].error, textarea.error { border-color: #ED6C4F; box-shadow: 0 0 0 2px rgba(232, 71, 35, 0.15); outline: 0 none;}
+textarea, .textarea { font: 12px/18px Arial; color: #777; background-color: #FFF; vertical-align: top; display: inline-block; height: 54px; padding: 4px; border: solid 1px #CCC; outline: 0 none;}
+select, .select {margin-right: 4px; color: #777; background-color: #FFF; height: 30px; vertical-align: middle; *display: inline; padding: 4px; border: solid 1px #CCC; *zoom:1;}
+select option, .select option { line-height: 20px; display: block; height: 20px; padding: 4px;}
+.submit-border { width: 40%; display: inline-block; *display: inline/*IE6,7*/; border: solid 1px; border-color: #52A452 #52A452 #448944 #52A452; zoom:1;}
+input[type="submit"], input.submit, a.submit {width: 100%; font-size: 12px; font-weight: bold; color: #FFF; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); background-color: #5BB75B; display: block; height: 30px; padding: 0 20px 2px 20px; border: 0; cursor: pointer; }
+.submit-border:hover { borderd-color: #499249 #499249 #3D7A3D #499249;}
+input[type="submit"]:hover, input.submit:hover, a.submit:hover { text-decoration: none; color: #FFF; background-color: #51A351;}
+input[type="file"] { line-height:20px; background-color:#FBFBFB; height: 20px; border: solid 1px #D8D8D8; cursor: default;}
+.add-on { line-height: 28px; background-color: #E6E6E6; vertical-align: top; display: inline-block; text-align: center; width: 28px; height: 28px; border: solid #CCC; border-width: 1px 1px 1px 0}
+.add-on { *display: inline/*IE6,7*/; zoom:1;}
+.add-on i { font-size: 14px; color: #666; text-shadow: 1px 1px 0 #FFFFFF; *margin-top: 8px/*IE7*/;}
+.add-p {
+	font-size: 12px;
+    color: red;
+    text-align: center;
+}
+/*表单验证错误提示文字*/
+label.error { font-size: 12px; color: #E84723; margin-left: 8px;}
+label.error i { margin-right: 4px;}

@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品列表 - 编辑产品</title>
+<link href="Template/manage/user/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+</head>
+
+<style>
+.pic-group{
+	margin: 0px;
+	padding: 0px;
+}
+.pic-group li{
+	position: relative;
+	float: left;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 4px;
+}
+.pic-group li{display:block}
+.pic-group img{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.17);
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}.pic-group .btn-file{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block
+}.pic-group .btn-file input[type=file]{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .01;
+	filter: alpha(opacity=1);
+	cursor: pointer;
+	z-index: 1
+}
+.wj_tjcg { width:80%; border-radius:5px; background:#fff; height:74px; text-align:center; margin:0 auto; padding-top:40px;}
+.wj_dhlx{ width:80%; border-radius:5px; background:#fff; height:114px; text-align:center; margin:10px auto 0 auto; }
+
+.wj_telep { height:57px; border-bottom:#b7b7b7 1px solid; font-size:24px; line-height:57px; color:#333;}
+.wj_telep a { text-decoration:none; color:#333;}
+.wj_telep1 { height:56px;  font-size:18px; line-height:56px; color:#007aff;}
+
+.wj_cancel { width:49%; height:56px; border-right:#b7b7b7 1px solid; float:left;}
+.wj_cance2 { width:50%; height:56px; float:left;}
+.wj_telep1 a { color:#007aff; text-decoration:none;}
+.wj_telep1 a:hover { color:#007aff;}
+
+p.txk_box{width:100%; height:100%; background-color:#f00; text-align:center;vertical-align:middle;line-height:68px;display:table-cell;}
+p.txk_box img{max-width:100%; max-height:100%; scale:expression((this.offsetWidth > this.offsetHeight)?(this.style.width = this.offsetWidth >= 100% ? "100%" : "auto"):(this.style.height = this.offsetHeight >= 100% ? "100%" : "auto")); display:inline !important;vertical-align:middle;_margin-top: expression(( 100% - this.height ) / 2);}
+.delete_img_but ul{width:96%; margin:0px auto; padding:0px;}
+.delete_img_but ul li.delete{width:48%; height:50px; background-color:#e33a3d; float:left; border-radius:3px; color:#fff; text-align:center; line-height:50px; font-size:16px;}
+.delete_img_but ul li.back{width:48%; height:50px; background-color:#f5f5f5; margin-left:3%; float:left; border-radius:3px; color:#333; text-align:center; line-height:50px; font-size:16px; border:1px solid #ddd;}
+
+</style>
+
+
+<body>
+<!--删除照片弹出框 开始-->
+<div id="delete_img" class="wj_dhlx" style=" z-index:1000; position:absolute; left:10%; background-color:#fff;border-radius:5px; height:auto; overflow:hidden; padding-bottom:20px; display:none;">
+    <div class="wj_telep"><a href="javascript:;" style="font-size:16px;">删除图片</a></div>
+    <div style="text-align:center; padding:20px;">
+        <p class="txk_box"><img></p>
+        <span>要删除这张图片吗？</span>
+    </div>
+    <div class="delete_img_but">
+        <ul>
+            <li class="delete">删除</li>
+            <li class="back" onClick="document.getElementById('delete_img').style.display='none'">返回</li>
+    </ul></div>
+
+</div>
+<!--删除照片弹出框 结束 -->
+<div class="list_main_r">
+<form  method="post" action="index.php?m=manageUpFile&c={[if $dataArr.A_ID]}update{[else]}add{[/if]}Advert&p=manage" target="_parent" name="myform" id="myfrom">
+<input type="hidden" name="id" value="{[$dataArr.A_ID]}">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+	<tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">广告名称</td>
+      <td width="60%" height="28" style="text-align:left">
+      	<input name="A_Name" placeholder="请输入广告名称" type="text" class="input_zck" id="A_Name" maxlength="100" value="{[$dataArr.A_Name]}">
+        </td>
+      </tr>
+	<tr>
+      <td width="40%" height="70" style="text-indent:1em; text-align:left">URL连接</td>
+      <td width="60%" height="70" style="text-align:left">
+      	<!--<input name="A_Url" placeholder="请输入广告名称" type="text" class="input_zck" id="A_Url" value="{[$dataArr.A_Url]}">-->
+        <textarea name="A_Url" cols="40">{[$dataArr.A_Url]}</textarea>
+        </td>
+      </tr>
+	<tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">广告图片</td>
+      <td width="60%" height="28" style="text-align:left" id="ch_upimg">
+	          <ul class="pic-group">
+                    <li id="upload_input">
+                        <label class="btn-file">
+                            <img src="/Template/tpl/show/images/upimg.png" onClick="javascript:selectImg();selectImg();">
+                            <input type="file" id="imgPhonto" name="imgPhonto" onChange="uploadImg();" capture="camera" class="input-file" accept="image/*">
+                        </label>
+                    </li>
+                    {[if $dataArr.A_Image]}
+					<li><a href="javascript:deletedisplay('{[$dataArr.A_ID]}');" id="img_{[$dataArr.A_ID]}"><p class="fabu_img_close" onClick="deletedisplay('{[$dataArr.A_ID]}');"></p><img src="{[$dataArr.A_Image]}"><input type="hidden" name="ImgArr[]" value="{[$dataArr.A_Image]}"></a></li>
+				 	{[/if]}
+                    <li><a id="loading" style="display:none"><img src="/Template/tpl/show/images/fabu_img_but.gif"></a></li>
+              </ul> 
+        </td>
+      </tr>
+      <tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">广告位置</td>
+      <td width="60%" height="28" style="text-align:left">
+      	<select style="width:100px;" name="A_Type" id="A_Type">
+        	<option {[if $dataArr.A_Type == 1]}selected="selected"{[/if]} value="1">顶部</option>
+            <option {[if $dataArr.A_Type == 2]}selected="selected"{[/if]} value="2">底部</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">是否显示</td>
+      <td width="60%" height="28" style="text-align:left">
+      	<input type="radio" name="A_State" {[if $dataArr.A_State == 1]}checked="checked"{[/if]} value="1" />是
+        <input type="radio" name="A_State" {[if $dataArr.A_State == 0]}checked="checked"{[/if]} value="0" />否
+        </td>
+      </tr>
+
+	  
+
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="button" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;" onclick="checkFrom();">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+</div>
+</body>
+</html>
+
+
+
+<script>
+function checkFrom(){
+	if($('#A_Name').val()=='' ){
+		alert('请填写广告名称!');
+		return false;	
+	}
+	var num = $('#ch_upimg input').length;
+	if(!num){
+		alert('请上传产品图片!');
+		return false;
+	}
+	
+	$('#myfrom').submit();	
+}
+
+function selectImg(){
+	var num = $('.ch_upimg input').length;
+	if(num>1){
+		alert('您上传的图片已达到最大上传数量!');
+		return false;
+	}
+}
+function uploadImg(){
+	$('#loading').show();
+	var data = new FormData();
+	$.each($('#imgPhonto')[0].files, function(i, file){
+		data.append('imgPhonto' + i, file);
+	})
+	$.ajax({
+		url:"index.php?m=manageUpFile&c=ajaxUploadImg&p=manage",
+		type:"POST",
+		data:data,
+		cache:false,
+		contentType:false,
+		processData:false,
+		success:function(data){
+			var imgArr = data.split("/");
+			var imgFileName = imgArr[3];
+			$('#loading').hide();
+			if(imgFileName){
+				imgNameArr = imgFileName.split('.');
+				if(data){
+					$('.pic-group').append('<li><a href="javascript:deletedisplay(\'' + imgNameArr[0] + '\');" id="img_' + imgNameArr[0] + '"><p class="fabu_img_close" onClick="deletedisplay(\'' + imgNameArr[0] + '\');"></p><img src="' + data + '"><input type="hidden" name="ImgArr[]" value="' + data + '"></a></li>');
+				}
+				var num = $('.pic-group input').length-1;
+				$('#showNum').text(num);
+				if(num==4){//删除上传功能
+					$('#upload_input').hide();	
+				}
+			}else{
+				alert('图片上传异常,请保证在良好的网络状态下操作!');	
+			}
+		}
+	});
+}
+
+function deletedisplay(data){
+	
+	var popUp = document.getElementById("delete_img")
+	var obj = document.getElementById("delete_img");
+	var W = screen.width;//取得屏幕分辨率宽度
+	var H = screen.height;//取得屏幕分辨率高度
+	var yScroll;//取滚动条高度
+	if(self.pageYOffset){
+		yScroll = self.pageYOffset;
+	}else if(document.documentElement && document.documentElement.scrollTop){
+		yScroll = document.documentElement.scrollTop;
+	}else if(document.body) {
+		yScroll = document.body.scrollTop;
+	}
+	//obj.style.top= (H/2- 180　+　yScroll) + "px";
+	obj.style.display="block"; 
+	$('.txk_box img').attr('src',$('#img_' + data + ' img').attr('src'));
+	$('.delete').attr('onClick',"document.getElementById('delete_img').style.display='none';delImg('" + data + "');");
+}
+
+function delImg(data){
+	var filename = $('#img_' + data + ' img').attr('src');
+	$('#img_' + data).remove();
+	$.get('index.php?m=manageUpFile&c=ajaxDelImg&p=manage&filename=' + filename);
+	var num = $('.ch_upimg input').length;
+	$('#showNum').text(num);	
+}
+</script>

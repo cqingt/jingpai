@@ -1,0 +1,3 @@
+<br />
+<b>Warning</b>:  readfile(http://test.soocang.com/images/201208/goods_img/1359_P_1345626234164.jpg) [<a href='function.readfile'>function.readfile</a>]: failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in <b>E:\wwwroot\96567\shop.96567.com\_suolanbo_\includes\get.php</b> on line <b>25</b><br />

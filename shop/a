@@ -1,0 +1,1245 @@
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_440533210410756987
+    [out_trade_no] => 440533210410756987
+    [total_fee] => 200000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => u1fa85r70foeeiyd3itn0h93gt87v8tg
+    [mch_id] => 1226270402
+    [sign] => 27440054E9782E489EB7008F5C5ADE14
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_660533210415624944
+    [out_trade_no] => 660533210415624944
+    [total_fee] => 300000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => hvrvy9jvgbm88ylu1gwjml6wvi1goml6
+    [mch_id] => 1226270402
+    [sign] => 2C00C79D946E96CEF799D5CB86BF6DA1
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_760533210470130197
+    [out_trade_no] => 760533210470130197
+    [total_fee] => 34500
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => s03ek2jau14f7jemwjktieqkzxc9qnd4
+    [mch_id] => 1226270402
+    [sign] => F3F8FAF18F117D5C089BDF266B9994D3
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_640533210414271622
+    [out_trade_no] => 640533210414271622
+    [total_fee] => 200000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 17piwclhm44i14uc98xzdb9sjo7cdfce
+    [mch_id] => 1226270402
+    [sign] => D809DBEFF1366886C1DD3066FDEEB8A5
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611230114667714
+    [out_trade_no] => 201611230114667714
+    [total_fee] => 110500
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => gpz5zqeyoczk4vm5iyae0vvcyfe057iz
+    [mch_id] => 1226270402
+    [sign] => CBB58F2C5EDDA037E377BABFE4DAEB7D
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611230283835698
+    [out_trade_no] => 201611230283835698
+    [total_fee] => 68000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 2sqkvs5fj4r2wac1dsatdre75bow0go2
+    [mch_id] => 1226270402
+    [sign] => 3315975CBEF200EE3D138B02F01D8E7E
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_950533233384501275
+    [out_trade_no] => 950533233384501275
+    [total_fee] => 90000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => go6whi24yjsahon1981eer8mwpv8fzkr
+    [mch_id] => 1226270402
+    [sign] => A3B7F58927FB904FE868FBEBAF9F39BC
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_300533234978890582
+    [out_trade_no] => 300533234978890582
+    [total_fee] => 21900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => hxbsukoyqho86hkfg42q9vbkrytxe1n1
+    [mch_id] => 1226270402
+    [sign] => D8273AF3683648C4C10D4DA059F73D73
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_300533234978890582
+    [out_trade_no] => 300533234978890582
+    [total_fee] => 21900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => zhy04p7czyij6p13d0ruxpmr8j5p1uo9
+    [mch_id] => 1226270402
+    [sign] => 437BBF23B298EBAC4AFC883A1221058F
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_300533234978890582
+    [out_trade_no] => 300533234978890582
+    [total_fee] => 21900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 647924su11qve56pj3nl4abk5t6i9ep9
+    [mch_id] => 1226270402
+    [sign] => E8843682DF7A721DD857471F08D2A922
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611230685949297
+    [out_trade_no] => 201611230685949297
+    [total_fee] => 1180000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => ao9ex7avtqs15w5qi76pab1ofkhl045q
+    [mch_id] => 1226270402
+    [sign] => ECA59C6B829DFB0FE70DC304FEA6CB28
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611230685949297
+    [out_trade_no] => 201611230685949297
+    [total_fee] => 1180000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => vonp1dsligsuayb0gosqfrgz4qhmui3t
+    [mch_id] => 1226270402
+    [sign] => 7A5B7BBDCD496306427CC56823CF9D9F
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_700533305200894900
+    [out_trade_no] => 700533305200894900
+    [total_fee] => 11000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => a0ve2s02n01efuidomq4n5s4yfgxdwl2
+    [mch_id] => 1226270402
+    [sign] => B81B06E895807372E25E15691FF9989F
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_590533313324391891
+    [out_trade_no] => 590533313324391891
+    [total_fee] => 800000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 7py7xaedost4opht2h9xxrsv9lu5igkc
+    [mch_id] => 1226270402
+    [sign] => 1A31801A64C93649ABA64AA158903E54
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_760533382112649650
+    [out_trade_no] => 760533382112649650
+    [total_fee] => 82000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 6d4loqwc36ki76govv8oljqec3j4xk8b
+    [mch_id] => 1226270402
+    [sign] => 4F7F03CD0FAEC3376DE3360DA73ACE12
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_950533383216666123
+    [out_trade_no] => 950533383216666123
+    [total_fee] => 60000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => fdi6ft16b6qm35kpc0ics2jnrfgha3qu
+    [mch_id] => 1226270402
+    [sign] => CAFEB2CEE1EF45CFA5D9EEEA3D908B10
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_460533388865779010
+    [out_trade_no] => 460533388865779010
+    [total_fee] => 17000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 01xr5ub5t3rm6zmuoebr4rebuh9zcd6e
+    [mch_id] => 1226270402
+    [sign] => 573A5ECC3FEF6B80B9E3F68BE29A77B7
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_590533393646221277
+    [out_trade_no] => 590533393646221277
+    [total_fee] => 14900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 8d2coihkv8b0sfs2cathxz5hqafdd5my
+    [mch_id] => 1226270402
+    [sign] => 218012BA09BD578382ED1FBCEB35E61E
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_590533393646221277
+    [out_trade_no] => 590533393646221277
+    [total_fee] => 14900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 262llwomiuv4iaf8q7dxje2uypj4n5eq
+    [mch_id] => 1226270402
+    [sign] => F22956B789B1E3500DBCAC56F00A93D7
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_230533396316953559
+    [out_trade_no] => 230533396316953559
+    [total_fee] => 921200
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => v798vyu1gfplfihlqiw8mrwhi7e7iwo1
+    [mch_id] => 1226270402
+    [sign] => 0A0F5145356D3021137863FC693557C0
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_330533478562746049
+    [out_trade_no] => 330533478562746049
+    [total_fee] => 21600
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => jg8ty5mn5whcxuhlvvd308vmkbczeh1c
+    [mch_id] => 1226270402
+    [sign] => 9E24CACD17967BCF449C198758B61196
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_330533495523635448
+    [out_trade_no] => 330533495523635448
+    [total_fee] => 83200
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => yf8z2xy30iy5a8oj3hf6veghs0l3y9v7
+    [mch_id] => 1226270402
+    [sign] => 6D0DA8E1BE7771D0AA5917000FD28A74
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_330533495523635448
+    [out_trade_no] => 330533495523635448
+    [total_fee] => 83200
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => vd5ejmub8mwgmxl2e78j9rxuv9v5zmwi
+    [mch_id] => 1226270402
+    [sign] => 2B13F05DBD8C385DE39E25F37B3BB7EB
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_590531943525250794
+    [out_trade_no] => 590531943525250794
+    [total_fee] => 33900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 8tz0elwjzb6k1ibdx0hmj271re1m8fdh
+    [mch_id] => 1226270402
+    [sign] => 9EAB589E0953700557B3DABC78009144
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_730533599436298709
+    [out_trade_no] => 730533599436298709
+    [total_fee] => 49900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => vc6neesiifk19vx57p7rdfr6ak0fibvs
+    [mch_id] => 1226270402
+    [sign] => 73BCF34D0C88B185B41E9931AA91A045
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_350533649713211197
+    [out_trade_no] => 350533649713211197
+    [total_fee] => 300000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => erzwjvq6i6d2t3xrj62x7khuid2usvhm
+    [mch_id] => 1226270402
+    [sign] => 125F59E0F0B0AD79A1FAEEEA03CE26E2
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_200533728817968899
+    [out_trade_no] => 200533728817968899
+    [total_fee] => 200000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 97l3sfr0kpwva9uomyuhgml4icg9dsoe
+    [mch_id] => 1226270402
+    [sign] => C8EADCEE20A12EA7196EF5A0BC282822
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_750533729240758277
+    [out_trade_no] => 750533729240758277
+    [total_fee] => 9900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => vthd15dtqzwhief15qg7iqq0z4ug07c5
+    [mch_id] => 1226270402
+    [sign] => 6325915C90FBA342ACD6343ACCAA5FED
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_750533729240758277
+    [out_trade_no] => 750533729240758277
+    [total_fee] => 9900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => bn851kdu8fipozz34l01bb8aaxrpnwl9
+    [mch_id] => 1226270402
+    [sign] => B87712A99DB48E8990681F627A413CF7
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_760533750483715351
+    [out_trade_no] => 760533750483715351
+    [total_fee] => 244200
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => dwx1rzmrke55073qifvdlz8ogjt50w2s
+    [mch_id] => 1226270402
+    [sign] => 436927841ECEF1CA179247EE1E8C21F8
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611294740547736
+    [out_trade_no] => 201611294740547736
+    [total_fee] => 298000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 1mpx1wvpsv633d9rpm7novegq7n5jx3y
+    [mch_id] => 1226270402
+    [sign] => 697DD949058DB2B3BC9CB8C43890B5B1
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611294740547736
+    [out_trade_no] => 201611294740547736
+    [total_fee] => 298000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 8guis9rj7r7usavkkb487y6onhna1o6r
+    [mch_id] => 1226270402
+    [sign] => DA5DF93BCF12EFA399652778DDC2A36E
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611294740547736
+    [out_trade_no] => 201611294740547736
+    [total_fee] => 298000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => fu1jl0r5u3cuzl1w9m25dgmxvmmgrhe1
+    [mch_id] => 1226270402
+    [sign] => 4999EFAAB8BBBC6E617BC19BD04EA5DA
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_690533766168974393
+    [out_trade_no] => 690533766168974393
+    [total_fee] => 11800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => hdwfec5dq2ohuyl4mg2qslaz5usti70n
+    [mch_id] => 1226270402
+    [sign] => 974ED5D86D2517ACB392F619AF941C72
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_110533820868242487
+    [out_trade_no] => 110533820868242487
+    [total_fee] => 75406
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => qcm55ai5fdm69h0bhyrlkhidkxumykg6
+    [mch_id] => 1226270402
+    [sign] => 269B0C9A0BF23AFB057ED8308E610E24
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_860533838046821875
+    [out_trade_no] => 860533838046821875
+    [total_fee] => 33000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 5g0k6elh6emc55lvub45a6wd9tqydd81
+    [mch_id] => 1226270402
+    [sign] => 2941346DF801E0C9E25F8D2F52C51728
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201611302417074994
+    [out_trade_no] => 201611302417074994
+    [total_fee] => 1170000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => i2w4su3z6pqdseq3xri6djn515o6frv8
+    [mch_id] => 1226270402
+    [sign] => 9A36B72476FF8481D9386F000DEAB8AD
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_710533898046431277
+    [out_trade_no] => 710533898046431277
+    [total_fee] => 29900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => fpqfpww82ufh54j0ycbzvb54i4fxzqu4
+    [mch_id] => 1226270402
+    [sign] => 1C9E0CEBC60DAFF4EE21795E19E12020
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_710533898046431277
+    [out_trade_no] => 710533898046431277
+    [total_fee] => 29900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => ggfe2gt4zv2jwn59fqy03ux92yulgwo6
+    [mch_id] => 1226270402
+    [sign] => 2E84820C5EA8D236A91C7B704A5F236D
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_900533915889045524
+    [out_trade_no] => 900533915889045524
+    [total_fee] => 16500
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => ca6l6sfqcljd1rohoytj040h4amn0xlq
+    [mch_id] => 1226270402
+    [sign] => 0DC6A5A7CE048322CA5E30B8FF2BC900
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_960533986889604941
+    [out_trade_no] => 960533986889604941
+    [total_fee] => 21600
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 0h9ooonj4dhn1mzz2qcc0woyej7ye2sr
+    [mch_id] => 1226270402
+    [sign] => 4162F1CA6E024276C7343608A06AC990
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201612014979582189
+    [out_trade_no] => 201612014979582189
+    [total_fee] => 159300
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => e27y3m3hvvn8kzw6i7y9u69uqsiywbpl
+    [mch_id] => 1226270402
+    [sign] => 5752E49168732EABB6A35D1323CF02B1
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_970534004275545004
+    [out_trade_no] => 970534004275545004
+    [total_fee] => 114700
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => y3wef113fcze4qbe31eo8bqpyntfapxn
+    [mch_id] => 1226270402
+    [sign] => F5ABB243D4289610EA99E5AD462E2A7B
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_500534008818187277
+    [out_trade_no] => 500534008818187277
+    [total_fee] => 8800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => eu0jo9hbixxxla1na9j75pxd0h0rfokb
+    [mch_id] => 1226270402
+    [sign] => 32841AF291C9F2D68D0753CA89B6E89E
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_300534014580141079
+    [out_trade_no] => 300534014580141079
+    [total_fee] => 6800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 59xpd4wryr93w9ariv1wdaczn24vk87g
+    [mch_id] => 1226270402
+    [sign] => 294D3B65F34D2608599B61818BC4ADB6
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_250534037472813733
+    [out_trade_no] => 250534037472813733
+    [total_fee] => 45800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => f7uyjnx1wwnlg22a9tkyipvyga46kluk
+    [mch_id] => 1226270402
+    [sign] => 4C8CD049F4F744162A4D4375592709F0
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_220534125986087407
+    [out_trade_no] => 220534125986087407
+    [total_fee] => 402200
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => la1e067rd5mpph75q7sbovpd1agt6syh
+    [mch_id] => 1226270402
+    [sign] => 4C4C20B74F2A16977B6675CA0056F202
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_500534209191512542
+    [out_trade_no] => 500534209191512542
+    [total_fee] => 1900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => mhgtl0aabm8j1gsoae9n6ktqjwbhtqsh
+    [mch_id] => 1226270402
+    [sign] => CDF3747D1E013BC9CA2CB83FAFDE8C95
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_290534245319113277
+    [out_trade_no] => 290534245319113277
+    [total_fee] => 29900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => gan1ofc7ql3y38zwsqzzt0y1wz357y6w
+    [mch_id] => 1226270402
+    [sign] => 39E2DE6B51825EB0024AF6454B755F85
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_290534245319113277
+    [out_trade_no] => 290534245319113277
+    [total_fee] => 29900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 1r1nplqv40pqhi8ldwfes8e18m1ezid2
+    [mch_id] => 1226270402
+    [sign] => 4E212A343EE508886F424F8A191C4FDB
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_400534253997174685
+    [out_trade_no] => 400534253997174685
+    [total_fee] => 90000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 8wotf8xp5tvxckunio5bylnvli6yrl61
+    [mch_id] => 1226270402
+    [sign] => 2233E7BF9462C4FB292A697BA3D0FC46
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_170534265360520040
+    [out_trade_no] => 170534265360520040
+    [total_fee] => 62800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => hba4820s0tjoxlfyjlgijacxxo0iu9zs
+    [mch_id] => 1226270402
+    [sign] => 3BC6D77E8AFA049450CC82CC4FA91026
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_170534265360520040
+    [out_trade_no] => 170534265360520040
+    [total_fee] => 62800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => xed4qr7612r5ilpcnc352b04thuqvsfh
+    [mch_id] => 1226270402
+    [sign] => AF5DA4FA966E1D52286AEA3B54CF26C9
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_170534265360520040
+    [out_trade_no] => 170534265360520040
+    [total_fee] => 62800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 43y37e1a4yuh9x85kwv67co5ose7cmsh
+    [mch_id] => 1226270402
+    [sign] => 2CF31EFC1F0FF07026372B8A8791D998
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_170534265360520040
+    [out_trade_no] => 170534265360520040
+    [total_fee] => 62800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => bvuy0xt7pouqugyf2zcf60wx1dkn4vkv
+    [mch_id] => 1226270402
+    [sign] => 6B99599DDF3C50FCE677BA4154725956
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_400534344958763024
+    [out_trade_no] => 400534344958763024
+    [total_fee] => 41800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 566vpr4t52o5zrdbhj7gyq5kd4ynvthp
+    [mch_id] => 1226270402
+    [sign] => 4949C2E6BFBF486F429026D341C8DB95
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_360534345478523024
+    [out_trade_no] => 360534345478523024
+    [total_fee] => 41800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => bpjfvdqf0c3t843gifhyvzmjlam25hca
+    [mch_id] => 1226270402
+    [sign] => 0F0B4609087CEDE586CF7A2207892AF1
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_190534356583625277
+    [out_trade_no] => 190534356583625277
+    [total_fee] => 15400
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 1ddxpenpp9t8txshqr403vh1au238bnb
+    [mch_id] => 1226270402
+    [sign] => 9BDB461B27842475A5E8210C3A5AC292
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201612060498435592
+    [out_trade_no] => 201612060498435592
+    [total_fee] => 44500
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => j2z89bcm7ojiy7ie4zwz60jnf3o51ocn
+    [mch_id] => 1226270402
+    [sign] => 848B099A4B4306E1F0FA8FE091135ADA
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_530534417324574277
+    [out_trade_no] => 530534417324574277
+    [total_fee] => 10900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 7q6pab4cueq364c4bqzcrivgzjlh1qz4
+    [mch_id] => 1226270402
+    [sign] => E57106614585640241AB273793DCE40D
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_530534417324574277
+    [out_trade_no] => 530534417324574277
+    [total_fee] => 10900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => x455117x5wj9n2b4h78fhc4g7timm7ja
+    [mch_id] => 1226270402
+    [sign] => EC24E17D8DD90291E24341E429088AB4
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_530534417324574277
+    [out_trade_no] => 530534417324574277
+    [total_fee] => 10900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => r8zh6k4f9cd4fp2e7g4lyz1b4gtp2jhj
+    [mch_id] => 1226270402
+    [sign] => 6AEEFEF5641A1791414404A8AC894FF0
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_160534422496456095
+    [out_trade_no] => 160534422496456095
+    [total_fee] => 41600
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 508mh88cg3e6m51ptl2wzvpiiz5ksapk
+    [mch_id] => 1226270402
+    [sign] => D647226B53CEF714C2DE8C53130769E2
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_330534436657625018
+    [out_trade_no] => 330534436657625018
+    [total_fee] => 35000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => g3rf32dhmltaa0y9p85zfnjefjblyc3t
+    [mch_id] => 1226270402
+    [sign] => 00B09941C43DBD2390592852928764ED
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_330534436657625018
+    [out_trade_no] => 330534436657625018
+    [total_fee] => 35000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => l2x0lf2eezif6hmp6j2jbo9bugwqknfy
+    [mch_id] => 1226270402
+    [sign] => CABCB54D75A26168F2F89E78D54C7258
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_720534437655496502
+    [out_trade_no] => 720534437655496502
+    [total_fee] => 20000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 4f9usqar48rhvqcwhvf86xup4edfr7nx
+    [mch_id] => 1226270402
+    [sign] => 56E5FEF6D809D8B3DA375C5B24C96571
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_490534444057689658
+    [out_trade_no] => 490534444057689658
+    [total_fee] => 27500
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => cnxp1p40n7plnd3o3agp7comomz0vyrv
+    [mch_id] => 1226270402
+    [sign] => DB49191315D2DB9BEC24FFA9835DA273
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_720534473527867244
+    [out_trade_no] => 720534473527867244
+    [total_fee] => 71500
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 0qdrucxlhd9dzftmbjqz3ku0ctyv5bba
+    [mch_id] => 1226270402
+    [sign] => 8093BD9B1C8ECA5D1D693B01D406E34B
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_740534518169479076
+    [out_trade_no] => 740534518169479076
+    [total_fee] => 41600
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => so34a2h6gttq4qgyuvh29cvafk54egau
+    [mch_id] => 1226270402
+    [sign] => F42E65E130EA9417A3CE24D26FBE889C
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_620534522532415210
+    [out_trade_no] => 620534522532415210
+    [total_fee] => 45800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => y0bg7icwqr4jnz2q1129utg2zdk18t2i
+    [mch_id] => 1226270402
+    [sign] => 50B4E51CA9AC6177AA82849C39403FF4
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_790534526217188658
+    [out_trade_no] => 790534526217188658
+    [total_fee] => 10100
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 7e8l5jki0a0ap5qpmm00f4k3k7x0i68f
+    [mch_id] => 1226270402
+    [sign] => D517B59A02520EB5DFA7475B39D19EF5
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_710534508580405067
+    [out_trade_no] => 710534508580405067
+    [total_fee] => 177900
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => tiwdxy83qd9ansd4oqeecncj97o8qzde
+    [mch_id] => 1226270402
+    [sign] => A783D71A2BE5409D75074D073371655A
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_440534596273875518
+    [out_trade_no] => 440534596273875518
+    [total_fee] => 21800
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => dhqjqir8jziit0q4y8gjlau4eq9bno1h
+    [mch_id] => 1226270402
+    [sign] => 94681C7B3AEECCD3F8B0FBC10F9E9965
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_570534612128964931
+    [out_trade_no] => 570534612128964931
+    [total_fee] => 11600
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => z7u0m3wse4s9a73u2rwrksmbhkpntqfj
+    [mch_id] => 1226270402
+    [sign] => 482B9D40F5698CE41FDBF87FFC970F7C
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_760534679276393487
+    [out_trade_no] => 760534679276393487
+    [total_fee] => 32400
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => i4omcb1in4ze0ugfevogujcfsu2c5mg0
+    [mch_id] => 1226270402
+    [sign] => FC9943D3096F2FF433BF4D0742C8F3C7
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_590534692787472296
+    [out_trade_no] => 590534692787472296
+    [total_fee] => 23000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => koekgb8umvdw2uccmfsc3a90utilk6ni
+    [mch_id] => 1226270402
+    [sign] => CA9F4A0F585B523323ADB0D7489904B4
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_920534693573772304
+    [out_trade_no] => 920534693573772304
+    [total_fee] => 10400
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => na2ogymf028ahrxwp7hzqmkomv4cx9cj
+    [mch_id] => 1226270402
+    [sign] => 902D145F1BCA8BC3FF2FE6CBD14C548A
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_500534696388992304
+    [out_trade_no] => 500534696388992304
+    [total_fee] => 33000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => hfyf5kllsogukf2g82t1ucnne4o5nzm4
+    [mch_id] => 1226270402
+    [sign] => 548BF0DC902041553918724FB9718B29
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_880534700034786151
+    [out_trade_no] => 880534700034786151
+    [total_fee] => 38000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => 6xi6uc4ufs3zigta0ufvgmuhmawrm1h9
+    [mch_id] => 1226270402
+    [sign] => 2BB90C425A4D5EC5688891CDC95C4720
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_760534704200442151
+    [out_trade_no] => 760534704200442151
+    [total_fee] => 5700
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => xo673s9bjsycudkra7zy3phaafsz8vvp
+    [mch_id] => 1226270402
+    [sign] => 0C0730855A249B6EFF203F6508B1B9F3
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_570534873043922933
+    [out_trade_no] => 570534873043922933
+    [total_fee] => 81000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => o93ddhfd6vl92bgid2oux0wfk156y4lq
+    [mch_id] => 1226270402
+    [sign] => C0778CD1D9E8BC0F117FEC7A9F3AC423
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_460534878745842685
+    [out_trade_no] => 460534878745842685
+    [total_fee] => 13000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => d4x0mt084qwvdmmcwetyjv5tu8id7x9c
+    [mch_id] => 1226270402
+    [sign] => E232E71FDF3ABD25A6CB33E9CB51ABDB
+)
+Array
+(
+    [attach] => real_order
+    [body] => 收藏天下实物订单_201612120628008584
+    [out_trade_no] => 201612120628008584
+    [total_fee] => 98000
+    [notify_url] => http://www.96567.com/shop/api/payment/wxpay/notify_url.php
+    [trade_type] => NATIVE
+    [appid] => wx00d52d21505f383f
+    [openid] => 
+    [spbill_create_ip] => 123.56.146.201
+    [nonce_str] => qr6chv6zq04n3dscponol6zad5atclci
+    [mch_id] => 1226270402
+    [sign] => 2B891109EB570EFFCADC6545FFCB6B83
+)

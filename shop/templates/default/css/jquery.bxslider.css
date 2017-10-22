@@ -1,0 +1,52 @@
+.bx-wrapper{position:relative;margin: 0 auto;padding:0;width:980px !important;}
+.bx-wrapper img{display:block;max-width:100%}
+.bx-wrapper .bx-viewport{left: -9px;width: 978px!important;margin-bottom: 10px;background:#fff;box-shadow:0 0 5px #ccc;-webkit-transform:translatez(0);transform:translatez(0);-ms-transform:translatez(0);}
+.bx-wrapper .bx-controls-auto,.bx-wrapper .bx-pager{position:absolute;bottom:-30px;width:100%}
+.bx-wrapper .bx-loading{position:absolute;top:0;left:0;z-index:2000;width:100%;height:100%;min-height:50px;background:url(../images/bx_loader.gif) center center no-repeat #fff}
+.bx-wrapper .bx-pager{display:none;color:#666;text-align:center;font-weight:700;font-size:.85em;font-family:Arial;}
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item,.bx-wrapper .bx-pager .bx-pager-item{display:inline-block}
+.bx-wrapper .bx-pager.bx-default-pager a{display:block;margin:0 5px;width:10px;height:10px;outline:0;border-radius:5px;background:#666;text-indent:-9999px}
+.bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:hover{background:#000}
+.bx-wrapper .bx-prev{left: 0;background:url(../images/controls.png) no-repeat 0 -2pc; transition: 0;}
+.bx-wrapper .bx-next{right: 0;background:url(../images/controls.png) no-repeat -43px -2pc;transition: 0;}
+.bx-wrapper .bx-prev:hover{background-position:0 0;}
+.bx-wrapper .bx-next:hover{background-position:-43px 0;}
+.bx-wrapper .bx-controls-direction a{position:absolute;top:50%;z-index:9999;margin-top:-1pc;width:2pc;height:2pc;outline:0;text-indent:-9999px}
+/*.bx-wrapper .bx-controls-direction a.disabled{display:none}*/
+.bx-wrapper .bx-controls-auto{text-align:center}
+.bx-wrapper .bx-controls-auto .bx-start{display:block;margin:0 3px;width:10px;height:11px;outline:0;background:url(../images/controls.png) -86px -11px no-repeat;text-indent:-9999px}
+.bx-wrapper .bx-controls-auto .bx-start.active,.bx-wrapper .bx-controls-auto .bx-start:hover{background-position:-86px 0}
+.bx-wrapper .bx-controls-auto .bx-stop{display:block;margin:0 3px;width:9px;height:11px;outline:0;background:url(../images/controls.png) -86px -44px no-repeat;text-indent:-9999px}
+.bx-wrapper .bx-controls-auto .bx-stop.active,.bx-wrapper .bx-controls-auto .bx-stop:hover{background-position:-86px -33px}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{width:80%;text-align:left}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{right:0;width:35px}
+.bx-wrapper .bx-caption{position:absolute;bottom:0;left:0;width:100%;background:#666\9;background:rgba(80,80,80,.75)}
+.bx-wrapper .bx-caption span{display:block;padding:10px;color:#fff;font-size:.85em;font-family:Arial}
+.slider3 .slide h2{overflow:hidden;margin:6px 0 2px;width:166px;height:20px;display: block;color:#484848;font-size:14px;line-height:20px;}
+.slider3 .slide h4{padding-bottom:5px;height:20px;border-bottom:1px dashed #dfdfdf;color:#b6b6b6;font-size:9pt;font-family:simsun;display: block;line-height:20px;}
+.slider3 .slide h4 .icon-time{float:left;display:block;margin-top:4px;margin-right:6px;width:9pt;height:9pt;background:url(http://96567.com/shop/templates/default/images/icon-newtime.jpg) no-repeat}
+.slider3 .slide p{margin-top:8px;color:#e4393c;display: block;font-size:14px;}
+.slider3 .slide p strong{font-size:18px}
+.sp-text span{float:left;display:block;width:93px;height:34px;border:1px solid #fa9e98;border-left:0;border-radius:0 6px 6px 0;background:#f75e54;color:#fff;text-align:center;font-size:1pc;line-height:34px}
+.sp-text{display:block;overflow:hidden;margin: 6pt 0;}
+.sp-text span:first-child{width:71px;border:1px solid #fdc04c;border-radius:6px 0 0 6px;background:#ffd71a;color:#e4393c;font-size:9pt}
+.slide{margin: 0 10px !important; margin-left:10px!important;float: left;padding-top: 5px;}
+.slideimg{display:block;overflow:hidden;height:168px!important}
+.slideimg img{width:100%}
+.slider3 {
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 310px;
+}
+.slider3 .slide {
+	height: 310px;
+	margin-bottom: 24px;
+	width: 176px !important;
+}
+.slider-jjks {
+	background: #999 !important;
+	border: #999 1px solid !important;
+	color: #fff;
+
+}

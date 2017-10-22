@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分系统管理 - </title>
+<link href="Template/manage/user/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/common.js"></script>
+<script type="text/javascript" src="static/js/My97DatePicker/WdatePicker.js"></script>
+<style>
+strong {
+	color: #0099cc;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: normal;
+}
+</style>
+</head>
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td height="30" bgcolor="#ecf9ff"><span class="title">添加文章</span></td>
+    <td bgcolor="#ecf9ff"></td>
+  </tr>
+</table>
+
+{[if $update]}
+<form name="form1" id="form1" method="post" action="index.php?m=manageNews&c=toUpNews&p=manage&cid={[$resNews.0.N_ID]}" target="_parent" enctype="multipart/form-data">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+
+  <tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>文章标题：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+      <input name="title" type="text" id="title" style="width:200px;" value="{[$resNews.0.N_Title]}"/>
+      <span style="color:#F00">*必填</span>
+      </td>
+      </tr>
+  <tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>图片上传：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+      <input name="get_file" type="file" id="get_file"  style="width:200px;" value=""/>
+      </td>
+      </tr>
+
+
+    <tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>文章类型：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+        <select name="Nclass" id="Nclass" >
+          <option value="">请选择分类</option>
+          {[foreach from=$resClass item=v key=k]}
+          <option value="{[$v.N_Class]}" {[if $resNews.0.N_Nclass == $v.N_Class]}selected="selected"{[/if]}>{[$v.N_Class]}</option>
+            {[foreach from=$resTwoClass[$v.N_ID] item=v1 key=k1]}
+              <option value="{[$v1.N_Class]}" {[if $resNews.0.N_Nclass == $v1.N_Class]}selected="selected"{[/if]}>├{[$v1.N_Class]}</option>
+            {[/foreach]}
+          {[/foreach]}
+        </select>
+      </td>
+      </tr>
+
+
+    <tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>文章类容：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+    {[$editClass]}
+      </td>
+      </tr>
+    <input type="hidden" name="goURL" id="goURL" value="{[$goURL]}"/>
+    <input type="hidden" name="type" id="type" value="2"/>
+    <input type="hidden" name="N_Level" id="N_Level" value="1"/>
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="submit" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;" onclick="return checkFrom();">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+
+
+{[else]}
+
+
+<form name="form1" id="form1" method="post" action="index.php?m=manageNews&c=toAddNews&p=manage" target="_parent" enctype="multipart/form-data">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+
+	<tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>文章标题：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+      <input name="title" type="text" id="title" style="width:200px;" value=""/>
+      <span style="color:#F00">*必填</span>
+      </td>
+      </tr>
+	<tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>图片上传：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+      <input name="get_file" type="file" id="get_file"  style="width:200px;" value=""/>
+      </td>
+      </tr>
+
+
+    <tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>文章类型：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+        <select name="Nclass" id="Nclass" >
+          <option value="">请选择分类</option>
+          {[foreach from=$resClass item=v key=k]}
+          <option value="{[$v.N_Class]}">{[$v.N_Class]}</option>
+            {[foreach from=$resTwoClass[$v.N_ID] item=v1 key=k1]}
+              <option value="{[$v1.N_Class]}">├{[$v1.N_Class]}</option>
+            {[/foreach]}
+          {[/foreach]}
+        </select>
+      </td>
+      </tr>
+
+
+    <tr>
+      <td width="20%" height="30" style="text-indent:1em; text-align:right"><strong>文章类容：</strong></td>
+      <td width="80%" height="30" style="text-align:left; padding-left:5px;">
+	  {[$editClass]}
+      </td>
+      </tr>
+	  <input type="hidden" name="goURL" id="goURL" value="{[$goURL]}"/>
+	  <input type="hidden" name="type" id="type" value="2"/>
+	  <input type="hidden" name="N_Level" id="N_Level" value="1"/>
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="submit" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;" onclick="return checkFrom();">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+{[/if]}
+</div>
+<script>
+function checkFrom(){
+	var name = $('#title').val();
+  var Nclass = $('#Nclass').val();
+	if(name==''){
+		alert('公告标题不能为空!');
+		return false;	
+	}
+  if(Nclass==''){
+    alert('文章类型不能为空!');
+    return false; 
+  }
+	return 1;
+}
+</script>
+</body>
+</html>

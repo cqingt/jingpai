@@ -1,0 +1,74 @@
+<!--{template header,admin}-->
+<SCRIPT src="js/admin.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="js/calendar.js" type="text/javascript"></SCRIPT>
+<div id="append">
+</div>
+<div style="width:100%; height:15px;color:#000;margin:0px 0px 10px;">
+  <div style="float:left;"><a href="index.php?admin_main/stat{$setting['seo_suffix']}" target="main"><b>{$lang['setting_userfrom_control_panel_home']}</b></a>&nbsp;&raquo;&nbsp;{$lang['setting_userfrom_edit_account_info']}</div>
+</div>
+<!--{if isset($message)}-->
+<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+<table class="table">
+	<tr>
+		<td class="{$type}">{$message}</td>
+	</tr>
+</table>
+<!--{/if}-->
+<form action="index.php?admin_user/edit{$setting['seo_suffix']}" method="post">
+<input type="hidden" name="uid" value="{$member['uid']}" />
+			<table class="table">
+				<tr class="header">
+					<td colspan="2">{$lang['setting_userfrom_userinfo']}</td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_username']}</b></td>
+					<td class="altbg2">{$member['username']}</td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_email']}:</b></td>
+					<td class="altbg2">{$member['email']}</td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_usergroup']}</b><br><span class="smalltxt">{$lang['setting_userfrom_userlist_user_usergroup']}</span></td>
+					<td class="altbg2">
+						<select name="groupid" onchange="getcredit1()" id="groupid">
+							<!--{loop $usergrouplist $group}-->
+							<option {if $member['groupid'] == $group['groupid']}selected{/if} value="{$group['groupid']}">{$group['grouptitle']}</option>
+							<!--{/loop}-->
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_empirical_value']}</b><br><span class="smalltxt">{$lang['setting_userfrom_userlist_empirical_value_msg']}</span></td>
+					<td class="altbg2"><input class="text"  name="credit1" id="credit1" value="{$member['credit1']}" /></td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_median_wealth']}</b><br><span class="smalltxt">{$lang['setting_userfrom_userlist_median_wealth_msg']}</span></td>
+					<td class="altbg2"><input class="text"  name="credit2" value="{$member['credit2']}" /></td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_gender']}</b><br><span class="smalltxt">{$lang['setting_userfrom_userlist_gender_msg']}</span></td>
+					<td class="altbg2">
+						<input class="radio" id="pmcenteryes"  type="radio"  {if $member['gender']}checked{/if} value="1" name="gender"><label for="pmcenteryes">{$lang['setting_userfrom_userlist_gender_handsome_boy']}</label>&nbsp;&nbsp;&nbsp;
+						<input class="radio" id="pmcenterno"   type="radio" {if !$member['gender']}checked{/if} value="0" name="gender"><label for="pmcenterno">{$lang['setting_userfrom_userlist_gender_belle']}</label>
+					</td>
+				</tr>
+				<tr>
+					<td class="altbg1" width="45%"><b>{$lang['setting_userfrom_userlist_personalized_signature']}</b><br><span class="smalltxt">{$lang['setting_userfrom_userlist_personalized_signature_set']}</span></td>
+					<td class="altbg2"><textarea class="textarea" cols="50" rows="2" name="signature">{$member['signature']}</textarea></td>
+				</tr>
+			</table>
+			<br />
+			<center><input type="submit" class="button" name="submit" value="{$lang['setting_userfrom_userlist_submit']}"></center><br>
+		</form>
+<br />
+<script type="text/javascript">
+    function getcredit1(){
+        var groupid = $("#groupid").val();
+        $.get("{SITE_URL}index.php?admin_user/ajaxgetcredit1/"+groupid,function(credit){         
+         $("#credit1").val(credit);
+        });
+        
+    }
+</script>
+<!--{template footer,admin}-->

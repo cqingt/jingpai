@@ -1,0 +1,203 @@
+*{margin:0px;}
+html{overflow-y:hidden}
+body {font-family:'Microsoft YaHei', sans-serif;}
+#cont{width:100%;position:relative; max-width: 1440px; min-width: 1000px; margin: 0 auto;}
+.stage{width:100%; height: 100%; display:block;position: relative;overflow: hidden;}
+.stage_box{width:1000px; margin:auto;position:relative;text-align:center;overflow:hidden;}
+#stage1{background-color:#f9f9f9; background:url(http://img.96567.com/ad/20151203/fe_banner.jpg) no-repeat;}
+#stage2{background:url(http://img.96567.com/ad/20151203/strategy.jpg) no-repeat center center;}
+#stage3{background-color:#efefef;}
+#stage4{background-color:#857578; background:url(http://img.96567.com/ad/20151203/immediately.jpg) no-repeat center center;}
+#stage5{background:#efefef url(http://img.96567.com/ad/20151203/Investment-promotion-category.jpg) no-repeat center center}
+#stage6{background-color:#d3254b; background:url(../images/footer.jpg) no-repeat center center;}
+
+/* stage1 */
+.beyond       {
+	background: #e4234e;
+	padding: 2px 20px;
+	display: inline-block;
+	position: absolute;
+	font-size: 14px;
+	color: #fff;
+}
+.beyond-left  {
+	top: 20px;
+	left: 20px;
+}
+.beyond-right {
+	top: 20px;
+	right: 20px;
+}
+.top-triangle {
+	position:absolute;
+	margin-left: -76px;
+	width: 152px;
+	height:61px;
+	left:50%;
+	top:0;
+	background:url(../images/top-triangle.png) no-repeat;
+}
+.business-man {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 1000px;
+    margin-left: -500px;
+	height:574px;
+	background:url(http://img.96567.com/ad/20151203/man.png) no-repeat;
+	background-size: 100% auto;
+    -webkit-animation:fadeInUpBig 3s .4s ease both;
+    -moz-animation:fadeInUpBig 3s .4s ease both;
+}
+@-webkit-keyframes fadeInUpBig{
+0%{opacity:0;
+-webkit-transform:translateY(2000px)}
+100%{opacity:1;
+-webkit-transform:translateY(0)}
+}
+@-moz-keyframes fadeInUpBig{
+0%{opacity:0;
+-moz-transform:translateY(2000px)}
+100%{opacity:1;
+-moz-transform:translateY(0)}
+}
+
+.banner-title {
+	position: absolute;
+	left: 50%;
+	top: 14%;
+	margin-left: -207px;
+	width: 415px;
+	height: 64px;
+	background:url(../images/banner-title.png) no-repeat;
+    -webkit-animation:fadeInDown 1s .2s ease both;
+    -moz-animation:fadeInDown 1s .2s ease both;
+}
+@-webkit-keyframes fadeInDown{
+0%{opacity:0;
+-webkit-transform:translateY(-20px)}
+100%{opacity:1;
+-webkit-transform:translateY(0)}
+}
+@-moz-keyframes fadeInDown{
+0%{opacity:0;
+-moz-transform:translateY(-20px)}
+100%{opacity:1;
+-moz-transform:translateY(0)}
+}
+
+
+/* stage3 */
+.brief-introduction {
+	background:url(../images/brief-introduction.png) no-repeat center center;
+	height: 62px;
+}
+.brief-introduction-main {
+	background:url(http://img.96567.com/ad/20151203/brief-introduction-main.jpg) no-repeat center center;
+	height: 459px;
+}
+/* stage4 */
+.imm-btn {
+	margin-top: 467px;
+	width: 310px;
+	height: 84px;
+	display: inline-block;
+}
+
+/* stage6 */
+.footer-btn1 {
+	width: 216px;
+	height: 60px;
+	margin-top: 434px;
+	display: inline-block;
+}
+.footer-btn2 {
+	width: 216px;
+	height: 60px;
+	margin-top: 434px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#guider{width:30px;height:205px;position:absolute;top:380px;right:30px;}
+#guider .sina{z-index:1;position:absolute;left:0px;bottom:34px;width:100%;height:26px;display:block;}
+#guider .sina:hover{background:url(../images/guider_bg.png) no-repeat center -135px;}
+#guider .tencent{z-index:1;position:absolute;left:0px;bottom:0px;width:100%;height:25px;display:block;}
+#guider .tencent:hover{background:url(../images/guider_bg.png) no-repeat center -170.5px;}
+#guider_link1{z-index:1;height:16px;}
+.guider_link{
+	position:relative;
+	z-index:1;
+	width:100%;
+	height:16px;
+	display:block;
+	cursor:pointer;
+	background: #dbdbdb;
+	margin-bottom: 10px;
+	border-radius: 16px;
+	width: 16px;
+}
+#guider_link2.select{background:#a9082a;}
+#guider_link3.select{background:#a9082a;}
+#guider_link4.select{background:#a9082a;}
+#guider_link5.select{background:#a9082a;}
+#guider_link6.select{background:#a9082a;}
+.btn_down{width:80px;height:80px;position:absolute;bottom:70px; margin-left: -40px;left: 50%;cursor:pointer;}
+.sign {position:absolute; width: 32px;height:12px;left:24px;}
+
+#sign1_1{background: url(../images/sign_1.png) no-repeat ;bottom: 30px;}
+#sign2_1{background: url(../images/sign_2.png) no-repeat ;bottom: 38px;}
+#sign3_1{background: url(../images/sign_3.png) no-repeat ;bottom: 46px;}
+
+#sign1_2{background: url(../images/sign1.png) no-repeat ;bottom: 30px;}
+#sign2_2{background: url(../images/sign2.png) no-repeat ;bottom: 38px;}
+#sign3_2{background: url(../images/sign3.png) no-repeat ;bottom: 46px;}
+
+#sign1_3{background: url(../images/sign1.png) no-repeat ;bottom: 30px;}
+#sign2_3{background: url(../images/sign2.png) no-repeat ;bottom: 38px;}
+#sign3_3{background: url(../images/sign3.png) no-repeat ;bottom: 46px;}
+
+.signImg1{background: url(../images/sign_1.png) no-repeat ;bottom: 30px;}
+.signImg2{background: url(../images/sign_2.png) no-repeat ;bottom: 38px;}
+.signImg3{background: url(../images/sign_3.png) no-repeat ;bottom: 46px;}
+
+#cnzz_stat_icon_4528288 {
+	display: none;
+}
+
+
+#preloader {
+	position:fixed;
+	z-index:2500;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#FFF; 
+	z-index:99999999; 
+}
+
+#status {
+	position:fixed;
+	z-index:99999999;
+	width:250px;
+	height:250px;
+	position:absolute;
+	left:50%; 
+	top:50%; 
+	background-image:url(../images/status.gif); 
+	background-size:64px 64px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-125px 0 0 -125px; 
+}
+
+#status p{
+	top:60%;
+}
+
+#status em{
+	font-size:10px!important;
+	display:block;
+	font-style:normal;
+}

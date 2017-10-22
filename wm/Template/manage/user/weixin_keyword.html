@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关联词设置 - {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+</head>
+
+<body>
+<div id="layout" style="position: absolute; width:100%; height:100%; background:rgba(255,255, 255, 0.8) none repeat scroll 0 0 !important;
+filter:Alpha(opacity=80); background:#fff; top:0px; left:0px;display:none"><img src="static/images/laod_wait.gif" style="padding-left:42%;padding-top:20%"/></div>
+<div class="list_main_r">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td bgcolor="#ecf9ff"><span class="title">关联词设置</span></td>
+    <td bgcolor="#ecf9ff">
+    <input type="button" value="加图文回复" class="a90-30" onClick="addKeyword('news');" style="margin-top:10px;margin-right:20px;">
+    <input type="button" value="加文本回复" class="a90-30" onClick="addKeyword('text');" style="margin-top:10px;margin-right:20px;">
+	</td>
+  </tr>
+</table>
+<div id="showContent">
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="myTab2_Content">
+      <tr class="title">
+        <td width="5%"  style=" text-align:center;">ID</td>
+        <td width="15%" style=" text-align:center;">回复类型</td>
+        <td width="10%" style=" text-align:center;">事件类型</td>
+        <td width="10%" style=" text-align:center;">关键词</td>
+        <td width="25%" style=" text-align:center;">标题</td>
+        <td width="5%" style=" text-align:center;">封面图</td>
+        <td width="15%" style=" text-align:center;">创建时间</td>
+        <td width="10%" style=" text-align:center;">详细操作</td>
+      </tr>
+{[foreach from=$dataArr item=v key=k]}
+      <tr class="con">
+        <td width="5%" style="text-align:center">{[$v.K_ID]}</td>
+        <td width="15%" style="text-align:center">{[if $v.K_Type=='text']}文本类型{[else]}图文模式{[/if]}</td>
+        <td width="10%" style="text-align:center">{[$v.K_Event]}</td>
+        <td width="10%" style="text-align:left;text-indent:1em;">{[$v.K_Keyword]}</td>
+        <td width="25%" style="text-align:left;text-indent:1em;">{[$v.K_Title]}</td>
+        <td width="5%" style="text-align:center">{[if $v.K_Img]}<a href="{[$v.K_Img]}" target="_blank">有图</a>{[else]}无图{[/if]}</td>
+        <td width="15%" style="text-align:center">{[$v.K_Time|date_format:"%Y-%m-%d %H:%M:%S"]}</td>
+        <td width="10%" style="text-align:center;">
+          <a href="index.php?m=manageKeyword&c=delKeyword&p=manage&kid={[$v.K_ID]}" onclick="javascript:return delConfirm(this);">删除</a>
+          <a href="javascript:updateKeyword({[$v.K_ID]},'{[$v.K_Type]}');">修改</a>
+        </td>
+      </tr>
+{[/foreach]}
+</table>
+<div id="page">{[$pageStr]}</div>
+</div>
+</div>
+<script>
+function addKeyword(type){
+	var w = 750;
+	var h = 600;
+	if(type == 'text'){
+		w = 600;
+		h = 260;
+	}
+	
+	$.open({
+		url : 'index.php?m=manageKeyword&c=popWeixinKeyword&p=manage&type=' + type,
+		width : w,
+		height : h,
+		callback : function(action){
+	　　　　if(action == 'close'){
+	　　　　	window.location.reload();
+	　　　　}
+		}
+	});
+}
+
+function updateKeyword(kid,type){
+	var w = 750;
+	var h = 600;
+	if(type == 'text'){
+		w = 600;
+		h = 260;
+	}
+	
+	$.open({
+		url : 'index.php?m=manageKeyword&c=popWeixinKeyword&p=manage&update=1&kid=' + kid + '&type=' + type,
+		width : w,
+		height : h,
+		callback : function(action){
+	　　　　if(action == 'close'){
+	　　　　	window.location.reload();
+	　　　　}
+		}
+	});	
+}
+
+//生成菜单
+function createMenu(){
+	$.get('index.php?m=manageWeixin&c=popWeixinKeyword&p=manage',function(data){
+		if(data.errcode){
+			$.alert('生成失败,当前返回状态为:' + data.errmsg);	
+		}else{
+			$.alert('生成生成,当前返回状态为:' + data.errmsg);	
+		}
+		window.location.reload();
+	},'JSON')
+	
+}
+</script>
+</body>
+</html>

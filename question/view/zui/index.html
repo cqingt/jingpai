@@ -1,0 +1,276 @@
+<!--{template header}-->
+<!--{template banner}-->
+<!--内容部分--->
+
+<!--问题推荐 start-->
+<div class="questions-articles wrapper">
+    <!--{if !empty($recommend_question)}-->
+    <!--{loop $recommend_question $key $val}-->
+    <a class="articles-items" href="{url q-$val['id']}" target="_blank">
+        <div class="art-pic">
+			<span class="pic-wrap">
+				<img src="{$val['img']}"/>
+				<i class="valign"></i>
+			</span>
+        </div>
+        <div class="art-txt">
+            <h2>{$val['title']}</h2>
+            <h6><strong>提问者：{$val['author']}</strong><em>{$val['time']}</em></h6>
+            <p>{$val['description']}</p>
+            <span>查看详情<i>>></i></span>
+        </div>
+    </a>
+    <!--{/loop}-->
+    <!--{/if}-->
+</div>
+<!--问题推荐 end-->
+
+<!--分类 start-->
+<div class="questions-kinds wrapper">
+    <ul class="kinds-title investment_title">
+        <!--{loop $categorylist['category'] $key $val}-->
+        <li {if 0==$key}class="on"{/if}>{$val['name']}</li>
+        <!--{/loop}-->
+    </ul>
+    <div class="kinds-con investment_con">
+        <!--{loop $categorylist['question'] $key $val}-->
+        <div class="demo">
+            <div id="owl-demo" class="owl-carousel">
+                <!--{if !empty($val)}-->
+                <!--{loop $val $k $v}-->
+                <div class="item"><a href="{url q-$v['qid']}" target="_blank"><img src="{$v['img']}" alt="{$v['title']}"></a></div>
+                <!--{/loop}-->
+                <!--{/if}-->
+            </div>
+        </div>
+        <!--{/loop}-->
+    </div>
+</div>
+<!--分类 end-->
+
+<div class="question-stream wrapper">
+    <div class="stream-demo">
+        <h2>已解决问题</h2>
+        <ul class="stream-list resolved">
+            <!--{loop $resolved_question $key $val}-->
+            <!--{if 0==$key}-->
+            <li>
+                <a href="{url q-$val['id']}" target="_blank">
+                    <div class="first-photo">
+                        <span><img src="{$val['img']}" alt="{$val['title']}"></span>
+                    </div>
+                    <div class="first-con">
+                        <h3>{$val['title']}</h3>
+                        <p class="con">{$val['description']}</p>
+                        <p class="quizzer"><strong>提问者：{$val['author']}</strong><i>{$val['time']}</i></p>
+                    </div>
+                </a>
+            </li>
+            <!--{else}-->
+            <li>
+                <a href="{url q-$val['id']}" target="_blank">
+                    <div class="title">
+                        <p>{$val['title']}</p>
+                        <strong>{$val['time']}</strong>
+                    </div>
+                    <div class="pick">
+                        <span class="type">{$val['category_name']}</span>
+                        <p class="con">{$val['description']}</p>
+                        <p class="number"><i>{$val['answers']}</i>回答</p>
+                    </div>
+                </a>
+            </li>
+            <!--{/if}-->
+            <!--{/loop}-->
+        </ul>
+    </div>
+    <div class="stream-demo">
+        <h2>未解决问题</h2>
+        <ul class="stream-list unsolved">
+            <!--{loop $at_issue_question $key $val}-->
+            <!--{if 0==$key}-->
+            <li>
+                <a href="{url q-$val['id']}" target="_blank">
+                    <div class="first-photo">
+                        <span><img src="{$val['img']}" alt="{$val['title']}"></span>
+                    </div>
+                    <div class="first-con">
+                        <h3>{$val['title']}</h3>
+                        <p class="con">{$val['description']}</p>
+                        <p class="quizzer"><strong>提问者：{$val['author']}</strong><i>{$val['time']}</i></p>
+                    </div>
+                </a>
+            </li>
+            <!--{else}-->
+            <li>
+                <a href="{val['url']}" target="_blank">
+                    <div class="title">
+                        <p>{$val['title']}</p>
+                        <strong>{$val['time']}</strong>
+                    </div>
+                    <div class="pick">
+                        <span class="type">{$val['category_name']}</span>
+                        <p class="con">{$val['description']}</p>
+                        <p class="number"><i>{$val['answers']}</i>回答</p>
+                    </div>
+                </a>
+            </li>
+            <!--{/if}-->
+            <!--{/loop}-->
+        </ul>
+    </div>
+
+    <div class="stream-hot">
+        <h2>热门回答</h2>
+        <ul>
+            <!--{loop $hotanswers $key $val}-->
+            <!--{if 0==$key}-->
+            <li>
+                <a href="{url q-$val['qid']}" target="_blank">
+                    <div class="first-hot">
+                        <span><img src="{$val['img']}" alt="{$val['title']}"></span>
+                    </div>
+                    <p>{$val['title']}</p>
+                </a>
+            </li>
+            <!--{else}-->
+            <li><a href="{url q-$val['qid']}" target="_blank">{$val['title']}</a></li>
+            <!--{/if}-->
+            <!--{/loop}-->
+        </ul>
+    </div>
+</div>
+
+<div class="questions-ad wrapper">
+    <a href="" target="_blank"><img src="images/ad.jpg"/></a>
+</div>
+
+<div class="wrapper mb-large">
+    <div class="suggested-users">
+        <h2 class="small-box-title">推荐用户</h2>
+        <div class="ui-demo line">
+            <div class="card one">
+                <div class="gallery_preview portrait-top" href=""><a href="images/gallery/11.jpg"></a></div>
+                <div class="gallery_caption"></div>
+                <div class="gallery_preload_area"></div>
+                <div class="gallery_thumbnails innderBox">
+                    <a class="portrait active" href="http://a4.topitme.com/l/201101/24/12958833266835.jpg" title="用户名：行尸走肉1" data-classify="擅长：抢劫1">
+                        <img src="http://a4.topitme.com/l/201101/24/12958833266835.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：行尸走肉2" data-classify="擅长：抢劫2">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：行尸走肉3" data-classify="擅长：抢劫3">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：行尸走肉4" data-classify="擅长：抢劫4" >
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：行尸走肉5" data-classify="擅长：抢劫5">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：行尸走肉6" data-classify="擅长：抢劫6">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                </div>
+            </div>
+            <div class="card two">
+                <div class="gallery_preview portrait-top" href=""><a href="images/gallery/11.jpg"></a></div>
+                <div class="gallery_caption"></div>
+                <div class="gallery_preload_area"></div>
+                <div class="gallery_thumbnails innderBox">
+                    <a class="portrait active" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：梁朝伟1" data-classify="擅长：抢劫1">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：梁朝伟2" data-classify="擅长：抢劫2">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：梁朝伟3" data-classify="擅长：抢劫3">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：梁朝伟4" data-classify="擅长：抢劫4" >
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：梁朝伟5" data-classify="擅长：抢劫5">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：梁朝伟6" data-classify="擅长：抢劫6">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                </div>
+            </div>
+            <div class="card three">
+                <div class="gallery_preview portrait-top" href=""><a href="images/gallery/11.jpg"></a></div>
+                <div class="gallery_caption"></div>
+                <div class="gallery_preload_area"></div>
+                <div class="gallery_thumbnails innderBox">
+                    <a class="portrait active" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：刘德华1" data-classify="擅长：抢劫1">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：刘德华2" data-classify="擅长：抢劫2">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：刘德华3" data-classify="擅长：抢劫3">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：刘德华4" data-classify="擅长：抢劫4" >
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：刘德华5" data-classify="擅长：抢劫5">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                    <a class="portrait" href="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg" title="用户名：刘德华6" data-classify="擅长：抢劫6">
+                        <img src="http://a3.topitme.com/0/b7/2b/1113189589b9f2bb70l.jpg"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions-erudite">
+        <h2 class="small-box-title">答主风云榜</h2>
+        <h6><p class="ui-left">用户名</p><p class="ui-right">财富</p></h6>
+        <ul class="ranking-list">
+            <!--{eval $weekuserlist=$this->fromcache('alluserlist');}-->
+            <!--{loop $weekuserlist $key $val}-->
+            <li>
+                <i class="icon-ranking {if $key<3}excellent{/if}">{eval $k=$key+1;}{$k}</i>
+                <p class="name">{$val['username']}</p>
+                <p class="treasure">{$val['credit2']}</p>
+            </li>
+            <!--{/loop}-->
+        </ul>
+    </div>
+</div>
+
+<div class="wrapper mb-last">
+    <div class="thematic-pavilion">
+        <h2 class="small-box-title">活动专题</h2>
+        <div class="tp-list">
+            <!--{loop $adlist $key $val}-->
+            <!--{if 1==$val['type']}-->
+            <a href="{$val['url']}" target="_blank"><img src="{$val['src']}"/></a>
+            <!--{/if}-->
+            <!--{/loop}-->
+        </div>
+    </div>
+    <div class="ui-right">
+        <div class="hot-labels">
+            <h2 class="small-box-title">热门标签</h2>
+            <div class="box">
+                <!--{loop $hosttaglist $key $val}-->
+                <a href="{url tag-$val['name']}" target="_blank">{$val['name']}</a>
+                <!--{/loop}-->
+            </div>
+        </div>
+        <div class="look-around">
+            <h2 class="small-box-title">随便看看</h2>
+            <div class="box">
+                <!--{loop $rand_question $val}-->
+                <a href="{url q-$val['id']}" target="_blank">{$val['title']}</a>
+                <!--{/loop}-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--{template footer}-->

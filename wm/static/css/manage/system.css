@@ -1,0 +1,64 @@
+body{color:#444; height:100%}a{text-decoration:none; color:#444}
+html.off,html.off body {background: #e2e9ea url(../../images/left_bg.png) repeat-y -40px top;}
+html.on,html.on body{background: #e2e9ea; background-image:none;}
+html.addbg,html.addbg body{background:#e2e9ea}
+a:hover{text-decoration:underline;}
+.pad-6{padding:6px; overflow:hidden}.pad-10{padding:10px; overflow:hidden}.pad_10,.pad-lr-10{padding:0 10px}.pad-lr-6{padding:0 6px}
+.hr{background: url(../images/uline.gif) repeat-x center center;}
+.hr hr{display:none}
+.border-none,.border-none-td td,{border:none}
+.ib, .ib-li li, .ib-a a, .ib-span span,.common-form ul li span.text,.fixed-bottom .fixed-but .button,.arrowhead,.arrowhead-b,#Skin li,.shortcut a,.shortcut a span,.picBut a,.tab-use{display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline;}
+.cut_line span{ color:#4d82bc; padding:0 4px}
+.mr6{margin-right:6px}.mr8{margin-right:8px}.mr10{margin-right:10px}.mb6{margin-bottom:6px}.mb8{margin-bottom:8px}.mb10{margin-bottom:10px}
+.picBut {background:url("../../images/picBnt.png") no-repeat 0 -28px;color:#FFF;float:left; text-align:center;font-weight:700;height:28px;line-height:26px;*line-height:30px;margin-right:10px;width:75px}
+.picBut a{color:#fff;text-decoration: none; width:75px}
+.line-x{border-bottom:1px solid #eee;}
+.title-1{border-bottom:1px solid #eee; padding-left:5px}
+.title-2{text-align:left;height:34px;*height:33px;font:18px/31px "MicroSoft YaHei","SimHei";color:#333;*line-height:33px; margin:0; padding:8px 0 3px 0px}
+body fieldset{border:1px solid #D8D8D8; padding:10px;}
+body fieldset legend{padding:3px 8px;font-weight:700;border:1px solid #D8D8D8;background-color: #F9F9F9;}
+body fieldset.blue{border:1px solid #dce3ed}
+body fieldset.blue legend{padding:3px 8px;font-weight:700;color:#347add; background:none; border:none}
+.fixed-bottom{height:60px;_margin-top:12px}
+.fixed-bottom .fixed-but{position: fixed;_position: relative; bottom:0;height:30px; border-top:1px solid #f1f1f1; padding:10px 0; width:100%;background: #fff url(../../images/x_bg.png) repeat-x 0 -100px;}
+.fixed-bottom .fixed-but .button,.fixed-bottom .fixed-but .button input{
+	background: url(../../images/btn-content.png) no-repeat; border:none; height:32px; line-height:32px; vertical-align:middle; margin:0;}
+.fixed-bottom .fixed-but .button{padding:0 0 0 10px; margin:0; margin:0 5px}
+.fixed-bottom .fixed-but .button input{padding-right:10px; margin:0;background-position: right top; display:block;color:#004092; font-size:14px; font-weight:700; white-space: nowrap;}
+.subnav{ padding:10px}.subnav h2{ margin-bottom:6px}
+.explain-col{ border:1px solid #ffbe7a;zoom:1; background: #fffced; padding:8px 10px; line-height:20px}
+
+/*容器样式*/
+.col-tab{ }
+.col-tab ul.tabBut{height:27px; padding-left:14px;position:relative;bottom:-1px}
+.col-tab ul.tabBut li{float:left; border:1px solid #dce3ed; height:25px; line-height:26px; margin-right:5px;}
+.col-tab ul.tabBut li{ background:#eaeef4; padding:0 8px;}
+.col-tab ul.tabBut li.on{position:relative; background:#fff;border-bottom:0;height:26px;_height:27px; font-weight:700;}
+.col-tab ul.tabBut li.icon{background-image:url(../images/icon/exclamation_small.png);padding-left:18px;background-repeat: no-repeat;background-position: 3px center;}
+.col-tab .content{border:1px solid #dce3ed;_zoom:1;}
+.col-tab .content-r{border-top:1px solid #dce3ed}
+.col-tab .contentList{border:1px solid #dce3ed;_zoom:1;}
+.col-1{ border:1px solid #f4f6f5;zoom:1; background:#fff}
+.col-1 div.content{border:1px solid #c2d1d8;zoom:1;}
+.col-2{
+	border: 1px solid #CCCCCC;
+	zoom: 1;
+	color: #666666;
+}
+.col-2 h6{
+	color: #666666;
+	background: url(../../images/x_bg.png) repeat-x left -42px;
+	height: 26px;
+	line-height: 28px;
+	margin: 0px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.col-2 div.content{
+	padding: 9px 10px;
+}

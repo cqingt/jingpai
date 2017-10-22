@@ -1,0 +1,326 @@
+<!--{template header,admin}-->
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <h3>问答系统设置</h3>
+            <ul class="tab-base">
+                <li>
+                    <a href="index.php?admin_setting/base{$setting['seo_suffix']}">
+                        <span>站点设置</span>
+                    </a>
+                    <a class="current">
+                        <span>首页设置</span>
+                    </a>
+                    <a href="index.php?admin_setting/msgtpl{$setting['seo_suffix']}">
+                        <span>消息模板</span>
+                    </a>
+                    <a href="index.php?admin_setting/seo{$setting['seo_suffix']}">
+                        <span>SEO设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed-empty"></div>
+<!--{if isset($message)}-->
+<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+<div class="alert  alert-warning">{$message}</div>
+<!--{/if}-->
+<table class="table tb-type2" id="prompt">
+    <tbody>
+    <tr class="space odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+        <th class="nobg" colspan="12"><div class="title"><h5>设置说明</h5><span class="arrow"></span></div></th>
+    </tr>
+    <tr class="odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: table-row;">
+        <td>
+            <ul>
+                <li>首页的每个区块显示数可以在这里设置，其它列表页包括分类列表，搜索结果等。</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br />
+<div class="close_float tabmenu">
+	<ul class="tab pngFix">
+		<li class="ui-tabs-selected">
+			<a href="javascript:void(0)">基本设置</a>
+		</li>
+		<li class="">
+			<a href="javascript:void(0)">板块设置</a>
+		</li>
+	</ul>
+</div>
+<form action="index.php?admin_setting/list{$setting['seo_suffix']}" method="post" id="form_1" {if isset($add_state)}style="display:none" {/if}>
+    <a name="基本设置"></a>
+    <table class="table tb-type2">
+        <tr class="header">
+            <td colspan="2">参数设置</td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>首页精彩推荐:</b><br><span class="smalltxt">首页精彩推荐列表显示个数，推荐5个</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexcommend']}" name="list_indexcommend"></td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>首页待解决、已解决问题:</b><br><span class="smalltxt">首页待解决问题、已解决问题列表显示数目</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexnosolve']}" name="list_indexnosolve"></td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>首页赏金求答案:</b><br><span class="smalltxt">首页悬赏求答案问题列表显示数目</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexreward']}" name="list_indexreward"></td>
+        </tr>	
+        <tr>
+            <td class="altbg1" width="45%"><b>首页推荐专家:</b><br><span class="smalltxt">首页专家显示数目</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexexpert']}" name="list_indexexpert"></td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>首页上周经验排行榜:</b><br><span class="smalltxt">首页上周经验排行榜列表显示数目</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexweekscore']}" name="list_indexweekscore"></td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>首页总经验排行榜:</b><br><span class="smalltxt">首页总经验排行榜列表显示数目</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexallscore']}" name="list_indexallscore"></td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>首页热门标签:</b><br><span class="smalltxt">首页热门标签显示个数</span></td>
+            <td class="altbg2"><input type="text" class="txt" value="{$setting['list_indexhottag']}" name="list_indexhottag"></td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>热点关键词:</b><br><span class="smalltxt">热点关键词设置，设置说明:<font color="red">关键词，对应问题qid</font>&nbsp;&nbsp;&nbsp;注意一行一个关键词，若qid为空则调用搜索模块。如：<font color="green">ask2，1</font></span></td>
+            <td class="altbg2"><textarea style="height: 200px; width: 200px;"  name="list_hot_words" class="tarea">{$setting['list_hot_words']}</textarea></td>
+        </tr>
+    </table>
+    <br>
+    <center><input value="提 交" type="submit" name="submit" class="btn"></center><br>
+</form>
+        <div id="form_2" {if isset($add_state)}style="display:block;"{else}style="display:none"{/if}>
+                <table class="table tb-type2">
+                    <tr>
+                        <td><b>{$lang['setting_list_list_title']}</b></td>
+                        <td><b>{$lang['setting_list_list_site']}</b></td>
+                        <td><b>{$lang['setting_list_list_sort']}</b><br>{$lang['setting_list_list_sort_msg']}</td>
+                        <td><b>{$lang['setting_list_list_if_show']}</b></td>
+                        <td><b>{$lang['setting_list_list_data_num']}</b></td>
+                        <td><b>{$lang['setting_list_list_data_rule']}</b></td>
+                        <td><b>{$lang['setting_list_list_operate']}</b></td>
+                    </tr>
+                    <!--{loop $web_list $key $val}-->
+                    <tr update_id="{$val['web_id']}">
+                        <td class="update_data" field_name="web_name">{$val['web_name']}</td>
+                        <td>{if 'left'==$val['web_site']}{$lang['setting_list_add_site_left']}{else}{$lang['setting_list_add_site_right']}{/if}</td>
+                        <td class="update_data" field_name="web_sort">{$val['web_sort']}</td>
+                        <td>{if 0==$val['web_show']}<a href="javascript:void(0)" class="if_show">{$lang['setting_list_list_hide']}</a>{else}<a href="javascript:void(0)" class="if_show">{$lang['setting_list_list_show']}</a>{/if}</td>
+                        <td class="update_data" field_name="web_num">{$val['web_num']}</td>
+                        <td class="update_data" field_name="web_list_type">{$web_config[$val['web_list_type']]['msg']}</td>
+                        <td><a href="javascript:void(0)" class="list_data_delete">{$lang['setting_list_list_delete']}</a></td>
+                    </tr>
+                    <!--{/loop}-->
+                </table>
+            <a href="javascript:void(0);" onclick="ck_addData()">{$lang['setting_list_add_msg']}</a>
+            <form action="index.php?admin_setting/webAdd{$setting['seo_suffix']}" method="post" id="form_3" style="display:none">
+                <table class="table">
+                    <tr>
+                        <td width="30%"><b>{$lang['setting_list_list_title']}</b>：</td>
+                        <td><input type="text" name="web_name"></td>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>{$lang['setting_list_list_site']}</b>：</td>
+                        <td>
+                            <input type="radio" name="web_site" value="left">{$lang['setting_list_add_site_left']}
+                            &nbsp;<input type="radio" name="web_site" value="right" checked>{$lang['setting_list_add_site_right']}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>{$lang['setting_list_list_sort']}</b>：</td>
+                        <td><input type="text" name="web_sort" value="127"></td>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>{$lang['setting_list_list_data_rule']}</b>：</td>
+                        <td>
+                            <select name="web_list_type">
+                                <!--{loop $web_config $key $val}-->
+                                <option value="{$key}">{$val['msg']}</option>
+                                <!--{/loop}-->
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>{$lang['setting_list_list_if_show']}</b>：</td>
+                        <td>
+                            <input type="radio" name="web_show" value="1">{$lang['setting_list_list_show']}&nbsp;
+                            <input type="radio" name="web_show" value="0" checked>{$lang['setting_list_list_hide']}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="30%"><b>{$lang['setting_list_list_data_num']}</b>：</td>
+                        <td>
+                            <input type="text" name="web_num" value="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span style="margin-left:200px;"><input value="提 交" type="submit" name="submit" class="btn"></span></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    <br>
+<br>
+    <!--删除弹窗-->
+    <div class="pop">
+        <div class="popMain">
+            <div class="popTop"></div>
+            <div class="popMiddle">
+                <p>是否确认删除？</p>
+            </div>
+            <div class="popBottom">
+                <span class="confirm">确认</span>
+                <span class="cancel">取消</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--{template footer,admin}-->
+<script type="text/javascript">
+$(function(){
+    $('.tabmenu > ul > li').first().click(function(){
+        $('#form_1').show();
+        $('#form_2').hide();
+        $(this).attr('class','ui-tabs-selected');
+        $(this).next().attr('class','');
+    });
+    $('.tabmenu > ul > li').last().click(function(){
+        $('#form_1').hide();
+        $('#form_2').show();
+        $(this).attr('class','ui-tabs-selected');
+        $(this).prev().attr('class','');
+    });
+    $(document).on('click','.update_data',function(){
+        var field_name = $(this).attr('field_name');
+        var value = $(this).html();
+        var id = $(this).parent().attr('update_id');
+        if( field_name == 'web_list_type' ){
+
+            var str = '<select id="list_type_update">';
+                {loop $web_config $key $val}
+                if( '{$val["msg"]}' == value ){
+                    str+= '<option selected="selected" key="{$key}">';
+                }else{
+                    str+= '<option key="{$key}">';
+                }
+                str+= '{$val["msg"]}</option>';
+                {/loop}
+                str+='</select>';
+            $(this).html(str);
+            $(this).removeAttr('class');
+            $('#list_type_update').change(function(){
+                var val = $(this).val();
+                var key = $(this).find("option:selected").attr('key');
+                $.ajax({
+                    url: 'index.php?admin_setting/ajaxUpdate',
+                    type: 'GET',
+                    data: 'field_name='+field_name+'&id='+id+'&value='+key,
+                    success: function(msg){
+                        if( msg == 0 ){
+                            alert('{$lang["setting_list_update_fail_msg"]}');
+                            $('#list_type_update').parent().attr('class','update_data');
+                            $('#list_type_update').parent().html(value);
+                        }else{
+                            $('#list_type_update').parent().attr('class','update_data');
+                            $('#list_type_update').parent().html(val);
+                        }
+                    }
+                });
+            })
+        }else{
+            $(this).html('<input type="text" id="update_text" value="'+value+'">');
+            $(this).children().focus().select();
+            $(this).removeAttr('class');
+            $('#update_text').blur(function(){
+                var val = $(this).val();
+                if(value == val){
+                    $(this).parent().attr('class','update_data');
+                    $(this).parent().html(val);
+                }else{
+                    $.ajax({
+                        url: 'index.php?admin_setting/ajaxUpdate',
+                        type: 'GET',
+                        data: 'value='+val+'&field_name='+field_name+'&id='+id,
+                        success: function(msg){
+                            if( msg == 0 ){
+                                alert('{$lang["setting_list_update_fail_msg"]}');
+                                $('#update_text').parent().attr('class','update_data');
+                                $('#update_text').parent().html(value);
+                            }else{
+                                $('#update_text').parent().attr('class','update_data');
+                                $('#update_text').parent().html(val);
+                            }
+                        }
+                    })
+                }
+            })
+        }
+    })
+    // 删除
+    var num;
+    $(".list_data_delete").on('click', function(event) {
+        event.preventDefault();
+        num = $(this);
+        $(".pop").fadeIn('fast');
+    });
+    //删除弹窗
+    $(".popBottom").on('click', 'span', function(event) {
+        event.preventDefault();
+        if($(this).hasClass('confirm')){
+            var id = num.parent().parent().attr('update_id');
+            $.ajax({
+                url: 'index.php?admin_setting/ajaxDelete',
+                type: 'GET',
+                data: 'id='+id,
+                success: function(msg){
+                    if( msg == 0 ){
+                        alert('{$lang["setting_list_update_fail_msg"]}');
+                        num = "";
+                        $(".pop").fadeOut();
+                    }else{
+                        num.parent().parent().remove();
+                        num = "";
+                        $(".pop").fadeOut();
+                    }
+                }
+            })
+        }else{
+            $(".pop").fadeOut();
+            num = "";
+        }
+    });
+    $('.if_show').click(function(){
+        var this_obj = $(this);
+        var value = this_obj.html();
+        var id = this_obj.parent().parent().attr('update_id');
+        if( value == '不显示' ){
+            value = 1;
+            var messg = '显示';
+        }else{
+            value = 0;
+            var messg = '不显示';
+        }
+        $.ajax({
+            url: 'index.php?admin_setting/ajaxUpdate',
+            type: 'GET',
+            data: 'value='+value+'&field_name=web_show&id='+id,
+            success: function(msg){
+                if( msg == 0 ){
+                    alert('{$lang["setting_list_update_fail_msg"]}');
+                }else{
+                    this_obj.html(messg);
+                }
+            }
+        })
+    })
+})
+    // 新增栏目
+    function ck_addData()
+    {
+        $('#form_3').show();
+    }
+</script>

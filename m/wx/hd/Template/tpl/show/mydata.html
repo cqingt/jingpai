@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 我的资料</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="javascript:;" style="color:#999;">我的资料</a>
+</div>
+
+<div class="user-main complete-data">
+    <div class="user-index">
+        <div class="remainder clear">用户名:<span class="yellow-ff8">{[$dataArr.U_UserName]}</span></div>
+        <div class="remainder clear">昵&nbsp;&nbsp;&nbsp;称:<span class="yellow-ff8">{[if $dataArr.U_nickname == '']}未填写{[else]}{[$dataArr.U_nickname]}{[/if]}</span></div>
+        <div class="remainder clear">性&nbsp;&nbsp;&nbsp;别:<span class="yellow-ff8">{[if $dataArr.U_sex == 0]}未填写{[else]}{[if $dataArr.U_sex == 2]}女{[/if]}{[if $dataArr.U_sex == 1]}男{[/if]}{[/if]}</span></div>
+        <div class="user-table">
+            <div class="caption green">管理信息</div>
+            <div class="content">
+                <a href="index.php?m=member&c=mydatashow&p=main&uid={[$dataArr.U_ID]}" class="cet-item">完善个人资料</a>
+                <a href="index.php?m=member&p=main" class="cet-item">返回会员中心</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">Copyright 2012-2014 m.96567.com 版权所有</div>
+
+<div style="height:10px;"></div>
+
+</form>
+</body>
+</html>

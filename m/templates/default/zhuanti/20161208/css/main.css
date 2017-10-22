@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	border: 0;
+}
+a {
+	text-decoration: none;
+}
+.ui-wrap img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.ui-demo {
+	position: relative;
+}
+.ui-demo a {
+	position: absolute;
+	top: 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+.ui-demo a:nth-child(2){
+	left: 0;
+}
+.ui-demo a:nth-child(3){
+	right: 0;
+}
+
+.ui-box {
+	
+overflow: hidden;
+}
+.ui-box ul {
+    background: #321a0d;
+    padding:5px 0;
+    overflow: hidden;	
+}
+.ui-box ul li {
+	position: relative;
+}
+.ui-box ul li span {
+	line-height: 25px;
+	font-size: 13px;
+	width: 80px;
+	margin: 0 auto 7px;
+	height: 25px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	background: #ae0202;
+}
+.icon-yishou {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -70px;
+	margin-left: -60px;
+	display: block;
+	background: url(../images/yishou.png);
+	background-size: 120px;
+	width: 120px;
+	height: 60px;
+	z-index: 12;
+}
+.ui-box ul li span i {
+	font-style: normal;
+	margin-right: -6px;
+	font-size: 14px;
+	margin-left: 2px;
+}
+.ui-box ul li {
+	position: relative;
+	float: left;
+	background: #fff;
+	overflow: hidden;
+	width: 49%;
+	margin: .5%;
+}
+.ui-box ul li a .img {position: relative;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-bottom: 0px;}
+.ui-box ul li .img i {
+    position: relative;
+    z-index: 1;
+    padding-top: 100%;
+    display: block;
+    background-position: 50% 50% !important;
+    background-color: #f0f0f0 !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+}
+.ui-box ul li a .con {
+	padding: 2px 8px 6px;
+	font-family: "microsoft yahei";
+}
+.ui-box ul li a .con p {
+	color: #000;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	font-size: 12px;
+}
+.ui-box ul li a .con p strong {
+	font-weight: normal;
+}
+.ui-box ul li a .con h4 {
+	color: #b00000;
+	font-size: 12px;
+	margin-top: 2px;
+	font-weight: normal;
+}
+.ui-box ul li a .con h5 {
+	color: #585858;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration:line-through;
+}
+.ukraine-look {
+	text-align: center;
+	background: #321a0e;
+	overflow: hidden;
+}
+.ukraine-look a {
+	display: block;
+	width: 50%;
+	margin: 0 25% ;
+}

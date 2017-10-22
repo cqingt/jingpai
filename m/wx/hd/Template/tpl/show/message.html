@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 消息盒子</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">消息盒子</a>
+</div>
+
+
+<!---卖出订单 kaishi--->
+<div class="lmlm_width"> 
+{[foreach from=$dataArr item=v key=k]}    
+     <dl class="lmlm_xxhz">
+     <dd><a href="index.php?m=message&c=negotiate&p=main&pid={[$v.I_PID]}&type={[$v.I_Type]}&fromopenid={[$v.I_fromOpenID]}"><img src="{[$DIR]}images/icon_1.jpg"></a></dd>
+     <dt><strong>{[$v.I_Title]}</strong><span>{[$v.I_Time|date_format:"%Y-%m-%d"]}</span></dt>
+     <div>您当前有1条洽谈消息</div>
+     </dl>
+{[/foreach]}   
+<!--  
+     <dl class="lmlm_xxhz">
+     <dd><a href="#"><img src="{[$DIR]}images/icon_01.jpg"></a></dd>
+     <dt><strong>发货通知</strong><span>2014-02-12</span></dt>
+     <div>您购买的人炮大全套已发货！</div>
+     </dl>
+     
+     <dl class="lmlm_xxhz">
+     <dd><a href="#"><img src="{[$DIR]}images/icon_02.jpg"></a></dd>
+     <dt><strong>物流跟踪</strong><span>2014-02-12</span></dt>
+     <div>您购买的人炮大全套已进入北京分拨中心。</div>
+     </dl>
+-->
+</div>
+<!---卖出订单 jieshu--->
+
+<div style="height:50px;"></div>
+
+</form>
+</body>
+</html>

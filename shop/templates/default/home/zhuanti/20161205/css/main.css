@@ -1,0 +1,353 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+.twelve01  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_01.jpg);
+	height: 685px;
+}
+.twelve02  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_02.jpg);
+	height: 500px;
+}
+.twelve03  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_03.jpg);
+	height: 436px;
+}
+.twelve04  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_04.jpg);
+	height: 755px;
+}
+.twelve05  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_05.jpg);
+	height: 441px;
+}
+.twelve06  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_06.jpg);
+	height: 755px;
+}
+.twelve07  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_07.jpg);
+	height: 436px;
+}
+.twelve08  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_08.jpg);
+	height: 755px;
+}
+.twelve09  {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_09.jpg);
+	height: 436px;
+}
+.twelve10 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_10.jpg);
+	height: 755px;
+}
+.twelve11 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_11.jpg);
+	height: 436px;
+}
+.twelve12 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_12.jpg);
+	height: 755px;
+}
+.twelve13 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_13.jpg);
+	height: 74px;
+}
+
+.twelve14 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_14.jpg);
+	height: 295px;
+}
+.twelve15 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_15.jpg);
+	height: 534px;
+}
+.twelve16 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_16.jpg);
+	height: 503px;
+}
+.twelve17 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_17.jpg);
+	height: 504px;
+}
+.twelve18 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_18.jpg);
+	height: 504px;
+}
+.twelve19 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_19.jpg);
+	height: 503px;
+}
+.twelve20 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_20.jpg);
+	height: 777px;
+}
+.twelve21 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_21.jpg);
+	height: 807px;
+}
+.twelve22 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_22.jpg);
+	height: 1387px;
+}
+.twelve23 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_23.jpg);
+	height: 798px;
+}
+.twelve24 {
+	background: url(http://img.96567.com/images/shuangshier201605web/twelve_24.jpg);
+	height: 216px;
+}
+
+[class*='twelve']{
+	margin: 0 auto;
+	background-repeat:no-repeat ;
+	background-position: center top;
+}
+
+.ui-wrap {
+	width: 1030px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ui-wrap.one {
+	height: 100%;
+}
+.ui-wrap.one a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ui-wrap.two {
+	height: 100%;
+}
+.ui-wrap.two a {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.ui-wrap.three1 {
+	height: 100%;
+}
+.ui-wrap.three1 a {
+	display: block;
+	margin-top: 180px;
+	width: 33.33%;
+	height: 575px;
+	float: left;
+}
+.ui-wrap.three2 {
+	height: 100%;
+}
+.ui-wrap.three2 {
+	padding-top: 175px;
+}
+.ui-wrap.three2 a {
+	display: block;
+	width: 33.33%;
+	height: 574px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+.ui-wrap.four {
+	width: 1010px;
+	padding: 20px 3px 0;
+	height: 100%;
+}
+.ui-wrap.four a {
+	position: relative;
+	display: block;
+	width: 238px;
+	height: 330px;
+	float: left;
+	color: #333;
+	font-family: "microsoft yahei";
+	margin: 15px 6px 0;
+	border: 1px #fff solid;
+}
+
+.ui-wrap.six {
+	width: 1000px;
+	height: 100%;
+	padding: 0 15px;
+}
+.ui-wrap.six a {
+	display: block;
+	width: 16.666%;
+	height: 100%;
+	float: left;
+}
+
+
+
+.four {}
+.four .img {
+	width: 238px;
+	height: 238px;
+	overflow: hidden;
+}
+.four .img img {
+	width: 100%;
+}
+.four h2 {
+	display: block;
+	background: #fff;
+	height: 34px;
+	line-height: 34px;
+	overflow: hidden;
+	padding: 0 10px;
+	font-size: 14px;
+}
+.four .ui-txt {
+	display: block;
+	width: 214px;
+	padding: 0 10px;
+	height: 53px;
+	background: #e32024;
+	overflow: hidden;
+	border: 2px #5a39d0 solid;
+}
+.four .te1 {
+	float: left;
+}
+.four .te1 p {
+	font-size: 14px;
+	color: #fff;
+	margin-top: 4px;
+	line-height: 20px;
+}
+
+.four .te1 strong {
+	color: #ffff01;
+	font-size: 24px;
+	font-weight: normal;
+}
+.four .te1 strong i {
+	font-size: 14px;
+	font-style: normal;
+	margin-right: 4px;
+}
+.four .te2 {
+	float: right;
+	display: block;
+	width: 100px;
+	height: 34px;
+	color: #e32024;
+	text-align: center;
+	line-height: 34px;
+	font-weight: bold;
+	margin-top: 9px;
+	font-size: 16px;
+	border-radius: 4px;
+	background: #fbff01;
+}
+.twelve06 .four .ui-txt {
+	border-color: #3dc4fe;
+	background: #5f009c;
+}
+.twelve08 .four .ui-txt {
+	border-color: #810b25;
+	background: #ffec36;
+}
+.twelve10 .four .ui-txt {
+	border-color: #7e1cc9;
+	background: #ffec36;
+}
+.twelve12 .four .ui-txt {
+	border-color: #ff4677;
+	background: #ffec36;
+}
+.twelve08 .four .te1 p,
+.twelve08 .four .te1 strong,
+.twelve10 .four .te1 p,
+.twelve10 .four .te1 strong,
+.twelve12 .four .te1 p,
+.twelve12 .four .te1 strong {
+	color: #d31e25;
+}
+.twelve08 .four .te2,
+.twelve10 .four .te2,
+.twelve12 .four .te2  {
+	background: #cd2026;
+	color: #fff;
+}
+
+.four .icon-twelve {
+	position: absolute;
+	display: block;
+	content: '';
+}
+.twelve04 .four .icon-twelve {
+	top: 5px;
+	right: 5px;
+	width: 77px;
+	height: 90px;
+}
+.twelve06 .four .icon-twelve {
+	top: 5px;
+	right: 5px;
+	width: 84px;
+	height: 84px;
+}
+.twelve08 .four .icon-twelve,
+.twelve10 .four .icon-twelve,
+.twelve12 .four .icon-twelve {
+	top: -3px;
+	right: -4px;
+	width: 100px;
+	height: 99px;
+}
+
+
+
+.hilarity-nav {
+	position: fixed;
+	top: 20%;
+	right: 60px;
+	background: url(../images/navtab.png) no-repeat;
+	width: 119px;
+	padding-top: 70px;
+	height: 437px;
+	display: none;
+}
+.hilarity-nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	height: 30px;
+	font-size: 14px;
+	width: 115px;
+	padding: 0;
+	margin: 0 auto;
+	line-height: 28px;
+	border-bottom: 1px #29bd7f solid;
+	font-family: Microsoft YaHei;
+
+}
+.hilarity-nav .last {
+	border: 0;
+}
+.hilarity-nav a.active {
+	color: #f3f3b3;
+}

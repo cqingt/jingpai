@@ -1,0 +1,79 @@
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {	text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+.banner .w,
+.photo .w {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.banner,
+.photo {
+    width: 100%;
+}
+.banner1 {
+    background: url(../images/banner1.jpg) no-repeat top center;
+    height: 244px;
+}
+.banner2 {
+    background: url(../images/banner2.jpg) no-repeat top center;
+    height: 244px;
+}
+.banner3 {
+    background: url(../images/banner3.jpg) no-repeat top center;
+    height: 244px;
+}
+.word {
+    background: url(../images/word.jpg) no-repeat top center;
+    height: 160px;
+    padding-top: 16px;	
+}
+.word p {
+	text-align: center;
+	color: #e4a2fd;
+	font-size: 30px;
+	line-height: 47px;
+}
+
+.photo1 {
+    background: url(../images/photo_01.jpg) no-repeat top center;
+    height: 268px;	
+}
+.photo2 {
+    background: url(../images/photo_02.jpg) no-repeat top center;
+    height: 269px;	
+}
+.photo3 {
+    background: url(../images/photo_03.jpg) no-repeat top center;
+    height: 268px;	
+}
+.photo4 {
+    background: url(../images/photo_04.jpg) no-repeat top center;
+    height: 268px;	
+}
+.photo5 {
+    background: url(../images/photo_05.jpg) no-repeat top center;
+    height: 397px;	
+}
+.photo6 {
+    background: url(../images/photo_06.jpg) no-repeat top center;
+    height: 168px;	
+}
+.monkey-footer {
+	height:95px;
+	max-width: 1920px;
+	margin: 0 auto;
+	text-align: center;
+	background: #72128f; 
+}
+.monkey-footer h5 {
+	color: #db7dfc;
+	font-size: 29px;
+    line-height: 95px;
+    font-weight: normal;
+}

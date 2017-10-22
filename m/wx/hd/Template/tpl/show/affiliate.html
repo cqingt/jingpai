@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 推荐送积分</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type=text/javascript src="{[$DIR]}js/hover.js"></script>
+</head>
+
+<body>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="javascript:;" style="color:#999;">推荐送积分</a>
+</div>
+
+
+{[foreach from=$dataArr item=v key=k]} 
+         <div class="lmlm_fbtime">注册（{[$v.level_register_all]}）&nbsp;下单（{[$v.order_all]}）</div>
+         <dl class="lmlm_fbnr">
+         <dt><a href="{[$v.affiliate_like]}&af_id={[$v.id]}&af_openid={[$openid]}">{[$v.name]}</a></dt>
+         <p>
+          <a href="{[$v.affiliate_like]}&af_id={[$v.id]}&af_openid={[$openid]}" class="dianping">详情</a>
+         </p> 
+         </dl>
+{[/foreach]}
+</body>
+</html>

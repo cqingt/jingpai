@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 我的订阅</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type=text/javascript src="{[$DIR]}js/hover.js"></script>
+<style>
+#LoginBox {
+position: absolute;
+left:4px;
+top: 150px;
+background: white;
+width: 306px;
+height: 102px;
+border: 3px solid #444;
+border-radius: 7px;
+z-index: 10000;
+display: none;
+}
+
+</style>
+<script>
+ function chick(){
+	var Name = document.getElementById('Name').value;
+	if(Name == ''){
+		alert('作者名称不能为空！');
+		return false;
+	}
+ }
+</script>
+</head>
+
+<body>
+<form method="post" action="index.php?m=subscribe&p=main&c=addsub" onsubmit="return chick();">
+	
+<div id="LoginBox" style="display: none;">
+        <div style="text-align:right;">
+            <a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="closeBtn" style="color: rgb(153, 153, 153);">关闭</a>
+        </div>
+        <div class="row">
+            作者名称: <span class="inputBox">
+                <input type="text" id="Name" name="S_name" placeholder="作者名称">
+            </span><span style="color:#FF0000;">*</span>
+        </div>
+        
+        <div style="padding: 10px 95px;margin-left: 37px;">
+            <input type="submit" value="提交">
+        </div>
+    </div>
+
+</form>
+
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">我的订阅</a>
+ <span style="margin-left:15px;"><input type="button" id="example" value="添加订阅" onclick="add()"></span>
+
+</div>
+
+{[foreach from=$dataArr item=v key=k]} 
+         <div class="lmlm_fbtime">订阅时间：{[$v.S_time|date_format:"%Y-%m-%d"]}</div>
+         <dl style="width:94%; height:50px; margin:0 auto; padding:5px 10px 15px 10px;">
+         <dt>{[$v.S_name]}</dt>
+		 
+		 {[if $v.S_isSub == 0]}
+         <p style="float:right;font:normal 14px/15px '微软雅黑'; color:#e33a3d; text-align:left;">
+          <a href="javascript:if(confirm('是否取消该订阅?')){window.location.href='index.php?m=subscribe&p=main&c=is_cancel&S_id={[$v.S_id]}&S_isSub=1'};" class="dianping">取消订阅</a>
+		 
+         </p> 
+		 {[else]}
+		 <p style="float:right;font:normal 14px/15px '微软雅黑'; color:#e33a3d; text-align:left;">
+		  <a href="index.php?m=subscribe&p=main&c=is_cancel&S_id={[$v.S_id]}&S_isSub=0" class="dianping">关注订阅</a>
+		 </p> 
+		 <p style="float:right;font:normal 14px/15px '微软雅黑'; color:#e33a3d; text-align:left;">
+		  <a href="javascript:if(confirm('是否删除该订阅?')){window.location.href='index.php?m=subscribe&p=main&c=del&S_id={[$v.S_id]}'};" class="dianping">删除订阅</a>
+		 </p> 
+		 {[/if]}
+         </dl>
+{[/foreach]}
+</body>
+<script type="text/javascript">
+	$(function ($) {
+		//弹出登录
+		$("#example").hover(function () {
+			$(this).stop().animate({
+				opacity: '1'
+			}, 600);
+		}, function () {
+			$(this).stop().animate({
+				opacity: '0.6'
+			}, 1000);
+		}).on('click', function () {
+			$("body").append("<div id='mask'></div>");
+			$("#mask").addClass("mask").fadeIn("slow");
+			$("#LoginBox").fadeIn("slow");
+		});
+		//
+		//按钮的透明度
+		$("#loginbtn").hover(function () {
+			$(this).stop().animate({
+				opacity: '1'
+			}, 600);
+		}, function () {
+			$(this).stop().animate({
+				opacity: '0.8'
+			}, 1000);
+		});
+		//文本框不允许为空---按钮触发
+		$("#loginbtn").on('click', function () {
+			var txtName = $("#txtName").val();
+			var txtPwd = $("#txtPwd").val();
+			if (txtName == "" || txtName == undefined || txtName == null) {
+				if (txtPwd == "" || txtPwd == undefined || txtPwd == null) {
+					$(".warning").css({ display: 'block' });
+				}
+				else {
+					$("#warn").css({ display: 'block' });
+					$("#warn2").css({ display: 'none' });
+				}
+			}
+			else {
+				if (txtPwd == "" || txtPwd == undefined || txtPwd == null) {
+					$("#warn").css({ display: 'none' });
+					$(".warn2").css({ display: 'block' });
+				}
+				else {
+					$(".warning").css({ display: 'none' });
+				}
+			}
+		});
+		//文本框不允许为空---单个文本触发
+		$("#txtName").on('blur', function () {
+			var txtName = $("#txtName").val();
+			if (txtName == "" || txtName == undefined || txtName == null) {
+				$("#warn").css({ display: 'block' });
+			}
+			else {
+				$("#warn").css({ display: 'none' });
+			}
+		});
+		$("#txtName").on('focus', function () {
+			$("#warn").css({ display: 'none' });
+		});
+		//
+		$("#txtPwd").on('blur', function () {
+			var txtName = $("#txtPwd").val();
+			if (txtName == "" || txtName == undefined || txtName == null) {
+				$("#warn2").css({ display: 'block' });
+			}
+			else {
+				$("#warn2").css({ display: 'none' });
+			}
+		});
+		$("#txtPwd").on('focus', function () {
+			$("#warn2").css({ display: 'none' });
+		});
+		//关闭
+		$(".close_btn").hover(function () { $(this).css({ color: 'black' }) }, function () { $(this).css({ color: '#999' }) }).on('click', function () {
+			$("#LoginBox").fadeOut("fast");
+			$("#mask").css({ display: 'none' });
+		});
+	});
+	</script>
+</html>

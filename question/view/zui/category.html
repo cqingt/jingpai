@@ -1,0 +1,188 @@
+<!--{template header}-->
+<!--{template banner}-->
+<div class="container bg-white mar-b-05 mar-t-05">
+    <div class="row">
+        <div class="col-sm-8">
+            <ol class="breadcrumb">
+                <li><a class="first" href="{url category/view/all}">全部分类</a></li>
+
+                <!--{loop $navlist $nav}-->
+                <li><a href="{url category/view/$nav['id']}">{$nav['name']}</a></li>
+
+                <!--{/loop}-->
+                <!--{if $cid!='all'}-->
+                <li class="active">{$category['name']}</li> <!--{/if}-->
+
+
+            </ol>
+            <hr>
+            <h3 class=" mar-l-1 font-15">
+                <!--{if $cid!='all'}-->
+                {$category['name']}
+                <!--{else}-->
+                全部分类
+                <!--{/if}-->
+            </h3>
+
+            <ul class="nav navbar-nav clearfix">
+                <!--{loop $sublist $index $sub}-->
+                <!--{if $sub['id']==$cid}-->
+                <li>
+                    <a href="{url category/view/$sub['id']}">
+                        <span class="text-danger bold"> {eval echo cutstr($sub['name'],10,'');}</span>
+
+                        <span class="label  label-danger">{$sub['questions']}</span>
+
+                    </a>
+                </li>
+                <!--{else}-->
+                <li><a href="{url category/view/$sub['id']}">
+                    {eval echo cutstr($sub['name'],10,'');} <span class="label  ">{$sub['questions']}</span></a>
+
+
+                </li>
+                <!--{/if}-->
+                <!--{/loop}-->
+            </ul>
+
+            <ul class="nav nav-secondary clearfix">
+                <li <!--{if all==$status}-->class="active"<!--{/if}--> >
+                <a href="{url category/view/$cid/all}">全部问题</a>
+                </li>
+                <li <!--{if 6==$status}-->class="active"<!--{/if}--> >
+                <a class="recommand" href="{url category/view/$cid/6}">推荐问题</a>
+                </li>
+                <li <!--{if 4==$status}-->class="active"<!--{/if}--> >
+                <a href="{url category/view/$cid/4}">悬赏问题</a>
+                </li>
+                <li <!--{if 1==$status}-->class="active"<!--{/if}--> >
+                <a href="{url category/view/$cid/1}"><i class="icon icon-question-sign text-danger"></i>待解决</a>
+                </li>
+                <li <!--{if 2==$status}-->class="active"<!--{/if}--> >
+                <a href="{url category/view/$cid/2}"><i class="icon icon-check-circle text-danger"></i>已解决</a>
+                </li>
+
+
+            </ul>
+            <hr class="clear">
+            <p>
+                <input type="text" id="keywords" placeholder="按关键词筛选" {if isset($keywords)}value="{$keywords}"{/if}>
+                <a href="javascript:void(0)" onclick="ck_select_keywords('{$status}')" class="btn">筛选</a>
+            </p>
+            <table class="table table-hover ">
+                <tbody>
+                <tr class="">
+                    <th class="s0 b-b-line">标题</th>
+                    <th class="s1 b-b-line">回答/浏览</th>
+                    <th class="s2">时间</th>
+                </tr>
+                <!--{loop $questionlist $question}-->
+                <tr>
+                    <td class="title b-b-line">
+                        <div class="tit-full">
+                            <div class="wrap">
+                                            <span class="gold">                
+                                                <!--{if $question['price'] > 0}-->
+                                                 <i class="quan"></i>
+                                                <!--{/if}-->
+                                            </span>
+                                <a href="{url question/view/$question['id']}" target="_blank"
+                                   title="{$question['title']}">
+                                    {eval echo cutstr($question['title'],50);}
+                                </a>&nbsp;
+                                <span class="cate">[<a target="_blank"
+                                                                 href="{url category/view/$question['cid']}"
+                                                                 title="{$question['category_name']}" class="lei">{eval echo cutstr($question['category_name'],14,'');}
+                                                        </a>]
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>{$question['answers']}/{$question['views']}</td>
+                    <td>{$question['format_time']}</td>
+                </tr>
+                <!--{/loop}-->
+                </tbody>
+            </table>
+
+            <div class="pages">{$departstr}</div>
+
+        </div>
+
+        <div class="col-sm-4 b-l-line">
+
+            <h3 class="font-15 mar-t-05">
+                推荐专家
+            </h3>
+            <hr>
+            <!--{if $expertlist}-->
+
+
+            <ul class="nav mar-b-1">
+                <!--{loop $expertlist $expert}-->
+
+
+                <li class="b-b-line">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="pic"><a title="{$expert['name']}" target="_blank"
+                                                href="{url user/space/$expert['uid']}"><img width="50" height="50"
+                                                                                            class="img-rounded"
+                                                                                            alt="{$expert['username']}"
+                                                                                            src="{$expert['avatar']}"
+                                                                                            onmouseover="pop_user_on(this, '{$expert[uid]}', '');"
+                                                                                            onmouseout="pop_user_out();"/></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 ">
+                            <h4 class="pull-left"><a title="{$expert['name']}" target="_blank"
+                                                     href="{url user/space/$expert['uid']}"
+                                                     onmouseover="pop_user_on(this, '{$expert[uid]}', 'text');"
+                                                     onmouseout="pop_user_out();">{$expert['username']}</a></h4>
+                            <p class="pull-right mar-t-05"><a href="{url question/add/$expert['uid']}"
+                                                              class="text-danger">向TA求助</a></p>
+                            <p class="clear mar-t-05">
+                                <span>{$expert['answers']}回答</span>
+                                <span>{$expert['supports']}赞同</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </li>
+
+                <!--{/loop}-->
+            </ul>
+
+            <!--{/if}-->
+
+
+            <!-- 关注问题排行榜 -->
+            <h3 class="font-15 mar-t-1">
+                一周热点问题
+            </h3>
+            <hr>
+            <ul class="nav clearfix">
+                <!--{eval $attentionlist=$this->fromcache('attentionlist');}-->
+                <!--{loop $attentionlist $index $question}-->
+                <!--{eval $index++;}-->
+                <li class="b-b-line">
+                    <i class="quan"></i>
+                    <a title="{$question['title']}" target="_blank" href="{url question/view/$question['id']}">{$question['title']}</a>
+                </li>
+                <!--{/loop}-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--{template footer}-->
+<script type="text/javascript">
+    function ck_select_keywords(status){
+        var keywords = $('#keywords').val();
+        if(keywords != ''){
+            window.location.href='{url category/viewKeywords/$cid/'+status+'/'+keywords+'}';
+        }
+    }
+</script>

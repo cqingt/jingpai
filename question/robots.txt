@@ -1,0 +1,9 @@
+
+
+User-agent: *
+
+Disallow: /install/
+Disallow: /js/
+Disallow: /data/
+Disallow: /caiji/
+

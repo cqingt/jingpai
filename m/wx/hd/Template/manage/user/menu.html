@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>菜单管理 - {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script>
+//显示默认显示菜单
+{[if $tid]}
+$(function(){
+	var obj = $('#a{[$tid]}');
+	nTabs(obj,{[$tid]})	;
+})
+{[/if]}
+
+//菜单栏目切换
+function nTabs(obj,id){
+	if($(obj).attr('class')=='active'){ return ;}
+	$('#myTab2 li').each(function(i) {
+        $('#myTab2 li:eq(' + i + ')').removeClass('active');
+    });
+	$(obj).addClass('active');
+	$('#showContent table').hide();
+	$('#myTab2_Content' + id).show();
+	$('#myTab2_Content' + id + ' .con:odd').addClass('con_a');
+}
+
+//连级检测文本域
+function checkInput(obj,id){
+	if($(obj).val()==''){
+		$('#' + id).attr('disabled',true);	
+	}else{
+		$('#' + id).removeAttr('disabled');
+		if(id=='C_Level'){
+			ajaxGetSmallMenu($(obj).val());	
+		}
+	}
+}
+
+//ajax模式获取二级子菜单
+function ajaxGetSmallMenu(id){
+	$.get("index.php?m=manageMenu&c=ajaxGetSmallMenu&p=manage&cid=" + id,function(option){
+		$('#C_Level').html(option);
+	})
+}
+
+//文本检测
+function checkFrom(){
+	if($('#C_CateName').val()==''){
+		alert('菜单名称不能为空!');
+		return false;	
+	}
+	
+	if($('#C_Type').val()==''){
+		alert('请选择菜单一级栏目!');
+		return false;
+	}
+	
+	if($('#C_Level').val() && $('#C_Link').val()==''){
+		alert('请输入菜单地址');
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+
+<body>
+<div class="list_main_r">
+  <form id="form1" name="form1" method="post" action="index.php?m=manageMenu&c=addMenu&p=manage">
+    <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr class="title">
+        <td colspan="4">菜单添加</td>
+      </tr>
+      <tr class="con con_a">
+        <td width="25%" align="center" style="text-align:right; padding-right:10px;"> 菜单名称：
+          <input name="C_CateName" type="text" id="C_CateName" size="15" maxlength="10" onchange="checkInput(this,'C_Type')"/></td>
+        <td width="25%" style="text-align:left; padding-left:10px;"> 菜单级别：
+          <select name="C_Type" id="C_Type" onchange="checkInput(this,'C_Level')" disabled="disabled">
+            <option value=''>==请选择==</option> 
+                {[foreach from=$menuArr item=v key=k name=menuTop]}
+                    <option value='{[$k]}'>{[$v.menuName]}</option>
+                {[/foreach]}
+          </select>
+          <select name="C_Level" id="C_Level" onchange="checkInput(this,'C_Link')" disabled="disabled">
+          <option value=''>一级菜单</option>
+          </select>
+        </td>
+        <td width="30%" style="text-align:left; padding-left:10px;"> 菜单地址：
+          <input name="C_Link" type="txt" id="C_Link" maxlength="100" style="width:250px;" disabled="disabled"/></td>
+        <td width="20%" style="padding-left:20px;"><input type="submit" value="提交" class="a70-26" style="margin-left:10px;" onclick="return checkFrom();"/>
+          <input name="重置" type="reset" class="a70-26-2" style="margin-left:10px;" value="重置" /></td>
+      </tr>
+    </table>
+  </form>
+  <div class="qiehuan">
+    <ul id="myTab2">
+    	{[foreach from=$menuArr item=v key=k name=menuTop]}
+      <li class="{[if $smarty.foreach.menuTop.first]}active{[else]}normal{[/if]}" onClick="nTabs(this,{[$k]});" id="a{[$k]}"><a href="javascript:;">{[$v.menuName]}</a></li> 
+		{[/foreach]}
+    </ul>
+</div>
+<div id="showContent">
+{[foreach from=$menuArr item=v key=k name=menu]}
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="myTab2_Content{[$k]}" {[if !$smarty.foreach.menu.first]}style="display:none"{[/if]}>
+      <tr class="title">
+        <td width="5%"  style=" text-align:center;">ID</td>
+        <td width="15%" style=" text-align:center;">菜单名称</td>
+        <td width="50%" style=" text-align:center;">链接地址</td>
+        <td width="20%" style=" text-align:center;">所属类别</td>
+        <td width="10%" style=" text-align:center;">详细操作</td>
+      </tr>
+	{[foreach from=$v.0 item=v1 key=k1]}
+      <tr class="con">
+        <td width="5%"  style="text-indent:1em;">{[$v1.C_ID]}</td>
+        <td width="15%"  style="text-align:left;text-indent:1em;">{[$v1.C_CateName]}</td>
+        <td width="50%" align="center"  style="text-indent:1em;">一级栏目</td>
+        <td width="20%"  style="text-indent:1em;">{[$v.menuName]}</td>
+        <td width="10%" style="text-align:center;">
+          <a href="index.php?m=manageMenu&c=delMenu&p=manage&type={[$v1.C_Type]}&tid={[$v1.C_ID]}" onclick="javascript:return delConfirm(this);">删除</a>
+          <a href="javascript:showPOP('index.php?m=manageMenu&c=popMenuUpdate&p=manage&tid={[$v1.C_ID]}',450,300,'菜单修改');">修改</a>
+        </td>
+      </tr>
+      	{[foreach from=$v1.Menu item=v2 key=k2 name=smallMenu]}
+          <tr class="con">
+            <td width="5%"  style="text-indent:1em;">{[$v2.C_ID]}</td>
+            <td width="15%"  style="text-align:left;text-indent:3em;">{[if $smarty.foreach.smallMenu.last]}└{[else]}├{[/if]}{[$v2.C_CateName]}</td>
+            <td width="50%"  style="text-align:left;text-indent:1em;">{[$v2.C_Link]}</td>
+            <td width="10%"  style="text-indent:1em;">{[$v.menuName]}</td>
+            <td width="10%" style="text-align:center;">
+            <a href="index.php?m=manageMenu&c=delMenu&p=manage&type={[$v2.C_Type]}&tid={[$v2.C_ID]}" onclick="javascript:return delConfirm(this);">删除</a>
+            <a href="javascript:showPOP('index.php?m=manageMenu&c=popMenuUpdate&p=manage&tid={[$v2.C_ID]}',450,300,'菜单修改');">修改</a>
+            </td>
+          </tr>
+      	{[/foreach]}
+    {[/foreach]}
+</table>
+{[/foreach]}
+</div>
+</div>
+</body>
+</html>

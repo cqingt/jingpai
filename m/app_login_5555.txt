@@ -1,0 +1,92 @@
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+    [app_] => 1
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+    [app_] => 1
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+    [app_] => 1
+)
+Array
+(
+    [is_login] => 1
+    [member_id] => 529023
+    [member_name] => apptest
+    [member_email] => 
+    [is_buy] => 1
+    [avatar] => 
+    [store_id] => 
+    [level] => 0
+    [app_] => 1
+)

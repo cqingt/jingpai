@@ -1,0 +1,141 @@
+<include file="Public:head"/>
+
+
+<link rel="stylesheet" href="{weixin::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{weixin::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{weixin::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{weixin::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{weixin::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script src="{weixin::C('site_url')}/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="{weixin::C('site_url')}/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script>
+
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#info', {
+resizeType : 1,
+allowPreviewEmoticons : false,
+allowImageUpload : true,
+uploadJson : '/index.php?g=User&m=Upyun&a=kindedtiropic',
+items : [
+'source','undo','clearhtml','hr','fontsize','forecolor','hilitecolor',
+'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+'insertunorderedlist', '|', 'emoticons', 'image','link', 'unlink','baidumap','lineheight','table','anchor','preview','print','template','code','cut']
+});
+
+
+
+});
+</script>
+
+<div class="content" style="width:920px; background:none; margin-left:275px; border:none; margin-bottom:30px;" >
+          <div class="cLineB"><h4>编辑图文自定义内容</h4><a href="javascript:history.go(-1);"  class="right btnGrayS vm" style="margin-top:-27px" >返回</a></div>
+         
+          <form method="post"   action="{weixin::U('Ewm/doAddContent')}"  enctype="multipart/form-data" >
+          <div class="msgWrap form">
+
+<input type="hidden" name="C_Eid" value="{weixin:$Eid}">
+
+            <TABLE class="userinfoArea" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+
+
+
+              </THEAD>
+              <TBODY>
+
+  <TR>
+                  <TH><span class="red">*</span><label for="title">回复类型：</label></TH>
+                  <TD id="selectClass">
+                    <select name="C_HuifuClass" id="C_HuifuClass" onchange="selClass()">
+                    <option value="1">自定义回复</option>
+                    <option value="99">关键词回复</option>
+                  </select>
+                </TD>
+                </TR>
+
+
+
+
+               <TR>
+                  <TH><span class="red">*</span><label for="title">标题：</label></TH>
+                  <TD><input required="required" type="input" class="px" id="C_Name" value="{weixin:$info.C_Name}"    name="C_Name" style="width:580px;"> </TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="text">简介：</label></TH>
+                  <TD><textarea  class="px" id="Hfcontent"  name="C_Content" style="width:580px;  height:100px">{weixin:$info.C_Content}</textarea><br />限制200字内
+</TD>
+                </TR>
+
+				<TR>
+                  <TH valign="top"><label for="pic">封面图片地址：</label></TH>
+                  <TD><input class="px" id="pic"  name="pic" value="{weixin:$info.pic}" style="width:580px;"  />  <script src="{weixin::C('site_url')}/tpl/static/upyun.js"></script><a href="###" onclick="upyunPicUpload('pic',700,420,'{weixin:$token}')" class="a_upload">上传</a> <a href="###" onclick="viewImg('pic')">预览</a>
+</TD>
+                </TR>
+
+
+
+
+                 <TR>
+                  <TH valign="top"><label for="url">图文外链网址：</label></TH>
+                  <TD><input type="input" class="px" id="url" value="{weixin:$info.C_Url}" name="C_Url" id="C_Url" style="width:580px;"><br /><span class="red">如需跳转到其他网址，请在这里填写网址(例如：http://baidu.com，记住必须有http://)</span></TD>
+                </TR>
+
+
+                <TR>
+                  <TH></TH>
+                  <TD><input type="submit" value="保存" name="sbmt" class="btnGreen left">　<a href="{weixin::U('Ewm/index')}"  class="btnGray vm">取消</a></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          </form>
+          
+        </div>     
+ 
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div> 
+<!--底部-->
+  	</div>
+<include file="Public:footer"/>
+
+<script>
+  function selClass(){
+    var v = $("#C_HuifuClass").val();
+    if(v == 99){
+      $.ajax({
+        type: "GET",
+        cache: false,
+        async: false,
+        url : "{weixin::U('Ewm/ajaxGuanjianci')}",
+        data: '',
+        success : function(html){
+          $("#selectClass").append(html);
+        }
+      });
+    }else if(v == 1){
+      $("#guanjianci").remove();
+    }
+  }
+
+
+  function selectGuanjiancifunction(){
+    var v = $("#guanjianci").val();
+    if(v){
+      var url = "{weixin::U('Ewm/getGuanjianci')}"; 
+        var data = 'gid=' + v; 
+        $.getJSON(url,data, function(json){
+          $("#C_Name").val(json.title);
+          $("#Hfcontent").html(json.text);
+          $("#pic").val(json.pic);
+          $("#url").val(json.url);
+            
+       });
+    }
+  }
+
+
+</script>

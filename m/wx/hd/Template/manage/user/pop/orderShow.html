@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>订单管理 - {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td colspan="5">
+        <ul class="mian3_box1">
+           <li><span>订单编号：</span>{[$dataArr.order_sn]}</li>
+
+           <li><span>下单时间：</span>{[$dataArr.time|date_format:"%Y-%m-%d"]}</li>
+           
+		   <li><span>收货方式：</span>{[if $dataArr.type == 1]}特快专递{[elseif $dataArr.type==2]}上门取货{[/if]}</li>
+		   {[if $dataArr.status > 0 && $dataArr.type == 1 && $dataArr.express_sn]}
+		   <li><span>快递单号：</span>{[$dataArr.express_sn]}</li>
+		   <li style=" background-image:url(Template/manage/user/images/70-24.jpg);width:70px;height:24px;margin-top:8px; padding:0px; line-height:25px;">
+           <a href="index.php?m=order&c=Kprint&p=manage&orderid={[$dataArr.oid]}" target="_blank">打印快递单</a></li>
+		   {[/if]}
+        </ul>
+    </td>
+    </tr>
+  <tr class="title">
+    <td width="12%">购货人</td>
+    <td width="8%">购货人电话</td>
+    <td width="15%">订单编号</td>
+    <td width="40%">详细地址</td>
+    <td width="25%">订单状态</td>
+  </tr>
+  <tr class="con">
+    <td width="12%">
+    {[$dataArr.name]}
+    </td>
+    <td width="8%">
+    {[$dataArr.mobile]}
+    </td>
+    <td width="15%">{[$dataArr.order_sn]}</td>
+    <td width="40%">{[$dataArr.province]} {[$dataArr.city]} {[$dataArr.address]}</td>
+    <td width="25%" class="queren">
+   {[if $dataArr.status == 1]}已发货{[elseif $dataArr.status == 0]}未发货{[elseif $dataArr.status == 2]}已收货{[/if]}
+    </td>
+  </tr>
+</table>
+
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="10%" height="28" class="title">相关操作：</td>
+    <td width="90%" height="28" style="text-align:left; padding-left:10px;">
+	
+	{[if $dataArr.status == 0]}
+		<input name="O_PayShipping_2" id="O_PayShipping_2" type="button" value="已发货" onclick="return setOrder('status',1);">
+		{[if $dataArr.type == 1]}
+		快递单号:<input type="text" name="express_sn" id='express_sn'>
+		{[/if]}
+	{[else]}
+		{[if $dataArr.status == 1]}
+			已发货
+			<input name="O_PayShipping_2" id="O_PayShipping_2" type="button" value="已收货" onclick="return setOrder('status',2);">
+		{[/if]}
+		{[if $dataArr.status == 2]}
+			已收货
+		{[/if]}
+	{[/if]}
+    </td>
+  </tr>
+</table> 
+
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="10%" height="28" class="title">备注：</td>
+    <td width="90%" height="28" style="text-align:left; padding-left:10px;">
+	{[$dataArr.content]}
+    </td>
+  </tr>
+</table> 
+                                     
+</div>
+<script>
+
+
+
+function setOrder(status,val){
+	//发送数据包
+		var express_sn = '';
+		if(val == 1 && {[$dataArr.type]} == 1){
+			var express_sn = document.getElementById('express_sn').value;
+			if(express_sn == ''){
+				alert('请填写快递单号');
+				return false;
+			}
+		}
+		$.post('index.php?m=order&c=setOrderStatus&p=manage&oid={[$dataArr.oid]}',
+				{ fields : status, value : val,express_sn:express_sn,type:{[$dataArr.type]}},
+				function(s){
+					if(parseInt(s))	{
+						$.alert('操作成功!','友情提示',function(){
+							window.location.reload();
+						})	
+					}else{
+						if(s==''){
+							$.alert('操作错误!','友情提示');	
+						}else{
+							$.alert(s,'友情提示');
+						}
+					}
+		});
+	}
+
+
+</script>
+</body>
+</html>

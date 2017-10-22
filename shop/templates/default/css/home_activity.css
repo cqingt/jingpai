@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* ================================ */
+/* 商城活动页面独立样式定义 				*/
+/* Author:			heilong		*/
+/* 	*/
+/* Create Date:		Aug-10-2012		*/
+/* Retrofit Date:	Aug-10-2012		*/
+/* ================================ */
+
+
+/*---书画频道模板标题20140725---*/
+.djh_titlebox{width:1210px; margin:20px auto 10px; padding:0px;}
+.djh_title0725{ margin:0px 15px; width:1180px; height:50px; background:url(../images/djh_t_bg0725.jpg) repeat-x bottom; }
+.djh_title0725 span{display:block; padding:0px 20px;  font-family:'微软雅黑'; font-size:30px; color:#854c54; font-weight:700; line-height:40px; float:left; margin-left:34px; background-color:#fff; margin-top:8px;}
+
+#banner_box {
+	margin: 0 auto;
+	text-align: center;
+}
+.nch-activity { margin: 0 auto; overflow: hidden;}
+.sale { width: 1210px; overflow: hidden; margin: 10px auto;}
+.pic img {text-align: center; margin: 0 auto;}
+.cp_img { width:270px; height:270px;}
+.cp_time { width:270px; height:26px; background:#af0000; text-align:center;}
+.cp_time span { line-height:26px;  color:#FFF;}
+.cp_name { height:50px; background:#f3f2f2; margin-top:5px; padding: 5px 10px 0 10px; color:#333; display:block; overflow:hidden; line-height:22px;}
+.cp_name a {font-family: "SimSun"; text-decoration:none; color:#323232;}
+.cp_name a:hover {text-decoration:none; color:#af0001;}
+.cp_price {position: relative; height:53px; width:248px; padding-top:20px;overflow:hidden; }
+.cp_col { color:#f04c44; font-family:"Microsoft YaHei"; font-size:20px;}
+.cp_size { font-size:22px; font-weight:700;}
+.cp_zj { float: left;display: block; height: 50px; padding-top: 2px;}
+.zi_xq {position: absolute; bottom: -12px; left: 0; float:left; display:block; height:53px; padding-left: 2px;}
+.gm_dj{font-family: "SimSun"; float:right; display:block; height:53px; color:#333;}
+.gm_dj_2 { background:url(../images/tg_04.jpg) no-repeat; height:53px; color:#333;}
+
+.gm_dj span{color:#fb9700; font-size:16px; font-weight:bold; font-family:"Microsoft YaHei"; }
+.cprice_left { display:block; color:#FFF; padding-top:8px;overflow:hidden; }
+.cprice_left .cp_del {float: left;background: url(../images/tg_05.gif) no-repeat left center;color: #FFF;display: block;height: 32px;padding-left: 8px;margin-left: 5px;line-height: 32px;width: 100px;}
+.cprice_left strong {text-decoration:line-through; font-weight: normal; float: left; display:block; color:#999; padding-top:8px;overflow:hidden; }
+
+/*20150715*/
+#dz_conter { width:1210px; height: auto; margin:0 auto; overflow:hidden;  background:#FFF;}
+.dzconter { width:1200px; height:auto; float:left; padding:0px 5px; }
+.dz_chanpin { width:248px; height:386px; float:left; overflow:hidden; padding:15px; border:#ededed 1px solid; margin:10px;}
+.dz_chanpin_2 { width:248px; height:400px; float:left;  color:#333; padding:14px 14px 0;border:#f97d7f 2px solid; overflow:hidden; margin:10px; }
+.dz_chanpin_3 { width:248px; height:400px; float:left; overflow:hidden; padding:15px; border:#ededed 1px solid; margin:10px;}
+.cp_price0715 {  width:248px;  }

@@ -1,0 +1,80 @@
+/* reset */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textarea, th, td {margin:0; padding:0; }
+body, button, input, select, textarea, td, th { font-family:"Microsoft Yahei","Arial"; }
+h1, h2, h3, h4, h5, h6 {font-size:100%; }
+img {border:0; vertical-align: top; }
+table {border-collapse:collapse; }
+th {font-weight:normal; }
+h1, h2, h3 {font-size:100%; }
+a {color:#515665; text-decoration:none; outline:none; }
+a:hover {text-decoration:none; }
+ul {margin:0; padding:0;}
+ul li {list-style:none; }
+.clear {clear:both; }
+i,em {font-style: normal;}
+#cnzz_stat_icon_4528288 {
+	display: none;
+}
+
+/* layout */
+.main {width:100%; height:100%; min-width:320px; max-width: 640px; margin: 0 auto; position: relative;}
+.wrap {margin: 0 auto; zoom: 1; }
+
+/* banner */
+.banner {
+	background:url(../images/lines.jpg) center top; 
+	overflow: hidden;
+	text-align: center;
+}
+.banner-main {
+	width:100%;
+    margin: 14px auto;
+	z-index: 999;
+}
+.banner-main img {
+	width: 92%;
+	margin: 0 4%;
+}
+.banner-bottom img {
+	z-index: 9;
+	width: 100%;
+}
+
+/* feedback */
+.feedback {
+	background: #2d1f20;
+	overflow: hidden;
+}
+
+.fee-happy {
+	margin: 30px auto 20px;
+}
+.fee-happy img {
+	width: 94%;
+	padding: 0 3%;
+}
+.zero-title {
+	margin: 16px auto 14px;
+}
+.zero-title img {
+	width: 100%;
+}
+
+.show-boxes {
+    padding-bottom: 10px;
+}
+.show-boxes a {
+    display: block;
+    clear: both;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.show-boxes img {
+	width: 100%;
+}
+.show-boxes .merchant {
+    margin: 20px auto 26px;
+}
+
+

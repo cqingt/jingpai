@@ -1,0 +1,72 @@
+ {[if $userArr.guanzhu=="100"]}       
+      <!--一键关注弹出层-->
+      <div id="lml" class="lmlc_box">
+      <div class="lmlc_txt">新年快乐，福气多多</div>
+      <div class="lmlc_botton"><a href="http://mp.weixin.qq.com/s?__biz=MjM5MTIzNjcyMg==&mid=201787239&idx=1&sn=a69d248c6afb93f1d91335d0545b136e#rd">一键关注</a></div>          
+      <div class="lmlc_close" onClick="document.getElementById('lml').style.display='none';closeWindow();">×</div>
+      </div>
+      <!--一键关注弹出层-->
+ {[/if]} 
+    <div class="dbfd">
+          <ul>
+          <li class="ljfx"><a href="#tanchu-2" onclick="fabudisplay();testMessageBox(event);  showdiv();">立即分享</a></li>
+          <li><a href="index.php?m=main&c=artist&p=main" target="_blank">艺术家</a></li>
+          <li id="one1" class="hover"><a href="#hdgz" onclick="javascript:setTab('one',1,2);">活动细则</a></li>
+          <li id="one2" class="hover"><a href="#zfbd" onclick="javascript:setTab('one',2,2);">祝福榜单</a></li>
+          </ul>
+    </div>
+    <div class="Contentbox">
+          <div id="con_one_1" class="hover" style="display:none">  
+          <a name="hdgz"></a>  
+          <div class="huodongshijian" >     
+                <p>搜藏天下携手众知名艺术家，致力于国粹书法艺术的弘扬与发展。特开展本次万福进万家活动，活动规则如下：</p>     
+                <p>1、分享活动，一次好友点击将为您增加1—3个祝福</p>
+                <p>2、集齐100个祝福，赠送名家书法“福”字真迹一幅</p> 
+                <br />
+                <p><strong>终极大奖：</strong></p>
+                <p>活动结束统计祝福量排行，前100名奖品将升级如下：</p>
+                <p style="color:#fce417;">第1名：赠送著名主持人毕福剑《家和万事兴》书法真迹一幅</p>
+                <p style="color:#fce417;">第2名：赠送著名艺术家单田芳《贵在坚持》书法真迹一幅</p>
+                <p style="color:#fce417;">第3—100名：赠送书协理事四平尺《福》字真迹一幅</p>
+          </div>
+          </div>
+          
+             
+          <div id="con_one_2" class="hover" style="display:none"> 
+          <div class="zhufubandan">
+          <div class="mypm">{[if $userArr.fu=="0"]}您当前没有排名哦{[else]}我当前的排名是第 <strong>{[$rank]}</strong> 名！{[/if]}</div>  
+          <div class="titel"><h1><a name="zfbd"></a></h1></div>
+                <div class="biaoti">
+                <p class="aa">排名</p>
+                <p class="bb">昵称</p>
+                <p class="cc">获得祝福</p>
+                </div>
+          <a name="zfbd"></a>
+          <ul class="msgs"  id="scrollWrap">
+          {[foreach from=$top10 item=v key=k]} 
+                <li>
+                <p class="aa">{[$k+1]}</p>
+                <p class="bb">{[$v.nickname]}</p>
+                <p class="cc">{[$v.fu]}个祝福</p>
+                </li>
+          {[/foreach]}
+          </ul>
+          </div>
+          </div>
+          
+    </div> 
+    <script>
+    function setTab(name,val,val1){
+    var obj = $('#con_' + name + '_' + val);
+    if(obj.is(":hidden")){
+    obj.show();	
+    }else{
+    obj.hide();	
+    }
+    $('.Contentbox .hover').each(function(i, obj) {
+    if((i+1) != val){
+    $(obj).hide();	
+    }
+    });
+    }  
+    </script>

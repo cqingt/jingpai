@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>书画平台价格区间设置 - {[$COMPANY]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+
+  <tr>
+  	<td bgcolor="#ecf9ff"><span class="title">价格区间</span></td>
+    <td bgcolor="#ecf9ff">
+    <input type="button" value="添加区间" class="a90-30" onclick="addDep(0);" style="margin-top:10px;margin-right:20px;">
+   	</td>
+  </tr>
+</table>
+
+<input type="hidden" name="number" id="number" value="{[$dataArr.W_Number]}"/>
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="padding">
+
+    
+
+	<tr class="title">
+	  <td width="10%" style=" text-align:center;">编号</td>
+	  <td width="10%" style=" text-align:center;">最小值</td>
+      <td width="10%" style=" text-align:center;">最大值</td>
+	  <td width="10%" style=" text-align:center;">添加时间</td>
+	  <td width="10%" style=" text-align:center;">操作</td>
+      </tr>
+{[foreach from=$dataArr item=v key=k]}
+    <tr class="con">
+      <td width="10%" style=" text-align:center;">{[$v.id]}</td>
+	  <td width="10%" style=" text-align:left;">{[$v.P_mini]}</td>
+      <td width="10%" style=" text-align:center;">{[$v.P_max]}</td>
+	  <td width="10%" style=" text-align:center;">{[$v.P_time|date_format:'%Y-%m-%d']}</td>
+	  <td width="10%" style=" text-align:center;"><a href="javascript:addDep({[$v.id]});">编辑</a> <a href="index.php?m=managePriceSetting&c=del&p=manage&id={[$v.id]}" onclick="javascript:return delConfirm(this);">删除</a>
+</td>
+    </tr>
+  {[/foreach]}
+
+	
+	
+  
+  </table>
+  <div id="page" style="text-align:center;">
+{[$pageStr]}
+</div>
+</div>
+<script>
+//添加推荐信息
+function addDep(id){
+	if(id == 0){
+		var mag = "添加区间信息";
+	}else{
+		var mag = "编辑区间信息";
+	}
+	asyncbox.open({
+		url : 'index.php?m=managePriceSetting&c=popPriceSetting&p=manage&id=' + id,
+		width : 450,
+		height : 250,
+		title : mag,
+		callback : function(action){
+			window.location.reload();
+		}
+
+	});	
+}
+
+
+</script>
+
+</body>
+</html>

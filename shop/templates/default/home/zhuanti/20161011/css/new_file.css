@@ -1,0 +1,90 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,cqrm,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,cqrm,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+address,article,aside,details,figcaption,figure,cqoter,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;cqnt-weight:400}
+body {
+  background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cqbj.jpg) repeat-y center top;
+}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{cqnt-style:normal}
+[hidecqcus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{cqnt-weight:400;cqnt-style:normal;cqnt-size:100%}
+sub,sup{cqnt-size:83%}
+code,kbd,pre,samp{cqnt-family:inherit}
+q:after,q:becqre{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=submit],input[type=reset],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+
+
+.cq-wrap{margin:0 auto;width: 990px;color:#fff;text-align:center;cqnt-family:"microsoft yahei";}
+
+
+.photo1 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_01.jpg) no-repeat center top;height: 369px;min-width: 1000px;margin: 0 auto;}
+.photo2 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_02.jpg) no-repeat center top;height: 369px;min-width: 1000px;margin: 0 auto;}
+
+.photo4 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_04.jpg) no-repeat center top;height: 142px;}
+
+.photo6 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_06.jpg) no-repeat center top;height: 497px;}
+.photo7 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_07.jpg) no-repeat center top;height: 497px;}
+.photo8 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_08.jpg) no-repeat center top; height: 497px;}
+.photo9 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_09.jpg) no-repeat center top; height: 500px;min-width: 1000px;margin: 0 auto;}
+.photo10 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_10.jpg) no-repeat center top;height: 500px;min-width: 1000px;margin: 0 auto;}
+
+.photo12 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_12.jpg) no-repeat center top;height: 184px;}
+
+.photo14 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_14.jpg) no-repeat center top; height: 547px;}
+.photo15 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_15.jpg) no-repeat center top; height: 547px;}
+.photo16 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_16.jpg) no-repeat center top;height: 136px;}
+.photo17{background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_17.jpg) no-repeat center top; height: 408px;}
+.photo18 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_18.jpg) no-repeat center top; height: 407px;}
+.photo19 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_19.jpg) no-repeat center top;height: 129px;}
+.photo20 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_20.jpg) no-repeat center top;height: 406px;}
+.photo21 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_21.jpg) no-repeat center top; height: 406px;}
+.photo22 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_22.jpg) no-repeat center top;height: 405px;}
+.photo23 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_23.jpg) no-repeat center top; height: 406px;}
+.photo24 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_24.jpg) no-repeat center top; height: 133px;}
+.photo25 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_25.jpg) no-repeat center top;height: 405px;}
+.photo26 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_26.jpg) no-repeat center top;height: 405px;}
+.photo27 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_27.jpg) no-repeat center top; height: 404px;}
+.photo28 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_28.jpg) no-repeat center top; height: 405px;}
+.photo29 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_29.jpg) no-repeat center top;height: 136px;}
+.photo30 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_30.jpg) no-repeat center top; height: 547px;}
+.photo31 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_31.jpg) no-repeat center top;height: 547px;}
+.photo32 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_32.jpg) no-repeat center top;height: 546px;}
+.photo33 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_33.jpg) no-repeat center top;height: 547px;}
+.photo34 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_34.jpg) no-repeat center top; height: 25px;}
+.photo35 {background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sc20161011/cq_35.jpg) no-repeat center top; height: 127px;min-width: 1000px;margin: 0 auto;} 
+
+.photo9 a,.photo10 a,.photo35 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.cq-wrap .two {
+	padding: 0 4%;
+}
+.cq-wrap .two a {
+	width: 50%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+.cq-wrap .three {
+	padding: 0 2%;
+}
+.cq-wrap .three a {
+	width: 33.33%;
+	height: 100%;
+	display: block;
+	float: left;
+}

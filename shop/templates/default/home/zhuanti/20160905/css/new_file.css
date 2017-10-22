@@ -1,0 +1,271 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+html{font-size:16px}
+body{ font-family: "microsoft yahei"; background: #fdfcd8 url(../images/zqbj.jpg) center repeat-y;}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{font-weight:400;font-style:normal;font-size:100%}
+sub,sup{font-size:83%}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=submit],input[type=reset],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+
+
+.formbox1 ::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #776565; 
+font-size: 24px;
+font-family: 'SimHei';
+} 
+.formbox1 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #776565; 
+font-size: 24px;
+font-family: 'SimHei';
+} 
+.formbox1 ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #776565; 
+font-size: 24px;
+font-family: 'SimHei';
+} 
+.formbox1 :-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #776565; 
+font-size: 24px;
+font-family: 'SimHei';
+} 
+
+
+.bar-wrap{margin:0 auto;width:1200px;color:#fff;text-align:center;font-family:"microsoft yahei"}
+[class*=photo]{width:100%}
+.photo1{height: 342px;background:url(../images/photo_01.jpg) no-repeat top center;}
+.photo2{height: 341px;background:url(../images/photo_02.jpg) no-repeat top center;}
+.photo3{height: 342px;background:url(../images/photo_03.jpg) no-repeat top center;}
+.photo4{height: 79px;background:url(../images/photo_04.jpg) no-repeat top center;}
+.photo5 {height: 1055px; background: url(../images/photo_12.jpg) no-repeat center top; padding-bottom: 50px;}
+
+.formbox1 {background: url(../images/photo_05.jpg) center no-repeat; height: 472px;position: relative;}
+.formbox1 input {
+	margin-top: 300px;
+}
+.formbox1 input.in1 {
+	border: 1px #c53232 solid;
+	width: 545px;
+	line-height: 68px;
+	height: 68px;
+	background: #fffeee;
+	color: #776565;
+	font-size: 28px;
+	padding-left: 15px;
+	float: left;
+	margin-left: 198px;
+}
+.formbox1 input.in2 {
+	width: 222px;
+	float: left;
+	height: 70px;
+	border: 0;
+	background: #c53232;
+	font-size: 30px;
+	color: #fee9af;
+	margin-left: 18px;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+.formbox1 input.in2:hover {
+	background: #ab1313;
+}
+.formbox1 input.in2:active {
+	background: #7c0708;
+}
+.reveal-modal-zq-bg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0;
+	background: rgba(192,192,192,.8)
+}
+
+.reveal-modal-zq {
+	visibility: hidden;
+	left: 50%;
+	margin-left: -265px;
+	top: 50% !important;
+	margin-top: -15%;
+	position: fixed;
+	z-index: 101;
+	width: 490px;
+	padding: 10px 45px 45px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	-box-shadow: 0 0 10px rgba(0,0,0,.4);
+	background-color: #FFF;
+}
+.reveal-modal-zq .tcform h2 {
+	font-size: 36px;
+	color: #ff6600;
+	overflow: hidden;
+	margin-top: 40px;
+	font-weight: bold;
+	line-height: 38px;
+	margin-bottom: 10px;
+}
+.close-reveal-modal-zq {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.reveal-modal-zq h4 {
+	font-size: 24px;
+	color: #ff6600;
+    margin-top: 4px;
+}
+.reveal-modal-zq .tcform p.go {
+	font-size: 24px;
+	color: #ff6600;
+	padding-bottom: 14px;
+	border-bottom: 1px #d4d4d4 solid;
+}
+.reveal-modal-zq .dem-tiem  {
+	margin-top: 20px;
+}
+.reveal-modal-zq .dem-tiem input {
+	width: 478px;
+	height: 38px;
+	padding-left: 10px;
+	font-size: 16px;
+	border: 1px #d4d4d4 solid;
+}
+.reveal-modal-zq .dem-tiem-yz {
+	margin: 20px 0;
+}
+.reveal-modal-zq .dem-tiem-yz input.in1 {
+	width: 316px;
+	height: 38px;
+	padding-left: 10px;
+	font-size: 16px;
+	border: 1px #d4d4d4 solid;
+}
+.reveal-modal-zq .dem-tiem-yz input.in2 {
+	width: 148px;
+	height: 40px;
+	float: right;
+	border: 1px #ffb07b solid;
+	background: #ffe4d2;
+	line-height: 38px;
+	font-size: 16px;
+	color: #ff6600;
+	cursor: pointer;
+}
+.reveal-modal-zq .btn-zq {
+	width: 498px;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+	font-size: 24px;
+	color: #fff;
+	background: #ff6600;
+}
+.word2 .btn-zq {
+	margin-top: 10px;
+}
+.photo2 .big-link {
+	float: right;
+	margin: 80px 270px 0 0;
+	width: 122px;
+	height: 40px;
+	display: block;
+}
+.tcform p {
+	line-height: 28px;
+	font-size: 16px;
+}
+.shopbox {
+	margin: 0 97px;
+}
+.shopbox li {
+	background: #8e3939;
+	width: 238px;
+	height: 292px;
+	float: left;
+	margin: 6px;
+}
+.shopbox .img {
+	width: 225px;
+	height: 208px;
+	padding: 7px 6px 0;
+	overflow: hidden;
+}
+.shopbox .img img {
+	width: 100%;
+}
+.shopbox p.text {
+	font-size: 12px;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding: 0 20px;
+}
+.shopbox p.rmb {
+	float: left;
+	margin-left: 20px;
+	font-size: 22px;
+	color: #fff;
+}
+.shopbox p.rmb sup {
+	font-size: 12px;
+}
+.shopbox strong {
+	display: block;
+	width: 97px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 16px;
+	color: #c01717;
+	background: #f8fa41;
+	float: right;
+	margin-right: 20px;
+}
+
+.dem-tiem select {
+    width: 32%;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px #d4d4d4 solid;
+}
+.shop {
+opacity: 1; visibility: visible;
+}
+
+.formbox1 a {
+	display: block;
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	top: 100px;
+	right: 194px;
+}

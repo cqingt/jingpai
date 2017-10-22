@@ -1,0 +1,39 @@
+Array
+(
+    [0] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc  [ RunTime:1,476,515,770.398841s ]
+
+    [1] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc  [ RunTime:1,476,515,770.398841s ]
+
+    [2] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc  [ RunTime:1,476,515,770.398841s ]
+
+    [3] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_article` WHERE ( article_id = '4863' ) LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [4] => [2016-10-15 15:16:10] SQL: SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '20' ) LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [5] => [2016-10-15 15:16:10] SQL: UPDATE `shop_cms_article` SET article_click=article_click+1 WHERE ( article_id = '4863' ) [ RunTime:1,476,515,770.398841s ]
+
+    [6] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10   [ RunTime:1,476,515,770.398841s ]
+
+    [7] => [2016-10-15 15:16:10] SQL: SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [8] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5   [ RunTime:1,476,515,770.398841s ]
+
+    [9] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9   [ RunTime:1,476,515,770.398841s ]
+
+    [10] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_promotion` [ RunTime:1,476,515,770.398841s ]
+
+    [11] => [2016-10-15 15:16:10] SQL: Select goods_id,goods_pic,goods_name,goods_price from `shop_promotion` where p_id IN (710, 608, 703, 977) [ RunTime:1,476,515,770.398841s ]
+
+    [12] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1476515770' ) AND ( goods_id = '15212' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [13] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_miaosha` WHERE ( state = '20' ) AND ( start_time < '1476515770' ) AND ( end_time > '1476515770' ) AND ( goods_id = '15212' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [14] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_p_xianshi_goods` WHERE ( state = '1' ) AND ( end_time > '1476515770' ) AND ( goods_id = '15791' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [15] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_miaosha` WHERE ( state = '20' ) AND ( start_time < '1476515770' ) AND ( end_time > '1476515770' ) AND ( goods_id = '15791' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [16] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_goods` WHERE ( goods_id = '17079' ) LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+    [17] => [2016-10-15 15:16:10] SQL: SELECT * FROM `shop_miaosha` WHERE ( state = '20' ) AND ( start_time < '1476515770' ) AND ( end_time > '1476515770' ) AND ( goods_id = '24978' ) ORDER BY start_time asc LIMIT 1   [ RunTime:1,476,515,770.398841s ]
+
+)

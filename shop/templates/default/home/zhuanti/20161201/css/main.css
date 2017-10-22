@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.fcbox1  {
+	background: url(http://img.96567.com/feicui20161201web/fc_01.jpg);
+	height: 281px;
+}
+.fcbox2  {
+	background: url(http://img.96567.com/feicui20161201web/fc_02.jpg);
+	height: 280px;
+}
+.fcbox3  {
+	background: url(http://img.96567.com/feicui20161201web/fc_03.jpg);
+	height: 277px;
+}
+.fcbox4  {
+	background: url(http://img.96567.com/feicui20161201web/fc_04.jpg);
+	height: 417px;
+}
+.fcbox5  {
+	background: url(http://img.96567.com/feicui20161201web/fc_05.jpg);
+	height: 458px;
+}
+.fcbox6  {
+	background: url(http://img.96567.com/feicui20161201web/fc_06.jpg);
+	height: 318px;
+}
+.fcbox7  {
+	background: url(http://img.96567.com/feicui20161201web/fc_07.jpg);
+	height: 395px;
+}
+.fcbox8  {
+	background: url(http://img.96567.com/feicui20161201web/fc_08.jpg);
+	height: 427px;
+}
+.fcbox9  {
+	background: url(http://img.96567.com/feicui20161201web/fc_09.jpg);
+	height: 426px;
+}
+.fcbox10 {
+	background: url(http://img.96567.com/feicui20161201web/fc_10.jpg);
+	height: 244px;
+}
+.fcbox11 {
+	background: url(http://img.96567.com/feicui20161201web/fc_11.jpg);
+	height: 450px;
+}
+.fcbox12 {
+	background: url(http://img.96567.com/feicui20161201web/fc_12.jpg);
+	height: 432px;
+}
+.fcbox13 {
+	background: url(http://img.96567.com/feicui20161201web/fc_13.jpg);
+	height: 432px;
+}
+
+.fcbox14 {
+	background: url(http://img.96567.com/feicui20161201web/fc_14.jpg);
+	height: 272px;
+}
+.fcbox15 {
+	background: url(http://img.96567.com/feicui20161201web/fc_15.jpg);
+	height: 458px;
+}
+.fcbox16 {
+	background: url(http://img.96567.com/feicui20161201web/fc_16.jpg);
+	height: 425px;
+}
+.fcbox17 {
+	background: url(http://img.96567.com/feicui20161201web/fc_17.jpg);
+	height: 419px;
+}
+.fcbox18 {
+	background: url(http://img.96567.com/feicui20161201web/fc_18.jpg);
+	height: 254px;
+}
+.fcbox19 {
+	background: url(http://img.96567.com/feicui20161201web/fc_19.jpg);
+	height: 452px;
+}
+.fcbox20 {
+	background: url(http://img.96567.com/feicui20161201web/fc_20.jpg);
+	height: 432px;
+}
+.fcbox21 {
+	background: url(http://img.96567.com/feicui20161201web/fc_21.jpg);
+	height: 264px;
+}
+.fcbox22 {
+	background: url(http://img.96567.com/feicui20161201web/fc_22.jpg);
+	height: 437px;
+}
+.fcbox23 {
+	background: url(http://img.96567.com/feicui20161201web/fc_23.jpg);
+	height: 264px;
+}
+.fcbox24 {
+	background: url(http://img.96567.com/feicui20161201web/fc_24.jpg);
+	height: 459px;
+}
+.fcbox25 {
+	background: url(http://img.96567.com/feicui20161201web/fc_25.jpg);
+	height: 429px;
+}
+.fcbox26 {
+	background: url(http://img.96567.com/feicui20161201web/fc_26.jpg);
+	height: 429px;
+}
+.fcbox27 {
+	background: url(http://img.96567.com/feicui20161201web/fc_27.jpg);
+	height: 245px;
+}
+.fcbox28 {
+	background: url(http://img.96567.com/feicui20161201web/fc_28.jpg);
+	height: 446px;
+}
+.fcbox29 {
+	background: url(http://img.96567.com/feicui20161201web/fc_29.jpg);
+	height: 431px;
+}
+.fcbox30 {
+	background: url(http://img.96567.com/feicui20161201web/fc_30.jpg);
+	height: 431px;
+}
+.fcbox31 {
+	background: url(http://img.96567.com/feicui20161201web/fc_31.jpg);
+	height: 279px;
+}
+.fcbox32 {
+	background: url(http://img.96567.com/feicui20161201web/fc_32.jpg);
+	height: 440px;
+}
+.fcbox33 {
+	background: url(http://img.96567.com/feicui20161201web/fc_33.jpg);
+	height: 434px;
+}
+.fcbox34 {
+	background: url(http://img.96567.com/feicui20161201web/fc_34.jpg);
+	height: 436px;
+}
+.fcbox35 {
+	background: url(http://img.96567.com/feicui20161201web/fc_35.jpg);
+	height: 239px;
+}
+.fcbox36 {
+	background: url(http://img.96567.com/feicui20161201web/fc_36.jpg);
+	height: 467px;
+}
+.fcbox37 {
+	background: url(http://img.96567.com/feicui20161201web/fc_37.jpg);
+	height: 425px;
+}
+.fcbox38 {
+	background: url(http://img.96567.com/feicui20161201web/fc_38.jpg);
+	height: 429px;
+}
+.fcbox39 {
+	background: url(http://img.96567.com/feicui20161201web/fc_39.jpg);
+	height: 264px;
+}
+.fcbox40 {
+	background: url(http://img.96567.com/feicui20161201web/fc_40.jpg);
+	height: 454px;
+}
+.fcbox41 {
+	background: url(http://img.96567.com/feicui20161201web/fc_41.jpg);
+	height: 426px;
+}
+.fcbox42 {
+	background: url(http://img.96567.com/feicui20161201web/fc_42.jpg);
+	height: 427px;
+}
+.fcbox43 {
+	background: url(http://img.96567.com/feicui20161201web/fc_43.jpg);
+	height: 426px;
+}
+.fcbox44 {
+	background: url(http://img.96567.com/feicui20161201web/fc_44.jpg);
+	height: 140px;
+}
+.fcbox45 {
+	background: url(http://img.96567.com/feicui20161201web/fc_45.jpg);
+	height: 141px;
+}
+.fcbox46 {
+	background: url(http://img.96567.com/feicui20161201web/fc_46.jpg);
+	height: 140px;
+}
+.fcbox47 {
+	background: url(http://img.96567.com/feicui20161201web/fc_47.jpg);
+	height: 140px;
+}
+.fcbox48 {
+	background: url(http://img.96567.com/feicui20161201web/fc_48.jpg);
+	height: 321px;
+}
+
+[class*='fcbox']{
+	margin: 0 auto;
+	background-repeat:no-repeat ;
+	background-position: center top;
+}
+
+.ui-wrap {
+	width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ui-wrap.one {
+	height: 100%;
+}
+.ui-wrap.one a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ui-wrap.two {
+	height: 100%;
+}
+.ui-wrap.two a {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.ui-wrap.four {
+	height: 100%;
+}
+.ui-wrap.four a {
+	display: block;
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+
+
+
+.hilarity-nav {
+	position: fixed;
+	top: 20%;
+	right: 30px;
+	background: url(../images/navtab.png) no-repeat;
+	width: 119px;
+	padding-top: 66px;
+	height: 437px;
+	display: none;
+}
+.hilarity-nav a:first-child {
+	border-top: 0;
+}
+.hilarity-nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	height: 30px;
+	width: 74px;
+	padding: 0;
+	font-size: 16px;
+	margin: 0 auto;
+	line-height: 30px;
+	border-bottom: 1px #b72126 dashed;
+	border-top: 1px #f86064 dashed;
+	font-family: Microsoft YaHei;
+
+}
+.hilarity-nav .last {
+	border: 0;
+}
+.hilarity-nav a.active {
+	color: #f3f3b3;
+}

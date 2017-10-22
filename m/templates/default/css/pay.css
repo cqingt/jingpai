@@ -1,0 +1,71 @@
+	.pay-success {
+		padding: 30px 20px;
+	}
+	.pay-success .title i {
+		color: #444;
+		display: block;
+	    float: left;
+		background: url(../images/pay-load.png) no-repeat left center;
+		background-size: 24px;
+		width: 24px;
+		height: 24px;
+	    -webkit-animation: payload 2s linear infinite;
+	    animation: payload 2s linear infinite;
+	}
+	.pay-success .title {
+		margin-bottom: 10px;
+		display: block;
+		overflow: hidden;
+	}
+	.pay-success .title strong {
+		display: block;
+		font-size: 22px;
+	    float: left;
+	    margin-left: 4px;
+	    line-height: 24px;
+	}
+	.pay-success p {
+		font-size: 16px;
+		clear: both;
+		line-height: 28px;
+	}
+	.pay-success p strong {
+		color: #e43a3d;
+	}
+	.pay-success .pay-bottom {
+		overflow: hidden;
+		margin-top: 18px;
+		padding-top: 18px;
+		border-top: 1px #bdbdbd solid;
+	}
+	.pay-success .pay-bottom p {
+		margin-bottom: 14px;
+		color: #444;
+	}
+	.pay-success .pay-bottom a {
+		display: inline-block;
+		margin-right: 10px;
+		font-size: 16px;
+		border: 1px #d9434e solid;
+		padding: 4px 20px;
+		border-radius: 20px;
+		color: #d9434e;
+	}
+	.pay-success .pay-btn-put {
+		color: #fff !important;
+		background: #d9434e;
+	}
+	.pay-success .pay-btn-home {
+		background: #d9434e;
+	}
+	@keyframes payload {
+		0% {
+		    transform: rotateZ(0deg);
+		}
+		50% {
+		    transform: rotateZ(180deg);
+		}
+		100% {
+		    transform: rotateZ(360deg);
+		}
+	}

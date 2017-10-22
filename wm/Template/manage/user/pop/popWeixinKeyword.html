@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关键回复内容设置</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<style type="text/css">
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+</style>
+<script>
+$(function(){
+	{[if $cid]}
+	if('{[$dataArr.0.M_Type]}'=='view'){
+		$('#viewType').show();
+		$('#clickType').hide();
+	}else{
+		$('#viewType').hide();
+		$('#clickType').show();
+	}
+	{[/if]}
+})
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="index.php?m=manageKeyword&c={[if $update]}update{[else]}add{[/if]}Keyword&p=manage">
+<input name="K_Type" type="hidden" id="K_Type" value="{[$type]}" />  
+<input name="K_ID" type="hidden" id="K_ID" value="{[$dataArr.K_ID]}" /> 
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="table">
+      <tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">事件类型：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><select name="K_Event" id="K_Event">
+          <option value="keyword">关键词事件</option>
+          <option value="CLICK">菜单事件</option>
+        </select></td>
+      </tr>
+    </table>
+{[if $type=='text']}
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="table">
+      <tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">关键词：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><input type="text" name="K_Keyword" id="K_Keyword" value="{[$dataArr.K_Keyword]}"/>
+        </td>
+      </tr>
+      <tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">文本内容：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><textarea name="K_Content" id="K_Content" cols="60" rows="6">{[$dataArr.K_Content]}</textarea></td>
+      </tr>
+      <tr class="con con_a">
+        <td colspan="2" align="center" style="text-align:center"><input type="submit" name="button" id="button" value="提交" /></td>
+      </tr>
+    </table>
+{[else]}
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="table">
+      <tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">关键词：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><input type="text" name="K_Keyword" id="K_Keyword" value="{[$dataArr.K_Keyword]}"/>
+        </td>
+      </tr>
+	 <tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">标题：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><input type="text" name="K_Title" id="K_Title" value="{[$dataArr.K_Title]}"/>
+        </td>
+      </tr>
+      <tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">简介：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><textarea name="K_Description" id="K_Description" cols="60" rows="4">{[$dataArr.K_Description]}</textarea></td>
+      </tr>
+	<tr class="con con_a">
+        <td width="15%" align="left" style="text-align:left; padding-left:10px;">封面图片地址：</td>
+        <td width="85%" align="left" style="text-align:left; padding-left:10px;"><input type="text" name="K_Img" id="K_Img" style="width:350px;" value="{[$dataArr.K_Img]}" readonly="readonly"/> 
+        <a href="javascript:uploadImg();">上传</a>
+        <a href="javascript:imgView();">预览</a>
+        </td>
+      </tr>
+	<tr class="con con_a">
+        <td colspan="2" align="left" style="text-align:center">图文详情内容</td>
+      </tr>
+	<tr class="con con_a">
+        <td colspan="2" style="text-align:center;padding:10px;">{[$edit]}</td>
+      </tr>
+      <tr class="con con_a">
+        <td colspan="2" align="center" style="text-align:center"><input type="submit" name="button" id="button" value="提交" /></td>
+      </tr>
+    </table>
+{[/if]}    
+</form>
+<script>
+function uploadImg(){
+	$.open({
+	url : 'index.php?m=uploadImg&p=action',
+	width : 600,
+	height : 220,
+	btnsbar : $.btn.OK, //按钮栏配置请参考 “辅助函数” 中的 $.btn。
+	callback : function(action,opener){
+			if(action == 'ok'){
+				var imgName = opener.document.getElementById("imgName").value;
+				$('#K_Img').val(imgName);
+			}
+		}
+	});	
+}
+
+function imgView(){
+	var img = $('#K_Img').val();
+	if(img){
+		window.open(img);
+	}else{
+		$.alert('没有要预览的图片地址!','友情提示');	
+	}
+}
+</script>  
+</body>
+</html>

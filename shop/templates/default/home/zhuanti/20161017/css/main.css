@@ -1,0 +1,179 @@
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,th,td{margin:0;padding:0}
+img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+i {font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a{
+    text-decoration: none;
+}
+html,body{
+	height: 100%;
+	font-family: 'microsoft yahei';
+	background-color: #fdfdfd;
+}
+.m-wrap{
+	position: relative;
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto;
+}
+.m-content{
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 101px;
+	max-width: 1900px;
+	margin: 0px auto;
+}
+
+
+.img-aer1 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer1.jpg);
+	height: 318px;
+}
+.img-aer2 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer2.jpg);
+	height: 318px;
+}
+.img-aer3 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer3.jpg);
+	height: 318px;
+}
+.img-aer4 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer4.jpg);
+	height: 319px;
+}
+.img-aer5 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer5.jpg);
+	height: 318px;
+}
+.img-aer6 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer6.jpg);
+	height: 318px;
+	text-align: center;
+}
+.img-aer7 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer7.jpg);
+	height: 318px;
+	text-align: center;
+}
+.img-aer8 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer8.jpg);
+	height: 212px;
+	text-align: center;
+}
+.img-aer9 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer9.jpg);
+	height: 358px;
+	text-align: center;
+}
+.img-aer10 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer10.jpg);
+	height: 84px;
+	text-align: center;
+}
+.img-aer11 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer11.jpg);
+	height: 492px;
+	text-align: center;
+}
+.img-aer12 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer12.jpg);
+	height: 213px;
+	text-align: center;
+}
+.img-aer13 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer13.jpg);
+	height: 327px;
+	text-align: center;
+}
+.img-aer14 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer14.jpg) no-repeat center top;
+	height: 2000px;
+	text-align: center;
+}
+.img-aer15 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer15.jpg);
+	height: 92px;
+	text-align: center;
+}
+.img-aer16 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aer16.jpg);
+	height: 232px;
+	text-align: center;
+}
+
+.aer-list {
+	overflow: hidden;
+}
+.aer-list li:nth-child(4n+1) {
+	margin-left: 0;
+}
+.aer-list li {
+	float: left;
+	width: 288px;
+	height: 376px;
+	margin-left: 12px;
+	margin-bottom: 22px;
+	overflow: hidden;
+	border: 1px #0d2d71 solid;
+	-moz-box-shadow:0px 0px 10px #0D2D71; -webkit-box-shadow:0px 0px 10px #0D2D71; box-shadow:0px 0px 10px #0D2D71;
+
+}
+.aer-list li .img-box {
+	width: 270px;
+	height: 270px;
+	padding: 10px;
+	overflow: hidden;
+}
+.aer-list li .img-box img {
+	width: 100%;
+}
+.aer-list li .txt-box {
+	width: 290px;
+	height: 86px;
+}
+.aer-list li .txt-box p {
+	font-size: 16px;
+	color: #fff;
+	padding: 4px 18px 6px;
+	line-height: 24px;
+	height: 20px;
+	margin-bottom: 6px;
+	overflow: hidden;
+}
+.aer-list li .txt-box span {
+	padding: 0 18px;
+	display: block;
+	overflow: hidden;
+}
+.aer-list li .txt-box span strong {
+	color: #f8ff02;
+	font-size: 20px;
+	line-height: 28px;
+	float: left;
+	display: block;
+	width: 100px;
+	font-weight: bold;
+}
+.aer-list li .txt-box span i {
+	display: block;
+	width: 124px;
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/ht20161017/aerbtn.png);
+	height: 33px;
+	float: left;
+	margin-left: 10px;
+}
+
+[class*='img-aer'] {
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+ }
+ .aertop,
+ .aer-shop {
+  	display: block;
+ 	height: 100%;
+ 	width: 100%;
+
+ }

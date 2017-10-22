@@ -1,0 +1,253 @@
+/*CSS3 按钮 */
+.look-over {
+    min-width: 100px;
+    max-width: 120px;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 auto 30px;
+    border: none;
+    background: none;
+    color: inherit;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.look-one {
+    background: #ff464e;
+    color: #fff;
+}
+.look-two {
+    background: #ffff00;
+    color: #2d1f20;
+}
+.button-wapasha {
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+.button-wapasha:hover {
+    background: #2D1F20;
+    color: #ff464e;
+}
+.button-wapasha::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    z-index: -9;
+    line-height: 45px;
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transform: scale3d(0.6, 0.6, 1);
+    transform: scale3d(0.6, 0.6, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button-wapasha:hover::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+}
+
+/*转盘*/
+#dowebok {
+    position: relative;
+    width: 510px;
+    height: 509px;
+    margin: 0 auto 18px;
+    background: url(../images/ly-plate-c.gif) 20px 20px no-repeat;
+}
+.plate {
+    position: relative;
+    float: left;
+    width: 510px;
+    height: 509px;
+    overflow: hidden;
+    background: url(../images/lyplate.png);
+}
+#plateBtn {
+    position: absolute;
+    left: 163px;
+    top: 162px;
+    width: 184px;
+    height: 184px;
+    background-image: url(../images/rotate-static.png);
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#result {
+    display: none;
+    position: absolute;
+    left: 86px;
+    top: 184px;
+    width: 340px;
+    height: 140px;
+    background-color: rgba(0,0,0,0.75);
+    filter: alpha(opacity=90);
+}
+#resultTxt {
+    padding: 45px 15px 0;
+    font: 16px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+}
+#resultTxt em {
+    color: #ffea76;
+    font-style: normal;
+    display: inline-block;
+}
+#resultBtn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    text-indent: -100px;
+    background: url(../images/close.png);
+    overflow: hidden;
+}
+
+/*切换*/
+.announcement {
+    width: 527px;
+    height: 257px;
+    margin: 0 auto;
+}
+.announcement-title {
+    border-bottom: 1px #e82d36 solid;
+    overflow: hidden;
+}
+.announcement-title li {
+    float: left;
+    color: #fff;
+    padding-top: 12px;
+    height: 44px;
+    font: bold 24px/24px 'Microsoft YaHei';
+    cursor: pointer;
+    -webkit-transition: color .3s;   /* Safari 和 Chrome */
+    -moz-transition: color .3s;  /* Firefox 4 */
+}
+.announcement-title li:hover {
+    -webkit-animation:fadeIn 1s .2s ease both;
+    -moz-animation:fadeIn 1s .2s ease both;
+}
+.announcement-title li:first-child {
+    margin-right: 32px;
+    margin-left: 134px;
+}
+.announcement .on {
+    background: url(../images/on.jpg) center bottom no-repeat;
+    color: #e82d36;
+}
+
+.announcement-con {
+    height: 200px;
+    overflow: hidden;
+}
+.announcement-con-list {
+    position: relative;
+    display: none;
+    height: 200px;
+}
+
+.annBoxes {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+.annBoxes li p {
+    float: left;
+    color: #fff;
+    font-size: 12px;
+}
+.annBoxes li {
+    clear: both;
+    text-align: center;
+    height: 39px;
+    overflow: hidden;
+    line-height: 39px;
+    color: #fff;
+    border-bottom: 1px #382a2b solid;
+}
+.annBoxes .ann-time {
+    width: 120px;
+}
+.annBoxes .ann-name {
+    width: 122px;
+}
+.annBoxes .ann-word {
+    width: 240px;
+    margin-left: 44px;
+    text-align: left;
+}
+
+.annBoxes .ann-name-f {
+    width: 330px;
+}
+.annBoxes .ann-word-f {
+    width: 56px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+
+/* 弹窗 */
+    .fea-reveal-modal-bg { 
+        position: fixed !important; 
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.8);
+        z-index: 100;
+        display: none;
+        top: 0;
+        left: 0; 
+        }
+    .fea-reveal-modal {
+        position: fixed !important;
+        position: absolute;
+        visibility: hidden;
+        top: 12% !important; 
+        left: 50%;
+        margin-left: -401px;
+        z-index: 101;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+        -box-shadow: 0 0 10px rgba(0,0,0,.4);
+        }
+    .fea-reveal-modal .close-reveal-modal {
+        width: 36px;
+        height: 32px;
+        position: absolute;
+        display: block;
+        font-size: 32px;
+        opacity: 0;
+        bottom: 18px;
+        right: 16px;
+        text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+        font-weight: bold;
+        cursor: pointer;
+        } 
+
+        .regulation1 img {
+
+        }
+		.list_lh {
+            height: 200px;
+            overflow: hidden;
+        }

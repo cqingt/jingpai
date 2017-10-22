@@ -1,0 +1,18 @@
+{[foreach from=$dataArr item=v key=k]}          
+          <dl>
+          <a href="index.php?m=goods&p=main&id={[$v.P_ID]}{[$swurl]}">
+          <dt>
+          <div class="name">{[$v.P_Author]}</div>
+          <div class="rzdb">
+			  {[if $v.P_BuyType!="0"]}
+                {[assign var=payArr value=","|explode:$v.P_BuyType]}
+                {[foreach from=$payArr item=v1 key=k1]}
+                    <span style="color:{[if $v1==1]}#e33a3d{[else]}#66a61a{[/if]}; font-size:12px; border:1px solid #ddd; border-radius:3px; padding:3px;">{[$paymentArr.$v1]}</span>
+                {[/foreach]}
+              {[/if]}
+          </div>
+          <div class="sjjg" style="width:100%; display:block;"><span class="sj">{[$v.P_Time|date_format:"%Y-%m-%d"]}  {[$v.Province]}{[if $v.Province!=$v.City]}-{[$v.City]}{[/if]}</span> <span class="jg">{[$v.P_Money]}</span></div>
+          </dt>
+          </a>
+          </dl>
+{[/foreach]}          

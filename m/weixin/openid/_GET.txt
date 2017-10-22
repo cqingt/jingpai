@@ -1,0 +1,224 @@
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 031a5fbca33abb55dac99e011edd288U
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 031cbcd793c9988d42b2c48c9c30124d
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 021c9b1e286dacc90d9ea0248a526d5P
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 031c7108c9733d8d42682c69dff2719F
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 03145c13a3b9f761630e96e126f27cbl
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 011f8780296180bddbbf4f14b683e9fn
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 021859343b22d6e2a3fcc8aa47d0345p
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 001821a11f9f843d381a9ad2f606e9e2
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 0417bd7c548ec141b74b46dfc66ad07N
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 031635fb750e970337b0a601fd838382
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 031d5fabe710c376a9d31afbb63d6f6M
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 0314d27358a202370a219331d4d9230z
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 021bbe6f31c1825de33a16ef6967991S
+    [state] => weixin
+)
+Array
+(
+    [url] => http://1.96567.com/?/mobile/mobile/init
+)
+Array
+(
+    [url] => http://1.96567.com/?/mobile/mobile/init
+    [code] => 0218ecdfa687c419f9154d5a212d9e55
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 031c204e347c92b7f99eefc2f2a9519K
+    [state] => weixin
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+)
+Array
+(
+    [type] => shopnc
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [url] => http://www.96567.com/wap/weixin.html
+    [code] => 001b5da0a9579899bac6e0dc2fd5886x
+    [state] => weixin
+)

@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>万福进万家</title>
+
+<link rel="stylesheet" type="text/css"  href="{[$DIR]}mobel_css.css" />  
+<script language="JavaScript" src="{[$DIR]}js/jquery-1.7.js"></script> 
+<script language="JavaScript" src="{[$DIR]}js/tab.js"></script> 
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<script>
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    // 通过下面这个API隐藏右上角按钮
+    WeixinJSBridge.call('hideOptionMenu');
+});
+
+function fabudisplay()
+{
+var popUp = document.getElementById("choujiang")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("choujiang");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+
+obj.style.display="block"; 
+}
+function fabudisplay2()
+{
+var popUp = document.getElementById("liquan")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("liquan");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+obj.style.top= (H/2- 　+　yScroll) + "px";
+obj.style.display="block"; 
+}
+</script>
+<script language="JavaScript">
+/*
+根据对象当前的属性，改变对象的显示状态
+*/
+function onClickDiv(DivId)
+{
+if(document.all[DivId].style.display=='none')
+{ document.all[DivId].style.display=''; }
+else
+{ document.all[DivId].style.display='none'; }
+return 0;
+}
+</script>
+</head>
+
+<body>
+<div id="wrap" >
+<div id="content">
+      <div class="sc4_fudai">
+      <div class="tupian"><img src="{[$DIR]}images/wanfuwj_hj_end.jpg" /></div>
+      <div class="wenzi">
+            <p class="p1">本期“搜藏天下·万福进万家”活动</p>
+            <p class="p1">10000张名家墨宝已全部送出</p>
+            <span class="span1">感谢您的参与和支持！</span>
+            <span class="span1">后期将进行奖品的派送，敬请留意。</span>
+      </div>
+      </div>
+      
+      <div class="zhufubandan">
+          <div class="mypm">终极大奖榜单</div>  
+          <div class="titel"><h1><a name="zfbd"></a></h1></div>
+                <div class="biaoti">
+                <p class="aa">排名</p>
+                <p class="bb">昵称</p>
+                <p class="cc">获得祝福</p>
+                </div>
+          <ul class="msgs"  id="scrollWrap"> 
+                <li>
+                <p class="aa">1</p>
+                <p class="bb">春暖花开</p>
+                <p class="cc">188888个祝福</p>
+                </li>
+                <li>
+                <p class="aa">2</p>
+                <p class="bb">春暖花开</p>
+                <p class="cc">188888个祝福</p>
+                </li>
+                <li>
+                <p class="aa">3</p>
+                <p class="bb">春暖花开</p>
+                <p class="cc">188888个祝福</p>
+                </li>
+                <li>
+                <p class="aa">4</p>
+                <p class="bb">春暖花开</p>
+                <p class="cc">188888个祝福</p>
+                </li>
+          </ul>
+          </div>
+          
+          
+      <div id="bg"></div>
+      <div id="choujiang" style="width:100%; height:100%; position:absolute; top:0; left:0; z-index:1000; background-color:none;  display:none; color:#fff">
+            <div class="fenxiang"> 
+            <a name="tanchu-2"></a>  
+            <div class="jiantou"><p><img src="{[$DIR]}images/jiantou.png" /></p></div>
+            <div class="djysj">
+            <span>点击右上角按钮：</span>
+            <span class="s_icon"><img src="{[$DIR]}images/fpy.png" width="30" /></span>
+            <span class="s_icon"><img src="{[$DIR]}images/pyq.png" width="30" /></span>
+            </div>
+      
+            <div class="djysj"><h1>分享给好友，千元福字轻松拿！</h1></div>
+            <div class="djysj">一个好友点击将为你带来1—3个祝福<br />满一百个，千元大礼就是你的啦！</div>
+            <div class="djysj"><h2>朋友和朋友的朋友点击均有效哦</h2></div>
+            </div>
+            <div class="lml_close"><a href="http://weixin.96567.com/hd">×</a></div>
+      </div> 
+      
+{[include file="tpl/wanfu/inc/menu.html"]}       
+</div>
+</div>
+
+<div class="zztj">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254040973'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254040973' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+<script>
+function receive(){
+var openid = '{[$userArr.openid]}';
+var m = $('#shoujihao').val();
+var reg0 = /^13\d{5,9}$/; 
+var reg1 = /^15\d{5,9}$/; 
+var reg2 = /^18\d{5,9}$/; 
+var reg3 = /^17\d{5,9}$/; 
+var reg4 = /^14\d{5,9}$/; 
+var reg5 = /^0\d{10,11}$/; 
+var my = false; 
+if (reg0.test(m))my=true; 
+if (reg1.test(m))my=true; 
+if (reg2.test(m))my=true; 
+if (reg3.test(m))my=true;
+if (reg4.test(m))my=true;
+if (reg5.test(m))my=true; 
+if (!my){ 
+alert('对不起，您输入的手机错误!'); 
+$('#shoujihao').val()='';
+return false; 
+}
+$.post('index.php?m=main&c=receive&p=main',{mobile : m, lopenid : openid},function(data){
+if(data==1){
+$('.biaodan').remove();	
+$('#anniu').html('奖品领取成功');	
+window.location.href='index.php?m=main&c=zhuanfa&p=main&zt=jiang&openid={[$userArr.openid]}';
+testMessageBox(event);
+}else if(data==-1){
+alert('您已经成功领取过奖品哦!');
+$('#shoujihao').val() = mobile;	
+$('#shoujihao').attr('readonly',true);	
+$('#anniu').html('奖品领取成功');				
+}else{
+alert(data);	
+}
+})
+}
+
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+window.shareData = {
+"timeLineLink": "http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}",    
+"sendFriendLink": "http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}",
+"weiboLink": "http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}",
+"tTitle": "{[$weixinTitle]}",
+"tContent": "{[$weixinTitle]}",
+"fTitle": "{[$weixinTitle1]}",
+"fContent": "{[$weixinTitle1]}",
+"wContent": "{[$weixinTitle]}"
+};
+// 发送给好友
+WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+WeixinJSBridge.invoke('sendAppMessage', {
+  "img_url": "http://m.soocang.com/{[$imgArr.0.I_Img]}",
+  "img_width": "350",
+  "img_height": "350",
+  "link": window.shareData.sendFriendLink,
+  "desc": window.shareData.fContent,
+  "title": window.shareData.fTitle
+}, function (res) {
+  _report('send_msg', res.err_msg);
+})
+});
+// 分享到朋友圈
+WeixinJSBridge.on('menu:share:timeline', function (argv) {
+WeixinJSBridge.invoke('shareTimeline', {
+  "img_url": "http://m.soocang.com/{[$imgArr.0.I_Img]}",
+  "img_width": "350",
+  "img_height": "350",
+  "link": window.shareData.timeLineLink,
+  "desc": window.shareData.tContent,
+  "title": window.shareData.tTitle
+}, function (res) {
+  _report('timeline', res.err_msg);
+});
+});
+
+}, false)
+</script>
+<script type="text/javascript">
+var bhid = 607;
+document.write("<script type=\"text/javascript\" src=\"http://113.106.95.36:8081/aa.js\"><\/script>");
+</script>
+</html>

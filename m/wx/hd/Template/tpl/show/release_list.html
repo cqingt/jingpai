@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 我发布的信息</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script>
+var j = 1;
+$(function(){
+	loadMore();
+})
+
+$(window).scroll(function(){
+	if($(document).height() - $(this).scrollTop() - $(this).height()<100) loadMore();
+});
+</script>
+</head>
+
+<body>
+<form>
+<input name="type" type="hidden" id="type" value="1">
+
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">发布的信息</a>
+</div>
+
+<div class="yue_menu">
+     <span id="one1" onclick="setTab('one',1,3);document.getElementById('float').style.display='block';" class="hover">出售</span>
+     <span id="one2" onclick="setTab('one',2,3);document.getElementById('float').style.display='none';">求购</span>  
+     <span id="one3" onclick="setTab('one',3,3);document.getElementById('float').style.display='none';">已售出</span>  
+</div>
+
+<!---出售 kaishi--->
+    <div class="lmlm_width" id="con_one_1"></div>
+<!---出售 jieshu--->
+
+<!---求购 kaishi--->
+    <div class="lmlm_width" id="con_one_2" style="display:none;"></div>
+<!---求购 jieshu--->
+
+<!---已售出 kaishi--->
+    <div class="lmlm_width" id="con_one_3" style="display:none;"></div>
+<!---已售出 jieshu--->
+<div class="lmlm_width" id="loadingsave" style="text-align:center"><img src='static/images/jia.gif' /> 数据努力加载中...</div>
+<div style="height:50px;"></div>
+</form>
+<script>
+function loadMore(){
+	var type = $("#type").val();
+	$.ajax({
+		type: "GET", cache: false,
+		url : "index.php?m=release&c=getList&p=main",
+		data: 'type=' + type + '&page=' + j,
+		beforeSend:function(XMLHttpRequest){
+			$("#loadingsave").show();
+			$("#loadingsave").html("<img src='static/images/jia.gif' /> 数据努力加载中...");
+ 		},
+		success : function(html){
+			if(html!=''){
+				$('#con_one_' + type).append(html);
+				$("#loadingsave").html('向下拉加载数据');
+			}else{
+				$("#loadingsave").html('没有了');
+			}
+		}
+	});
+	j++;
+}
+
+function setTab(name,cursel,n){
+	$('#type').val(cursel);
+	getOnePage(cursel)
+	for(i=1;i<=n;i++){
+		var menu=document.getElementById(name+i);
+		var con=document.getElementById("con_"+name+"_"+i);
+		menu.className=i==cursel?"hover":"";
+		con.style.display=i==cursel?"block":"none";
+	}
+}
+
+function getOnePage(type){
+	$("#loadingsave").html("<img src='static/images/jia.gif' /> 数据努力加载中...");
+	$.get('index.php?m=release&c=getList&p=main&type=' + type,function(html){
+		$('#con_one_' + type).html(html);
+		$("#loadingsave").html("向下拉加载数据");
+	})	
+}
+
+function fn(P_ID){
+      if(confirm("确定删除吗？")){
+          location.href="index.php?m=release&p=main&c=release_del&id="+P_ID;
+      }
+}
+</script>
+</body>
+</html>

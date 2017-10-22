@@ -1,0 +1,101 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+html{font-size:16px}
+body{background:#a41e21 url(../images/bj.png)}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{font-weight:400;font-style:normal;font-size:100%}
+sub,sup{font-size:83%}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=submit],input[type=reset],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+
+.bar-wrap{margin:0 auto;width:1000px;color:#fff;text-align:center;font-family:"microsoft yahei"}
+[class*=photo]{width:100%}
+.photo1{height:205px;background:url(../images/photo1.jpg) no-repeat top center}
+.photo2{height:205px;background:url(../images/photo2.jpg) no-repeat top center}
+.photo3{height:206px;background:url(../images/photo3.jpg) no-repeat top center}
+.photo4{height:205px;background:url(../images/photo4.jpg) no-repeat top center}
+.photo5{height:205px;background:url(../images/photo5.jpg) no-repeat top center}
+.bar-wrap img{clear:both}
+.bar-wrap h2{font-size:36px;line-height: 38px;}
+.bar-wrap h3{color:#f92a49;font-size:36px;line-height: 38px;}
+.bar-wrap p{font-size:18px;line-height: 20px;margin-top: 8px;}
+.bar-wrap .mt48{margin-top:48px}
+h2.barone{line-height:70px}
+h2.bartwo{margin-top:18px;}
+.bar-wrap .barzero {
+	margin: 40px 0 16px;
+}
+p.barthree{margin-bottom:30px}
+.bar-wrap .mtb14{margin-top:14px;margin-bottom:14px}
+.bar-wrap .wechat{margin-top:30px}
+.overstriking{font-weight:700}
+
+
+
+.bar-text {
+    overflow: hidden;
+    text-align: left;
+    padding: 40px;
+    background: #242424;
+    margin: 28px 0 40px;
+}
+.bar-text h2 {
+    font-style: italic;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 14px;
+
+}
+.bar-text h2 em {
+    display: block;
+    float: left;
+    font-size: 30px;
+    color: #cc0000;
+    font-style: italic;
+    background: #fff;
+    width: 38px;
+    height: 50px;
+    padding-left: 12px;
+    line-height: 50px;
+    border-radius: 25px;
+
+    margin-right: 16px;
+}
+.bar-text p {
+    font-size: 22px;
+    line-height: 32px;
+    color: #ccc;
+    margin-bottom: 34px;
+}
+.bar-rule {
+    background: #242424;
+    text-align: left;
+    padding: 30px 40px;
+    margin-top: 14px;
+    overflow: hidden;
+    border:1px #fff solid;
+}
+.bar-rule h2 {
+    font-size: 36px;
+    font-style: inherit;
+}
+.bar-rule p {
+    font-size: 22px;
+    margin-bottom: 0;
+}

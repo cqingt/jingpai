@@ -1,0 +1,103 @@
+<!--{template header,admin}-->
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <h3>问答系统管理</h3>
+            <ul class="tab-base">
+                <li>
+                    <a href="index.php?admin_setting/base{$setting['seo_suffix']}">
+                        <span>站点设置</span>
+                    </a>
+                    <a href="index.php?admin_setting/list{$setting['seo_suffix']}">
+                        <span>首页设置</span>
+                    </a>
+                    <a class="current">
+                        <span>消息模板</span>
+                    </a>
+                    <a href="index.php?admin_setting/seo{$setting['seo_suffix']}">
+                        <span>SEO设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed-empty"></div>
+<!--{if isset($message)}-->
+<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+<table class="table">
+    <tr>
+        <td class="{$type}">{$message}</td>
+    </tr>
+</table>
+<!--{/if}-->
+<table class="table tb-type2" id="prompt">
+    <tbody>
+    <tr class="space odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+        <th class="nobg" colspan="12"><div class="title"><h5>设置说明</h5><span class="arrow"></span></div></th>
+    </tr>
+    <tr class="odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: table-row;">
+        <td>
+            <ul>
+                <li>网站名称:{wzmc}（应用范围：所有消息模板）</li>
+                <li>问题标题:{wtbt}（应用范围：所有消息模板）</li>
+                <li>问题描述:{wtms}（应用范围：所有消息模板）</li>
+                <li>回答内容:{hdnr}（应用范围：仅回答评分模板有效）</li>
+                <li>以上标签（必须包含大括号"{}"）可以通过添加在下面来配置消息模板，每个消息结束部分系统会自动加上问题查看链接。</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<form action="index.php?admin_setting/msgtpl{$setting['seo_suffix']}" method="post">
+    <a name="基本设置"></a>
+    <table class="table tb-type2">
+        <tr class="header">
+            <td colspan="2">问题收到新的回答</td>
+        </tr>
+        <tr>
+            <td width="45%"><b>邮件（消息）标题：</b><br><span class="smalltxt">站内消息或者邮件的标题</span></td>
+            <td><input  type="text" {if isset($msgtpl[0]['title'])}value="{$msgtpl[0]['title']}"{/if} style="width:300px;" name="title1"></td>
+        </tr>
+        <tr>
+            <td width="45%"><b>消息内容:</b><br><span class="smalltxt">站内消息或者邮件的内容</span></td>
+            <td><textarea class="area" name="content1"  style="height:100px;width:300px;">{if isset($msgtpl[0]['content'])}{$msgtpl[0]['content']}{/if}</textarea></td>
+        </tr>
+        <tr class="header">
+            <td colspan="2">回答被采纳</td>
+        </tr>
+        <tr>
+            <td width="45%"><b>邮件（消息）标题：</b><br><span class="smalltxt">站内消息或者邮件的标题</span></td>
+            <td><input  type="text" {if isset($msgtpl[1]['title'])}value="{$msgtpl[1]['title']}"{/if} style="width:300px;" name="title2"></td>
+        </tr>
+        <tr>
+            <td width="45%"><b>消息内容:</b><br><span class="smalltxt">站内消息或者邮件的内容</span></td>
+            <td><textarea class="area" name="content2"  style="height:100px;width:300px;">{if isset($msgtpl[1]['content'])}{$msgtpl[1]['content']}{/if}</textarea></td>
+        </tr>
+        <tr class="header">
+            <td colspan="2">问题过期关闭</td>
+        </tr>
+        <tr>
+            <td width="45%"><b>邮件（消息）标题：</b><br><span class="smalltxt">站内消息或者邮件的标题</span></td>
+            <td><input  type="text" {if isset($msgtpl[2]['title'])}value="{$msgtpl[2]['title']}"{/if} style="width:300px;" name="title3"></td>
+        </tr>
+        <tr>
+            <td width="45%"><b>消息内容:</b><br><span class="smalltxt">站内消息或者邮件的内容</span></td>
+            <td><textarea class="area" name="content3"  style="height:100px;width:300px;">{if isset($msgtpl[2]['content'])}{$msgtpl[2]['content']}{/if}</textarea></td>
+        </tr>
+        <tr class="header">
+            <td colspan="2">回答被评分</td>
+        </tr>
+        <tr>
+            <td width="45%"><b>邮件（消息）标题：</b><br><span class="smalltxt">站内消息或者邮件的标题</span></td>
+            <td><input  type="text" {if isset($msgtpl[3]['title'])}value="{$msgtpl[3]['title']}"{/if} style="width:300px;" name="title4"></td>
+        </tr>
+        <tr>
+            <td width="45%"><b>消息内容:</b><br><span class="smalltxt">站内消息或者邮件的内容</span></td>
+            <td><textarea class="area" name="content4"  style="height:100px;width:300px;">{if isset($msgtpl[3]['content'])}{$msgtpl[3]['content']}{/if}</textarea></td>
+        </tr>
+    </table>
+    <br>
+    <center><input type="submit" class="btn btn-success" name="submit" value="提 交"></center><br>
+</form>
+<br>
+<!--{template footer,admin}-->

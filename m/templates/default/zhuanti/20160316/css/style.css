@@ -1,0 +1,178 @@
+/* commonality */	 
+* {margin:0;padding:0} 
+body{font:12px"Microsoft YaHei","Arial Narrow",HELVETICA;background:#000058;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{text-decoration:none} 
+em,i{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+/* commonality End */
+
+.section {
+  width:100%; 
+  height: 100%;
+  overflow:hidden; 
+  max-width:640px; 
+  min-width: 320px; 
+  margin:0 auto; 
+}
+.banner img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.tile-box {
+  background: #000058;
+}
+.tile-box .description {
+  text-align: center;
+  color: #fff;
+}
+.tile-box .description h1 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 20px 20px 0;
+}
+.tile-box .description h2 {
+  font-size: 15px;
+  line-height: 44px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.tile-box .description h2 em {
+  font-weight: bold;
+}
+.tile-box .description p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 6px;
+}
+.userinfo {
+  text-align: center;
+  width: 80%;
+  margin: 18px auto 0;
+  padding-bottom: 70px;
+}
+.userinfo label {
+  font-size: 15px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: right;
+  width: 24%;
+  line-height: 30px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1; 
+}
+.userinfo .hp-input {
+  margin-bottom: 14px;
+}
+.userinfo .hp-input input {
+  border: 1px #fff solid;
+  font-size: 16px;
+  text-indent: 10px;
+  color: #fff;
+  line-height: 30px;
+  width: 64%;
+  height: 30px;
+  background: #000058;
+}
+.participation {
+  margin-top: 26px;
+  display: block;
+  background: #ff4e00;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+.participation:hover {
+  background: #e34500;
+}
+
+.dialog_title_icon {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.dialog_body {
+  padding-top: 14px;
+}
+.add-wrap {
+  display: none;
+  background: #000058;
+  border: 1px #14129e solid;
+  margin: 10px;
+}
+.address {
+  margin: 10px auto 18px;
+  padding: 10px;
+}
+.address .submit-border {
+  margin: 18px 0 6px 28%;
+}
+.congratulation {
+  font-size: 20px;
+  color: #d4171b;
+  text-align: center;
+}
+.congr-p {
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+}
+.hint { color: #BBB; line-height: 20px; }
+/* 通用弹出式窗口样式 */
+.eject_con { background: #000058; overflow: hidden;}
+.eject_con h3 { font: 14px/36px "microsoft yahei"; text-align: center; height: 36px; margin-top: 10px;}
+.eject_con dl { font-size: 0; *word-spacing:-1px/*IE6、7*/; line-height: 20px; color: #fff; clear: both; padding: 0; margin: 0; overflow: hidden;}
+.eject_con dl dt,
+.eject_con dl dd { font-size: 12px; line-height: 32px; vertical-align: top; letter-spacing: normal; word-spacing: normal; text-align: right; display: inline-block; width: 27%; padding: 10px 1% 0 0; margin: 0; *display: inline/*IE6,7*/; *zoom: 1;}
+.eject_con dl dt i.required { font: 12px/16px Tahoma; color: #F30; vertical-align: middle; margin-right: 4px;}
+.eject_con dl dd { text-align: left; width: 72%; padding: 10px 0 0 0; }
+.eject_con-list { margin-top: 4px;}
+.eject_con-list li { line-height: 24px;}
+.eject_con-list li .radio { vertical-align: middle; margin-right: 4px;}
+.eject_con .bottom { background-color:#F9F9F9; text-align: center; border-top: 1px solid #EAEAEA; margin-top:12px; }
+.eject_con .alert { margin: 5px;}
+.ncmc-delivery { background-color: #F5F5F5; min-height: 250px; padding: 10px 5px 10px 20px; margin: 10px; position: relative; z-index: 1;}
+.ncmc-delivery ul { width: 570px; height: 200px;}
+.ncmc-delivery ul li { height: 20px; padding: 9px; margin: 1px;}
+.ncmc-delivery ul li.select { background:#FFF; border: solid 1px #ff966e; margin: 0;}
+.ncmc-delivery .delivery-map { background-color: #FFF; width: 250px; height: 250px; position: absolute; z-index: 1; top: 10px; right: 10px;}
+.ncmc-delivery .pagination { clear: both;}
+.ncmc-delivery .pagination ul { width: auto; height: auto;}
+.ncmc-delivery .pagination ul li { height: auto; padding: 0;}
+.ncmc-delivery .pagination ul li span { font-size: 12px; padding: 2px;}
+
+ 
+/* 表单项属性
+------------------------------------------- */
+input[type="text"], input[type="password"], input.text, input.password { font: 12px/20px Arial; color: #777; background-color: #FFF; vertical-align: top; display: inline-block; height: 20px; border: solid 1px #CCC; outline: 0 none;}
+input[type="text"]:focus, input[type="password"]:focus, input.text:focus, input.password:focus, textarea:focus { color: #333; border-color: #75B9F0; box-shadow: 0 0 0 2px rgba(82, 168, 236, 0.15); outline: 0 none;}
+input[type="text"].error, input[type="password"].error, textarea.error { border-color: #ED6C4F; box-shadow: 0 0 0 2px rgba(232, 71, 35, 0.15); outline: 0 none;}
+textarea, .textarea { font: 12px/18px Arial; color: #777; background-color: #FFF; vertical-align: top; display: inline-block; height: 54px; padding: 4px; border: solid 1px #CCC; outline: 0 none;}
+select, .select {margin-right: 4px; color: #777; background-color: #FFF; height: 30px; vertical-align: middle; *display: inline; padding: 4px; border: solid 1px #CCC; *zoom:1;}
+select option, .select option { line-height: 20px; display: block; height: 20px; padding: 4px;}
+.submit-border { width: 40%; display: inline-block; *display: inline/*IE6,7*/; border: solid 1px; border-color: #52A452 #52A452 #448944 #52A452; zoom:1;}
+input[type="submit"], input.submit, a.submit {width: 100%; font-size: 12px; font-weight: bold; color: #FFF; text-shadow: 0 -1px 0 rgba(0,0,0,0.1); background-color: #5BB75B; display: block; height: 30px; padding: 0 20px 2px 20px; border: 0; cursor: pointer; }
+.submit-border:hover { borderd-color: #499249 #499249 #3D7A3D #499249;}
+input[type="submit"]:hover, input.submit:hover, a.submit:hover { text-decoration: none; color: #FFF; background-color: #51A351;}
+input[type="file"] { line-height:20px; background-color:#FBFBFB; height: 20px; border: solid 1px #D8D8D8; cursor: default;}
+.add-on { line-height: 28px; background-color: #E6E6E6; vertical-align: top; display: inline-block; text-align: center; width: 28px; height: 28px; border: solid #CCC; border-width: 1px 1px 1px 0}
+.add-on { *display: inline/*IE6,7*/; zoom:1;}
+.add-on i { font-size: 14px; color: #666; text-shadow: 1px 1px 0 #FFFFFF; *margin-top: 8px/*IE7*/;}
+.add-p {
+  font-size: 12px;
+    color: red;
+    text-align: center;
+}
+/*表单验证错误提示文字*/
+label.error { font-size: 12px; color: #E84723; margin-left: 8px;}
+label.error i { margin-right: 4px;}

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 会员认证</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type=text/javascript src="{[$DIR]}js/hover.js"></script>
+</head>
+
+<body>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">会员认证</a>
+</div>
+{[if $rzArr.0.RZ]}
+<!---未认证 kaishi--->
+<div style="padding:0px 20px;">账号状态：<span style="color:#e33a3d;">
+{[if !$rzArr.0.U_Status]}
+	审核认证中
+{[else]}
+	已认证
+{[/if]}
+</span></div>
+<div style="padding:0px 20px;">认证类型：<span style="color:#063;">{[if $rzArr.0.U_Type==1]}个人认证{[else if $rzArr.0.U_Type==2]}企业认证{[/if]}</span></div>
+{[if $rzArr.0.U_Type==2]}
+<div style="padding:0px 20px;">公司名称：<span style="color:#063;">{[$rzArr.0.U_Company]}</span></div>
+<div style="padding:0px 20px;">营业执照号：<span style="color:#063;">{[$rzArr.0.U_CompanyID]}</span></div>
+{[/if]}
+<div style="padding:0px 20px;">{[if $rzArr.0.U_Type==2]}负责人{[else]}姓名{[/if]}：<span style="color:#063;">{[$rzArr.0.U_Name]}</span></div>
+<div style="padding:0px 20px;">电话：<span style="color:#063;">{[$rzArr.0.U_Mobile]}</span></div>
+<div style="padding:0px 20px;">身份证号：<span style="color:#063;">{[$rzArr.0.U_sfID]}</span></div>
+<div style="padding:0px 20px;">收货地址：<span style="color:#063;">{[$addressInfo.province]}{[$addressInfo.city]}{[$addressInfo.A_Address ]}</span></div>
+<div style="padding:0px 20px;">开户行：<span style="color:#063;">{[$rzArr.0.U_Bank]}</span></div>
+<div style="padding:0px 20px;">收款帐户：<span style="color:#063;">{[$rzArr.0.U_Account]}</span></div>
+<div style="padding:0px 20px;">开户行地址：<span style="color:#063;">{[$rzArr.0.U_Adress]}</span></div>
+<!---未认证 jieshu--->
+{[else]}
+<div class="fabu_menu">
+     <span id="one1" onclick="setTab('one',1,2)" class="hover">个人认证</span>
+     <span id="one2" onclick="setTab('one',2,2)">企业认证</span>  
+</div>
+
+<!---个人认证信息 kaishi--->
+<div id="con_one_1">
+<form action="index.php?m=autho&c=addAutho&p=main" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<input type="hidden" name="U_Type" id="U_Type_1" value="1">
+    <div style="padding-left:10px; display:none; ">请填写认证信息</div>
+    <div class="zc_form" style="margin-bottom:10px; margin-top:5px;">
+         <ul><li class="zd1c">姓名</li><li class="zd2c"><input name="U_Name" type="text" class="input_zck" placeholder="您的姓名" id="U_Name_1" maxlength="5"></li></ul>
+         <ul><li class="zd1c">电话</li><li class="zd2c"><input name="U_Mobile" type="text" class="input_zck" placeholder="您的电话" id="U_Mobile_1" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></li></ul>
+         <ul><li class="zd1c">身份证号</li><li class="zd2c"><input name="U_sfID" type="text" class="input_zck" placeholder="您的身份证号码" id="U_sfID_1" maxlength="18"></li></ul>
+         <ul><li class="zd1c">身份证照片</li><li class="zd2c">
+           <input type="file" name="U_sfImg" id="U_sfImg">
+         </li>
+         </ul>
+         <ul>
+         	<li class="zd1c">收货地址</li>
+         	<li class="zd2c">
+         	<select name="A_Province" id="A_Province_1" onChange="getCity(this.value,0,1)" style="width:50px;"></select>
+         	<select name="A_City" id="A_City_1" style="width:50px;"><option value="">市</option></select>
+            <input type="text" name="A_Adress" id="A_Adress_1" style="width:120px;">
+         	</li>
+      	</ul>
+      <ul><li class="zd1c">收款帐户</li><li class="zd2c"><input name="U_Account" type="text" class="input_zck" placeholder="您的收款账户（默认账户）" id="U_Account_1" style="width:90%;" maxlength="20" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></li></ul>
+         <ul><li class="zd1c">开户行</li><li class="zd2c"><input name="U_Bank" type="text" class="input_zck" placeholder="您的开户行全称" id="U_Bank_1" maxlength="20"></li></ul>
+         <ul><li class="zd1c">开户行地址</li><li class="zd2c"><input name="U_Adress" type="text" class="input_zck" placeholder="您的开户行地址" id="U_Adress_1" maxlength="50"></li></ul>
+    </div>
+    <div class="tijiao_but"><a href="javascript:checkFrom(1);">申请认证</a></div>
+</form>
+</div>
+<!---个人认证信息 jieshu--->
+
+
+<!---企业认证信息 kaishi--->
+<div id="con_one_2" style="display:none;">
+<form action="index.php?m=autho&c=addAutho&p=main" method="post" enctype="multipart/form-data" name="form2" id="form2">
+<input type="hidden" name="U_Type" id="U_Type_2" value="2">
+    <div style="padding-left:10px;display:none; ">请填写认证信息</div>
+    <div class="zc_form" style="margin-bottom:10px; margin-top:5px;">
+         <ul><li class="zd1c">企业名称</li><li class="zd2c"><input class="input_zck" name="U_Company" placeholder="您的企业全称" type="text" id="U_Company"></li></ul>
+         <ul><li class="zd1c">营业执照号</li><li class="zd2c"><input name="U_CompanyID" type="text" class="input_zck" placeholder="您的营业执照号" id="U_CompanyID" onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="20" onafterpaste="this.value=this.value.replace(/\D/g,'')"></li></ul>
+         <ul><li class="zd1c">执照照片</li><li class="zd2c"><input type="file" name="U_yeImg" id="U_yeImg"></li></ul>
+         <ul><li class="zd1c">负责人</li><li class="zd2c"><input class="input_zck" name="U_Name" type="text" placeholder="您企业负责人的姓名" id="U_Name_2"></li></ul>
+         <ul><li class="zd1c">电话</li><li class="zd2c"><input name="U_Mobile" type="text" class="input_zck" placeholder="您企业负责人的电话" id="U_Mobile_2" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></li></ul>
+         <ul><li class="zd1c">身份证号</li><li class="zd2c"><input name="U_sfID" type="text" class="input_zck" placeholder="您企业负责人的身份证号码" id="U_sfID_2" maxlength="18"></li></ul>
+         <ul><li class="zd1c">身份证照片</li><li class="zd2c"><input type="file" name="U_sfImg" id="U_sfImg_2"></li></ul>
+         </ul>
+         <ul>
+         	<li class="zd1c">收货地址</li>
+         	<li class="zd2c">
+         	<select name="A_Province" id="A_Province_2" onChange="getCity(this.value,0,2)" style="width:50px;"></select>
+         	<select name="A_City" id="A_City_2" style="width:50px;"><option value="">市</option></select>
+            <input type="text" name="A_Adress" id="A_Adress_2" style="width:120px;">
+         	</li>
+      	</ul>         
+         <ul><li class="zd1c">收款帐户</li><li class="zd2c"><input name="U_Account" type="text" class="input_zck" placeholder="您企业的收款账户" id="U_Account_2" style="width:90%;" onkeyup="this.value=this.value.replace(/\D/g,'')" maxlength="20" onafterpaste="this.value=this.value.replace(/\D/g,'')"></li></ul>
+         <ul><li class="zd1c">开户行</li><li class="zd2c"><input name="U_Bank" type="text" class="input_zck" placeholder="企业账户的开户行名称" id="U_Bank_2" maxlength="20"></li></ul>
+         <ul><li class="zd1c">开户行地址</li><li class="zd2c"><input name="U_Adress" type="text" class="input_zck" placeholder="企业账户的开户行地址" id="U_Adress_2" maxlength="50"></li></ul>
+    </div>
+    <div class="tijiao_but"><a href="javascript:checkFrom(2);">申请认证</a></div>
+</form>
+</div>
+<!---企业认证信息 jieshu--->
+{[/if]}
+<div style="height:10px;"></div>
+<script>
+function checkFrom(typeID){
+	var type = $('#U_Type_' + typeID).val();
+	if(type==2 && $('#U_Company').val()==''){
+		alert('请输入企业名称');
+		return false;	
+	}
+
+	if(type==2 && $('#U_CompanyID' + type).val()==''){
+		alert('请输入营业执照号');
+		return false;	
+	}	
+	
+	if(type==2 && $('#U_yeImg').val()==''){
+		alert('请上传营业执照照片');
+		return false;	
+	}
+	
+	if($('#U_Name_' + type).val()==''){
+		alert('姓名不能为空');
+		return false;	
+	}
+	
+	if($('#U_Mobile_' + type).val()==''){
+		alert('手机号不能为空');
+		return false;	
+	}
+	
+	if($('#U_sfID_' + type).val()==''){
+		alert('身份证号不能为空');
+		return false;	
+	}
+	
+	if($('#U_sfImg_' + type).val()==''){
+		alert('请上传身份证图片');
+		return false;	
+	}
+	
+	if($('#U_Account_' + type).val()==''){
+		alert('收款账户不能为空');
+		return false;	
+	}
+
+	if($('#U_Bank_' + type).val()==''){
+		alert('开户行不能为空');
+		return false;	
+	}
+	
+	if($('#U_Adress_' + type).val()==''){
+		alert('开户行地址不能为空');
+		return false;	
+	}
+	
+	if($('#A_Province_' + type).val()==''){
+		alert('请输入完整的收货地址');
+		return false;	
+	}
+	
+	if($('#A_City_' + type).val()==''){
+		alert('请输入完整的收货地址');
+		return false;	
+	}
+	
+	if($('#A_Adress_' + type).val()==''){
+		alert('请输入完整的收货地址');
+		return false;	
+	}
+	$('#form' + type).submit();
+}
+
+function getCity(rid,sid,type){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#A_City_' + type).html('<option value="">市</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid,type){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#A_Province_' + type).html('<option value="">省</option>' + str);	
+	});
+}
+
+$(function(){
+	getProvince(1,0,1);
+	getProvince(1,0,2);
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+<!--
+body {
+	background-color: #f9f9f9;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font:12px Arial,"宋体";
+}
+.modeMain
+{
+    border:1px solid #666666;
+	padding:1px;
+}
+.topTitle
+{
+    background:#f1f1ef;
+	padding:5px;
+	font-weight:bold;
+	border-bottom:1px solid #666666;
+}
+td
+{
+    font:12px Arial,"宋体";
+}
+input,select {
+	font-size: 12px;
+	border-top:1px solid #999999;
+	border-right:1px solid #cccccc;
+	border-left:1px solid #999;
+	border-bottom:1px solid #ccc;
+}
+.button {
+	width: 64px;
+	height: 22px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #999;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #999;
+	background:#f3f3f3;
+}
+legend {
+	font-weight: bold;
+}
+-->

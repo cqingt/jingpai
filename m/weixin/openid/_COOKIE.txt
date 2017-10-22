@@ -1,0 +1,347 @@
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lpvt_4990e66d06ee96054218c1b03d13daa7] => 1447815359
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1447809577
+    [CCKF_is_registing2] => 1
+    [CCKF_visitorid] => 615323292
+    [CNZZDATA4528288] => cnzz_eid=1401277151-1447805397-&ntime=1447811004
+    [ECS] => Array
+        (
+            [display] => grid
+            [history] => 9481,10303
+        )
+
+    [ECS_ID] => 9c4e406f164ad2c2a220084726d984a64c3fafaa
+    [randomcookie] => eiGRLP8FHdY81MpWzH35j2ycLikvWfAg
+    [__utma] => 79763999.1251846924.1447809578.1447809578.1447814350.2
+    [__utmb] => 79763999.63.10.1447814350
+    [__utmc] => 79763999
+    [__utmt] => 1
+    [__utmz] => 79763999.1447809578.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [m_96567_com] => 9c4e406f164ad2c2a220084726d984a6
+    [sj_openid] => ocmCHjq3Wyk56O3n7zjRCLZyEEhM
+)
+Array
+(
+    [Hm_lpvt_4990e66d06ee96054218c1b03d13daa7] => 1447815359
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1447809577
+    [url] => http://1.96567.com/?/mobile/mobile/init
+    [CCKF_is_registing2] => 1
+    [CCKF_visitorid] => 615323292
+    [CNZZDATA4528288] => cnzz_eid=1401277151-1447805397-&ntime=1447811004
+    [ECS] => Array
+        (
+            [display] => grid
+            [history] => 9481,10303
+        )
+
+    [ECS_ID] => 9c4e406f164ad2c2a220084726d984a64c3fafaa
+    [randomcookie] => eiGRLP8FHdY81MpWzH35j2ycLikvWfAg
+    [__utma] => 79763999.1251846924.1447809578.1447809578.1447814350.2
+    [__utmb] => 79763999.63.10.1447814350
+    [__utmc] => 79763999
+    [__utmt] => 1
+    [__utmz] => 79763999.1447809578.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [m_96567_com] => 9c4e406f164ad2c2a220084726d984a6
+    [sj_openid] => ocmCHjq3Wyk56O3n7zjRCLZyEEhM
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)
+Array
+(
+    [Hm_lvt_4990e66d06ee96054218c1b03d13daa7] => 1446791344,1446791660,1447655823,1447666530
+    [rurl] => http://www.96567.com/mobile/index.php?act=weixin&op=index
+    [type] => shopnc
+    [url] => http://www.96567.com/wap/weixin.html
+    [CNZZDATA4528288] => cnzz_eid=1163921824-1437463296-&ntime=1447661541
+    [ECS] => Array
+        (
+            [history] => 10303
+            [password] => 4775de55126349f42ec6147ca14fca20
+            [user_id] => 435376
+        )
+
+    [PHPSESSID] => h379hulokebi0567e2ifgmkl23
+    [__utma] => 79763999.435153537.1437465066.1447655823.1447666530.12
+    [__utmz] => 79763999.1437465066.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+    [sj_openid] => ocmCHjvOcGWeMkzeXPBIMWTDRNaY
+)

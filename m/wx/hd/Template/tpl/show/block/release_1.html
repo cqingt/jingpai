@@ -1,0 +1,9 @@
+{[foreach from=$dataArr item=v key=k]}
+		 <div class="lmlm_fbtime">发布时间：{[$v.P_Time|date_format:"%Y-%m-%d"]}</div>
+         <dl class="lmlm_fbnr">
+         <dd><a href="index.php?m=goods&p=main&id={[$v.P_ID]}" class="picture"><img src="{[$v.Img]}"></a></dd>
+         <dt><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">{[$v.P_Name]}</a></dt>
+         <p>{[if $v.P_Money=='0']}询价{[else]}￥{[$v.P_Money]}{[/if]}<a href="index.php?m=release&p=main&id={[$v.P_ID]}&c=end_release" class="dianping">编辑</a><a href="###" class="dianping" onclick="fn({[$v.P_ID]});">删除</a></p>
+		 
+         </dl>
+{[/foreach]}

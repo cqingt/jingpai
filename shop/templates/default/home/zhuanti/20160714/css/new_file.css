@@ -1,0 +1,56 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+body{background:#fff}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=reset],input[type=submit],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+.bar-wrap{margin:0 auto;width:1000px;color:#fff;text-align:center;font-family:"microsoft yahei"}
+[class*=photo]{width:100%}
+.photo1{height:244px;background:url(../images/photo_01.jpg) no-repeat top center}
+.photo2{height:245px;background:url(../images/photo_02.jpg) no-repeat top center}
+.photo3{height:244px;background:url(../images/photo_03.jpg) no-repeat top center}
+.photo4{height:245px;background:url(../images/photo_04.jpg) no-repeat top center}
+.photo5{height:244px;background:url(../images/photo_05.jpg) no-repeat top center}
+.photo6{margin:0 auto;height:97px;max-width:1920px;background:#ffd300}
+.photo7{height:190px;background:url(../images/photo_07.jpg) no-repeat top center}
+.photo8{height:189px;background:url(../images/photo_08.jpg) no-repeat top center}
+.photo9{height:190px;background:url(../images/photo_09.jpg) no-repeat top center}
+.photo10{height:284px;background:url(../images/photo_10.jpg) no-repeat top center}
+.photo11{height:324px;background:url(../images/photo_11.jpg) no-repeat top center}
+.photo12{height:283px;background:url(../images/photo_12.jpg) no-repeat top center}
+.photo13{height:284px;background:url(../images/photo_13.jpg) no-repeat top center}
+.photo14{height:151px;background:url(../images/photo_14.jpg) no-repeat top center}
+.photo15{height:151px;background:url(../images/photo_15.jpg) no-repeat top center}
+.photo16{height:151px;background:url(../images/photo_16.jpg) no-repeat top center}
+.photo17{height:151px;background:url(../images/photo_17.jpg) no-repeat top center}
+.photo18{height:151px;background:url(../images/photo_18.jpg) no-repeat top center}
+.photo19{height:1048px;background:url(../images/photo_19.jpg) no-repeat top center}
+.photo20{height:269px;background:url(../images/photo_20.jpg) no-repeat top center}
+.photo21{height:268px;background:url(../images/photo_21.jpg) no-repeat top center}
+.photo22{height:269px;background:url(../images/photo_22.jpg) no-repeat top center}
+.photo23{height:228px;background:url(../images/photo_23.jpg) no-repeat top center}
+.photo24{height:228px;background:url(../images/photo_24.jpg) no-repeat top center}
+.bar-wrap a.btn{display:inline-block;width:369px;height:88px;border-radius:40px;background:#e60012;-webkit-box-shadow:0 7px 0 #7D0000;-moz-box-shadow:0 7px 0 #7D0000;box-shadow:0 7px 0 #7D0000;color:#fff;font-size:30px;line-height:88px}
+.mt7{margin-top:7px}
+.mt13{margin-top:13px}
+ul.cd-shop{margin-left:45px}
+ul.cd-shop li{float:left;display:block;margin:0 46px 38px;text-align:center}
+ul.cd-shop li a{display:block}
+ul.cd-shop li a.img{margin-bottom:13px;width:351px;height:351px;border:6px #ffda01 solid;border-radius:6px}
+ul.cd-shop li a.img img{width:100%}
+ul.cd-shop li a.word{margin:0 auto;width: 346px;overflow: hidden;height:47px;border-radius:40px;background:#fee236;color:#000;text-align:center;font-weight:700;font-size: 17px;line-height:47px;}

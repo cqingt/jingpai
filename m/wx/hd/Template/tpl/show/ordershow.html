@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 订单详情</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">订单信息</a>
+</div>
+
+
+<!---出售 kaishi--->
+<div class="zc_form" style="margin:0px; margin-bottom:10px;">
+     <ul><li class="zd1b">订单号</li><li class="zd2b"><span class="txt">{[$dataArr.O_Number]}</span></li></ul>
+     <ul><li class="zd1b">下单时间</li><li class="zd2b"><span class="txt">{[$dataArr.O_Time|date_format:"%Y-%m-%d"]}</span></li></ul>
+     <ul><li class="zd1b">订单状态</li><li class="zd2b"><span class="txt">{[$dataArr.PayStatus]}，{[$dataArr.PayShipping]}，{[$dataArr.OrderStatus]}</span></li></ul>
+</div>
+<!---出售 jieshu--->
+<div class="djh_ddxq821">
+    <ul>
+       <li><span class="span1" style=" font-weight:bold; color:#666; font-size:18px;">产品详情</span></li>
+       <li><span class="span1">产品名称</span><span class="span2">价格</span><span class="span3">数量</span></li>
+	   
+	{[foreach from=$OordeGgoodsArr item=v key=k]}  
+       <li><span class="span1 name">{[$v.O_GoodsName]}</span><span class="span2">{[$v.O_GoodsMoney]}</span><span class="span3">1</span></li>
+	   {[assign var=totalProPrice value=$totalProPrice+$v.O_GoodsMoney]} 
+	 {[/foreach]}
+    </ul>
+</div>
+
+<div style="font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px; color:#999;">商品总价：<span style="font-size:24px; font-weight:bold; color:#e33a3d;"><span style=" font-size:18px; color:#e33a3d;">￥</span>{[$totalProPrice]}</span></div>
+{[if $uid == $dataArr.O_SellUID]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 0 && $dataArr.O_OrderStatus == 0]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已支付，请尽快发货。</div>
+		<div class="tijiao_but" style="margin-top:30px;"><a href="javascript:;" onclick='FaHuo(1,{[$dataArr.O_ID]});'>发货</a></div>
+	{[/if]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 1 && $dataArr.O_OrderStatus == 0]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已发货，等待买家收货。</div>
+	{[/if]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 2 && $dataArr.O_OrderStatus == 0]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">买家已收货，等待系统结算。</div>
+	{[/if]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 2 && $dataArr.O_OrderStatus == 1]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已完成</div>
+	{[/if]}
+{[else]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 0 && $dataArr.O_OrderStatus == 0]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已支付，等待卖家发货。</div>
+	{[/if]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 1 && $dataArr.O_OrderStatus == 0]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已发货</div>
+		<div class="tijiao_but" style="margin-top:30px;"><a href="javascript:;" onclick='FaHuo(2,{[$dataArr.O_ID]});'>确认收货</a></div>
+	{[/if]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 2 && $dataArr.O_OrderStatus == 0]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已完成</div>
+	{[/if]}
+	{[if $dataArr.O_PayStatus == 1 && $dataArr.O_PayShipping == 2 && $dataArr.O_OrderStatus == 1]}
+		<div style="color:#f60; font-family:'宋体'; font-size:14px; text-align:right; padding:0px 30px;">订单已完成</div>
+	{[/if]}
+
+	{[if $dataArr.O_Payment == 1 && $dataArr.O_PayStatus == 0]}
+		<div class="tijiao_but" style="margin-top:30px;"><a href="javascript:;" onclick='FaHuo(99,{[$dataArr.O_ID]});'>已支付</a></div>
+	{[/if]}
+	
+{[/if]}
+</body>
+<script>
+//更改订单发货状态
+function FaHuo(val,OID){
+	if(val == 1){
+		var msg = '确定已发货吗？'; 
+	}
+	if(val == 2){
+		var msg = '确定已收货吗？';
+	}
+	if(val == 99){
+		var msg = '确定已支付吗？';
+	}
+	if(confirm(msg)){
+		 window.location.href="index.php?m=order&p=main&c=upOrderStatus&val="+val+"&OID="+OID;
+      }
+}
+</script>
+</html>

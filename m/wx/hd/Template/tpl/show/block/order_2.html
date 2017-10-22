@@ -1,0 +1,13 @@
+{[foreach from=$dataArr item=v key=k]} 
+         <div class="lmlm_fbtime">成交时间：{[$v.O_Time|date_format:"%Y-%m-%d"]}</div>
+         <dl class="lmlm_fbnr">
+         <dd><a href="index.php?m=order&p=main&c=ordershow&id={[$v.O_ID]}" class="picture"><img src="{[$v.img]}"></a></dd>
+         <dt><a href="index.php?m=order&p=main&c=ordershow&id={[$v.O_ID]}">{[$v.O_GoodsName]}</a></dt>
+         <p>
+             ￥{[$v.O_GoodsMoney]}
+             {[if !$v.O_isDianPing]}
+             	<a href="javascript:fabudisplay({[$v.O_GoodsID]},{[$v.O_ID]});" class="dianping" id="dp_{[$v.O_GoodsID]}">评价</a>
+             {[/if]}
+         </p> 
+         </dl>
+{[/foreach]}

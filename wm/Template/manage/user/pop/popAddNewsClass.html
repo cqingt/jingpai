@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分系统管理 - </title>
+<link href="Template/manage/user/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+</head>
+
+<body>
+
+  
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td height="30" bgcolor="#ecf9ff"><span class="title">分类{[if $update]}编辑{[else]}添加{[/if]}</span></td>
+    <td bgcolor="#ecf9ff"></td>
+  </tr>
+</table>
+
+{[if $update]}
+<form name="form1" id="form1" method="post" action="index.php?m=manageNews&c=popToUpNewsClass&p=manage" target="_parent">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">分类名称</td>
+      <td width="60%" height="28" style="text-align:left">
+        <input type="text" name="N_Class" id="C_Name" value="{[$resClass.0.N_Class]}"/>
+        </td>
+      </tr>
+  <tr>
+    <td width="40%" height="28" style="text-indent:1em; text-align:left">所属父类</td>
+    <td width="60%" height="28" style="text-align:left">
+      <select name="cid" id="C_ParentID">
+      <option value="{[$cid]}">{[if $resClass.0.N_Path == '0']}一级分类{[else]}二级分类{[/if]}</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="submit" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+{[elseif $addTwo]}
+<form name="form1" id="form1" method="post" action="index.php?m=manageNews&c=popToTwoAddClass&p=manage" target="_parent">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">分类名称</td>
+      <td width="60%" height="28" style="text-align:left">
+        <input type="text" name="N_Class" id="C_Name" value=""/>
+        </td>
+      </tr>
+  <tr>
+    <td width="40%" height="28" style="text-indent:1em; text-align:left">所属父类</td>
+    <td width="60%" height="28" style="text-align:left">
+      <select name="N_Path" id="C_ParentID">
+      <option value="{[$resClass.0.N_ID]}">{[$resClass.0.N_Class]}</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="submit" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+
+{[else]}
+<form name="form1" id="form1" method="post" action="index.php?m=manageNews&c=addNewsClass&p=manage" target="_parent">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">分类名称</td>
+      <td width="60%" height="28" style="text-align:left">
+        <input type="text" name="N_Class" id="C_Name" value=""/>
+        </td>
+      </tr>
+  <tr>
+    <td width="40%" height="28" style="text-indent:1em; text-align:left">所属父类</td>
+    <td width="60%" height="28" style="text-align:left">
+      <select name="N_Path" id="C_ParentID">
+      <option value="0">一级分类</option>
+      {[foreach from=$resClass item=v key=k]}
+      <option value="{[$v.N_ID]}" >{[$v.N_Class]}</option>
+      {[/foreach]}
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="submit" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+{[/if]}
+</div>
+</body>
+</html>

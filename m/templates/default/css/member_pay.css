@@ -1,0 +1,144 @@
+/* pay */
+.pay-success {
+	padding: 22px 14px;
+	text-align: center;
+	font-size: 18px;
+	color: #555354;
+}
+.pay-success .icon-check {
+	background: url(../images/check.jpg) no-repeat center left;
+	background-size: 20px;
+	height: 26px;
+	display: inline-block;
+	font-style: normal;
+	text-indent: 24px;
+}
+.pay-success p {
+    margin: 6px 0;
+}
+.pay-success p strong {
+	color: #f12f00;
+	font-weight: bold;
+}
+.pay-success .btn-look {
+	display: block;
+	padding: 4px;
+	border-radius: 4px;
+	background: #28a8ce;
+	width: 50%;
+	margin: 14px auto 0;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+.pay-success .btn-look i {
+	margin-right: 4px;
+}
+.payment h1 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 6px 14px;
+    color: #3c3b3e;
+}
+.payment h1 strong {
+	color: #e80000;
+	font-weight: bold;
+}
+.payment-li {
+    border-top: 1px solid #DFDFDF;
+	background: #fff;
+}
+.payment-li li {
+    border-bottom: 1px solid #DFDFDF;
+    overflow: hidden;
+    padding: 4px 14px;
+}
+.payment-li li p {
+	font-size: 14px;
+	color: #494949;
+}
+.payment-li-number {
+	float: left;
+}
+.payment-li-money {
+	float: right;
+}
+
+.order-type {
+    background: #fff;
+    border-top: 1px solid #dfdfdf;
+}
+.order-type li{
+    position: relative;
+    padding: 18px 20px 22px 74px;
+    border: 1px solid #DFDFDF;
+    border-top: 0;
+}
+.order-type li a {
+	display: block;
+}
+.order-type-icon{
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+.icon-alipay{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/alipay.jpg) no-repeat;
+    background-size: 100%;
+}
+.icon-wxpay{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/wxpay.png) no-repeat;
+    background-size: 100%;
+}
+
+.icon-icbc{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/icbc.png) no-repeat;
+    background-size: 100%;
+}
+
+.icon-unionpay{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/upop.png) no-repeat;
+    background-size: 100%;
+}
+.icon-cmb{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/cmb.png) no-repeat;
+    background-size: 100%;
+}
+.icon-fenqile{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(../images/fenqile.png) no-repeat;
+    background-size: 100%;
+}
+.order-type .order-type-detail{
+    color: #999;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.order-success-tips{
+    text-align: center;
+}
+.order-type-title {
+	font-size: 14px;
+    color: #858585;
+}
+.alihuabei-tips {
+    padding-left: 10px;
+    color: #64c04A;
+}

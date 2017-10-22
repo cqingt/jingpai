@@ -1,0 +1,132 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, ol, ul, li, form, table, tbody, tfoot, thead, tr, th, td, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body, button, input {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    outline: none;
+}
+body {
+    background: #f8f8f8;
+    line-height: 1.5;
+    margin: 0 auto;
+    color: #333;
+    overflow-y: scroll;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    font-size: 100%;
+    word-wrap: break-word;
+}
+em, i {
+    font-weight: normal;
+    font-style: normal;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+table, td, th, li, img, input, select {
+    vertical-align: middle;
+    outline: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+input {
+    padding: 5px;
+    margin: 0;
+    outline: 0;
+    font-size: 14px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    cursor: auto;
+}
+a, a:focus, a:outline, a img {
+    border: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: rgb(103, 157, 255);
+    // -webkit-tap-highlight-color: rgba(128, 128, 128, 0);
+}
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    vertical-align: middle;
+}
+span {
+    display: inline-block;
+}
+
+/*html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#f8f8f8;
+    font-size: 14px;
+    line-height: 1.4em;
+    min-height: 100%;
+    font-family: "Helvetica,arial,sans-serif";
+}
+*/
+.piece {
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    box-sizing: border-box;
+}
+.piece.fbottom, .piece.ftop {
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 10 !important;
+}
+.piece.fbottom {
+    top: auto !important;
+    bottom: 0 !important;
+}
+.piece.ftop {
+    top: 0 !important;
+    bottom: auto !important;
+}
+#content {
+    background-color: #fff;
+    position: relative;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>账户管理 - {[$W_NAME]}</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<style>
+.anniu {width:52px; height:24px; background-image:url({[$DIR]}images/52-24.jpg); border:none; border:0px; color:#fff;cursor:pointer;}
+.ts_d_m { width:700px; float:left;}
+.ts_d_m li { float:left; margin-right:10px; list-style-type:none;}
+.ts_d_m li a{ line-height:34px; padding-left:15px; padding-right:15px; text-align:center; background-color:#dbf4ff; font-weight:bold; color:#0fa6d6; display:inline-block; font-size:14px; font-family:"宋体"; border-radius:5px 5px 0 0;}
+.ts_d_m li a:hover,.ts_d_m li .here{ line-height:34px; padding-left:15px; padding-right:15px; text-align:center; background-color:#0aa2d3; color:#fff; display:inline-block; font-size:14px;  border-radius:5px 5px 0 0;}
+.ts_d_ss { float:right;}
+</style>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td bgcolor="#ecf9ff">
+    <span class="title">
+    教研智能占座系统
+    </span>
+    </td>
+    <td bgcolor="#ecf9ff">
+    <input type="button" value="添加班级" class="a90-30" onClick="addCustomer(0);" style="margin-top:10px;margin-right:20px;">
+
+    <input type="button" value="添加年级" class="a90-30" onClick="addCustomer(0);" style="margin-top:10px;margin-right:20px;">
+	</td>
+  </tr>
+</table>
+
+<!--右边表格内容-->
+<div style="height:auto; margin-top:10px;">
+
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" style="clear:both;"> 
+  <tr class="title">
+    <td width="20%">班级名称</td>
+    <td width="25%">分校名称</td>
+	<td width="10%">座位个数</td>
+	<td width="10%">当前座位详情</td>
+	<td width="10%">排序</td>
+	<td width="20%">相关操作</td>
+  </tr>
+
+
+{[foreach from=$dataArr item=v key=k]}  
+  <tr class="con" id="b{[$v.J_ID]}">
+    <td width="20%">{[$v.B_Name]}</td>
+    <td width="25%" style="text-align:center;">{[$v.B_Fenxiao]}</td>
+    <td width="10%" style="text-align:center;">{[$v.B_Zuowei]}</td>
+    <td width="10%" style="text-align:center;">{[$v.B_Sum]}/{[$v.B_Zuowei]}</td>
+    <td width="10%" style="text-align:center;">{[$v.B_Xu]}</td>
+    <td width="20%" align="left" style="padding-top:8px; padding-left:15px; text-align:center;">
+      {[if $v.B_Type == '1']}
+          <a href="index.php?m=zhanzuo&c=offBanji&p=manage&id={[$v.B_Id]}">关闭</a>
+      {[else]}
+          <a href="index.php?m=zhanzuo&c=onBanji&p=manage&id={[$v.B_Id]}">开启</a>
+      {[/if]}
+    <a href="index.php?m=zhanzuo&c=zuoweiSheng&p=manage&id={[$v.B_Id]}">座位审核</a>
+    <a onClick="addCustomer({[$v.B_Id]});">编辑</a>
+    <a onclick="delContent({[$v.B_Id]})">删除</a>
+  </td>
+  </tr>
+{[/foreach]}
+
+
+</table>
+     
+
+</div>
+<!--分页代码-->
+<div id="page">{[$pageStr]}</div>
+<script>
+//添加客户
+function addCustomer(id){
+	$.open({
+		url : 'index.php?m=zhanzuo&c=editJiaocai&p=manage&id=' + id,
+		width : 600,
+		height : 280
+	});
+}
+//删除客户
+function delContent(bid){
+	$.confirm('确定删除该班级吗?','系统提示!',function(action){
+		if(action=='ok'){
+      window.location.href='index.php?m=zhanzuo&c=delBanji&p=manage&id=' + bid;
+		}
+	})	
+}
+</script>
+</body>
+</html>

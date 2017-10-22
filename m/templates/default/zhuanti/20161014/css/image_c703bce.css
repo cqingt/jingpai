@@ -1,0 +1,74 @@
+.image-item {
+    width: 100%;
+}
+.image-box {
+    position: relative;
+}
+.image-link {
+    display: block;
+}
+.image-con {
+    position: relative;
+}
+.image-text {
+    position : absolute;
+}
+.text-label-0, .text-label-1, .text-label-2, .text-label-3, .text-label-4, .text-label-5 {
+    font-size : 12px;
+    color : #FFF;
+    background-color : rgba(0,0,0,0.3);
+    padding : 5px;
+}
+.text-label-0 {
+    width : auto;
+    left  : 0;
+    top   : 0;
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    padding : 5px 10px;
+}
+.text-label-1 {
+    width : 100%;
+    left  : 0;
+    top   : 0;
+    text-align : center;
+    padding-left : 10px;
+    box-sizing : border-box;
+}
+.text-label-2 {
+    width : auto;
+    right : 0;
+    top   : 0;
+    text-align : right;
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+.text-label-3 {
+    width : auto;
+    left  : 0;
+    bottom : 0;
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    padding-left : 10px;
+}
+.text-label-4 {
+    width : 100%;
+    left  : 0;
+    bottom : 0;
+    text-align : center;
+    box-sizing : border-box;
+}
+.text-label-5 {
+    width : auto;
+    right : 0;
+    bottom : 0;
+    text-align : right;
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    padding-right : 10px;
+}

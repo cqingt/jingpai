@@ -1,0 +1,94 @@
+/* commonality */	 
+* {margin:0;padding:0} 
+body{font:12px"Microsoft YaHei","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{text-decoration:none} 
+em,i{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+/* commonality End */
+
+.section {
+  width:100%; 
+  height: 100%;
+  overflow:hidden; 
+  max-width:640px; 
+  min-width: 320px; 
+  margin:0 auto; 
+}
+.banner img {
+  width: 100%;
+}
+
+.tile-box {
+  background: #000058;
+}
+.tile-box .description {
+  text-align: center;
+  color: #fff;
+}
+.tile-box .description h1 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 20px 20px 0;
+}
+.tile-box .description h2 {
+  font-size: 15px;
+  line-height: 44px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.tile-box .description h2 em {
+  font-weight: bold;
+}
+.tile-box .description p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 6px;
+}
+.userinfo {
+  text-align: center;
+  width: 80%;
+  margin: 18px auto 0;
+  padding-bottom: 30px;
+}
+.userinfo label {
+  font-size: 15px;
+  color: #fff;
+  margin-right: 10px;
+  text-align: right;
+  width: 24%;
+  line-height: 30px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1; 
+}
+.userinfo .hp-input {
+  margin-bottom: 14px;
+}
+.userinfo .hp-input input {
+  border: 1px #2b2bf8 solid;
+  font-size: 16px;
+  text-indent: 10px;
+  color: #fff;
+  line-height: 30px;
+  width: 64%;
+  height: 30px;
+  background: #000058; 
+}
+.participation {
+  margin-top: 26px;
+  display: block;
+  background: #fff205;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 16px;
+  color: #24227b;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+.participation:hover {
+  background: #ebdf04;
+}

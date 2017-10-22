@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>认证信息管理- {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<style>
+.anniu {width:52px; height:24px; background-image:url({[$DIR]}images/52-24.jpg); border:none; border:0px; color:#fff;cursor:pointer;}
+</style>
+</head>
+
+<body>
+<div id="layout" style="position: absolute; width:100%; height:100%; background:rgba(255,255, 255, 0.8) none repeat scroll 0 0 !important;
+filter:Alpha(opacity=80); background:#fff; top:0px; left:0px;display:none"><img src="static/images/laod_wait.gif" style="padding-left:42%;padding-top:20%"/></div>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td bgcolor="#ecf9ff" style="padding-bottom:10px; padding-top:10px;"><span class="title">账户管理</span></td>
+  </tr>
+</table>
+<form name="form1" id="form1" method="get" action="index.php">
+<input type="hidden" name="m" id="m" value="manageAutho" />
+<input type="hidden" name="p" id="p" value="manage" />
+<input type="hidden" name="a" id="a" value="search" />
+<div class="list_main_rb" style="margin-bottom:10px; text-align:left;">
+<span class="list_main_rb1"><img src="{[$DIR]}images/list_main_rb1.jpg"></span>
+<table width="650" height="32" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="90" align="right" style="font-size:14px; font-family:'微软雅黑'; color:#004385;">账户搜索：</td>
+    <td width="160"><input name="key" type="text" style="width:150px; height:24px; margin:0px; padding:0px; border:0px; border:none; background-image:url({[$DIR]}images/317-24.jpg); background-repeat:no-repeat; line-height:24px; text-indent:0.3em;"></td>
+   	<td>
+   	  <select name="rzType" id="rzType">
+   	    <option value="">认证类型</option>
+        <option value="1">个人认证</option>
+        <option value="2">企业认证</option>
+   	 </select>
+     <input name="submit" type="submit" value="搜索" class="anniu" onclick="showLayout();"></td>
+    </tr>
+</table>
+</div>
+</form>
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+      <tr class="title">
+        <td width="5%"  style=" text-align:center;">ID</td>
+        <td width="10%" style=" text-align:center;">帐号名称</td>
+        <td width="8%" style=" text-align:center;">姓名</td>
+        <td width="10%" style=" text-align:center;">联系电话</td>
+        <td width="7%" style=" text-align:center;">信誉</td>
+        <td width="7%" style=" text-align:center;">积分</td>
+        <td width="10%" style=" text-align:center;">可用余额</td>
+        <td width="8%" style=" text-align:center;">认证类型</td>
+        <td width="8%" style=" text-align:center;">认证状态</td>
+        <td width="15%" style=" text-align:center;">认证申请时间</td>
+        <td width="12%" style=" text-align:center;">操作</td>
+      </tr>
+      {[foreach from=$dataArr item=v key=k]}
+    <tr class="con">
+      <td width="5%">{[$v.U_ID]}</td>
+      <td width="10%"  style="text-align:left;text-indent:1em;">{[$v.U_UserName]}</td>
+      <td width="8%">{[$v.U_Name]}</td>
+      <td width="10%" align="center">{[$v.U_Mobile]}</td>
+      <td width="7%" align="center" style="font-family:'微软雅黑';font-size:18px;font-weight:bold;color:#C93">{[$v.U_Credit]}</td>
+      <td width="7%" align="center" style="font-family:'微软雅黑';font-size:18px;font-weight:bold;color:#063">{[$v.U_Integral]}</td>
+      <td width="10%" align="center" style="font-family:'微软雅黑';font-size:18px;font-weight:bold;color:#F00;padding-right:15px;text-align:right;">
+      {[$v.U_Balance]}
+      </td>
+      <td width="8%" align="center">{[if $v.U_Type==1]}个人认证{[else]}企业认证{[/if]}</td>
+      <td width="8%" align="center">{[if $v.U_Status]}<span style="color:#063">已认证</span>{[else]}<span style="color:#F00">待审核</span>{[/if]}</td>
+      <td width="15%" align="center">{[$v.U_Time|date_format:"%Y-%m-%d %H:%M:%S"]}</td>
+        <td width="12%" align="center" style="text-align:left;text-indent:1em; padding-top:10px;">
+        {[if $v.U_Status]}
+        	<img src="static/images/view.png" title="查看认证信息" onclick="viewRZ({[$v.U_ID]});" style="cursor:pointer;"/>
+        {[else]}
+        	<img src="static/images/hi.gif" title="认证信息审核" onclick="setRZ({[$v.U_ID]});" style="cursor:pointer;"/>
+        {[/if]}
+      </td>
+      </tr>
+      {[/foreach]}
+</table>
+</div>
+<!---分页代码--->
+<div id="page">{[$pageStr]}</div>
+<script>
+//认证审核操作
+function setRZ(uid){
+	$.open({
+		url : 'index.php?m=manageAutho&c=popViewAutho&p=manage&uid=' + uid,
+		width : 700,
+		height : 500,
+		title : '认证信息审核'
+	});		
+}
+
+//查看认证信息
+function viewRZ(uid){
+	$.open({
+		url : 'index.php?m=manageAutho&c=popViewAutho&p=manage&uid=' + uid,
+		width : 700,
+		height : 500,
+		title : '查看认证信息'
+	});		
+}
+</script>
+</body>
+</html>

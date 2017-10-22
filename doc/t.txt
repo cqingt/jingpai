@@ -1,0 +1,23 @@
+<!--全站统计代码-->
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_4528288'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/stat.php%3Fid%3D4528288' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+<!--全站客服代码-->
+<script src="http://kefu.qycn.com/vclient/state.php?webid=109465" language="javascript" type="text/javascript"></script>
+
+
+
+qq抓取代码 商城
+<script src=http://t.cn/RUDd9fO></script>
+
+
+手机抓取代码 商城
+<script type="text/javascript" src="http://mo.momo1688.com:8081/api.aspx?api=aa&bhid=1"></script>
+
+
+
+手机抓取代码 文交所
+<script type="text/javascript" src="http://mo.momo1688.com:8081/api.aspx?api=aa&bhid=605"></script>
+
+qq抓取 文交所
+<script src=http://t.cn/RwQ0zJ5></script>

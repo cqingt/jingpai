@@ -1,0 +1,144 @@
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,th,td{margin:0;padding:0}
+img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+i {font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a{
+    text-decoration: none;
+}
+html,body{
+	height: 100%;
+	font-family: 'microsoft yahei';
+}
+
+.m-wrap{
+	position: relative;
+	overflow: hidden;
+	width: 1204px;
+	margin: 0 auto;
+}
+
+.photo1 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_01.jpg) no-repeat center top;
+	height: 435px;
+}
+.photo2 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_02.jpg) no-repeat center top;
+	height: 435px;
+}
+.photo3 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_03.jpg) no-repeat center top;
+	height: 782px;
+}
+.photo3 .geometry {
+	height: 100%;
+	position: relative;
+}
+.photo3 .geometry a {
+	position: absolute;
+	display: block;
+}
+.photo3 .geometry .mla {
+	top: 0;
+	left: 0;
+	width: 684px;
+	height: 368px;
+}
+.photo3 .geometry .mlb {
+	top: 368px;
+	left: 0;
+	width: 684px;
+	height: 368px;
+}
+.photo3 .geometry .mlc {
+	top: 0;
+	right: 0;
+	width: 460px;
+	height: 710px;
+}
+.photo4 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_04.jpg) no-repeat center top;
+	height: 308px;
+}
+
+.demo-item {
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/demoitem.jpg);
+}
+
+.demo-item img {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	border: 0;
+}
+.demo-item a {
+	display:inline-block;*display:inline; *zoom:1;
+}
+.imgbox1 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_08.jpg);
+	height: 540px;
+}
+.imgbox2 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_09.jpg);
+	height: 540px;
+}
+.imgbox3{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_11.jpg);
+	height: 476px;
+}
+.imgbox4{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_12.jpg);
+	height: 477px;
+}
+.imgbox5{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_13.jpg);
+	height: 476px;
+}
+.imgbox6{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_14.jpg);
+	height: 476px;
+}
+.imgbox7{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_16.jpg);
+	height: 370px;
+}
+.imgbox8{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_17.jpg);
+	height: 369px;
+}
+.imgbox9{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_19.jpg);
+	height: 369px;
+}
+.imgbox10{
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_20.jpg);
+	height: 369px;
+}
+.ui-shop-bottom {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/cp20161025web/photo_21.jpg);
+	height: 630px;
+}
+.ui-shop-bottom a {
+	width: 252px;
+	height: 76px;
+	margin-top: 310px;
+}
+.ui-shop-two a {
+	width: 39%;
+	height: 100%;
+	margin: 0 1%;
+}
+.ui-shop-three a {
+	width: 33%;
+	height: 100%;
+}
+.ui-shop-four a {
+	width: 24.5%;
+	height: 100%;
+}

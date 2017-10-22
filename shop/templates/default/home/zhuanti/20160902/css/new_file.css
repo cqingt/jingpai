@@ -1,0 +1,430 @@
+a,abbr,acronym,address,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,iframe,img,input,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,select,small,span,strike,strong,sub,sup,table,tbody,td,textarea,tfoot,th,thead,tr,tt,ul,var {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  font-family: 'Microsoft YaHei'
+}
+
+a {
+  color: #fff;
+  text-decoration: none
+}
+
+img {
+  border: 0;
+  vertical-align: top
+}
+
+.clearfix:after,.clearfix:before {
+  display: table;
+  content: ""
+}
+
+li {
+  list-style: none
+}
+
+.clearfix:after {
+  clear: both
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+}
+
+[class*=photo]{
+	margin: 0 auto;
+	min-width: 1004px;
+
+	
+}
+.photo1 {
+	background: url(../images/army_01.jpg) no-repeat center top;
+	height: 172px;
+}
+.photo2 {
+	background: url(../images/army_02.jpg) no-repeat center top;
+	height: 171px;
+}
+.photo3 {
+	background: url(../images/army_03.jpg) no-repeat center top;
+	height: 172px;
+}
+.photo4 {
+	background: url(../images/army_04.jpg) no-repeat center top;
+	height: 171px;
+}
+
+.photo7 {
+	background: url(../images/army_07.jpg) no-repeat center top;
+	height: 536px;
+}
+.photo8 {
+	background: url(../images/army_08.jpg) no-repeat center top;
+	height: 581px;
+}
+.photo12 {
+	background: url(../images/army_12.jpg) no-repeat center top;
+	height: 667px;
+}
+.photo16 {
+	background: url(../images/army_16.jpg) no-repeat center top;
+	height: 535px;
+}
+.photo17 {
+	background: url(../images/army_17.jpg) no-repeat center top;
+	height: 536px;
+}
+.photo20 {
+	background: url(../images/army_20.jpg) no-repeat center top;
+	height: 536px;
+}
+.photo21 {
+	background: url(../images/army_21.jpg) no-repeat center top;
+	height: 535px;
+}
+.photo29 {
+	background: url(../images/army_29.jpg) no-repeat center top;
+	height: 535px;
+}
+.photo30 {
+	background: url(../images/army_30.jpg) no-repeat center top;
+	height: 536px;
+}
+.photo35 {
+	background: url(../images/army_35.jpg) no-repeat center top;
+	height: 958px;
+}
+.content {
+	width: 1024px;
+	margin: 0 auto;
+	
+}
+.lot-photo {
+	text-align: center;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	background: #e70012;
+    height: 72px;
+    width: 100%;
+    z-index: 100;
+}
+.footer-con {
+	width: 1200px;
+	margin: 0 auto;
+    overflow: hidden;
+
+}
+.footer-con p {
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 80px;
+}
+.footer-con p strong {
+	font-size: 18px;
+	display: block;
+	line-height: 28px;
+	font-weight: normal;
+}
+.footer-con p em {
+	font-size: 32px;
+	display: block;
+	line-height: 28px;
+	font-weight: bold;
+}
+.footer-con p.p1 {
+	margin-left: 75px;
+	width: 255px;
+}
+.footer-con p.p2 {
+	margin-left: 70px;
+	width: 366px;
+	font-size: 32px;
+}
+.footer-con p.p3 {
+	margin-top: 12px;
+}
+
+.main {
+	width: 100%;
+}
+
+.form-input {
+	float: left;
+	padding-top: 406px;
+	padding-left: 90px;
+}
+.form-input .in {
+	margin-bottom: 10px;
+	width: 0;
+}
+.form-input .in label {
+	font-size: 18px;
+	line-height: 40px;
+	color: #555;
+	float: left;
+}
+.form-input .in input {
+    border: 1px #d3d3d3 solid;
+    height: 46px;
+    font-size: 16px;
+    width: 350px;
+    padding: 0 6px;
+    color: #555;
+    margin-left: 14px;
+    padding-left: 12px;
+}
+.form-input .in textarea {
+	width: 306px;
+	height: 66px;
+	padding: 6px;
+	font-size: 18px;
+	color: #555;
+	border: 1px #D3D3D3 solid;
+	margin-left: 14px;
+}
+.form-input p.last {
+	color: #555;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 115px 30px 18px 30px;
+}
+.btn-okey {
+	background: none;
+	border: none;
+	width: 170px;
+	height: 53px;
+	outline: none;
+	cursor: pointer;
+	margin: -6px 0 0 115px;
+}
+.roll-list {
+	height: 292px;
+	float: right;
+	padding-right: 0;
+	margin-top: 408px;
+}
+.scrollDiv-top {
+    overflow: hidden;
+}
+.roll-list ul.line{
+	width: 464px;
+	height: 460px;
+	overflow: hidden;
+} 
+
+.roll-list ul li {
+	width: 366px;
+	height: 76px;
+	overflow: hidden;
+	border-bottom: 1px #ccc dashed;
+}
+.roll-list ul li p:first-child {
+	margin-top: 19px;
+}
+.roll-list ul li p {
+	font-size: 18px;
+	color: #555;
+    white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;
+}
+.roll-list ul li p strong {
+	color: #ee0219;
+	margin-right: 16px;
+}
+.roll-list ul li p i {
+
+}
+.roll-list ul li p em {
+	font-size: 14px;
+	color: #555;
+}
+.roll-list ul li p span {
+	display: inline-block;
+	background: #ee0219 url(../images/okey.jpg) no-repeat 4px center;
+	padding-left: 20px;
+	color: #fff;
+	width: 56px;
+	text-indent: 4px;
+	margin-left: 10px;;
+	height: 20px;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.rio-comment {
+	padding-top: 102px;
+	padding-left: 46px;
+	background: url(../images/rio-comment.jpg) no-repeat top;
+	height: 620px;
+}
+#scrollDiv-two,
+.rio-comment ul {
+	height: 554px;
+	overflow: hidden;
+}
+.rio-comment ul li {
+	width: 900px;
+	height: 66px;
+	overflow: hidden;
+}
+.rio-comment .raty {
+    margin-top: -1px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    zoom: 1;
+    width: 140px !important;
+}
+.rio-comment .raty img {
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 8px 0 0 3px;
+}
+.rio-comment .commentimg {
+	float: left;
+	margin-top: 8px;
+}
+.rio-comment .commentimg img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: expression(40-this.height/2);
+    border-radius: 20px;
+}
+.rio-comment .alllist {
+	float: left;
+}
+.rio-comment .alllist p {
+    font: 12px/30px "Microsoft Yahei";
+    color: #AAA;
+    width: 848px;
+    margin-left: 10px;
+}
+.rio-comment .alllist em.time {
+	float: right;
+	color: #ccc;
+	font-weight: normal;
+	font-size: 14px;
+}
+.rio-comment .remark {
+	color: #555;
+	line-height: 20px;
+	width: 770px;
+	margin: 7px 0 0 6px;
+}
+.rio-comment p.last {
+
+}
+.rio-comment p.last span {
+	float: left;
+	display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+.scroltit{ height:26px; line-height:26px; margin-right: 56px;}
+.scroltit h3{ width:100px; float:left;}
+.scroltit .updown{float:right; width:32px; height:22px; margin-left:4px}
+#but_up{ background:url(../images/up.gif) no-repeat 0 0; text-indent:-9999px}
+#but_down{ background:url(../images/down.gif) no-repeat 0 0; text-indent:-9999px}
+.mf {
+	font-size: 20px;
+	color: #d02f34;
+	margin-left: 20px;
+	margin-bottom: 6px;
+	font-weight: bold;
+}
+.flotage {
+	position: fixed;
+	top: 40%;
+	right: 10px;
+	width: 198px;
+	height: 206px;
+	background: url(../images/flotage.png) no-repeat;
+}
+.flotage h2 {
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 28px auto 0;
+	color: #f3ec22
+}
+.flotage p {
+	font-size: 48px;
+	color: #f3ec22;
+	font-weight: bold;
+    margin-left: 24px;
+	margin-top: 30px;
+	text-align: center;
+	letter-spacing: 10px;
+}
+.flotage p em {
+	float: left;
+}
+.flotage p strong {
+	font-size: 36px;
+	display: block;
+	transform:scale(.8,1);
+	-webkit-transform:scale(.8,1); 
+	float: left;
+	margin-top: 8px;
+	margin-left: -4px;
+}
+.form-input .img {
+	margin: 20px 0px 10px 72px;
+}
+.form-input .item-yz input.l {
+	margin-left: 14px;
+	padding-left: 14px;
+	width: 228px;
+}
+.form-input .item-yz input.l,
+.form-input .item-yz input.r {
+	float: left;
+	height: 50px;
+	border-radius: 0;
+	font-size: 18px;
+	border: 1px #d3d3d3 solid;
+	margin-bottom: 10px;
+}
+.form-input .item-yz input.r {
+	margin-right: 0;
+	background: #3e5aa1;
+	color: #fff;
+	height: 52px;
+	border: 1px #3e5aa1 solid;
+	width: 176px;
+	cursor: pointer;
+}
+
+.inselect label {
+	width: 50px;
+	color: #999;
+  margin-left: 15px;
+}
+.inselect select {
+	width: 317px;
+	height: 46px;
+	color: #999;
+	border: 1px #dfdfdf solid;
+}
+.content iframe {
+	margin: 170px 0 0 425px;
+	z-index: 1;
+}

@@ -1,0 +1,36 @@
+Array
+(
+    [mmt_code] => order_payment_success
+    [mmt_name] => 付款成功提醒
+    [mmt_message_switch] => 1
+    [mmt_message_content] => 关于订单：{$order_sn}的款项已经收到，请留意出库通知。<a href="{$order_url}" target="_blank">点击查看订单详情</a>
+    [mmt_short_switch] => 0
+    [mmt_short_content] => 【{$site_name}】{$order_sn}的款项已经收到，请留意出库通知。
+    [mmt_mail_switch] => 0
+    [mmt_mail_subject] => {$site_name}提醒：{$order_sn}的款项已经收到，请留意出库通知。
+    [mmt_mail_content] => <p>
+	{$site_name}提醒：
+</p>
+<p>
+	{$order_sn}的款项已经收到，请留意出库通知。
+</p>
+<p>
+	<a href="{$order_url}" target="_blank">点击查看订单详情</a>
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:right;">
+	{$site_name}
+</p>
+<p style="text-align:right;">
+	{$mail_send_time}
+</p>
+<br />
+)

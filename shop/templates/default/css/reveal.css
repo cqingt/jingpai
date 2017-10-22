@@ -1,0 +1,148 @@
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.8);
+}
+
+.reveal-modal {
+    width: 874px;
+    max-width: 874px;
+    min-width: 290px;
+    visibility: hidden;
+    top: 150px;
+    left: 50%;
+    margin-left: -437px;
+    position: fixed;
+    z-index: 9999;
+    padding: 40px 0 44px;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+    -box-shadow: 0 0 10px rgba(0,0,0,.4);
+    background-color: #FFF;
+}
+
+.reveal-modal .close-style { 
+    font-size: 22px; 
+    line-height: 0.5; 
+    position: absolute; 
+    top: 14px; 
+    right: 15px; 
+    color: #333; 
+    text-shadow: 0 -1px 1px rbga(0,0,0,.6); 
+    font-weight: bold; 
+    cursor: pointer;        
+} 
+
+    
+/* content 3*/
+.reveal-modal h1 {
+    font-size: 16px;
+    display: block;
+    font-weight: normal;
+    text-indent: 2em;
+    color: #000;
+    margin: 16px 0 60px;
+    text-align: center;
+}
+.reveal-modal strong {
+    color: #d63b3d;
+    font-weight: bold;
+}
+
+.dialog-welcome a,
+.dialog-btn a {
+    display: inline-block;
+    width: 168px;
+    height: 48px;
+    color: #fff !important;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.dialog-btn a:hover,
+.dialog-welcome a:hover {
+    text-decoration: none;
+}
+.btn-left {
+    background: #d63b3d;
+    margin-right: 90px;
+}
+.btn-left:hover {
+    background: #d90f12;
+}
+.btn-right{
+    background: #faa732;
+}
+.btn-right:hover {
+    background: #f8970e;
+}
+
+.dialog-close {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+}
+
+/*content 2 */
+.dialog-wechat,
+.dialog-welcome {
+    float: left;
+    text-align: left;
+}
+.dialog-wechat {
+    border-right: 1px #bfbfbf solid;
+    margin: 0 48px 0 75px;
+    padding: 24px 38px 40px 0;
+    text-align: center;
+}
+.dialog-wechat img {
+    width: 208px;
+    height: 208px;
+    background: red;
+}
+.dialog-wechat strong {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 52px;
+    color: #d63b3d;
+}
+.dialog-welcome {
+    padding-top: 74px;
+}
+.dialog-welcome p {
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    width: 418px;
+    margin-bottom: 16px;
+    text-indent: 2em;
+}
+.dialog-welcome em {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.dialog-welcome a {
+    clear: both;
+}
+.dialog-welcome .mtl8-2 {
+    margin: 8px 0 0 2em;
+}
+.dialog-welcome .mb20 {
+    margin-bottom: 80px;
+}
+.dialog-welcome .mr70 {
+    margin-right: 70px;
+}
+.dialog-btn {
+    text-align: center;
+}

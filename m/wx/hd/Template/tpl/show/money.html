@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 余额管理</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type=text/javascript src="{[$DIR]}js/hover.js"></script>
+<script>
+$(function(){
+	setTabMoney(1);
+})
+</script>
+</head>
+
+<body>
+<form>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">余额管理</a>
+</div>
+
+<div style=" line-height:36px; font-size:14px; padding-left:20px; color:#333;">您的账户余额：<a href="###" style=" color:#e33a3d; text-decoration:none;">{[$dataArr.U_Balance]}元</a></div>
+
+<div class="yue_menu">
+     <span id="one1" onclick="setTab('one',1,3);document.getElementById('float').style.display='block';" class="hover">充值</span>
+     <span id="one2" onclick="setTab('one',2,3);document.getElementById('float').style.display='none';">提现</span>  
+     <span id="one3" onclick="setTab('one',3,3);document.getElementById('float').style.display='none';">明细</span>  
+</div>
+
+<!---充值 kaishi--->
+<div id="con_one_1" style="width:96%; margin:0px auto; padding:0px;">
+    <div class="chongzhi_box1">选择充值金额<span>充值越多赠送越多，最高40%！</span></div>
+    
+    <div class="chongzhi_je">
+         <a href="javascript:setTabMoney(1);" id="two1"class="hover">300</a>
+         <a href="javascript:setTabMoney(2);" id="two2" style="margin:0px 4%;">500</a>
+         <a href="javascript:setTabMoney(3);" id="two3">1000</a>
+         <a href="javascript:setTabMoney(4);" id="two4">3000</a>
+         <a href="javascript:setTabMoney(5);" id="two5" style="margin:0px 4%;">5000</a>
+         <a href="javascript:setTabMoney(6);" id="two6">10000</a>
+    </div>
+    
+    <div class="chongzhi_box2" id="con_two_1">
+         <span class="font1">充值金额</span>
+         <span class="font2"><input type="text" class="cz_input" id="money" value="300" style="height:38px; line-height:38px; background:none;" onkeyup="setTabMoney1(this.value);"></span>
+    </div>    
+    <div class="chongzhi_box3">请选择支付方式</div>
+    
+    <div class="zhifu_box">
+	{[foreach from=$payment item=v]}
+         <dl>
+            <div class="ffbox"><span class="edge"></span><img src="{[$v.P_img]}" alt="{[$v.P_name]}"></div>
+            <dd>{[$v.P_name]}<p>{[$v.P_desc]}</p></dd>
+            <dt><input name="zf" id='zhifu' type="radio" value="{[$v.P_id]}"></dt>
+         </dl>
+	{[/foreach]}
+    </div>
+</div>
+
+<div class="chongzhi_float_box" id="float">
+<div class="chongzhi_float2">需支付金额：<span id="price"></span>元<a href="javascript:tijiao();">确认并支付</a></div>
+<div class="chongzhi_float"></div>
+</div>
+<!---充值 jieshu--->
+
+<!---提现 kaishi--->
+<div id="con_one_2" style=" width:96%; margin:0px auto; padding:0px; display:none;">
+     <div style="margin:5px 0px;">请填写提现银行信息<p style="font-size:12px; color:#68a51a;">所填银行信息必须与认证时填写的一致!</p></div>
+
+    <div class="zc_form" style="margin:0px;">
+         <ul><li class="zd1b">开户银行</li><li class="zd2"><input class="input_zck" name="U_Bank" placeholder="请填写开户银行地址" value="{[$total_amount.U_Bank]}" readonly type="text"></li></ul>
+         <ul><li class="zd1b">账号</li><li class="zd2"><input class="input_zck" name="U_Account" placeholder="请填写银行卡号码" value="{[$total_amount.U_Account]}" readonly type="text"></li></ul>
+         <ul><li class="zd1b">户名</li><li class="zd2"><input class="input_zck" name="U_Name" placeholder="请填写卡片归属人的姓名" value="{[$total_amount.U_Name]}" readonly type="text"></li></ul>
+         <ul><li class="zd1b">提现金额</li><li class="zd2"><input class="input_zck" name="amount" id="amount" type="text" value="0"></li></ul>
+    </div>
+    
+    <div class="tijiao_but" style="margin-top:10px;"><a href="javascript:tixian(document.getElementById('amount').value);">确认</a></div>
+</div>
+<!---提现 jieshu--->
+
+<!---交易明细 kaishi--->
+<div id="con_one_3" style=" width:96%; margin:0px auto; padding:0px; display:none;">
+
+    <div class="mingxi_table">
+         <ul><li class="li25a">日期</li><li class="li50">交易名称</li><li class="li25b">金额</li></ul>
+		 {[foreach from=$detailed item=v]}
+         <ul><li class="li25a2">{[$v.date]}</li><li class="li502">{[$v.val]}</li>{[$v.L_amount]}</ul>
+		{[/foreach]}
+    </div>
+</div>
+<!---交易明细 jieshu--->
+
+<div style="height:50px;"></div>
+
+</form>
+<script>
+function tixian(amount){
+	if (isNaN(amount))
+    {
+		alert('请正确的填写金额！');
+		return false;
+    }else{
+		if(amount <= 0){
+			alert('请正确的填写金额！');
+			return false;
+		}
+	}
+	window.location.href="index.php?m=member&c=addTotalAmount&p=main&amount="+amount;
+}
+function tijiao(){
+	var amount = document.getElementById("money").value;
+	var chkObjs = document.getElementsByName("zf");
+	var zhifu = 0;
+	var i=0;
+	for(i=0;i<chkObjs.length;i++){
+		if(chkObjs[i].checked){
+			zhifu = chkObjs[i].value;
+			break;
+		}
+	}
+	
+    if (zhifu == 0)
+    {
+		alert('请选择支付方式');
+		return false;
+    }
+	
+	window.location.href="index.php?m=member&c=payment&p=main&amount="+amount+"&P_id="+zhifu;
+}
+function setTabMoney(id){
+	$('.chongzhi_je a').each(function(i,obj) {
+        $(obj).removeClass('hover');
+    });
+	$('.chongzhi_je #two' + id).addClass('hover');
+	var price = $('.chongzhi_je #two' + id).text();
+	$('#money').val(price);
+	$('#price').text(price);
+}
+function setTabMoney1(price){
+	$('#price').text(price);
+}
+</script>
+</body>
+</html>

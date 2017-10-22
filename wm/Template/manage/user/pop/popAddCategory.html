@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分系统管理 - </title>
+<link href="Template/manage/user/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td height="30" bgcolor="#ecf9ff"><span class="title">分类{[if $update]}编辑{[else]}添加{[/if]}</span></td>
+    <td bgcolor="#ecf9ff"></td>
+  </tr>
+</table>
+<form name="form1" id="form1" method="post" action="index.php?m=manageCategory&c={[if $update]}update{[else]}add{[/if]}Category&p=manage" target="_parent">
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td width="40%" height="28" style="text-indent:1em; text-align:left">分类名称</td>
+      <td width="60%" height="28" style="text-align:left">
+      	<input type="text" name="C_Name" id="C_Name" value="{[$dataArr.0.C_Name]}"/>
+        {[if $update]}<input type="hidden" name="cid" id="cid" value="{[$dataArr.0.C_ID]}"/>{[/if]}
+        </td>
+      </tr>
+	<tr>
+	  <td width="40%" height="28" style="text-indent:1em; text-align:left">所属父类</td>
+	  <td width="60%" height="28" style="text-align:left">
+	    <select name="C_ParentID" id="C_ParentID">
+	    <option value="0">一级部门</option>
+	    {[foreach from=$cateArr item=v key=k]}
+        {[$dataArr.0.C_ParentID]}
+	    <option value="{[$v.C_ID]}" {[if ($update && $dataArr.0.C_ParentID==$v.C_ID) || (!$update && $cid==$v.C_ID)]}selected="selected"{[/if]}>{[$v.C_Name]}</option>
+	    {[/foreach]}
+	    </select>
+	    {[if $cid]}<input type="hidden" name="C_Parent" id="C_ParentID" value="{[$cid]}"/>{[/if]}
+	    </td>
+	  </tr>
+    <tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:70px; margin:0 auto 0 auto;">
+          <input type="submit" value="提交" class="a70-26" style="margin-top:5px; margin-bottom:5px;">
+          </div>
+        </td>
+    </tr>
+  </table>
+</form>
+</div>
+</body>
+</html>

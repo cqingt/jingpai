@@ -1,0 +1,333 @@
+<!--{template header,admin}-->
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <h3>问答管理</h3>
+            <ul class="tab-base">
+                <li>
+                    <a class="current">
+                        <span>{$lang['question_list_issues_management']}</span>
+                    </a>
+                    <a href="index.php?admin_question/searchanswer{$setting['seo_suffix']}">
+                        <span>回答管理</span>
+                    </a>
+                    <a href="index.php?admin_question/examine{$setting['seo_suffix']}">
+                        <span>问题审核</span>
+                    </a>
+                    <a href="index.php?admin_question/examineanswer{$setting['seo_suffix']}">
+                        <span>回答审核</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed-empty"></div>
+    <!--{if isset($message)}-->
+    <!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+    <div class="alert alert-primary">{$message}</div>
+    <!--{/if}-->
+    <table class="table tb-type2" id="prompt">
+        <tbody>
+        <tr class="space odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+            <th class="nobg" colspan="12"><div class="title"><h5>设置说明</h5><span class="arrow"></span></div></th>
+        </tr>
+        <tr class="odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: table-row;">
+            <td>
+                <ul>
+                    <li>{$lang['question_list_seek_where_msg']}</li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <form action="index.php?admin_question/searchquestion{$setting['seo_suffix']}" method="post" name="formSearch">
+        <table class="table tb-type2">
+            <tbody>
+            <tr>
+                <td width="10%">
+                    {$lang['question_list_seek_where_record_date']}:
+                    <div class="input-group date form-date" data-date="" data-date-format="dd MM yyyy"
+                         data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input class="txt" type="text" size="16" id="timestart" name="srchdatestart"
+                               value="{$srchdatestart}" readonly="">
+                        <span class="input-group-addon"><span class="icon-remove"></span></span>
+                        <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                    </div>
+                </td>
+                <td width="10%">
+                        {$lang['question_list_seek_where_record_date_to']}
+                    <div class="input-group date form-date" data-date="" data-date-format="dd MM yyyy"
+                         data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                        <input class="txt" type="text" size="16" id="timeend" name="srchdateend" value="{$srchdateend}"
+                               readonly="">
+                        <span class="input-group-addon"><span class="icon-remove"></span></span>
+                        <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                    </div>
+                </td>
+                <td width="10%" class="altbg2">{$lang['question_list_seek_where_title']}:
+                    <input class="txt" type="text" name="srchtitle" {if isset($srchtitle)}value="{$srchtitle}" {/if}>
+                </td>
+                <td width="10%" class="altbg2">{$lang['question_list_seek_where_quizzer']}:
+                    <input class="txt" type="text" name="srchauthor" {if isset($srchauthor)}value="{$srchauthor}" {/if}>
+                </td>
+                <td width="7%" class="altbg2">{$lang['question_list_seek_where_status']}:<br>
+                    <select name="srchstatus">
+                        <option {if (isset($srchstatus) &&'-1'==$srchstatus) } selected {/if}value="-1">--{$lang['question_list_seek_where_unlimited']}--</option>
+                        <option value="1" {if (isset($srchstatus) && 1==$srchstatus) } selected {/if}>{$lang['question_list_seek_where_at_issue']}</option>
+                        <option value="2" {if (isset($srchstatus) && 2==$srchstatus) } selected {/if}>{$lang['question_list_seek_where_resolved']}</option>
+                        <option value="6" {if (isset($srchstatus) && 6==$srchstatus) } selected {/if}>{$lang['question_list_seek_where_recommend_question']}</option>
+                    </select>
+                </td>
+                <td width="7%" class="altbg2">{$lang['question_list_seek_where_classify']}:<br>
+                    <select name="srchcategory" id="srchcategory">
+                        <option value="0">--{$lang['question_list_seek_where_unlimited']}--</option>
+                        {$catetree}</select>
+                </td>
+                <td rowspan="2" class="altbg2">
+                    &nbsp;<br>
+                    <a href="javascript:document.formSearch.submit()" class="btn-search" title="{$lang['question_list_seek_where_submit']}"><span>&nbsp;</span></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    [{$lang['question_list_count']} <font color="green">{$rownum}</font> {$lang['question_list_count_msg']}]
+    <form name="queslist" method="POST">
+        <table class="table tb-type2">
+            <tr class="header">
+                <td width="5%"><input class="checkbox" value="chkall" id="chkall" onclick="checkall('qid[]')" type="checkbox" name="chkall"><label for="chkall">{$lang['question_list_check_all']}</label>
+                </td>
+                <td width="30%">{$lang['question_list_title']}</td>
+                <td width="15%">{$lang['question_list_seek_where_quizzer']}</td>
+                <td width="5%">{$lang['question_list_offer_a_reward']}</td>
+                <td width="10%">{$lang['question_list_answer_examine']}</td>
+                <td width="5%">{$lang['question_list_status']}</td>
+                <td width="10%">{$lang['question_list_ip']}</td>
+                <td width="12%">{$lang['question_list_quiz_time']}</td>
+                <td width="18%">{$lang['question_list_has_recommended']}</td>
+            </tr>
+            <!--{if isset($questionlist)} {loop $questionlist $question}-->
+            <tr>
+                <td class="altbg2">
+                    <input class="checkbox" type="checkbox" value="{$question['id']}" name="qid[]">
+                </td>
+                <td class="altbg2" id="title_{$question['id']}"><a
+                        href="index.php?question/view/{$question['id']}{$setting['seo_suffix']}" target="_blank">{eval
+                    echo cutstr($question['title'],46,'');}</a></td>
+                <td class="altbg2"><a href="index.php?user/space/{$question['authorid']}{$setting['seo_suffix']}"
+                                      target="_blank">{$question['author']}</a></td>
+                <td class="altbg2"><font color="#FC6603">{$question['price']}</font></td>
+                <td class="altbg2">{$question['answers']} / {$question['views']}</td>
+                <td class="altbg2"><img src="{SITE_URL}css/admin/icn_{$question['status']}.gif"></td>
+                <td class="altbg2">{$question['ip']}</td>
+                <td class="altbg2">{$question['format_time']}</td>
+                <td class="altbg2">{if $question['status']==6}<img src="{SITE_URL}css/admin/icn_6.gif">{else}{$lang['question_list_no']}{/if}
+                </td>
+            </tr>
+            <!--{eval $content=htmlspecialchars($question['description']);}-->
+            <input type="hidden" id="cont_{$question['id']}" value="{$content}">
+            <!--{/loop}-->
+            <!--{/if}-->
+            <!--{if $departstr}-->
+            <tr class="smalltxt">
+                <td class="altbg2" colspan="9" align="right">
+                    <div class="pages">{$departstr}</div>
+                </td>
+            </tr>
+            <!--{/if}-->
+            <tr class="altbg1">
+                <td colspan="9">
+                    <a href="javascript:void(0)" class="btnn" onclick="buttoncontrol(2);"><span>{$lang['question_list_recommend']}</span></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="btnn" onclick="buttoncontrol(3);"><span>{$lang['question_list_cancel_recommend']}</span></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="btnn" onclick="movecate();"><span>{$lang['question_list_move_classify']}</span></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="btnn" onclick="buttoncontrol(8);"><span>{$lang['question_list_set_as_resolved']}</span></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="btnn" onclick="buttoncontrol(5);"><span>{$lang['question_list_set_as_at_issue']}</span></a>&nbsp;&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="btnn" onclick="buttoncontrol(6);"><span>{$lang['question_list_delete']}</span></a>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="dialog_topic" title="{$lang['question_list_add_question_to_special']}" style="display: none">
+        <form name="topicform" action="index.php?admin_question/addtotopic{$setting['seo_suffix']}" method="post">
+            <input type="hidden" name="qids" value="" id="topic_qid"/>
+            <table border="0" cellpadding="0" cellspacing="0" width="470px">
+                <tr>
+                    <td>
+                        <div class="inputbox mt15" id="topic_select">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="button  mt15" value="{$lang['question_list_affirm']}"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <link rel="stylesheet" type="text/css" href="{SITE_URL}js/jquery-ui/soso/jquery-ui.css"/>
+    <script type="text/javascript" src="{SITE_URL}js/jquery-ui/jquery-ui.js"></script>
+    <div id="dialog_category" title="{$lang['question_list_move_classify']}" style="display: none">
+        <form name="categoryform" action="index.php?admin_question/movecategory{$setting['seo_suffix']}" method="post">
+            <input type="hidden" name="qids" value="" id="category_qid"/>
+            <table class="table" width="470px">
+                <tr>
+                    <td>
+                        <div class="inputbox mt15">
+                            <select name="category" size=1 style="width:240px">{$catetree}</select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="button flright mt15" value="{$lang['question_list_affirm']}"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <link href="{SITE_URL}css/dist/lib/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <script src="{SITE_URL}css/dist/lib/datetimepicker/datetimepicker.min.js"></script>
+    <script type="text/javascript">
+        $(".form-date").datetimepicker(
+                {
+                    language: "zh-CN",
+                    weekStart: 1,
+                    todayBtn: 1,
+                    autoclose: 1,
+                    todayHighlight: 1,
+                    startView: 2,
+                    minView: 2,
+                    forceParse: 0,
+                    format: "yyyy-mm-dd"
+                });
+        function buttoncontrol(num) {
+            if ($("input[name='qid[]']:checked").length == 0) {
+                alert('{$lang["question_list_not_select_msg"]}');
+                return false;
+            } else {
+                switch (num) {
+                    case 9:
+                        $("#baidutui").modal("show");
+
+                        $("#btntui").click(function () {
+                            document.queslist.action = "index.php?admin_question/baidutui{$setting['seo_suffix']}";
+                            document.queslist.submit();
+                        })
+
+                        break;
+                    case 2:
+                        if (confirm('{$lang["question_list_recommend_msg"]}') == false) {
+                            return false;
+                        } else {
+                            document.queslist.action = "index.php?admin_question/recommend{$setting['seo_suffix']}";
+                            document.queslist.submit();
+                        }
+                        break;
+                    case 3:
+                        document.queslist.action = "index.php?admin_question/inrecommend{$setting['seo_suffix']}";
+                        document.queslist.submit();
+                        break;
+                    case 4:
+                        if (confirm('{$lang["question_list_close_msg"]}') == false) {
+                            return false;
+                        } else {
+                            document.queslist.action = "index.php?admin_question/close{$setting['seo_suffix']}";
+                            document.queslist.submit();
+                        }
+
+                        break;
+                    case 5:
+                        if (confirm('{$lang["question_list_set_as_resolved_msg"]}') == false) {
+                            return false;
+                        } else {
+                            document.queslist.action = "index.php?admin_question/nosolve{$setting['seo_suffix']}";
+                            document.queslist.submit();
+                        }
+
+                        break;
+                    case 6:
+                        if (confirm('{$lang["question_list_delete_msg"]}') == false) {
+                            return false;
+                        } else {
+                            document.queslist.action = "index.php?admin_question/delete{$setting['seo_suffix']}";
+                            document.queslist.submit();
+                        }
+                        break;
+                    case 7:
+                        if ($("input[name='qid[]']:checked").length == 0) {
+                            alert('{$lang["question_list_not_select_question"]}');
+                            return false;
+                        }
+                        var qids = document.getElementsByName('qid[]');
+                        var num = '', tag = '';
+                        for (var i = 0; i < qids.length; i++) {
+                            if (qids[i].checked == true) {
+                                num += tag + qids[i].value;
+                                tag = ",";
+                            }
+                        }
+                        $.ajax({
+                            type: "POST",
+                            url: "{SITE_URL}index.php?admin_topic/ajaxgetselect{$setting['seo_suffix']}",
+                            success: function (selectstr) {
+                                $("#topic_select").html(selectstr);
+                                $("#topic_qid").val(num);
+                                $("#dialog_topic").dialog({
+                                    autoOpen: false,
+                                    width: 500,
+                                    modal: true,
+                                    resizable: false
+                                });
+                                $("#dialog_topic").dialog("open");
+                            }
+                        });
+                        break;
+                    case 8:
+                        if (confirm('{$lang["question_list_set_at_issue_msg"]}') == false) {
+                            return false;
+                        } else {
+                            document.queslist.action = "index.php?admin_question/solve{$setting['seo_suffix']}";
+                            document.queslist.submit();
+                        }
+
+                        break;
+                    default:
+                        alert("{$lang['question_list_illegal_operation']}");
+                        break;
+                }
+            }
+        }
+        function movecate() {
+            if ($("input[name='qid[]']:checked").length == 0) {
+                alert('{$lang["question_list_not_select_question"]}');
+                return false;
+            } else {
+                var qids = document.getElementsByName('qid[]');
+                var num = '', tag = '';
+                for (var i = 0; i < qids.length; i++) {
+                    if (qids[i].checked == true) {
+                        num += tag + qids[i].value;
+                        tag = ",";
+                    }
+                }
+                $("#category_qid").val(num);
+                $("#dialog_category").dialog({
+                    autoOpen: false,
+                    width: 500,
+                    modal: true,
+                    resizable: false
+                });
+                $("#dialog_category").dialog("open");
+            }
+        }
+        {if $srchcategory}
+        $(document).ready(function () {
+            $("#srchcategory option").each(function () {
+                if ($(this).val() == $srchcategory) {
+                    $(this).prop("selected", "true");
+                }
+            });
+        });
+        {/if}
+    </script>
+
+    <!--{template footer,admin}-->

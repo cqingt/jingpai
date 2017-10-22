@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品列表 - 编辑画廊认证</title>
+<link href="Template/manage/user/css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+</head>
+<body>
+
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+  <tr>
+  	<td height="30" bgcolor="#ecf9ff"><span class="title">编辑画廊认证</span></td>
+    <td bgcolor="#ecf9ff"></td>
+  </tr>
+</table>
+<form  method="post" action="index.php?m=manageGallery&c=update&p=manage" target="_parent" name="myform" id="myfrom" enctype="multipart/form-data">
+<input type="hidden" name="id" value="{[$dataArr.id]}">
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+    	<tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">画廊名称：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="画廊名称" value="{[$dataArr.g_name]}" name="g_name" id='g_name' /></td>
+        </tr>
+
+		<tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">画廊密码：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="画廊密码用于pc端登陆" value="" name="g_password" id='g_password' /></td>
+        </tr>
+
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">营业执照号：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="营业执照号" name="license_no" id="license_no" value="{[$dataArr.license_no]}" /></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">执照照片：</td>
+            <td width="60%" id="license_photos" style="text-indent:1em; text-align:left">
+				<input id="license_photo" type="file" style="display:none" onchange="PreviewImage(this,0)" name="license_photo" >
+            	<a href="javascript:;" onclick="document.getElementById('license_photo').click();" style="color:#666;border: 1px solid #dcdcdc;padding: 2px;">选择文件</a><br />
+				<div id="imgPreview0">
+					 <a href="{[$dataArr.d_license_photo]}" target="_blank"><img style="margin-top:10px;" src="{[$dataArr.license_photo]}" title="点击看大图"/>
+					 </a>
+				</div>
+            </td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">负责人姓名：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="负责人姓名" name="head_name" id="head_name" value="{[$dataArr.head_name]}" /></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">身份证号码：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="身份证号码" id="card" name="card" value="{[$dataArr.card]}"/></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">手持身份证照片：</td>
+            <td width="60%" id="card_photos" style="text-indent:1em; text-align:left">
+				<input id="card_photo" type="file" style="display:none" onchange="PreviewImage(this,1)" name="card_photo" >
+            	<a href="javascript:;" onclick="document.getElementById('card_photo').click();" style="color:#666;border: 1px solid #dcdcdc;padding: 2px;">选择文件</a><br />
+				<div id="imgPreview1">
+                <a href="{[$dataArr.d_card_photo]}" target="_blank"><img style="margin-top:10px;" src="{[$dataArr.card_photo]}" title="点击看大图"/></a>
+				</div>
+            </td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">常用手机：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="请填写手机号" id="phone" name="phone" value="{[$dataArr.phone]}"/></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">常用微信：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="请填写微信号" id="wechat" name="wechat" value="{[$dataArr.wechat]}"/></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">画廊介绍：</td>
+            <td width="60%" style="text-indent:1em; text-align:left">
+            	<textarea  cols="20" rows="5" placeholder="画廊介绍" id="g_desc" name="g_desc">{[$dataArr.g_desc]}</textarea> 
+            </td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">画廊照片：</td>
+            <td width="60%" id="gallery_photos" style="text-indent:1em; text-align:left">
+			<input id="gallery_photo" type="file" style="display:none" onchange="PreviewImage(this,2)" name="gallery_photo" >
+            	<a href="javascript:;" onclick="document.getElementById('gallery_photo').click();" style="color:#666;border: 1px solid #dcdcdc;padding: 2px;">选择文件</a><br />
+				<div id="imgPreview2">
+                <a href="{[$dataArr.d_gallery_photo]}" target="_blank"><img style="margin-top:10px;" src="{[$dataArr.gallery_photo]}" title="点击看大图"/></a>
+				</div>
+            </td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">画廊地址：</td>
+            <td width="60%" style="text-indent:1em; text-align:left">
+            	 <div>
+                 <span class="select_style">
+                    <i class="filt-arrow" style="top:13px;"></i>
+						<select name="province" id="province" onChange="getCity(this.value,0);">
+						   <option>请选择</option>
+						 </select>
+					    </span>
+                 <span class="select_style">
+                    <i class="filt-arrow" style="top:13px;"></i>
+                     <select name="city" id="city" onChange="getCounty(this.value,0);">
+					   <option>请选择</option>
+					 </select>
+				</span>
+                 <span class="select_style">
+                    <i class="filt-arrow" style="top:13px;" ></i>
+                    <select name="county" id="county">
+						<option>请选择</option>
+                    </select>
+				</span>
+                </div>
+                <div><input type="text" placeholder="所在的街道" name="address" id="address" value="{[$dataArr.address]}" /></div>
+            </td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">收款账户：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="您画廊的收款账户" id="collection" name="collection" value="{[$dataArr.collection]}"/></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">开户行：</td>
+            <td width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="您画廊账户的开户行名称" id="bank" name="bank" value="{[$dataArr.bank]}"/></td>
+        </tr>
+        <tr>
+        	<td width="40%" style="text-indent:1em; text-align:left">开户行地址：</td>
+            <td  width="60%" style="text-indent:1em; text-align:left"><input type="text" placeholder="您画廊账户的开户行地址" id="bank_address" name="bank_address" value="{[$dataArr.bank_address]}"/></td>
+        </tr>
+    </table>
+
+<tr>
+      <td height="28" colspan="2" align="center">
+        <div style="width:150px; margin:0 auto 0 auto;">
+         
+<input type="button" value="修改" class="a70-26" style="margin-top:5px; margin-bottom:5px;" onclick="checkFrom();">
+{[if $dataArr.is_shen == 0]}
+<input type="button" value="通过认证" class="a70-26" style="margin-left:5px;margin-top:5px; margin-bottom:5px;" onclick="shenhe(1,{[$dataArr.id]},{[$dataArr.g_id]});">
+{[/if]}
+{[if $dataArr.is_shen == 1]}
+<input type="button" value="取消认证" class="a70-26" style="margin-left:5px;margin-top:5px; margin-bottom:5px;" onclick="shenhe(0,{[$dataArr.id]},{[$dataArr.g_id]});">
+{[/if]}
+          </div>
+        </td>
+    </tr>
+</form>
+</div>
+</body>
+</html>
+
+<script>
+
+function shenhe(ob_val,id,g_id){
+	parent.location.href="index.php?m=manageGallery&c=getShenHe&p=manage&type="+ob_val+"&id="+id+"&g_id="+g_id;
+}
+function checkFrom(){
+	var g_name = $('#g_name').val();//画廊名称
+	var license_no = $('#license_no').val();//营业执照号
+	var license_photo = $('#license_photo').val();//营业执照图片
+	var head_name = $('#head_name').val();//负责人名称
+	var card = $('#card').val();//负责人身份证号
+	var card_photo = $('#card_photo').val();//负责人身份证正面照片
+	var phone = $('#phone').val();//负责人电话号码
+	var wechat = $('#wechat').val();//微信号
+	var g_desc = $('#g_desc').val();//画廊介绍
+	var gallery_photo = $('#gallery_photo').val();//画廊logo图片
+	var province = $('#province').val();//画廊省级
+	var city = $('#city').val();//画廊市级
+	var county = $('#county').val();//画廊县级
+	var address = $('#address').val();//画廊详细地址
+	var collection = $('#collection').val();//画廊收款账户
+	var bank = $('#bank').val();//收款账户开户行
+	var bank_address = $('#bank_address').val();//开户行地址
+	if(g_name == ''){
+		alert('画廊名称不能为空!');
+		return false;
+	}
+	if(license_no == ''){
+		alert('营业执照号不能为空!');
+		return false;
+	}
+	if(head_name == ''){
+		alert('请填写负责人名称！');
+		return false;
+	}
+    var reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;  
+    if(reg.test(card) == false)  
+    {  
+       alert("请正确的填写身份证号码！");  
+       return  false;  
+    }
+
+	
+	var ab=/^(1[3-9][0-9]|14[0|3|6|7|8|9]|15[0|3|6|7|8|9]|18[6|7|8|9])\d{8}$/;
+	if(ab.test(phone) == false){
+		alert('请输入正确的手机号码！');
+		return false;
+	}
+	if(wechat == ''){
+		alert('常用微信不能为空！');
+		return false;
+	}
+	if(g_desc == ''){
+		alert('画廊介绍不能为空！');
+		return false;
+	}
+	if(province=='' || city == '' || county == ''){
+		alert('请选择完整的地区信息！');
+		return false;
+	}
+	if(address == ''){
+		alert('画廊详细地址不能为空！');
+		return false;
+	}
+	if(collection == ''){
+		alert('画廊收款账户不能为空！');
+		return false;
+	}
+	if(bank == ''){
+		alert('画廊收款开户行不能为空！');
+		return false;
+	}
+	if(bank_address == ''){
+		alert('开户行地址不能为空！');
+		return false;
+	}
+	$('#myfrom').submit();
+}
+
+
+function getCity(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#city').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#province').html('<option value="">请选择</option>' + str);	
+	});
+}
+function getCounty(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#county').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+
+$(function(){
+	$('#smallCate').hide();
+	getProvince(1,{[$dataArr.province]});
+	getCity({[$dataArr.province]},{[$dataArr.city]});
+	getCounty({[$dataArr.city]},{[$dataArr.county]});
+})
+ 
+function PreviewImage(imgFile,obj_id)  
+{  
+    var filextension=imgFile.value.substring(imgFile.value.lastIndexOf("."),imgFile.value.length);  
+    filextension=filextension.toLowerCase();  
+    if ((filextension!='.jpg')&&(filextension!='.gif')&&(filextension!='.jpeg')&&(filextension!='.png')&&(filextension!='.bmp'))  
+    {  
+        alert("对不起，系统仅支持标准格式的照片，请您调整格式后重新上传，谢谢 !");  
+        imgFile.focus();  
+    }  
+    else  
+    {  
+        var path;  
+        if(document.all)//IE  
+        {  
+            imgFile.select();  
+            path = document.selection.createRange().text;  
+            document.getElementById("imgPreview"+obj_id).innerHTML="";  
+            document.getElementById("imgPreview"+obj_id).style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src=\"" + path + "\")";  
+        }  
+        else//FF  
+        {  
+            path=window.URL.createObjectURL(imgFile.files[0]);
+            document.getElementById("imgPreview"+obj_id).innerHTML = "<img id='img1' onload='DrawImage(this,128,64);'  src='"+path+"'/>";
+        }  
+    }  
+}  
+
+
+function DrawImage(ImgD,w,h){
+	var image=new Image();
+	image.src=ImgD.src;
+	if(image.width==0){
+		image=ImgD;
+	}
+	
+	if(image.width>0 && image.height>0){
+		if(image.width/image.height>= w/h){//当宽大于高的情况下
+			if(image.width>w){
+				ImgD.width=w;
+				ImgD.height = (image.height*w) / image.width;
+				var ImgHeight = (image.height*w) / image.width;
+				if(ImgD.height){		
+					var nTop=parseInt((h-ImgD.height)/2);
+				}else{
+					var nTop=parseInt((h-ImgHeight)/2);
+				}
+				ImgD.style.marginTop=nTop+'px';	
+				ImgD.style.marginLeft='0px';
+			}else{
+				ImgD.width=image.width;
+				ImgD.height=image.height;
+				var ImgHeight = (image.height*w) / image.width;	
+				
+				var nTop=parseInt((h-ImgD.height)/2);
+				var ImgWidth = (image.width*h) / image.height;
+				var nLeft=parseInt((w-ImgD.width)/2);
+			
+				ImgD.style.marginLeft=nLeft+'px';
+				ImgD.style.marginTop=nTop+'px';	
+			
+			}
+		}else{//当宽小于高的情况下
+			if(image.height>h){
+				ImgD.height=h;
+				ImgD.width=(image.width*h)/image.height;
+				var ImgWidth = (image.width*h) / image.height;
+				if(ImgD.width){
+					var nLeft=parseInt((w-ImgD.width)/2);
+				}else{
+					var nLeft=parseInt((w-ImgWidth)/2);
+				}
+				ImgD.style.marginLeft=nLeft+'px';
+				ImgD.style.marginTop='0px';
+			}else{
+				ImgD.width=image.width;
+				ImgD.height=image.height;
+				var ImgHeight = (image.height*w) / image.width;	
+				var nTop=parseInt((h-ImgD.height)/2);
+				var ImgWidth = (image.width*h) / image.height;
+				var nLeft=parseInt((w-ImgD.width)/2);
+			
+				ImgD.style.marginLeft=nLeft+'px';
+				ImgD.style.marginTop=nTop+'px';	
+			}
+		}
+	}
+}
+
+</script>  

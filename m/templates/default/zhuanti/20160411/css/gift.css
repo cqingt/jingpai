@@ -1,0 +1,175 @@
+html, body, div, span, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td { 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-weight: inherit; 
+  font-style: inherit; 
+  font-size: 100%; 
+  font-family: inherit; 
+  vertical-align: baseline; 
+  font-family: 'Microsoft YaHei';
+} 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+li {list-style: none;}
+.clearfix:after {
+  clear: both;
+}
+body {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  background: #fef4f0 ;
+}
+
+.present {
+  padding: 14px 14px 50px;
+} 
+.present p {
+  font-size: 15px;
+  color: #ef8258;
+  line-height: 26px;
+}
+.present p.p1 {
+  font-weight: bold;
+}
+.present p:last-child {
+  color: #666;
+  font-size: 15px;
+  text-indent: 2em;
+}
+.present p:last-child strong {
+  color: #ff9272;
+  font-weight: bold;
+}
+.present h4 {
+  font-size: 15px;
+  color: #666;
+}
+.present h5 {
+  font-size: 12px;
+  color: #666;
+  margin: 8px 0 10px;
+}
+.present h1 {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border-top: 1px #ff9272 solid;
+  padding-top: 18px;
+  margin: 20px 0 16px;
+  overflow: hidden;
+}
+.soleimg {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px #ff9272 solid;
+  padding: 6px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.soleimg img {
+  width: 100%;
+}
+.form {
+  border: 2px #ff9272 solid;
+  width: 100%;
+  margin-top: 14px;
+  font-size: 14px;
+  padding: 3% 5%;
+  color: #666;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.form input {
+  border: none;
+  background: #fef4f0;
+  outline: none;
+}
+.btn-form,
+.btnform {
+  display: block;
+  border: none;
+  width: 100%; 
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  background: #ff9272;
+  font-family: 'Microsoft YaHei';
+  margin: 14px auto;
+}
+
+
+.btn-tier {
+  position: fixed; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index:1;
+  background: #000;
+}
+.btn-tier,
+.space-layer {
+  display: none;
+}
+.space-layer {
+  position: fixed;
+  top: 10%;
+  width: 90%;
+  padding: 12px 12px 20px;
+  margin: 10% 5%;
+  border-radius: 8px;
+  background: #fff;
+  z-index: 9;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.space-layer h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  line-height: 16px;
+  margin-bottom: 6px;
+  color: #ff9272;
+}
+.space-layer h4 {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  color: #ff9272;
+}
+.iconfont-androidcancel {
+  display: block;
+  background: url(../images/iconfont-androidcancel.png) no-repeat center;
+  float: right;
+  width: 26px;
+  height: 26px;
+  background-size: 100%;
+}

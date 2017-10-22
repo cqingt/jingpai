@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>书画平台推荐任务配置 - {[$COMPANY]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+
+  <tr  style="height:50px;">
+  	<td bgcolor="#ecf9ff"><span class="title">产品列表</span></td>
+  </tr>
+</table>
+<div>
+  <form id="form1" name="form1" method="get" action="index.php">
+  <input type="hidden" name="m" id="m" value="manageGoods"/>
+  <input type="hidden" name="p" id="p" value="manage"/>
+  <input type="hidden" name="a" id="a" value="search"/>
+  <select name="type" id="type">
+      {[foreach from=$typeArr item=v key=k]}
+      <option value="{[$k]}">{[$v]}</option>
+      {[/foreach]}
+    </select>
+    <select name="payment" id="payment">
+   	  <option value="">交易类型</option>
+      {[foreach from=$paymentArr item=v key=k]}
+      <option value="{[$k]}">{[$v]}</option>
+      {[/foreach]}
+    </select>
+	<select name="W_Province" id="W_Province" onChange="getCity(this.value,0);"></select>
+    <select name="W_City" id="W_City">
+    	<option value="">请选择</option>
+    </select>
+    <input type="text" name="key" id="key" />
+    <input type="submit" name="button" id="button" value="提交" />
+  </form>
+</div>
+<input type="hidden" name="number" id="number" value="{[$dataArr.W_Number]}"/>
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="padding">
+
+    
+
+	<tr class="title">
+	  <td width="15%" style=" text-align:center;">产品名称</td>
+	  <td width="5%" style=" text-align:center;"><a href="index.php?m=manageGoods&p=manage&sort=P_Money&by_order={[if $by_order == 'DESC']}ASC{[else]}DESC{[/if]}" style="color: #0fa6d6;">价格</a></td>
+	  <td width="10%" style=" text-align:center;"><a href="index.php?m=manageGoods&p=manage&sort=P_Time&by_order={[if $by_order == 'DESC']}ASC{[else]}DESC{[/if]}" style="color: #0fa6d6;">发布时间</a></td>
+      <td width="10%" style=" text-align:center;">区域</td>
+	  <td width="10%" style=" text-align:center;">交易方式</td>
+	  <td width="5%" style=" text-align:center;">作者</td>
+	  <td width="15%" style=" text-align:center;">尺寸</td>
+	  <td width="5%" style=" text-align:center;">状态</td>
+	  <td width="5%" style=" text-align:center;"><a href="index.php?m=manageGoods&p=manage&sort=P_click_count&by_order={[if $by_order == 'DESC']}ASC{[else]}DESC{[/if]}" style="color: #0fa6d6;">访问量</a></td>
+	  <td width="10%" style=" text-align:center;">操作</td>
+      </tr>
+{[foreach from=$dataArr item=v key=k]}
+    <tr class="con">
+      <td width="15%" style=" text-align:left;">{[$v.P_Name]}</td>
+	  <td width="5%" style=" text-align:left;">{[$v.P_Money]}</td>
+      <td width="10%" style=" text-align:center;">{[$v.P_Time|date_format:"%Y-%m-%d"]}</td>
+	  <td width="10%" style=" text-align:left;">{[$v.Province]}{[if $v.Province!=$v.City]}-{[$v.City]}{[/if]}</td>
+	  <td width="10%" style=" text-align:left;">{[foreach from=$v.P_BuyType item=pay key=paykey]}
+                {[assign var=payID value=$pay]}
+                {[$paymentArr.$payID]}
+      {[/foreach]}
+	  </td>
+	  <td width="10%" style=" text-align:center;">{[$v.P_Author]}</td>
+	  <td width="10%" style=" text-align:left;">{[$v.P_Size.0]}cm X {[$v.P_Size.1]}cm （约 {[$v.P_C]} 平尺）</td>
+	  <td width="5%" style=" text-align:center;">[{[assign var=typeID value=$v.P_Type]}{[$typeArr.$typeID]}]</td>
+	  <td width="5%" style=" text-align:center;">{[$v.P_click_count]}</td>
+	  <td width="10%" style=" text-align:center;"><a href="index.php?m=manageGoods&c=del_goods&p=manage&pid={[$v.P_ID]}" onclick="return delConfirm(this)">
+        	删除         
+        </a>
+		
+		<a href="javascript:up_goods({[$v.P_ID]});">
+        	编辑         
+        </a>
+		</td>
+    </tr>
+  {[/foreach]}
+
+	
+	
+  
+  </table>
+  <div id="page" style="text-align:center;">
+{[$pageStr]}
+</div>
+</div>
+<script>
+//添加推荐信息
+function addDep(id){
+	
+	asyncbox.open({
+		url : 'index.php?m=manageAffiliate&c=popAffiliate&p=manage&id=' + id,
+		width : 750,
+		height : 500,
+		title : '添加推荐信息'
+	});	
+}
+
+function getCity(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#W_City').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#W_Province').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+$(function(){
+	getProvince(1,0);
+})
+</script>
+
+</body>
+</html>
+<script>
+function up_goods(PID){
+	$.open({
+		url : 'index.php?m=manageGoods&c=up_goods&p=manage&pid=' + PID,
+		width : 700,
+		height : 500,
+		callback : function(action){
+	　　　　if(action == 'close'){
+	　　　　	window.location.reload();
+	　　　　}
+		}
+	});
+}
+</script>

@@ -1,0 +1,9 @@
+{[foreach from=$dataArr item=v key=k]}
+<div class="lmlm_fbtime">发布时间：{[$v.P_Time|date_format:"%Y-%m-%d"]}</div>
+         <dl class="lmlm_fbnr">
+         <dt style="width:69%;"><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">求购{[$v.P_Author]}的作品 [描述：{[$v.P_Content]}]</a>
+             <span style="display:block; color:#999; font-size:12px; font-family:'宋体'; height:30px; overflow:hidden;">这里放产品描述阿这里放产品描述阿这里放产品描述阿这里放产品描述阿这里放产品描述阿</span>   
+         </dt>
+         <p><span style="line-height:18px;">求购金额</span>￥{[$v.P_Money]}<a href="index.php?m=release&p=main&id={[$v.P_ID]}&c=end_release" class="dianping">编辑</a><a href="###" class="dianping" onclick="fn({[$v.P_ID]});">删除</a></p> 
+         </dl>
+{[/foreach]}

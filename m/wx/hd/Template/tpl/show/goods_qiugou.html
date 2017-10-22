@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>求购{[$dataArr.P_Author]}{[$P_Size.0]}cm X {[$P_Size.1]}cm （约 {[$P_C]} 平尺）作品 - 求购 - 书画市场</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"></meta>
+<meta content="yes" name="apple-mobile-web-app-capable"></meta>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"></meta>
+<meta name="format-detection" content="telephone=no"></meta>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/touchScroll.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/touchslider.dev.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<script>
+function showPOP(webUrl,w,h){
+	$.open({
+		url : webUrl,
+		width : w,
+		height : h,
+		title : ''
+	});	
+}
+</script>
+<!---弹出框在页面始终居中js--->
+<script>
+function fabudisplay()
+{
+	var popUp = document.getElementById("writebg")
+	//document.getElementById('fabu_box').style.display='';
+	
+	var obj = document.getElementById("writebg");
+	var W = screen.width;//取得屏幕分辨率宽度
+	var H = screen.height;//取得屏幕分辨率高度
+	var yScroll;//取滚动条高度
+	if (self.pageYOffset) {
+	yScroll = self.pageYOffset;
+	} else if (document.documentElement && document.documentElement.scrollTop){
+	yScroll = document.documentElement.scrollTop;
+	} else if (document.body) {
+	yScroll = document.body.scrollTop;
+	}
+	
+	//obj.style.marginLeft= (W/2 - 200) + "px";
+	obj.style.top= (H/2- 180　+　yScroll) + "px";
+	obj.style.display="block"; 
+}
+function fabudisplay2()
+{
+	var popUp = document.getElementById("writebg2")
+	//document.getElementById('fabu_box').style.display='';
+	
+	var obj = document.getElementById("writebg2");
+	var W = screen.width;//取得屏幕分辨率宽度
+	var H = screen.height;//取得屏幕分辨率高度
+	var yScroll;//取滚动条高度
+	if (self.pageYOffset) {
+	yScroll = self.pageYOffset;
+	} else if (document.documentElement && document.documentElement.scrollTop){
+	yScroll = document.documentElement.scrollTop;
+	} else if (document.body) {
+	yScroll = document.body.scrollTop;
+	}
+	
+	//obj.style.marginLeft= (W/2 - 200) + "px";
+	obj.style.top= (H/2- 180　+　yScroll) + "px";
+	obj.style.display="block"; 
+}
+</script>
+
+</head>
+
+<body>
+<!---直接确认弹出框 kaishi--->
+<div id="writebg" class="wj_tjcg" style=" z-index:100; position:absolute; left:10%; background-color:#fff;border-radius:5px; display:none;"> <img onClick="document.getElementById('writebg').style.display='none';closeWindow()" src="{[$DIR]}images/tj_03.jpg" /></div>
+<!---直接确认弹出框 jieshu--->
+<div class="wj_box">
+   
+   <!--产品信息 开始-->
+   <div class="wj_cp">
+      <!--<div class="wj_cpname">中国集邮总公司 2013年邮票年册 含小本票 册内附赠《癸巳年》黄色赠版小版票</div>  -->
+      <div class="wj_cpsuc"><ul><li>发布时间</li><li style="color:#666; padding-left:5px;"> {[$dataArr.P_Time|date_format:"%m-%d"]}</li><li style="padding-left:5px;">浏览量</li><li style="color:#666; padding-left:5px;">{[$dataArr.P_click_count]}</li><li style="padding-left:35px; padding-top:2px;">
+	  <img src="{[$DIR]}images/fav_{[$isFav]}.jpg" width="56" height="25" {[if !$isFav]}onclick="collection({[$dataArr.P_ID]})"{[/if]} id="collectionImg"/>
+	  </li></ul></div>
+     </div>
+  
+  
+  
+  
+  
+   <div class="wj_cp">
+        <ul><li class="li1">价格</li><li class="li3"> {[$dataArr.P_Money]}元</li></ul>
+        <ul><li class="li1">区域 </li><li class="li2"> {[if $dataArr.Province==$dataArr.City]}{[$dataArr.City]}{[else]}{[$dataArr.Province]}{[$dataArr.City]}{[/if]}</li></ul>
+        <ul><li class="li1">交易方式</li><li class="li2"> {[foreach from=$buyType item=pay key=paykey]}
+                {[assign var=payID value=$pay]}
+                {[$paymentArr.$payID]}
+            {[/foreach]}</li></ul>
+
+  </div>
+  
+  
+  
+ <div class="wj_cp">    
+     <h3 class="cph3">详情描述:</h3>
+     <ul><li  class="li1">作者</li><li class="li2">{[$dataArr.P_Author]}</li></ul>
+     <ul><li  class="li1">尺寸</li><li class="li2">{[$P_Size.0]}cm X {[$P_Size.1]}cm （约 {[$P_C]} 平尺）</li></ul>
+     <div class="wj_cpsuc">{[$dataArr.P_Content]} </div>
+   </div>
+<div class="wj_xhs">
+  <ul>
+  <li> 联系人：</li><li class="li3">{[$dataArr.P_Contact]}</li>
+  <li style="padding-top:5px; padding-left:15px;"><img src="{[$DIR]}images/rz/{[$userArr.U_Type]}.jpg" /></li>
+  <li style=" padding-top:2px; padding-left:5px; font-size:12px; color:#999;">信誉值：{[$userArr.U_Credit]}</li></ul>
+  <ul>
+  	{[if $dataArr.isRZ]}
+    	<li class="li4">该用户已通过{[if $userArr.U_Type==1]}个人认证{[else]}企业认证{[/if]}，可以放心交易。</li>
+    {[else]}
+    	<li class="li4" style="color:#F00"> 该用户还未经过认证。</li>
+    {[/if]}
+  </ul> 
+</div>
+
+
+<div class="wj_sdp"> <h3 class="cph4">相关信息</h3></div>
+{[foreach from=$goodsArr item=v key=k]}
+    <div class="wj_dp2">
+        <ul>
+            <li class="dp_li"><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">{[if $v.P_Name == '0']}{[$v.P_Author]}{[else]}{[$v.P_Name]}{[/if]}</a></li>
+            <li class="dp_l2"><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">{[$v.P_Money]}元</a></li>
+        </ul>
+    </div>
+{[/foreach]}
+
+
+<div class="wj_gw" id="float_menu">
+	<ul>
+		<li class="wj_gt2"><a href="index.php?m=chat&p=main&pid={[$dataArr.P_ID]}&openid={[$dataArr.OpenID]}{[$swurl]}">在线沟通</a></li>
+		<li class="wj_gtlx2"><a href="tel:{[$dataArr.P_Mobile]}" >电话联系</a></li>
+	</ul>  
+</div>
+
+<!--产品信息 结束-->
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div style="height:50px;"></div>
+<script>
+function collection(pid){
+	$.get('index.php?m=goods&c=collection&p=main&pid=' + pid,function(status){
+		if(parseInt(status)){
+			alert('收藏成功!');
+			$('#collectionImg').attr('src','{[$DIR]}images/fav_1.jpg');
+			$('#collectionImg').removeAttr('onclick');
+		}else{
+			alert('收藏失败!');	
+		}
+	})
+}
+</script>
+</body>
+</html>

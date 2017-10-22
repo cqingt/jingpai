@@ -1,0 +1,226 @@
+SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Jtime > '1459908124' ) AND ( T_Iswin = '1' ) ORDER BY T_Ktime asc LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) LIMIT 1  -------SELECT lepai_admin_goods.*,lepai_admin_theme.T_Ktime FROM `shop_lepai_admin_goods` AS `lepai_admin_goods` INNER JOIN `shop_lepai_admin_theme` AS `lepai_admin_theme` ON lepai_admin_theme.T_Id =lepai_admin_goods.G_Tid WHERE ( lepai_admin_goods.G_Atype = '3' ) AND ( lepai_admin_theme.T_Ktime < '1459908124' ) AND ( lepai_admin_goods.G_EndTime > '1459908124' ) ORDER BY lepai_admin_goods.pai_count desc,lepai_admin_goods.G_Click desc LIMIT 8  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT lepai_admin_goods.*,lepai_admin_theme.T_Ktime FROM `shop_lepai_admin_goods` AS `lepai_admin_goods` INNER JOIN `shop_lepai_admin_theme` AS `lepai_admin_theme` ON lepai_admin_theme.T_Id =lepai_admin_goods.G_Tid WHERE ( lepai_admin_goods.G_Atype = '3' ) AND ( lepai_admin_theme.T_Ktime > '1459908124' ) AND ( lepai_admin_goods.G_EndTime > '1459908124' ) ORDER BY lepai_admin_goods.pai_count desc,lepai_admin_goods.G_Click desc LIMIT 8  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908124' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908124' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,6  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Jtime > '1459908143' ) AND ( T_Iswin = '1' ) ORDER BY T_Ktime asc LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) LIMIT 1  -------SELECT lepai_admin_goods.*,lepai_admin_theme.T_Ktime FROM `shop_lepai_admin_goods` AS `lepai_admin_goods` INNER JOIN `shop_lepai_admin_theme` AS `lepai_admin_theme` ON lepai_admin_theme.T_Id =lepai_admin_goods.G_Tid WHERE ( lepai_admin_goods.G_Atype = '3' ) AND ( lepai_admin_theme.T_Ktime < '1459908143' ) AND ( lepai_admin_goods.G_EndTime > '1459908143' ) ORDER BY lepai_admin_goods.pai_count desc,lepai_admin_goods.G_Click desc LIMIT 8  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT lepai_admin_goods.*,lepai_admin_theme.T_Ktime FROM `shop_lepai_admin_goods` AS `lepai_admin_goods` INNER JOIN `shop_lepai_admin_theme` AS `lepai_admin_theme` ON lepai_admin_theme.T_Id =lepai_admin_goods.G_Tid WHERE ( lepai_admin_goods.G_Atype = '3' ) AND ( lepai_admin_theme.T_Ktime > '1459908143' ) AND ( lepai_admin_goods.G_EndTime > '1459908143' ) ORDER BY lepai_admin_goods.pai_count desc,lepai_admin_goods.G_Click desc LIMIT 8  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908143' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908143' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,6  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '7309' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '57' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '57' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,100  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '599' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '579' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '633' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '596' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '581' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '604' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '600' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '584' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '577' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '587' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '575' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '583' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '586' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '585' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '582' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '590' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '578' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '589' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '576' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '57' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Jtime > '1459908238' ) AND ( T_Iswin = '1' ) ORDER BY T_Ktime asc LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '61' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '62' ) LIMIT 1  -------SELECT SUM(G_Click) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) LIMIT 1  -------SELECT SUM(pai_count) AS nc_sum FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) LIMIT 1  -------SELECT lepai_admin_goods.*,lepai_admin_theme.T_Ktime FROM `shop_lepai_admin_goods` AS `lepai_admin_goods` INNER JOIN `shop_lepai_admin_theme` AS `lepai_admin_theme` ON lepai_admin_theme.T_Id =lepai_admin_goods.G_Tid WHERE ( lepai_admin_goods.G_Atype = '3' ) AND ( lepai_admin_theme.T_Ktime < '1459908238' ) AND ( lepai_admin_goods.G_EndTime > '1459908238' ) ORDER BY lepai_admin_goods.pai_count desc,lepai_admin_goods.G_Click desc LIMIT 8  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT lepai_admin_goods.*,lepai_admin_theme.T_Ktime FROM `shop_lepai_admin_goods` AS `lepai_admin_goods` INNER JOIN `shop_lepai_admin_theme` AS `lepai_admin_theme` ON lepai_admin_theme.T_Id =lepai_admin_goods.G_Tid WHERE ( lepai_admin_goods.G_Atype = '3' ) AND ( lepai_admin_theme.T_Ktime > '1459908238' ) AND ( lepai_admin_goods.G_EndTime > '1459908238' ) ORDER BY lepai_admin_goods.pai_count desc,lepai_admin_goods.G_Click desc LIMIT 8  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908238' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908238' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,6  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '566' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '566' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '566' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '566' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '60' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '566' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_baoming` WHERE ( auction_id = '566' ) AND ( member_id = '414674' ) LIMIT 1  -------SELECT * FROM `shop_lepai_weituo` WHERE ( member_id = '414674' ) AND ( auction_id = '566' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908251' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908251' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,10  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '679' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '566' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '566' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '566' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '566' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '60' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_log` WHERE ( auction_id = '566' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '566' ) ORDER BY price desc LIMIT 0,4  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,100  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '698' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '702' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '695' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '696' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '697' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '699' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '700' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '701' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '703' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '705' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '706' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '704' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '704' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '704' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '704' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_baoming` WHERE ( auction_id = '704' ) AND ( member_id = '410481' ) LIMIT 1  -------SELECT * FROM `shop_lepai_weituo` WHERE ( member_id = '410481' ) AND ( auction_id = '704' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908345' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908345' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,10  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '679' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '704' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '704' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '704' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '704' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,100  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '698' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '702' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '695' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '696' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '697' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '699' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '700' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '701' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '703' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '705' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '706' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '695' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '695' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '695' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '695' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_baoming` WHERE ( auction_id = '695' ) AND ( member_id = '410481' ) LIMIT 1  -------SELECT * FROM `shop_lepai_weituo` WHERE ( member_id = '410481' ) AND ( auction_id = '695' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908404' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908404' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,10  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '679' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '695' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '695' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '695' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '695' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,100  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '695' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '698' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '702' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '696' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '697' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '699' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '700' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '701' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '703' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '705' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '706' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '700' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '700' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '700' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '700' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_baoming` WHERE ( auction_id = '700' ) AND ( member_id = '410481' ) LIMIT 1  -------SELECT * FROM `shop_lepai_weituo` WHERE ( member_id = '410481' ) AND ( auction_id = '700' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908474' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1459908474' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,10  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '664' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '688' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '666' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '669' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '665' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '674' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '677' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '667' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '679' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Id = '700' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_img` WHERE ( IM_GoodsId = '700' ) ORDER BY IM_Type desc LIMIT 1000  -------SELECT * FROM `shop_lepai_admin_goodsinfo` WHERE ( I_GoodsId = '700' ) LIMIT 1000  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_baoming` WHERE ( auction_id = '700' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_Tid = '63' ) AND ( G_Atype >= '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,100  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '690' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '694' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '704' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '707' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '691' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '692' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '708' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '693' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '695' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '698' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '700' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '702' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '696' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '697' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '699' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '701' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '703' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '705' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------SELECT * FROM `shop_lepai_log` WHERE ( auction_id = '706' ) ORDER BY price desc LIMIT 1  -------SELECT * FROM `shop_lepai_admin_theme` WHERE ( T_Id = '63' ) LIMIT 1  -------Array
+(
+    [table] => `shop_lepai_admin_goods`
+    [field] => *
+    [where] => Array
+        (
+            [G_Id] => 646
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_admin_img`
+    [field] => *
+    [where] => Array
+        (
+            [IM_GoodsId] => 646
+        )
+
+    [order] => IM_Type desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_lepai_admin_goodsinfo`
+    [field] => *
+    [where] => Array
+        (
+            [I_GoodsId] => 646
+        )
+
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_lepai_baoming`
+    [where] => Array
+        (
+            [auction_id] => 646
+        )
+
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_admin_theme`
+    [field] => *
+    [where] => Array
+        (
+            [T_Id] => 60
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 646
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_admin_goods`
+    [where] => Array
+        (
+            [G_EndTime] => Array
+                (
+                    [0] => gt
+                    [1] => 1459908592
+                )
+
+            [G_Atype] => 3
+        )
+
+    [field] => COUNT(*) AS nc_count
+    [order] => pai_count desc,G_Click desc
+    [limit] => 1
+    [page] => 10
+)
+Array
+(
+    [table] => `shop_lepai_admin_goods`
+    [where] => Array
+        (
+            [G_EndTime] => Array
+                (
+                    [0] => gt
+                    [1] => 1459908592
+                )
+
+            [G_Atype] => 3
+        )
+
+    [field] => *
+    [order] => pai_count desc,G_Click desc
+    [limit] => 1000
+    [page] => 10
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 664
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 688
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 666
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 669
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 665
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 674
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 677
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 667
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 679
+        )
+
+    [order] => price desc
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_lepai_log`
+    [field] => *
+    [where] => Array
+        (
+            [auction_id] => 690
+        )
+
+    [order] => price desc
+    [limit] => 1
+)

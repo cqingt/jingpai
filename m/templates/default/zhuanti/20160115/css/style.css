@@ -1,0 +1,110 @@
+/* commonality */	 
+body {
+  font-family: 'Microsoft YaHei';
+  -webkit-text-size-adjust: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td, textarea, input { 
+  font-weight: normal; 
+  padding: 0;
+  margin: 0;
+}
+a, a:link, a:active, a:visited, a:hover{
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+input {-webkit-appearance:none;}
+/* commonality End */
+
+.section {
+  width:100%;  
+  overflow:hidden; 
+  max-width:640px; 
+  min-width: 320px; 
+  margin:0 auto; 
+}
+.banner {
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  vertical-align: top;
+}
+.tile-box {
+  background: url(../images/tile.jpg); 
+}
+.tile-box .description {
+  text-align: center;
+  color: #695412;
+}
+.tile-box .description h1 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  padding: 20px 20px 0;
+}
+.tile-box .description h2 {
+  font-size: 15px;
+  line-height: 44px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+.tile-box .description h2 em {
+  font-weight: bold;
+}
+.tile-box .description p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 6px;
+}
+
+.tile-box {
+  background: url(../images/footer.jpg) repeat-y top center; 
+  background-size: 100%;
+}
+.userinfo {
+  width: 84%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 4px 0 26px;
+}
+.userinfo label {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 6px;
+  text-align: right;
+  line-height: 26px;
+  width: 72px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1; 
+}
+.userinfo .hp-input {
+  margin-bottom: 10px;
+}
+.userinfo .hp-input input {
+  border: 1px #fff solid;
+  font-size: 14px;
+  text-indent: 10px;
+  color: #fff;
+  line-height: 26px;
+  width: 60%;
+  height: 26px;
+  background: none; 
+}
+.participation {
+  margin-top: 16px;
+  display: block;
+  background: #ff00ff;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%;
+}
+.participation:hover {
+  background: #e34500;
+}

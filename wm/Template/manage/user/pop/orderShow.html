@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单管理 - {[$W_NAME]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td colspan="5">
+        <ul class="mian3_box1">
+           <li><span>订单编号：</span>{[$dataArr.O_Number]}</li>
+
+           <li><span>下单时间：</span>{[$dataArr.O_Time|date_format:"%Y-%m-%d"]}</li>
+
+           <li>
+           <span>支付方式：</span>{[$dataArr.P_name]}</li>
+
+<li>
+           <span>交易方式：</span>{[if $dataArr.O_Payment == 1]}线下交易{[else]}线上交易{[/if]}</li>
+           
+        </ul>
+    </td>
+    </tr>
+  <tr class="title">
+    <td width="12%">购货人</td>
+    <td width="8%">购货人电话</td>
+    <td width="15%">订单编号</td>
+    <td width="40%">详细地址</td>
+    <td width="25%">订单状态</td>
+  </tr>
+  <tr class="con">
+    <td width="12%">
+    {[$dataArr.O_Consignee]}
+    </td>
+    <td width="8%">
+   <!-- <img src="static/images/view.png" onclick="viewCustomerInfo({[$dataArr.O_UID]});" style="cursor:pointer" title="查看客户信息"/>
+   -->
+    {[$dataArr.O_Mobile]}
+    </td>
+    <td width="15%">{[$dataArr.O_Number]}</td>
+    <td width="40%">{[$dataArr.Province]} {[$dataArr.City]} {[$dataArr.O_Address]}</td>
+    <td width="25%" class="queren">
+   {[$dataArr.PayStatus]}&nbsp;{[$dataArr.PayShipping]}&nbsp;{[$dataArr.OrderStatus]}
+    </td>
+  </tr>
+</table>
+
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td colspan="7" style="height:30px; line-height:30px; color:#09a1d2; font-size:14px; font-weight:bold;">订单产品
+    </td>
+    </tr>
+  <tr class="title">
+    <td width="5%">ID</td>
+    <td width="35%">商品名称</td>
+    <td width="12%">产品价格</td>
+  </tr>
+{[foreach from=$OordeGgoodsArr item=v key=k]}  
+  <tr class="con">
+    <td width="5%">{[$v.O_GoodsID]}</td>
+    <td width="35%" style=" text-align:left; padding-left:10px;">{[$v.O_GoodsName]}</td>
+    <td width="12%"  style=" text-align:right; padding-right:10px;">￥{[$v.O_GoodsMoney]}元</td>
+  </tr>
+{[assign var=totalProPrice value=$totalProPrice+$v.O_GoodsMoney]} 
+{[/foreach]}
+  <tr>
+    <td colspan="7" style=" text-align:right; padding-right:10px; height:30px; line-height:30px;">
+    合计：金额：￥{[$totalProPrice]}元
+
+    </td>
+    </tr>
+  <tr>
+    <td colspan="7" style="text-align:right; padding-right:10px; line-height:24px; padding-top:10px; padding-bottom:10px;">
+	
+        商品总额：<span style="color:#ff0000;">￥{[$dataArr.O_Price]}</span> 元
+    </td>
+    </tr>
+</table>
+<table class="table" width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td width="10%" height="28" class="title">相关操作：</td>
+    <td width="90%" height="28" style="text-align:left; padding-left:10px;">
+	{[if $dataArr.O_PayStatus == 0]}
+		<input name="O_PayStatus_2" id="O_PayStatus_2" type="button" value="付款" onclick="return setOrder('O_PayStatus',1);">
+	{[else]}
+		已付款
+	{[/if]}
+	{[if $dataArr.O_PayShipping == 0]}
+		<input name="O_PayShipping_2" id="O_PayShipping_2" type="button" value="已发货" onclick="return setOrder('O_PayShipping',1);">
+	{[else]}
+		{[if $dataArr.O_PayShipping == 1]}
+			已发货
+			<input name="O_PayShipping_2" id="O_PayShipping_2" type="button" value="已收货" onclick="return setOrder('O_PayShipping',2);">
+		{[/if]}
+		{[if $dataArr.O_PayShipping == 2]}
+			已收货
+		{[/if]}
+	{[/if]}
+	{[if $dataArr.O_OrderStatus == 0]}
+		{[if $dataArr.O_PayShipping == 2 && $dataArr.O_PayStatus == 1 && $dataArr.O_Payment == 2]}
+		
+		<input name="O_OrderStatus_2" id="O_OrderStatus_2" type="button" value="已结算" onclick="return setOrder('O_OrderStatus',1);">
+		{[/if]}
+	{[else]}
+		已结算
+	{[/if]}
+    </td>
+  </tr>
+</table> 
+                                     
+</div>
+<script>
+
+
+
+function setOrder(status,val){
+	//发送数据包
+		$.post(
+				'index.php?m=manageOrder&c=setOrderStatus&p=manage&oid={[$dataArr.O_ID]}',
+				{ fields : status, value : val},
+				function(s){
+					if(parseInt(s))	{
+						$.alert('操作成功!','友情提示',function(){
+							window.location.reload();
+						})	
+					}else{
+						if(s==''){
+							$.alert('操作错误!','友情提示');	
+						}else{
+							$.alert(s,'友情提示');
+						}
+					}
+		});
+	}
+
+
+</script>
+</body>
+</html>

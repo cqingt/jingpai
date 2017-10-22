@@ -1,0 +1,94 @@
+
+.photo01 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_01.jpg);
+	height: 329px;
+}
+.photo02 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_02.jpg);
+	height: 328px;
+}
+.photo03 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_03.jpg);
+	height: 329px;
+}
+.photo04 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_04.jpg);
+	height: 357px;
+}
+.photo05 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_05.jpg);
+	height: 291px;
+}
+.photo06 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_06.jpg);
+	height: 490px;
+}
+.photo07 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_07.jpg);
+	height: 275px;
+}
+.photo08 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_08.jpg);
+	height: 754px;
+}
+.photo09 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_09.jpg);
+	height: 276px;
+}
+.photo10 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_10.jpg);
+	height: 754px;
+}
+.photo11 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_11.jpg);
+	height: 276px;
+}
+.photo12 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_12.jpg);
+	height: 754px;
+}
+.photo13 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_13.jpg);
+	height: 276px;
+}
+.photo14 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_14.jpg);
+	height: 754px;
+}
+.photo15 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/shuhua20161111web/sh_15.jpg);
+	height: 170px;
+}
+[class*='photo'] {
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+[class*='photo'] img {
+	vertical-align: top;
+}
+.ui-wrap {
+	position: relative;
+	width: 1040px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ui-wrap.one a {
+	display: block;
+	width: 100%;
+	height: 170px;
+}
+.ui-wrap.two a {
+	display: block;
+	float: left;
+	margin: 0 0 20px 20px;
+	width: 490px;
+	height: 235px;
+}
+.ui-wrap.four a {
+	display: block;
+	float: left;
+	width: 235px;
+	margin-left: 20px;
+	margin-bottom: 18px;
+	height: 370px;
+}

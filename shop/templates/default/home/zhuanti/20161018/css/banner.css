@@ -1,0 +1,17 @@
+﻿
+.sh_banner-pos{ position:relative; width:1200px; height:auto; margin:0 auto;}
+.sh_banner-box{width:436px; height:711px; padding:20px; margin-top:60px; overflow:hidden; background-color:#FFF; position:absolute; left:45px; box-shadow:0px 5px 5px #bebbbc; z-index:9;}
+.sh_banner-box .bd{ width:436px !important;}
+.sh_banner-box .bd li .m-width {width:436px;margin:0 auto;overflow:hidden;}
+.sh_banner-box .bd ul{height:621px; overflow: hidden;}
+.sh_banner-box .bd li{width:436px !important;height:621px; overflow: hidden;}
+.sh_banner-box .bd li a{display:block;background-size:auto;}
+
+.sh_banner-btn{width:1210px;position:absolute;top:120px;left:50%;margin-left:-605px;}
+.sh_banner-btn a{display:block;width:49px;height:104px;position:absolute;top:0;filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;}
+.sh_banner-btn a.prev{left:20px;background:url(../images/foot.png) no-repeat 0 0;} 
+.sh_banner-btn a.next{right:20px;background:url(../images/foot.png) no-repeat -49px 0;}
+
+.sh_banner-box .hd {position:absolute;top:475px;left:425px;}
+.sh_banner-box .hd ul li{width:35px;height:35px;border-radius:50%;text-indent:-9999px;margin-right:15px; margin-top:30px;background:#c3965b; border:5px solid #fff;float:left;cursor:pointer;}
+.sh_banner-box .hd ul li.on{background:/*url(../images/hd.png) no-repeat center center  */#cd2e10;width:55px; height:55px; margin-top:15px;}

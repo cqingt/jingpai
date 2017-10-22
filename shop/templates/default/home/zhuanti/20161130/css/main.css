@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background: url(http://img.96567.com/taxue20161130web/txbj.jpg);
+}
+.txbox1  {
+	background:#bfbfc1 url(http://img.96567.com/taxue20161130web/taxue_01.jpg);
+	height: 357px;
+}
+.txbox2  {
+	background:#bfbfc1 url(http://img.96567.com/taxue20161130web/taxue_02.jpg);
+	height: 120px;
+}
+.txbox4  {
+	background: url(http://img.96567.com/taxue20161130web/taxue_04.jpg);
+	height: 916px;
+}
+.txbox6  {
+	background: url(http://img.96567.com/taxue20161130web/taxue_06.jpg);
+	height: 356px;
+}
+.txbox7  {
+	background: url(http://img.96567.com/taxue20161130web/taxue_07.jpg);
+	height: 376px;
+}
+.txbox8  {
+	background: url(http://img.96567.com/taxue20161130web/taxue_08.jpg);
+	height: 380px;
+}
+.txbox10 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_10.jpg);
+	height: 197px;
+}
+.txbox11 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_11.jpg);
+	height: 781px;
+}
+.txbox12 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_12.jpg);
+	height: 376px;
+}
+.txbox13 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_13.jpg);
+	height: 363px;
+}
+
+.txbox14 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_14.jpg);
+	height: 388px;
+}
+
+.txbox16 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_16.jpg);
+	height: 1068px;
+}
+.txbox17 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_17.jpg);
+	height: 370px;
+}
+.txbox18 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_18.jpg);
+	height: 369px;
+}
+.txbox19 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_19.jpg);
+	height: 370px;
+}
+
+.txbox21 {
+	background: url(http://img.96567.com/taxue20161130web/taxue_21.jpg);
+	height: 199px;
+}
+
+[class*='txbox']{
+	margin: 0 auto;
+	background-repeat:no-repeat ;
+	background-position: center top;
+}
+
+.ui-wrap {
+	width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ui-wrap.one {
+	height: 100%;
+}
+.ui-wrap.one a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ui-wrap.two {
+	height: 100%;
+}
+.ui-wrap.two a {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.ui-wrap.four {
+	height: 100%;
+}
+.ui-wrap.four a {
+	display: block;
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+.txbtn.ui-wrap {
+	text-align: center;
+	cursor: pointer;
+}
+.boxes {
+	display: none;
+}
+.boxes.show {
+	display: block;
+}
+.txbtn p {
+	position: relative;
+	display: block;
+	width: 1200px;
+	height: 107px;
+	margin: 0 auto;
+	background: url(http://img.96567.com/taxue20161130web/zhankai.jpg) no-repeat;
+}
+.txbtn.show p {
+	background: url(http://img.96567.com/taxue20161130web/shouqi.jpg) no-repeat;
+}

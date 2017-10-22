@@ -1,0 +1,11 @@
+{[foreach from=$dataArr item=v key=k]} 
+<dl>
+          <dd><a href="index.php?m=goods&p=main&id={[$v.P_ID]}{[$swurl]}"><img src="{[$v.Img]}" width="80px" height="80px;"></a></dd>
+          <dt>
+          <div class="name"><a href="index.php?m=goods&p=main&id={[$v.P_ID]}{[$swurl]}">{[$v.P_Name]}</a></div>
+          <div class="rzdb"><a href='javascript:if(confirm("您确定要取消该收藏吗？")){location.href="index.php?m=collection&p=main&c=cancel&id={[$v.F_ID]}";};' style='font:bold 14px/20px "微软雅黑"; color:#ff0000;'>取消收藏</a></div>
+          </dt>
+          <dt class="sjjg" style="width:300px;" ><span class="sj">{[$v.F_Time|date_format:"%Y-%m-%d"]}</span> <span class="jg">{[$v.P_Money]}</span></dt>
+</dl>
+{[/foreach]}  
+  

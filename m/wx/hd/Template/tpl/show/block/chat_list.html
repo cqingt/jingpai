@@ -1,0 +1,6 @@
+{[foreach from=$dataArr item=v key=k]}   
+     <dl>
+        <dd class="{[if $v.toOpenID!=$openid]}right{[else]}left{[/if]}"><img src="{[$DIR]}images/tx.jpg" width="40" height="40" alt=""></dd>
+        <dt class="{[if $v.toOpenID!=$openid]}right{[else]}left{[/if]}"><p></p><span>{[$v.C_Message]}</span></dt>  
+     </dl>
+{[/foreach]}     

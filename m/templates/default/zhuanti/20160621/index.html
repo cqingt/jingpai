@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+     <!--jQuery动画暂停插件-->
+    <script src="js/jquery.pause.min.js"></script>
+    <!--滚动效果js-->
+    <script src="js/weiboscroll.js"></script>
+ 
+</head>
+<body>
+	<div class="photo-one">
+		<img src="images/photo_02.jpg"/>
+		<img src="images/photo_03.jpg"/>
+		<img src="images/photo_04.jpg"/>
+		<img src="images/photo_05.jpg"/>
+		<img src="images/photo_06.jpg"/>
+		<img src="images/photo_07.jpg"/>
+		<img src="images/photo_08.jpg"/>
+		<img src="images/photo_09.jpg"/>
+		<img src="images/photo_10.jpg"/>
+		<a id="btn1" href="javascript:;"><img src="images/photo_11.jpg"/></a>
+		<img src="images/photo_12.jpg"/>
+		<img src="images/photo_13.jpg"/>	
+	</div>
+	<div class="photo-two">	
+		<a class="btn3" href="javascript:;"><img src="images/photo_14.jpg"/></a>
+		<a class="btn3" href="javascript:;"><img src="images/photo_15.jpg"/></a>
+	</div>
+	<div class="photo-two">
+		<a class="btn3" href="javascript:;"><img src="images/photo_16.jpg"/></a>
+		<a class="btn3" href="javascript:;"><img src="images/photo_17.jpg"/></a>
+	</div>
+	<div class="photo-one">
+		<a class="btn3" href="javascript:;"><img src="images/photo_18.jpg"/></a>
+		<img src="images/photo_19.jpg"/>
+	</div>	
+	<div class="photo-two">
+		<a id="btn2" href="javascript:;"><img src="images/photo_20.jpg"/></a>
+		<a id="btn6" href="JavaScript:;"><img src="images/photo_21.jpg"/></a>
+	</div>	
+	<div class="main-one">
+		<a class="head-portrait" href=""><img src="images/portrait.jpg"/></a>
+		<p>Sandra</p>
+	</div>
+
+	<div class="boxes">
+		<div class="photo-three">
+			<img src="images/photo_23.jpg"/>
+			<h2>当前助力人数：58人</h2>
+		</div>		
+		<div class="photo-four">
+            <div class="art-record"  id="art-con">
+<!--            <p class="begin">活动马上开始</p>-->
+                <ul>
+                   <li>
+                      <h3>
+                      	<div class="tx">
+                      		<img src="images/portrait.jpg"/>
+                      	</div>
+                      </h3>
+                      <h4>XXX微信好友</h4>
+                      <p>助力成功</p>
+                      <h6>1朋友，是一辈子的</h6>
+                   </li>                       
+                </ul>
+            </div>			
+		</div>
+	</div>
+	
+	
+	<div class="popup">
+	   <!-- 活动规则  btn1-->
+	   <div id="rule" class="content">
+         <a class="close" href="javascript:;" onclick="closeBg();"></a>
+         <div class="rule tab-content">
+              <h2>活动规则</h2>
+              <p>1、	点击“我要参加”分享活动，即可召唤好友助力领取话费</p>
+              <p>2、	前来助力的好友点击“助力一下”，注册成功之后即可为好友助力</p>
+              <p>3、	邀请不同数量的好友助力，可以免费提取不等的话费：邀请 3个、5个、10个、15个、20个好友助力，分别可以获得10元、20元、50元、100元、200元的话费奖励；一旦点击了“提取”按钮，该用户发起的活动立即结束，在72小时内将收到我们为您充值的话费（上限200元）</p>
+              <p>4、	若在72小时内未收到话费，请前往“收藏天下”官方微信进行咨询，本活动最终解释权归“收藏天下”所有</p>
+              <img class="img WeChat" src="images/WeChat.jpg"/>
+              <p>温馨提示：“收藏天下”将持续举办各种趣味活动，为您发放话费和红包等福利，扫码关注，坐享其成，还有更多惊喜哦！</p>
+              <img class="img mt" src="images/logo.jpg"/>
+         </div>	
+       </div>		
+       
+	   <!-- 用户点击提取话费（弹窗）  btn3-->
+	   <div id="telephone" class="content">
+         <a class="close" href="javascript:;" onclick="closeBg();"></a>
+         <div class="telephone tab-content">
+            <img class="img" src="images/top3.jpg"/>
+            <span>10元话费</span>
+            <form action="">
+	            <input class="message" type="tel" name="" id="" value="" placeholder="请输入手机号">
+	            <div class="ui-select">
+					<select>
+					  <option value="volvo">选择运营商</option>
+					  <option value="saab">联通</option>
+					  <option value="opel">电信</option>
+					</select>
+					<select>
+					  <option value="volvo">选择地区</option>
+					  <option value="saab">上海</option>
+					  <option value="opel">广州</option>
+					  <option value="audi">重庆</option>
+					</select>	            	
+	            </div>	
+	            <input class="ok mb" type="submit" name="" id="" value="提交" />
+            </form>
+            <p>温馨提示：完成此次话费提取之后，活动即结束，用户将无法继续参与活动。</p>
+            <p>话费领取完成后将在72小时内进行派送，若72小时后未收到话费，请前往【收藏天下官方微信】咨询</p>
+         </div>	
+       </div>		
+				       
+				
+	   <!-- 弹窗  登录与注册  btn2-->
+	   <div id="dialog" class="content">
+	     <a class="close" href="javascript:;" onclick="closeBg();"></a>
+	         <img class="img" src="images/logo-top.jpg"/>
+		     <div class="coat">
+		         <div class="investment_con mt">
+		         	<div class="inv-demo">
+			             <div class="tab-content">
+				             <form id="register_form" method="post" action="">
+							     <div class="row">
+							         <label for="">用户名</label>
+							         <input type="text" value="">		     	
+							     </div>
+							     <div class="row">
+							         <label for="">设置密码</label>
+							         <input type="password" value="">		     	
+							     </div>
+							     <div class="row">
+							         <label for="">确认密码</label>
+							         <input type="password" value="">		     	
+							     </div>			
+							     <div class="row">
+							         <label for="">手机号</label>
+							         <input type="tel" value="">		     	
+							     </div>						     
+							     <div class="row">
+							         <label for="">验证码</label>
+							         <input class="verify" type="tel" value="">	
+							         <input class="submit" type="submit" name="" id="" value="获取验证码" />
+							     </div>		   
+							     <input class="rio-button" type="button" id="" value="立即注册">  
+							     <!--注册完，要跳转到  2.html页面-->
+							 </form>           
+			             </div>	     		
+		         	</div>
+		         </div>	   
+		    	     	
+		     </div>
+         </div>
+         
+         
+	   <!-- 弹窗  登录与注册 我也参加2   btn4-->
+	   <div id="dialog2" class="content">
+	     <a class="close" href="javascript:;" onclick="closeBg();"></a>
+		     <div class="coat">
+		         <ul class="activity-nav investment_title">
+		         	<li class="on">登录</li>
+		         	<li>注册</li>
+		         </ul>
+		         <div class="investment_con">
+		         	<div class="inv-demo">
+		         		 <img class="img mb" src="images/word1.png"/>
+			             <div class="tab-content">
+				             <form id="register_form" method="post" action="">
+							     <div class="row">
+							         <label for="">账号</label>
+							         <input type="text" value="">		     	
+							     </div>
+							     <div class="row">
+							         <label for="">密码</label>
+							         <input type="password" value="">		     	
+							     </div>	   
+							     <input class="rio-button" type="button" id="" value="登录">    
+							 </form>           
+			             </div>	         		
+		         	</div>
+		         	<div class="inv-demo">
+		         		<img class="img mb" src="images/word2.png"/>
+			             <div class="tab-content">
+				             <form id="register_form" method="post" action="">
+							     <div class="row">
+							         <label for="">用户名</label>
+							         <input type="text" value="">		     	
+							     </div>
+							     <div class="row">
+							         <label for="">设置密码</label>
+							         <input type="password" value="">		     	
+							     </div>
+							     <div class="row">
+							         <label for="">确认密码</label>
+							         <input type="password" value="">		     	
+							     </div>			
+							     <div class="row">
+							         <label for="">手机号</label>
+							         <input type="tel" value="">		     	
+							     </div>						     
+							     <div class="row">
+							         <label for="">验证码</label>
+							         <input class="verify" type="tel" value="">	
+							         <input class="submit" type="submit" name="" id="" value="获取验证码" />
+							     </div>		   
+							     <input class="rio-button" type="button" id="" value="立即注册">    
+							 </form>           
+			             </div>		
+		         	</div>
+		         </div>	   
+		    	     	
+		     </div>
+         </div>         
+         
+ 	   <!-- 还不是好友  btn5-->
+	   <div id="share" class="content2">
+         <div class="tab-content">
+             <a class="" href="javascript:;" onclick="closeBg();"> <img class="img" src="images/share.png"/></a>
+         </div>	
+       </div>	        
+ 
+ 	   <!-- 还不是好友  btn6-->
+	   <div id="query" class="content">
+         <a class="close" href="javascript:;" onclick="closeBg();"></a>
+         <div class="tab-content">
+            <img class="img" src="images/query.jpg"/>
+         </div>	
+       </div>	
+         
+	</div>
+
+	   <!-- 遮罩层 -->
+	  <a id="fullbg" class="mask-layer" href="javascript:;" onclick="closeBg();"></a>
+ 
+	 
+	 <script type="text/javascript">	     
+	     //活动规则
+	     $('#btn1').click(function(){
+	     	rule();
+	     })	    
+	 
+	     //登录与注册
+	     $('#btn2').click(function(){
+	     	showBg();
+	     })
+	     
+	     //活动规则
+	     $('#btn3,.btn3').click(function(){
+	     	telephone();
+	     })	    
+	     
+	     //登录与注册 上面带图片
+	     $('#btn4').click(function(){
+	     	showBg2();
+	     })	    	 	     
+
+	     //分享
+	     $('#btn5').click(function(){
+	     	share();
+	     })	    
+	     
+	     //还不是好友
+	     $('#btn6').click(function(){
+	     	query();
+	     })	    	 	     
+
+
+	     function showBg() { 
+		  $("#dialog,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#dialog,#fullbg").show(); 
+		  } 
+	     function showBg2 () { 
+		  $("#dialog2,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#dialog2,#fullbg").show(); 
+		  } 
+		  
+		  
+	     function rule() { 
+		  $("#rule,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#rule,#fullbg").show(); 
+		  } 		  
+
+	     function telephone() { 
+		  $("#telephone,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#telephone,#fullbg").show(); 
+		  } 
+
+	     function share() { 
+		  $("#share,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#share,#fullbg").show(); 
+		  } 
+		  
+	     function query() { 
+		  $("#query,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#query,#fullbg").show(); 
+		  } 		  
+		  
+		  
+		  //关闭灰色 遮罩 
+		  function closeBg() { 
+		    $("#dialog,#dialog2,#fullbg,#rule,#telephone,#share,#query").hide(); 
+		  } 
+
+	 </script>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

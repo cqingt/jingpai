@@ -1,0 +1,21 @@
+[2017-10-15 19:56:47] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_groupbuy' n'existe pas
+SELECT * FROM `shop_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1508068607' ) AND ( end_time > '1508068607' ) ORDER BY recommended desc LIMIT 4  
+[2017-10-15 19:56:47] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_miaosha' n'existe pas
+SELECT * FROM `shop_miaosha` WHERE state = 20  AND end_time > 1508068607 AND max_quantity - buy_quantity > 0 ORDER BY start_time asc,m_sort asc LIMIT 6  
+[2017-10-15 19:56:48] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_link' n'existe pas
+SELECT * FROM `shop_link` as `link`   order by link_id
+[2017-10-15 19:56:48] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_p_xianshi_goods' n'existe pas
+SELECT * FROM `shop_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1508068607' ) AND ( end_time > '1508068607' ) ORDER BY xianshi_recommend desc LIMIT 4  
+[2017-10-15 19:56:48] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_lepai_admin_goods' n'existe pas
+SELECT COUNT(*) AS nc_count FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1508068607' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 1  
+[2017-10-15 19:56:48] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_lepai_admin_goods' n'existe pas
+SELECT * FROM `shop_lepai_admin_goods` WHERE ( G_EndTime > '1508068607' ) AND ( G_Atype = '3' ) ORDER BY pai_count desc,G_Click desc LIMIT 0,3  
+[2017-10-15 19:56:48] /paimai/ ( act=index&op=index ) 
+ERR: Db Error: La table 'paimai_online.shop_web' n'existe pas
+SELECT * FROM `shop_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  

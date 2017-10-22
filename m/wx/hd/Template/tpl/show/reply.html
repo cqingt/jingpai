@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>在线洽谈</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script>
+$(function(){
+	$.get('index.php?m=chat&c=chatList&p=main&pid={[$pid]}&openid={[$toOpenID]}&fromOpenID={[$fromOpenID]}',function(html){
+		$('.online').html(html);	
+	})	
+})
+</script>
+</head>
+
+<body>
+<div id="layout" style="position: absolute; width:100%; height:600px;; background:rgba(255,255, 255, 0.8) none repeat scroll 0 0 !important;
+filter:Alpha(opacity=80); background:#fff; top:0px; left:0px;display:none"><img src="static/images/laod_wait.gif" style="padding-left:20%;padding-top:40%"/></div>
+
+<div class="top_back"><a href="javascript:history.back();">返回</a> > 在线洽谈</div>
+<!---->
+<div class="lmlm_content" id="lmlm_pic">          
+          <dl style="background-color:#f0f0f0;position:fixed;right:0px;top:56px;z-index:1000;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-0-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||100))); border-top:1px solid #ddd;">
+          <a href="index.php?m=goods&p=main&id={[$dataArr.P_ID]}{[$swurl]}" style="padding-left:10px;">
+          <dd><p><img src="{[$dataArr.Img]}" width="80px" height="80px;"></p></dd>
+          <dt>
+          <div class="name">{[$dataArr.P_Name]}</div>
+          <div class="rzdb">
+		  {[assign var=payArr value=","|explode:$dataArr.P_BuyType]}
+			{[foreach from=$payArr item=v1 key=k1]}
+				<span style="color:{[if $v1==1]}#900{[else]}#090{[/if]}; font-size:12px; border:1px solid #ddd; border-radius:3px; padding:3px;">{[$paymentArr.$v1]}</span>
+			{[/foreach]}
+		  </div>
+          </dt>
+          <dt class="sjjg" style="width:100%; display:block;" ><span class="sj">{[$dataArr.P_Time|date_format:"%m-%d %H:%S"]}  {[if $dataArr.Province==$dataArr.City]}{[$dataArr.City]}{[else]}{[$dataArr.Province]}{[$dataArr.City]}{[/if]}</span> <span class="jg">{[$dataArr.P_Money]}元</span></dt>
+          </a>
+          </dl>
+          <dl style="height:90px; border:0px;">&nbsp;</dl>
+</div>
+
+
+<!---在线沟通 kaishi--->
+<div class="online">
+	
+</div>
+<!---在线沟通 jieshu--->
+
+<div class="online_float">
+     <div class="ico">&nbsp;</div>
+     <div class="k"><input name="Message" type="text" id="Message" maxlength="300"></div>
+     <div class="fasong"><a href="javascript:sendMessage({[$pid]},'{[$fromOpenID]}');$('#Message').val('');">发送</a></div>
+</div>
+<script>
+function sendMessage(pid,openid){
+	var content = $('#Message').val();
+	if(content==''){
+		alert('发送内容不能为空哦！');
+		return false;
+	}
+	$('#layout').show();
+	$.post('index.php?m=chat&c=sendMessage&p=main&type=1',{pid : pid, openid : openid, content: content},function(html){
+		$('#layout').hide();
+		$('.online').html(html);
+	})
+}
+</script>
+</body>
+</html>

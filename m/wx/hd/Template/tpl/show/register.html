@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 注册</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type=text/javascript src="static/js/jquery-1.7.js"></script>
+<script type=text/javascript src="{[$DIR]}js/hover.js"></script>
+</head>
+
+<body>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz">
+     <a href="###" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">注册</a>
+</div>
+
+<div class="zc_menu">
+     <a href="###" id="one1" onclick="setTab('one',1,2)" class="hover">普通注册</a>
+     <a href="###" id="one2" onclick="setTab('one',2,2)">手机注册</a>  
+</div>
+<form name="form1" method="post" action="index.php?m=register&c=addRegister&p=main">
+<input type="hidden" name="U_OpenID" id="U_OpenID" value="{[$openid]}">
+<!---普通注册内容 kaishi--->
+<div class="zc_form" id="con_one_1">
+     <ul><li class="zd1">账号</li><li class="zd2"><input class="input_zck" name="U_UserName" type="text" id="U_UserName"> 
+     </li>
+     </ul>
+    <ul><li class="zd1">密码</li><li class="zd2"><input class="input_zck" name="password" type="password" id="password"></li></ul>
+     <ul><li class="zd1">确认</li><li class="zd2"><input class="input_zck" name="password1" type="password" id="password1"></li></ul>
+     <ul><li class="zd1">推荐人</li><li class="zd2"><input name="U_FromOpenID" type="text" class="input_zck" id="U_FromOpenID" value="{[$swopenid]}" readonly></li></ul>
+     <!--
+     <ul><li class="zd1">验证码</li><li class="zd3"><input class="input_yzm" name="" type="text"></li><li class="zd4"><img src="images/yzm.jpg" alt=""></li></ul>
+     -->
+</div>
+<!---普通注册内容 jieshu--->
+
+<!---手机注册内容 kaishi--->
+<div class="zc_form" id="con_one_2" style="display:none;">
+     <ul><li class="zd1">手机号</li><li class="zd2"><input class="input_zck" name="U_Mobile" type="text" id="U_Mobile"></li></ul>
+     <ul><li class="zd1">密码</li><li class="zd2"><input class="input_zck" name="pass1" type="password" id="pass1"></li></ul>
+     <ul><li class="zd1">推荐人</li><li class="zd2"><input name="U_FromOpenID" type="text" class="input_zck" id="U_FromOpenID" value="{[$swopenid]}" readonly></li></ul>
+     <ul><li class="zd1">验证码</li><li class="zd3" style="width:40%"><input class="input_yzm" name="code" type="text" id="code"></li><li class="zd4" style="width:30%"><a href="javascript:getCode();">获取验证码</a></li></ul>
+     </ul>
+</div>
+<!---手机注册内容 jieshu--->
+</form>
+
+<div class="tijiao_but"><a href="javascript:register();">免费注册</a></div>
+<!--
+<div style="color:#999; padding-left:15px; line-height:40px;">已有搜藏账号？<a href="index.php?m=register&c=login&p=main" style="color:#e33a3d;">立即登录></a></div>
+-->
+{[include file="tpl/show/inc/bottom.html"]}
+<script>
+function register(){
+	var username;
+	var password;
+	var code;
+	var a;
+	var openid = $('#U_OpenID').val();
+	if($('#con_one_1').css("display") == 'none'){
+		if($('#U_Mobile').val()==''){
+			alert('手机号不能为空!');
+			return false;	
+		}
+		
+		code = $('#code').val();
+		if(code == ''){
+			alert('验证码不能为空!');
+			return false;	
+		}	
+		
+		var pass1 = $('#pass1').val();
+		if(pass1==''){
+			alert('密码不能为空!');
+			return false;	
+		}
+		username = $('#U_Mobile').val();
+		password = pass1;
+		a = 'mobile';
+	}else{
+		if($('#U_UserName').val()==''){
+			alert('用户名不能为空!');
+			return false;	
+		}
+		
+		var pass1 = $('#password').val();
+		var pass2 = $('#password1').val();
+		if(pass1=='' || pass2==''){
+			alert('请正确输入密码!');
+			return false;	
+		}else if(pass1!=pass2){
+			alert('二次输入的密码不一致!');
+			return false;		
+		}
+		username = $('#U_UserName').val();
+		password = pass1;
+		a = 'username';
+	}
+
+	$.post('index.php?m=register&c=addRegister&p=main',{U_UserName : username, password : password, U_OpenID : openid, code : code, fromOpenID : '{[$swopenid]}', action : a},function(val){
+		val = parseInt(val);
+		if(val > 0){
+			alert('注册成功!');
+			window.location.href='index.php?m=member&p=main';
+		}else if(val == -1){
+			alert('验证码错误!');
+			return false;
+		}else if(val == -2){
+			alert('该用户名已存在!');
+			return false;
+		}else{
+			alert('注册失败，请联系管理员');	
+			return false;
+		}
+	})
+}
+
+function getCode(){
+	var mobile = $('#U_Mobile').val();
+	if(!mobile || mobile.length != 11){
+		alert('请输入手机号码');	
+		return false;
+	}
+	$.get('index.php?m=sms&c=sendCode&p=action&mobile=' + mobile, function(status){
+		status = parseInt(status);
+		if(status){
+			alert('短信发送成功!');
+		}else{
+			alert('短信发送失败,请联系管理员!');	
+		}
+	})
+}
+</script>
+</body>
+</html>

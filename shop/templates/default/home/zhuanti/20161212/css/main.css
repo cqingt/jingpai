@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.treasure1  {
+	background: url(../images/treasure_01.jpg);
+	height: 367px;
+}
+.treasure2  {
+	background: url(../images/treasure_02.jpg);
+	height: 366px;
+}
+.treasure3  {
+	background: url(../images/treasure_03.jpg);
+	height: 450px;
+}
+.treasure4  {
+	background: url(../images/treasure_04.jpg);
+	height: 371px;
+}
+.treasure5  {
+	background: url(../images/treasure_05.jpg);
+	height: 264px;
+}
+.treasure6  {
+	background: url(../images/treasure_06.jpg);
+	height: 682px;
+}
+.treasure7  {
+	background: url(../images/treasure_07.jpg);
+	height: 260px;
+}
+.treasure8  {
+	background: url(../images/treasure_08.jpg);
+	height: 854px;
+}
+.treasure9  {
+	background: url(../images/treasure_09.jpg);
+	height: 264px;
+}
+.treasure10 {
+	background: url(../images/treasure_10.jpg);
+	height: 342px;
+}
+.treasure11 {
+	background: url(../images/treasure_11.jpg);
+	height: 330px;
+}
+
+[class*='treasure']{
+	margin: 0 auto;
+	background-repeat:no-repeat ;
+	background-position: center top;
+}
+.demo-block {
+	overflow: hidden;
+	position: relative;
+    background: url(../images/treasure.jpg);
+}
+.ui-wrap {
+	width: 990px;
+	height: 100%;
+    margin: 0 auto;
+}
+.ui-wrap:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.ui-wrap.one a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.ui-wrap.two a {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.ui-wrap.three a {
+	display: block;
+	width: 33.33%;
+	height: 50%;
+	float: left;
+}
+
+.ui-wrap.four1 a {
+	display: block;
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+.ui-wrap.four2 a {
+	display: block;
+	width: 25%;
+	height: 50%;
+	float: left;
+}

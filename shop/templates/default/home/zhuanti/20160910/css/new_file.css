@@ -1,0 +1,106 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+html{font-size:16px}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{font-weight:400;font-style:normal;font-size:100%}
+sub,sup{font-size:83%}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=reset],input[type=submit],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+.demo-wrap{margin:0 auto;height: 100%;width:1200px;color: #fff;text-align:center;}
+[class*=photo]{width:100%; display: block;}
+.photo1{height:245px;background:url(../images/photo_01.jpg) no-repeat top center}
+.photo2{height:244px;background:url(../images/photo_02.jpg) no-repeat top center}
+.photo3{height:245px;background:url(../images/photo_03.jpg) no-repeat top center}
+.photo4{height:244px;background:url(../images/photo_04.jpg) no-repeat top center}
+.photo5{height:702px;background:url(../images/photo_05.jpg) no-repeat top center}
+.photo6{height:448px;background:url(../images/photo_06.jpg) no-repeat top center}
+.photo7{height:68px;background:url(../images/photo_07.jpg) no-repeat top center}
+.photo8{height:694px;background:url(../images/photo_08.jpg) no-repeat top center}
+.photo9{height:64px;background:url(../images/photo_09.jpg) no-repeat top center}
+.photo10{height:748px;background:url(../images/photo_10.jpg) no-repeat top center}
+.photo11{height: 113px;background:url(../images/photo_11.jpg) no-repeat top center;}
+.photo12{height:135px;background:url(../images/photo_12.jpg) no-repeat top center}
+.photo13{height:510px;background:url(../images/photo_13.jpg) no-repeat top center}
+.photo14{height:572px;background:url(../images/photo_14.jpg) no-repeat top center}
+.photo15{height:456px;background:url(../images/photo_15.jpg) no-repeat top center}
+.photo16{height:664px;background:url(../images/photo_16.jpg) no-repeat top center}
+.photo17{height:786px;background:url(../images/photo_17.jpg) no-repeat top center}
+.photo18{height:66px;background:url(../images/photo_18.jpg) no-repeat top center}
+.photo19{height:506px;background:url(../images/photo_19.jpg) no-repeat top center}
+.photo20{height:165px;background:url(../images/photo_20.jpg) no-repeat top center}
+.photo21{height:157px;background:url(../images/photo_21.jpg) no-repeat top center}
+.photo22{height:1838px;background:url(../images/photo_22.jpg) no-repeat top center}
+.photo23{height:599px;background:url(../images/photo_23.jpg) no-repeat top center}
+.photo24{height:426px;background:url(../images/photo_24.jpg) no-repeat top center}
+.photo25{height:441px;background:url(../images/photo_25.jpg) no-repeat top center}
+.photo26{height:422px;background:url(../images/photo_26.jpg) no-repeat top center}
+.photo27{height:579px;background:url(../images/photo_27.jpg) no-repeat top center}
+.photo28{height:595px;background:url(../images/photo_28.jpg) no-repeat top center}
+.photo29{height:641px;background:url(../images/photo_29.jpg) no-repeat top center}
+.photo30{height:190px;background:url(../images/photo_30.jpg) no-repeat top center}
+
+.two a {
+	display: block;
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+.one a {
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+
+.photo22 a {
+	display: block;
+	position: absolute;
+}
+.photo22 .demo-wrap {
+	position: relative;
+}
+.photo22 a.a1 {
+	top: 0px;
+	left: 157px;
+	width: 438px;
+	height: 540px;
+} 
+.photo22 a.a2 {
+	top: 71px;
+	right: 135px;
+	width: 422px;
+	height: 665px;
+} 
+.photo22 a.a3 {
+	top: 592px;
+	left: 117px;
+	width: 452px;
+	height: 552px;
+} 
+.photo22 a.a4 {
+	top: 853px;
+	right: 133px;
+	width: 422px;
+	height: 809px;
+} 
+.photo22 a.a5 {
+	bottom: 0;
+	left: 126px;
+	width: 431px;
+	height: 643px;
+} 

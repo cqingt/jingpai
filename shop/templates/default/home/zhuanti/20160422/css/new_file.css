@@ -1,0 +1,347 @@
+
+a {
+  color: #fff;
+  text-decoration: none
+}
+
+img {
+  border: 0;
+  vertical-align: top
+}
+
+.clearfix:after,.clearfix:before {
+  display: table;
+  content: ""
+}
+
+li {
+  list-style: none
+}
+
+.clearfix:after {
+  clear: both
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: url(../images/rio_bg.jpg) no-repeat;
+}
+
+
+.banner1 {
+	margin: 0 auto;
+	background: url(../images/banner1.jpg) no-repeat center top;
+	height: 312px;
+	min-width: 1004px;
+}
+.banner2 {
+	margin: 0 auto;
+	background: url(../images/banner2.jpg) no-repeat center top;
+	height: 312px;
+	min-width: 1004px;
+}
+.banner3 {
+	margin: 0 auto;
+	background: url(../images/banner3.jpg) no-repeat center top;
+	height: 312px;
+	min-width: 1004px;
+}
+.banner4 {
+	margin: 0 auto;
+	background: url(../images/banner4.jpg) no-repeat center top;
+	height: 312px;
+	min-width: 1004px;
+}
+.banner5 {
+	margin: 0 auto;
+	background: url(../images/banner5.jpg) no-repeat center top;
+	height: 312px;
+	display: block;
+	min-width: 1004px;
+}
+.content {
+	width: 1004px;
+	margin: 0 auto 14px;
+}
+.lot-photo {
+	text-align: center;
+	width: 1003px;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	background: url(../images/footer.jpg) no-repeat center;
+	height: 80px;
+	width: 100%;
+	z-index: 9;
+	display: none;
+}
+.footer-con {
+	width: 1000px;
+	margin: 0 auto;
+    overflow: hidden;
+}
+.footer-con p {
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 80px;
+}
+.footer-con p strong {
+	font-size: 18px;
+	display: block;
+	line-height: 28px;
+	font-weight: normal;
+}
+.footer-con p em {
+	font-size: 32px;
+	display: block;
+	line-height: 28px;
+	font-weight: bold;
+}
+.footer-con p.p1 {
+	margin-left: 75px;
+	width: 244px;
+}
+.footer-con p.p2 {
+	margin-left: 66px;
+	width: 355px;
+	font-size: 31px;
+}
+.footer-con p.p3 {
+	margin-top: 12px;
+}
+
+.main {
+	background: url(../images/main.jpg) no-repeat center;
+	height: 643px;
+	width: 100%;
+}
+
+.form-input {
+	float: left;
+	padding-top: 100px;
+	padding-left: 40px;
+}
+.form-input .in {
+	margin-bottom: 20px;
+}
+.form-input .in label {
+	font-size: 18px;
+	line-height: 40px;
+	color: #555;
+	float: left;
+}
+.form-input .in input {
+    border: 1px #d3d3d3 solid;
+    height: 38px;
+    font-size: 18px;
+    width: 306px;
+    padding: 0 6px;
+    color: #555;
+    margin-left: 14px;
+}
+.form-input .in textarea {
+	width: 306px;
+	height: 66px;
+	padding: 6px;
+	font-size: 18px;
+	color: #555;
+	border: 1px #D3D3D3 solid;
+	margin-left: 14px;
+}
+.form-input p.last {
+	color: #127dd8;
+	font-size: 18px;
+	margin-left: 70px;
+	margin-bottom: 18px;
+}
+.btn-okey {
+	background: url(../images/btn.jpg) no-repeat center;
+	border: none;
+	width: 145px;
+	height: 40px;
+	outline: none;
+	cursor: pointer;
+	margin-left: 70px;
+}
+.roll-list {
+	height: 462px;
+	float: right;
+	padding-right: 40px;
+	margin-top: 94px;
+}
+.scrollDiv-top {
+    overflow: hidden;
+}
+.roll-list ul.line{
+	width: 400px;
+	height: 462px;
+	overflow: hidden;
+} 
+
+.roll-list ul li {
+	width: 400px;
+	height: 76px;
+	overflow: hidden;
+	border-bottom: 1px #ccc dashed;
+}
+.roll-list ul li p:first-child {
+	margin-top: 14px;
+}
+.roll-list ul li p {
+	font-size: 18px;
+	color: #555;
+    white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;
+}
+.roll-list ul li p strong {
+	color: #ff5b00;
+}
+.roll-list ul li p em {
+	font-size: 14px;
+	color: #555;
+}
+.roll-list ul li p span {
+	display: inline-block;
+	background: #ff5b00 url(../images/okey.jpg) no-repeat 4px center;
+	padding-left: 20px;
+	color: #fff;
+	width: 56px;
+	text-indent: 4px;
+	margin-left: 10px;;
+	height: 20px;
+	font-size: 14px;
+	border-radius: 10px;
+}
+.rio-comment {
+	padding-top: 102px;
+	padding-left: 46px;
+	background: url(../images/rio-comment.jpg) no-repeat top;
+	height: 620px;
+}
+#scrollDiv-two,
+.rio-comment ul {
+	height: 546px;
+	overflow: hidden;
+}
+.rio-comment ul li {
+	width: 900px;
+	height: 90px;
+	overflow: hidden;
+}
+.rio-comment .raty {
+    margin-top: -1px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    zoom: 1;
+    width: 140px !important;
+}
+.rio-comment .raty img {
+    letter-spacing: normal;
+    word-spacing: normal;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 8px 0 0 3px;
+}
+.rio-comment .commentimg {
+	float: left;
+	margin-top: 8px;
+}
+.rio-comment .commentimg img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-top: expression(40-this.height/2);
+    border-radius: 20px;
+}
+.rio-comment .alllist {
+	float: left;
+}
+.rio-comment .alllist p {
+    font: 12px/30px "Microsoft Yahei";
+    color: #AAA;
+    width: 848px;
+    margin-left: 10px;
+}
+.rio-comment .alllist em.time {
+	float: right;
+	color: #ccc;
+	font-weight: normal;
+	font-size: 14px;
+}
+.rio-comment .remark {
+	color: #555;
+	line-height: 20px;
+	width: 770px;
+	margin: 7px 0 0 6px;
+}
+.rio-comment p.last {
+
+}
+.rio-comment p.last span {
+	float: left;
+	display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+.scroltit{ height:26px; line-height:26px; margin-right: 56px;}
+.scroltit h3{ width:100px; float:left;}
+.scroltit .updown{float:right; width:32px; height:22px; margin-left:4px}
+#but_up{ background:url(../images/up.gif) no-repeat 0 0; text-indent:-9999px}
+#but_down{ background:url(../images/down.gif) no-repeat 0 0; text-indent:-9999px}
+
+.flotage {
+	position: fixed;
+	top: 40%;
+	right: 52px;
+	display: none;
+	width: 198px;
+	z-index: 9;
+	height: 206px;
+	background: url(../images/flotage.png) no-repeat;
+}
+.flotage h2 {
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 28px auto 0;
+	color: #f3ec22
+}
+.flotage p {
+	font-size: 48px;
+	color: #f3ec22;
+	font-weight: bold;
+	margin-left: 24px;
+	margin-top: 50px;
+	text-align: center;
+	letter-spacing: 10px;
+}
+.flotage p em {
+	float: right;
+	font-family: 'Microsoft YaHei';
+}
+.flotage p strong {
+	font-family: 'Microsoft YaHei';
+	font-size: 36px;
+	display: block;
+	transform:scale(.8,1);
+	-webkit-transform:scale(.8,1);
+	float: right;
+	margin-top: -2px;
+	margin-left: -2px;
+	margin-right: 10px;
+}
+
+.rio2016 {
+	margin-bottom: 18px;
+}
+	.okfooter {
+		display: block !important;
+	}

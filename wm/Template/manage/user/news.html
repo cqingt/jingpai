@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>分类列表 - {[$COMPANY]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+
+  <tr>
+  	<td bgcolor="#ecf9ff"><span class="title">文章列表</span></td>
+    <td bgcolor="#ecf9ff">
+    <input type="button" value="文章发布" class="a90-30" onclick="addDep(0);" style="margin-top:10px;margin-right:20px;">
+   	</td>
+  </tr>
+</table>
+
+<input type="hidden" name="number" id="number" value="{[$dataArr.W_Number]}"/>
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="padding">
+
+    
+
+	<tr class="title">
+		  <td width="10%" style=" text-align:center;">编号</td>
+		  <td width="10%" style=" text-align:center;">文章标题</td>
+		  <td width="10%" style=" text-align:center;">文章类型</td>
+	      <td width="10%" style=" text-align:center;">发布人</td>
+		  <td width="10%" style=" text-align:center;">发布时间</td>
+		  <td width="10%" style=" text-align:center;">操作</td>
+     </tr>
+	{[foreach from=$resNews item=v key=k]}
+	    <tr class="con">
+	      <td width="10%" style=" text-align:center;">{[$v.N_ID]}</td>
+		  <td width="10%" style=" text-align:center;">{[$v.N_Title]}</td>
+	      <td width="10%" style=" text-align:center;">{[$v.N_Content]}</td>
+	      <td width="10%" style=" text-align:center;">{[$v.N_Uname]}</td>
+		  <td width="10%" style=" text-align:center;">{[$v.N_Time|date_format:"%Y-%m-%d %H:%M:%S"]}</td>
+		  <td width="10%" style=" text-align:center;">
+		  		<a href="javascript:upDep({[$v.N_ID]});">编辑</a>
+		  		<a href="index.php?m=manageNews&c=deNews&p=manage&id={[$v.N_ID]}" onclick="javascript:return delConfirm(this);">删除</a>
+			</td>
+	    </tr>
+  {[/foreach]}
+  </table>
+  <div id="page" style="text-align:center;">
+{[$pageStr]}
+</div>
+</div>
+<script>
+//添加推荐信息
+function addDep(id){
+	if(id == 0){
+		var mag = "添加区间信息";
+	}else{
+		var mag = "编辑区间信息";
+	}
+	asyncbox.open({
+		url : 'index.php?m=manageNews&c=addNews&p=manage&id=' + id,
+		width : 800,
+		height : 500,
+		title : mag,
+		callback : function(action){
+			window.location.reload();
+		}
+
+	});	
+}
+
+
+function upDep(id){
+	if(id == 0){
+		var mag = "添加区间信息";
+	}else{
+		var mag = "编辑区间信息";
+	}
+	asyncbox.open({
+		url : 'index.php?m=manageNews&c=upNews&p=manage&id=' + id,
+		width : 800,
+		height : 500,
+		title : mag,
+		callback : function(action){
+			window.location.reload();
+		}
+
+	});	
+}
+
+</script>
+
+</body>
+</html>

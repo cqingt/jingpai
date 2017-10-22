@@ -1,0 +1,36 @@
+
+.tel-btn {
+    display: block;
+    margin: 16px auto;
+    cursor: pointer;
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+    background-color: #f85959;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.phone-icon {
+    width: 16px;
+    height: 16px;
+    background: url("http://s2.pstatp.com/site/tetris/images/phone-icon.png") no-repeat;
+    background-size: 12px;
+    display: inline-block;
+    background-position: 2px 1px;
+}
+
+a.tel-btn:hover, a.tel-btn:focus {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+.fbottom>.tel-btn {
+    width: 100% !important;
+    border-radius: 0;
+    opacity: 0.95;
+}

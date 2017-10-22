@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> CETMUBB所见即所得编辑器增加ASP解析 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+
+    <h1>1、有内容调用方法示例</h1>
+	<form method="post" name="file" action="get.asp">
+	<textarea name="content" cols="80" rows="2" style="display:none">将内容放在此处即可</textarea>
+	<iframe ID="Editor" name="Editor" src="edit.html?ubb=1&id=content" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="No" style="height:400px;width:650px"></iframe><br/>
+	<input type="submit" value="提交表单并观看效果"> &nbsp;
+	 <script>
+  function jsgetcontent(){
+      if(typeof(window.frames['Editor'].editdoc.body)=="undefined")
+			return window.frames['Editor'].document.getElementById('posteditor_textarea').value;
+		else 
+			return window.frames['Editor'].editdoc.body.innerHTML;
+  }
+  
+  </script>
+    <input type="button" value="点击用js取得内容" onClick="alert(jsgetcontent())">
+	</form>
+    <h1>2、<a href="index.html">无内容调用方法示例</a></h1>
+ </BODY>
+</HTML>

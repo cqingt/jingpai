@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 我的订单</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<!---弹出框在页面始终居中js--->
+<script>
+var j = 1;
+$(function(){
+	loadMore();
+})
+
+$(window).scroll(function(){
+	if($(document).height() - $(this).scrollTop() - $(this).height()<100) loadMore();
+});
+</script>
+
+</head>
+
+<body>
+<!---评价框 kaishi--->
+<div id="dianping" class="wj_tjcg dp_box" style="display:none">
+<form>
+     <div class="dp_boxa">
+          <a href="###" class="tj_zh close" onClick="dianpingClose();">x</a>
+          <p style=" float:left; font-size:18px; line-height:18px;">商品评分</p>
+     </div>
+     <div><textarea name="content" cols="" rows="" id="content" onfocus="if(this.value=='说点什么吧...')this.value='';" onblur="if(this.value=='') this.value='说点什么吧...';">说点什么吧...</textarea>
+       <input type="hidden" name="pid" id="pid">
+       <input type="hidden" name="oid" id="oid">
+     </div>
+     <div><a href="###" class="tijiao_pj" onClick="submitDianPing();">提交评价</a></div>
+</form>    
+<script>
+function submitDianPing(){
+	var pid = $('#pid').val();
+	$.post('index.php?m=order&c=dianping&p=main',{content : $('#content').val(), pid : pid, oid : $('#oid').val()},function(status){
+		if(parseInt(status)){
+			alert('点评成功!');	
+			$('#dp_' + pid).remove();
+		}else{
+			alert('点评失败!');	
+		}
+	})
+	$('content').val('说点什么吧...');
+	$('pid').val('');
+	$('#dianping').hide();
+}
+
+function dianpingClose(){
+	$('#content').val('说点什么吧...');
+	$('#pid').val('');
+	$('#dianping').hide();
+}
+</script> 
+</div>
+<!---评价框 jieshu--->
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">我的订单</a>
+</div>
+<input name="type" type="hidden" id="type" value="1">
+<div class="fabu_menu">
+     <span id="one1" onclick="setTab('one',1,2)" class="hover">卖出订单</span>
+     <span id="one2" onclick="setTab('one',2,2)">买入订单</span>  
+</div>
+
+<!---卖出订单 kaishi--->
+    <div class="lmlm_width" id="con_one_1"></div>
+<!---卖出订单 jieshu--->
+
+<!---买入订单 kaishi--->
+    <div class="lmlm_width" id="con_one_2" style="display:none;"></div>
+<!---买入订单 jieshu--->
+<div class="lmlm_width" id="loadingsave" style="text-align:center"><img src='static/images/jia.gif' /> 数据努力加载中...</div>
+<div style="height:50px;"></div>
+<script>
+function loadMore(){
+	var type = $("#type").val();
+	$.ajax({
+		type: "GET", cache: false,
+		url : "index.php?m=order&c=ajaxGetList&p=main",
+		data: 'type=' + type + '&page=' + j,
+		beforeSend:function(XMLHttpRequest){
+			$("#loadingsave").show();
+			$("#loadingsave").html("<img src='static/images/jia.gif' /> 数据努力加载中...");
+ 		},
+		success : function(html){
+			if(html!=''){
+				$('#con_one_' + type).append(html);
+				$("#loadingsave").html('向下拉加载数据');
+			}else{
+				$("#loadingsave").html('没有了');
+			}
+		}
+	});
+	j++;
+}
+
+function setTab(name,cursel,n){
+	$('#type').val(cursel);
+	getOnePage(cursel)
+	for(i=1;i<=n;i++){
+		var menu=document.getElementById(name+i);
+		var con=document.getElementById("con_"+name+"_"+i);
+		menu.className=i==cursel?"hover":"";
+		con.style.display=i==cursel?"block":"none";
+	}
+}
+
+function getOnePage(type){
+	$("#loadingsave").html("<img src='static/images/jia.gif' /> 数据努力加载中...");
+	$.get('index.php?m=order&c=ajaxGetList&p=main&type=' + type,function(html){
+		$('#con_one_' + type).html(html);
+		$("#loadingsave").html("向下拉加载数据");
+	})	
+}
+
+function fabudisplay(pid,oid){
+	var popUp = document.getElementById("dianping")
+	var obj = document.getElementById("dianping");
+	var W = screen.width;//取得屏幕分辨率宽度
+	var H = screen.height;//取得屏幕分辨率高度
+	var yScroll;//取滚动条高度
+	$('#pid').val(pid);
+	$('#oid').val(oid);
+	if(self.pageYOffset){
+		yScroll = self.pageYOffset;
+	}else if(document.documentElement && document.documentElement.scrollTop){
+		yScroll = document.documentElement.scrollTop;
+	}else if(document.body){
+		yScroll = document.body.scrollTop;
+	}
+	obj.style.top= (H/2- 180　+　yScroll) + "px";
+	obj.style.display="block"; 
+}
+</script>
+</body>
+</html>

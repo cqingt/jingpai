@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>菜单修改</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<style type="text/css">
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+</style>
+<script>
+$(function(){
+	{[if $cid]}
+	if('{[$dataArr.0.M_Type]}'=='view'){
+		$('#viewType').show();
+		$('#clickType').hide();
+	}else{
+		$('#viewType').hide();
+		$('#clickType').show();
+	}
+	{[/if]}
+})
+</script>
+</head>
+
+<body>
+  <form id="form1" name="form1" method="post" action="index.php?m=manageWeixin&c={[if $update]}update{[else]}add{[/if]}Menu&p=manage">
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="table">
+      <tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;"> 菜单名称：
+          <input name="M_Name" type="text" id="M_Name" size="15" maxlength="10" value="{[$dataArr.0.M_Name]}"/>
+          {[if $update]}<input name="M_ID" type="hidden" id="M_ID" value="{[$dataArr.0.M_ID]}" />{[/if]}
+        </td>
+      </tr>
+      <tr class="con">
+        <td align="left" style="text-align:left; padding-left:10px;"> 菜单级别：
+          <select name="M_ParentID" id="M_ParentID">
+        <option value=''>一级菜单</option> 
+                {[foreach from=$menuArr item=v key=k name=menuTop]}
+                    <option value='{[$v.M_ID]}' {[if $v.M_ID==$dataArr.0.M_ParentID]}selected="selected"{[/if]}>{[$v.M_Name]}</option>
+                {[/foreach]}
+          </select></td>
+      </tr>
+      <tr class="con con_a">
+        <td align="left" style="text-align:left; padding-left:10px;"> 菜单类型：
+          <select name="M_Type" id="M_Type" onchange="tabType(this.value);">
+            <option value="view" {[if $dataArr.0.M_Type=='view']}selected="selected"{[/if]}>链接类型</option>
+            <option value="click" {[if $dataArr.0.M_Type=='click']}selected="selected"{[/if]}>回复类型</option>
+        </select></td>
+      </tr>
+      <tr class="con" id="viewType">
+        <td align="left" style="text-align:left; padding-left:10px;">链接地址：
+        <input type="text" name="M_Url" id="M_Url" style="width:220px;" value="{[$dataArr.0.M_Url]}"/></td>
+      </tr>
+      <tr class="con" id="clickType" style="display:none;">
+        <td align="left" style="text-align:left; padding-left:10px;">回复关键词：
+        <input type="text" name="M_Key" id="M_Key" style="width:68px;" value="{[$dataArr.0.M_Key]}"/></td>
+      </tr>
+      <tr class="con">
+        <td align="center"><input type="submit" name="button" id="button" value="提交" onclick="return checkFrom();"/></td>
+      </tr>
+    </table>
+  </form>
+<script>
+function tabType(type){
+	if(type=='view'){
+		$('#viewType').show();	
+		$('#clickType').hide();	
+	}else{
+		$('#clickType').show();	
+		$('#viewType').hide();			
+	}
+}
+
+//表单检测
+function checkFrom(){
+	if($('#M_Name').val()==''){
+		alert('菜单名称不能为空!');	
+		return false;
+	}
+	
+	//当不是一级菜单的情况下进行检测
+	if($('#M_ParentID').val()){
+		$type = $('#M_Type').val();
+		if($type=='view' && $('#M_Url').val()==''){
+			alert('请填写转向链接地址!');
+			return false;	
+		}
+		
+		if($type=='click' && $('#M_Key').val()==''){
+			alert('请填写回复关键词!');
+			return false;	
+		}
+	}
+	
+	return 1;	
+}
+</script>  
+</body>
+</html>

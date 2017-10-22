@@ -1,0 +1,243 @@
+a,input{
+border:none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+outline:none；
+}
+input {
+    -webkit-appearance: none;
+}
+select {
+	background-color: #fff;
+}
+.headline .mt {
+	margin-top: 12px;
+}
+.headline {
+	padding: 15px;
+}
+.headline h1,
+.headline h2 {
+	color: #d43c3b;	
+}
+.headline h1 {
+	font-size: 18px;
+	border-bottom: 1px #e1dddc solid;
+	padding-bottom: 6px;
+}
+.headline h2 {
+	font-size: 16px;
+}
+.headline p {
+    color: #d43c3b;	
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.merchant {
+	padding: 0 15px 15px;
+	
+}
+.merchant h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding-bottom: 10px;
+}
+.merchant input,
+.merchant select {
+	background: #fff;
+	border: 1px #ccc solid;
+}
+
+.form-team {
+	clear: both;
+	margin-bottom: 6px;
+}
+.form-team label {
+	font-size: 15px;
+	line-height: 30px;
+	display: block;
+	text-align: left;
+	padding-right: 4px;
+}
+.form-team label em {
+	color: #ff2626;
+}
+.form-team input.same1,
+.form-team select {
+	font-size: 14px;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 6px;
+	border: 1px #ccc solid;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #434343;
+	width: 100%;
+}
+.form-team input.image {
+	padding-top: 8px;
+	line-height: 22px;
+}
+.merchant .hint {
+	font-size: 12px;
+	color: #ff2626;
+	line-height: 16px;
+	margin-top: 4px;
+}
+.merchant .submit {
+	border-top: 1px #e1dddc solid;
+	margin: 20px 0;
+	text-align: center;
+}
+.merchant .submit .btn-next {
+	margin-top: 20px;
+	background: #d43c3b;
+	height: 40px;
+	color: #fff;
+	width: 60%;
+    outline: none;	
+	border: 0;
+	border-radius: 4px;
+}
+.form-team.time select {
+	width: 49%;
+	float: left;
+}
+.form-team.time select:last-child {
+	margin-left: 2%;
+}
+.form-team textarea {
+	width: 100%;
+	height: 80px;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 10px;
+	border: 1px #ccc solid;
+}
+.merchant h4 {
+	font-size: 12px;
+	color: #ff2626;
+	margin: -10px 0 4px;
+}
+.world {
+	text-align: center;
+}
+.world h2 {
+	background: url(../images/okey.png) no-repeat left top;
+	background-size: 28px;
+	display: inline-block;
+	padding-left: 32px;
+	font-size: 16px;
+	color: #000;
+	line-height: 30px;
+	margin: 30% 0;
+}
+.agreement-box {
+	border: 1px #e1dddc solid;
+    overflow: scroll; 
+    height: 300px;
+    scrollbar-face-color: #DBEBFE; 
+    scrollbar-shadow-color: #B8D6FA; 
+    scrollbar-highlight-color: #FFFFFF; 
+    scrollbar-3dlight-color: #DBEBFE; 
+    scrollbar-darkshadow-color:#458CE4; 
+    scrollbar-track-color: #FFFFFF; 
+    scrollbar-arrow-color: #458CE4;
+    padding: 6px;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 10px;
+}
+.agreement-box p {
+	font-size: 14px;
+	line-height: 24px;
+}
+.agreement-box .mt {
+	margin-top: 6px;
+}
+
+
+
+.holder {
+	width: 100%;
+	margin: 6ox 0;
+	text-align: center;
+}
+
+.holder > div {
+	clear: both;
+	padding: 2%;
+	float: left;
+	width: 96%;
+	font-size: 14px;
+}
+
+.holder label {
+	display: inline;
+}
+.holder strong {
+	line-height: 24px;
+	margin-left: 6px;
+}
+.holder .regular-checkbox {
+	display: none;
+}
+
+.holder .regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #6B7171;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	top: 4px;
+	left: 4px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	display: inline-block;
+}
+
+.holder .regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.holder .regular-checkbox:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.holder .regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	color: #000 !important;
+}
+.btn-enter {
+	display: inline-block;
+	border: 1px #d43c3b solid;
+	color: #d43c3b;
+	padding: 5px 14px;
+	font-size: 16px;
+	margin: 6px 0 10px;
+}
+.btn-enter.last {
+	background: #d43c3b;
+	color: #fff;
+}
+.btn-enter:last-child {
+	margin-left: 14px;
+}
+.btn-enter:hover,.btn-enter:focus {
+	color: #d43c3b;
+}
+
+.form-team p {
+    font-size: 12px;
+    margin-top: -10px;
+    color: #D43C3B;
+}

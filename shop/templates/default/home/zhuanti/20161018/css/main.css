@@ -1,0 +1,97 @@
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,th,td{margin:0;padding:0}
+img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+i {font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a{
+    text-decoration: none;
+}
+html,body{
+	height: 100%;
+	font-family: 'microsoft yahei';
+}
+.wwrap {
+		background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo18.jpg);
+}
+.m-wrap{
+	position: relative;
+	overflow: hidden;
+	width: 1004px;
+	margin: 0 auto;
+
+}
+
+.photo1 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo1.jpg) no-repeat center top;
+	height: 260px;
+}
+.photo2 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo2.jpg) no-repeat center top;
+	height: 310px;
+}
+.boxes {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo3.jpg) no-repeat center top;
+	height: 187px;
+	position: relative;
+}
+.m-wrap .boxes a:first-child {
+	margin-left: 220px;
+	margin-right: 15px;
+}
+.m-wrap .boxes a {
+	display: block;
+	float: left;
+	width: 270px;
+	height: 100%;
+}
+.m-wrap .box {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo4.jpg) no-repeat center top;
+	height: 83px;
+}
+.m-wrap .box a {
+	display: block;
+	width: 330px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.boxes-four {
+	height: 327px;
+	width: 100%;
+}
+.demo-photo {
+
+text-align: center;
+}
+.boxes-four.one1 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo6.jpg) no-repeat center top;
+}
+.boxes-four.one2 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo7.jpg) no-repeat center top;
+}
+.boxes-four.one3 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo10.jpg) no-repeat center top;
+}
+.boxes-four.one4 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo11.jpg) no-repeat center top;
+}
+.boxes-four.one5 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo14.jpg) no-repeat center top;
+}
+.boxes-four.one6 {
+	background: url(http://sctx.oss-cn-beijing.aliyuncs.com/images/sh20161018/photo15.jpg) no-repeat center top;
+}
+.boxes-four a {
+	display: block;
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+img {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	border: 0;
+}

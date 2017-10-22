@@ -1,0 +1,71 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+html{font-size:1pc}
+body{margin:0 auto;max-width:1242px;background:#fff;font-family:microsoft yahei,arial,sans-serif}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{font-weight:400;font-style:normal;font-size:100%}
+sub,sup{font-size:83%}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+body,button,input,keygen,legend,select,textarea{outline:0;color:#333}
+body *{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=reset],input[type=submit],nput[type=button]{-webkit-appearance:none}
+::-webkit-input-placeholder{color:#7b3100}
+:-moz-placeholder,::-moz-placeholder{color:#7b3100}
+:-ms-input-placeholder{color:#7b3100}
+textarea{-webkit-appearance:none}
+a:active,a:hover{-webkit-transition:.2s;transition:.2s}
+.btn-play,.chicken-bar img{width:100%}
+.btn-play{position:fixed;bottom:0}
+.btn-play a{float:left;display:inline-block;width:50%;height:46px;color:#fff;text-align:center;font-size:18px;line-height:46px}
+.btn-play a:first-child{background:#ffa200}
+.btn-play a:last-child{background:#e94601}
+.fochickenox{padding:20px;background:#ffe8aa;text-align:center}
+.fochickenox span{display:block;margin-bottom:9pt;/*font-size:0*/}
+.fochickenox .item input,.fochickenox .item select{box-sizing:border-box;padding:10px;width:100%;border:1px solid #fec195;border-radius:none;font-size:14px}
+.fochickenox .item strong{display:block;margin-bottom:14px;color:#ca151e;text-align:left;font-weight:400;font-size:1pc;line-height:18px}
+.fochickenox .item-yz{overflow:hidden;margin-bottom:14px}
+.fochickenox .item-yz input.l,.fochickenox .item-yz input.r{float:left;padding:10px;width:60%;border:1px solid #d3d3d3;border-radius:0;font-size:1em}
+.fochickenox .item-yz input.r{margin-right:0;width:40%;border:1px solid #d02f34;border-bottom:0;background:#d02f34;color:#fff}
+.fochickenox .item-yz input{box-sizing:border-box}
+.fochickenox .item-select select{width:31%;height:34px;border:1px solid #fec195;border-radius:none;background:#fff}
+.fochickenox .item-select select:nth-child(2){margin:0 3%}
+.commitment,.emphasis{text-align:left;font-size:14px;line-height:20px}
+.commitment,.emphasis{color:#7b3100}
+.btn-go{display:inline-block;margin-top:10px;width:100%;border:0;background:#d02f34;color:#fff;text-align:center;font:700 18px/40px microsoft yahei}
+.fochickenox .box{overflow:hidden}
+.fochickenox .p1,.fochickenox .p2{float:left;clear:both;margin-bottom:14px;width:100%}
+.fochickenox .box strong{float:left;display:block;margin-left:5px;height:38px;font-weight:400;font-size:1pc;line-height:2pc}
+.fochickenox .box .demo{overflow:hidden;width:100%}
+.chicken-nav{position:fixed;bottom:0;width:100%;height:46px;max-width:1242px;background:#ca151e;text-align:center}
+.chicken-nav a{display:inline-block;margin:10px 0;padding:0 15px;border-radius:20px;background:#ffd426;color:#ca151e;font-weight:700;font-size:1pc;line-height:26px}
+.regular-radio{display:none}
+.regular-radio+label{position:relative;display:inline-block;box-sizing:border-box;padding:10px;width:100%;border:1px solid #898989;background-color:#fafafa;text-align:left;font-size:14px;-webkit-appearance:none}
+@media (max-width:320px){.regular-radio+label{font-size:9pt}
+}
+.regular-radio:checked+label:after{position:absolute;right:0;bottom:0;width:30px;height:24px;background:url(http://zyh.96567.com/ad/20161115/images/zyhok_03.png) no-repeat;background-size:30px;content:''}
+.regular-radio:checked+label{border:1px solid #cf1d1b;background-color:#fff;box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 -15px 10px -9pt rgba(0,0,0,.05),inset 15px 10px -9pt hsla(0,0%,100%,.1),inset 0 0 10px rgba(0,0,0,.1);color:#cf1d1b}
+.regular-radio+label:active,.regular-radio:checked+label:active{box-shadow:0 1px 2px rgba(0,0,0,.05),inset 0 1px 3px rgba(0,0,0,.1)}
+.big-radio:checked+label:after{right:0;bottom:0;width:30px;height:24px}
+.gw_num{overflow:hidden;box-sizing:border-box;width:39%;border:1px solid #fec195;background:#fff;line-height:38px}
+.gw_num em{width:26px;height:38px;border-right:1px solid #fec195;color:#000;cursor:pointer}
+.gw_num .num,.gw_num em{float:left;display:block;text-align:center;font-style:normal}
+.gw_num .num{padding:0!important;width:52px!important;border:0!important;background:#fff;font-size:14px!important;line-height:38px!important}
+.gw_num em.add{float:left;border-right:0;border-left:1px solid #fec195}
+div.item{margin-bottom:10px;line-height:38px}
+div.item .txt{float:left;width:40%;color:#7b3100;text-align:left}
+.fochickenox h4{margin-bottom:14px;color:#7b3100;font-weight:700;font-size:20px}

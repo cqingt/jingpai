@@ -1,0 +1,36 @@
+Array
+(
+    [api_version] => v1
+    [member_name] => apptest
+    [method] => getLoginSession
+    [os_type] => ios
+    [sign] => bc5b2eac7ffa1f83221b93ac4c324263
+    [time] => 1477726283
+)
+Array
+(
+    [api_version] => v1
+    [member_name] => apptest
+    [method] => getLoginSession
+    [os_type] => ios
+    [sign] => 6160079df7a9086a3c786cb4ab486fc0
+    [time] => 1477726529
+)
+Array
+(
+    [api_version] => v1
+    [member_name] => apptest
+    [method] => getLoginSession
+    [os_type] => ios
+    [sign] => 26fb05dd9407d34b3930831c742598bf
+    [time] => 1477726719
+)
+Array
+(
+    [api_version] => v1
+    [member_name] => apptest
+    [method] => getLoginSession
+    [os_type] => ios
+    [sign] => 92b4624dd6117bfb5b72eaacb75efabe
+    [time] => 1477726727
+)

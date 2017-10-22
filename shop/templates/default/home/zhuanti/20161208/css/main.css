@@ -1,0 +1,337 @@
+*{ 
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.ukraine01  {
+	background: url(../images/ukraine_01.jpg);
+	height: 303px;
+}
+.ukraine02  {
+	background: url(../images/ukraine_02.jpg);
+	height: 302px;
+}
+.ukraine03  {
+	background: url(../images/ukraine_03.jpg);
+	height: 198px;
+}
+.ukraine04  {
+	background: url(../images/ukraine_04.jpg);
+	height: 573px;
+}
+.ukraine05  {
+	background: url(../images/ukraine_05.jpg);
+	height: 567px;
+}
+.ukraine06  {
+	background: url(../images/ukraine_06.jpg);
+	height: 570px;
+}
+.ukraine07  {
+	background: url(../images/ukraine_07.jpg);
+	height: 570px;
+}
+.ukraine08  {
+	background: url(../images/ukraine_08.jpg);
+	height: 190px;
+}
+.ukraine09  {
+	background: url(../images/ukraine_09.jpg);
+	height: 516px;
+}
+.ukraine10 {
+	background: url(../images/ukraine_10.jpg);
+	height: 199px;
+}
+.ukraine11 {
+	background: url(../images/ukraine_11.jpg);
+	height: 450px;
+}
+.ukraine12 {
+	background: url(../images/ukraine_12.jpg);
+	height: 510px;
+}
+.ukraine13 {
+	background: url(../images/ukraine_13.jpg);
+	height: 199px;
+}
+.ukraine14 {
+	background: url(../images/ukraine_14.jpg);
+	height: 461px;
+}
+.ukraine15 {
+	background: url(../images/ukraine_15.jpg);
+	height: 189px;
+}
+.ukraine16 {
+	background: url(../images/ukraine_16.jpg);
+	height: 191px;
+}
+.ukraine17 {
+	background: url(../images/ukraine_17.jpg);
+	height: 191px;
+}
+.ukraine18 {
+	background: url(../images/ukraine_18.jpg);
+	height: 191px;
+}
+.ukraine19 {
+	background: url(../images/ukraine_19.jpg);
+	height: 191px;
+}
+.ukraine20 {
+	background: url(../images/ukraine_20.jpg);
+	height: 193px;
+}
+.ukraine20 a {
+	display: block;
+	height: 100%;
+	width: 40%;
+	margin: 0 30%;
+}
+[class*='ukraine']{
+	margin: 0 auto;
+	background-repeat:no-repeat ;
+	background-position: center top;
+}
+.ui-nav {
+	width: 1071px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ui-nav ul {
+	overflow: hidden;
+	margin: 40px 0 0 40px;
+}
+.ui-nav ul li {
+	position: relative;
+	display: block;
+	background: url(../images/btn-u.png) no-repeat;
+	width: 244px;
+	height: 55px;
+	float: left;
+	text-align: center;
+	margin: 0 4px 18px;
+}
+.icon-yishou {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -70px;
+	margin-left: -60px;
+	display: block;
+	background: url(../images/yishou.png);
+	background-size: 120px;
+	width: 120px;
+	height: 60px;
+}
+.ui-nav ul li a:hover {
+	color: #a73111;
+} 
+.ui-nav ul li a {
+	color: #000;
+}
+.ui-nav ul li h2 {
+	margin-top: 8px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "bradley hand itc";
+}
+.ui-nav ul li p {
+	margin-top: 4px;
+	line-height: 16px;
+	font-size: 14px;
+}
+.ui-box {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-family: "microsoft yahei";
+	background: #311c0b;
+}
+.ui-wrap {
+    margin: 0 auto;
+    overflow: hidden;
+    background:#000 url(../images/ukraine.jpg);
+}
+.ui-wrap a {
+	text-decoration: none;
+}
+.ui-box ul {
+	margin-left: 5px;
+}
+
+.shop-three li {
+	width: 322px;
+	height: 440px;
+	margin: 4px ;
+}
+.shop-three li .img {
+	width: 322px;
+	height: 322px;
+}
+.shop-three li .con {
+	margin-top: 10px;
+}
+.shop-three li h4 {
+	margin-top: 8px !important;
+}
+.shop-three li span {
+	width: 130px;
+	height: 33px;
+	font-size: 16px;
+	line-height: 33px;
+}
+.shop-three li span i {
+	font-style: normal;
+	font-size: 14px;
+	margin-left: 2px;
+}
+.shop-four li {
+	width: 242px;
+	height: 345px;
+	margin: 0 3px 6px;
+}
+.shop-four li .img {
+	width: 242px;
+	height: 242px;
+}
+.shop-four li span {
+	line-height: 25px;
+	font-size: 14px;
+	width: 86px;
+	height: 25px;
+}
+.shop-four li .con {
+	margin-top: 4px;
+}
+.shop-four li span i {
+	font-style: normal;
+	margin-right: -6px;
+	font-size: 14px;
+	margin-left: 2px;
+}
+.ui-box ul li {
+	position: relative;
+	float: left;
+	background: #fff;
+	overflow: hidden;
+}
+.ui-box ul li a .img {
+	overflow: hidden;
+}
+.ui-box ul li a .img img {
+	width: 100%;
+}
+.ui-box ul li a .con {
+	padding: 10px 8px 0;
+}
+.ui-box ul li a .con p {
+	color: #000;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.ui-box ul li a .con p strong {
+	font-weight: normal;
+}
+.ui-box ul li a .con h4 {
+	color: #b00000;
+	font-size: 16px;
+	margin-top: 2px;
+	font-weight: normal;
+}
+.ui-box ul li a .con h5 {
+	color: #585858;
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration:line-through;
+}
+.ui-box ul li a span {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	background: #ae0202;
+}
+.ukraine-look {
+	text-align: center;
+	background: #321a0e;
+}
+.ui-wrap .one a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ui-wrap .two a {
+	display: block;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.ui-wrap .three a {
+	display: block;
+	width: 33.33%;
+	height: 100%;
+	float: left;
+}
+.ui-wrap .four a {
+	display: block;
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+
+
+.hilarity-nav {
+	position: fixed;
+	top: 20%;
+	right: 10px;
+	background: url(../images/navtab.png) no-repeat;
+	width: 119px;
+	padding-top: 66px;
+	height: 437px;
+	display: none;
+}
+.hilarity-nav a:first-child {
+	border-top: 0;
+}
+.hilarity-nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	height: 30px;
+	width: 74px;
+	padding: 0;
+	margin: 0 auto;
+	line-height: 30px;
+	border-bottom: 1px #b72126 dashed;
+	border-top: 1px #f86064 dashed;
+	font-family: Microsoft YaHei;
+
+}
+.hilarity-nav .last {
+	border: 0;
+}
+.hilarity-nav a.active {
+	color: #f3f3b3;
+}

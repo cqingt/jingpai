@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 编辑发布信息</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<link href="static/js/jquery.mobile.theme-1.4.3.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<style>
+.pic-group{
+	margin: 0px;
+	padding: 0px;
+}
+.pic-group li{
+	position: relative;
+	float: left;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 4px;
+}
+.pic-group li{display:block}
+.pic-group img{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,.17);
+	vertical-align: top;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}.pic-group .btn-file{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block
+}.pic-group .btn-file input[type=file]{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .01;
+	filter: alpha(opacity=1);
+	cursor: pointer;
+	z-index: 1
+}
+</style>
+
+</head>
+
+<body>
+<!--删除照片弹出框 开始-->
+<div id="delete_img" class="wj_dhlx" style=" z-index:1000; position:absolute; left:10%; background-color:#fff;border-radius:5px; height:auto; overflow:hidden; padding-bottom:20px; display:none;">
+    <div class="wj_telep"><a href="javascript:;" style="font-size:16px;">删除图片</a></div>
+    <div style="text-align:center; padding:20px;">
+        <p class="txk_box"><img></p>
+        <span>要删除这张图片吗？</span>
+    </div>
+    <div class="delete_img_but">
+        <ul>
+            <li class="delete">删除</li>
+            <li class="back" onClick="document.getElementById('delete_img').style.display='none'">返回</li>
+    </ul></div>
+
+</div>
+<!--删除照片弹出框 结束 -->
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+	 <span>&nbsp;</span>
+     <a href="index.php?m=release&c=releaseList&p=main" style="color:#999;">发布的信息</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">编辑</a>
+</div>
+
+<form action="index.php?m=release&c=To_update&p=main" method="post" name="myform" id="myfrom">
+<input type="hidden" name="id" value="{[$dataArr.P_ID]}">
+<div id="con_one_1" style="margin-top:2px;">
+{[if $dataArr.P_Type == 1]}
+    <div id="upImgLoad">
+        <div class="ch_uptxt">您可以上传<span>4</span>张图片（已上传<span id="showNum">{[$countImg]}</span>张）</div>
+        <div class="ch_upimg">
+              <ul class="pic-group">
+                    <li id="upload_input">
+                        <label class="btn-file">
+                            <img src="{[$DIR]}images/upimg.png" onClick="javascript:selectImg();selectImg();">
+                            <input type="file" id="imgPhonto" onChange="uploadImg();" capture="camera" class="input-file" accept="image/*">
+                        </label>
+                    </li>
+				{[foreach from=$Img_DataArr item=v key=key]}
+				<li><a href="javascript:;" id="img_{[$key]}"><p class="fabu_img_close" onClick="deletedisplay('{[$key]}');"></p><img src="{[$v.I_Img]}"><input type="hidden" name="ImgArr[]" value="{[$v.I_Img]}"></a></li>
+				 
+				 {[/foreach]}
+                    <li><a id="loading" style="display:none"><img src="{[$DIR]}images/fabu_img_but.gif"></a></li>
+              </ul> 
+		
+
+        </div>
+    </div>
+{[/if]}
+<div class="zc_form" style="margin:0px; margin-bottom:10px;">
+     <ul><li class="zd1">所属分类</li><li class="zd2" style="height:48px;">
+     <span class="select_style" style=" width:100px; display:block; float:left; font-size:12px; margin-top:8px; height:48px;">
+     <i class="filt-arrow" style="top:16px;"></i>
+     <select style=" color:#aaa; width:100px;" name="P_Cate" id="P_Cate" onChange="getSmallCate(this.value);">
+       <option value="" style="color:#aaa;">请选择</option>
+       {[foreach from=$cateArr item=v key=k]}
+       <option value="{[$v.C_ID]}" {[if $dataArr.P_Cate == $v.C_ID]}selected{[/if]}>{[$v.C_Name]}</option>
+       {[/foreach]}
+     </select>
+     </span>
+     
+     <span id="smallCate" class="select_style" style=" width:100px; display:block; float:left; font-size:12px; margin-top:8px; height:48px;">
+     <i class="filt-arrow" style="top:16px;"></i>
+     <select style="color:#aaa; width:100px;" name="P_SmallCate" id="P_SmallCate">
+       <option style=" color:#aaa;">请选择</option>
+     </select>
+     </span>
+     <input name="P_Type" type="hidden" id="P_Type" value="{[$dataArr.P_Type]}">
+     <input name="OpenID" type="hidden" id="OpenID" value="{[$openid]}">
+     </li>
+     </ul>
+     <ul id="proName"><li class="zd1">作品名称</li><li class="zd2"><input name="P_Name" placeholder="请输入作品名称" type="text" class="input_zck" id="P_Name" maxlength="100" value="{[$dataArr.P_Name]}"></li></ul>
+     <ul><li class="zd1">作者</li><li class="zd2"><input name="P_Author" placeholder="请输入作者姓名" type="text" class="input_zck" id="P_Author" maxlength="20" value="{[$dataArr.P_Author]}"></li></ul>
+     <ul><li class="zd1">尺寸</li>
+	 <li class="zd2" style="color:#999;">
+	 {[$P_Width]}cm
+	 {[$P_Height]}cm
+	 </li>
+	 </ul>
+
+     <ul style="display:none;"><li class="zd1">尺寸</li><li class="zd2">{[$P_Size]}</li></ul>
+     <ul><li class="zd1">价格</li><li class="zd2">{[$P_Money]}</li></ul>
+     <ul><li class="zd1">联系人</li><li class="zd2"><input name="P_Contact" value="{[$dataArr.P_Contact]}" placeholder="请填写您的姓名" type="text" class="input_zck" id="P_Contact" maxlength="10"></li></ul>
+     <ul><li class="zd1">联系手机</li><li class="zd2">{[$P_Mobile]}</li></ul>
+     <ul><li class="zd1" style="height:100px;">详情描述</li><li class="zd2" style="height:100px;"><textarea style="width:100%; height:100%; border:0px; float:left;" name="P_Content" placeholder="作品状况，交易方式等，10-800字" cols="" rows="" id="P_Content">{[$dataArr.P_Content]}</textarea></li></ul>
+     <ul><li class="zd1">所在地区</li><li class="zd2" style="height:48px;">
+     <span class="select_style" style=" width:100px; display:block; float:left; font-size:12px; margin-top:6px; height:48px;">
+     <i class="filt-arrow" style="top:16px;"></i>
+     <select style=" color:#aaa; width:100px;" class="fabu" name="P_Province" id="P_Province" onChange="getCity(this.value,0);">
+       <option>请选择</option>
+     </select>
+     </span>
+     
+     <span class="select_style" style=" width:100px; display:block; float:left; font-size:12px; margin-top:6px; height:48px; ">
+     <i class="filt-arrow" style="top:16px;"></i>
+     <select style=" color:#aaa; width:100px; background-color:#fff;" class="fabu" name="P_City" id="P_City">
+       <option>请选择</option>
+     </select>
+     </span>
+     </li></ul>
+     <ul><li class="zd1">交易类型</li><li class="zd2"><input style="vertical-align:middle;" name="P_BuyType[]" type="checkbox" value="1"  {[if $dataArr.P_BuyType1 == 1]}checked="checked"{[/if]} id="P_BuyType[]"><span style="padding-right:20px; padding-left:4px;">线下交易</span><input style="vertical-align:middle;" name="P_BuyType[]" type="checkbox" value="2" {[if $dataArr.P_BuyType2 == 2]}checked="checked"{[/if]} id="P_BuyType[]"><span style="padding-right:20px; padding-left:4px;">担保交易</span></li></ul></div>
+</div>
+<div class="tijiao_but"><a href="javascript:checkFrom();" data-role="button" data-theme="c">更新</a></div>
+</form>
+
+<div style="height:10px;"></div>
+<script>
+function checkFrom(){
+	var type = $('#P_Type').val();
+	var num = $('.ch_upimg input').length;
+	if(type==1 && !num){
+		alert('请上传产品图片!');
+		return false;
+	}
+	
+	if($('#P_Cate').val()=='' || $('#P_SmallCate').val()==''){
+		alert('请选择分类');
+		return false;	
+	}
+	
+	if($('#P_Name').val()=='' ){
+		alert('请填写产品名称!');
+		return false;	
+	}
+	
+	if($('#P_Author').val()==''){
+		alert('请填写作者信息!');
+		return false;	
+	}
+	
+	if($('#P_Width').val()==''){
+		alert('请填写尺寸宽度!');
+		return false;	
+	}
+	
+	if($('#P_Height').val()==''){
+		alert('请填写尺寸高度!');
+		return false;	
+	}
+	//if($('#P_Money').val()==''){
+	//	alert('请填写价格信息');
+	//	return false;	
+	//}
+	
+	if($('#P_Contact').val()==''){
+		alert('联系人不能为空!');
+		return false;	
+	}
+	
+	if($('#P_Mobile').val()==''){
+		alert('联系人手机不能为空!');
+		return false;	
+	}
+	
+	if($('#P_Content').val()==''){
+		alert('请填写描述信息!');	
+		return false;
+	}
+	
+	if($('#P_Province').val()=='' || $('#P_City').val()==''){
+		alert('请选择完整的区域信息!');
+		return false;	
+	}
+	
+	if($('#OpenID').val()==''){
+		alert('微信身份信息丢失，将自动刷新页面从新获取微信信息!');
+		window.location.reload();
+		return false;	
+	}	
+	
+	$('#myfrom').submit();	
+}
+function getSmallCate(cid){
+	if(cid){
+		$.get('index.php?m=release&c=ajaxGetSmallCate&p=main&cid=' + cid,function(option){
+			if(option){
+				$('#smallCate').show();
+				option = '<option>请选择</option>' + option;
+				$('#P_SmallCate').html(option);
+			}else{
+				$('#smallCate').hide();	
+			}
+		})	
+	}
+}
+
+function selectImg(){
+	var num = $('.ch_upimg input').length;
+	if(num>3){
+		alert('您上传的图片已达到最大上传数量!');
+		return false;
+	}
+}
+function uploadImg(){
+	$('#loading').show();
+	var data = new FormData();
+	$.each($('#imgPhonto')[0].files, function(i, file){
+		data.append('imgPhonto' + i, file);
+	})
+	$.ajax({
+		url:"index.php?m=release&c=ajaxUploadImg&p=main",
+		type:"POST",
+		data:data,
+		cache:false,
+		contentType:false,
+		processData:false,
+		success:function(data){
+			var imgArr = data.split("/");
+			var imgFileName = imgArr[3];
+			$('#loading').hide();
+			if(imgFileName){
+				imgNameArr = imgFileName.split('.');
+				if(data){
+					$('.pic-group').append('<li><a href="javascript:;" id="img_' + imgNameArr[0] + '"><p class="fabu_img_close" onClick="deletedisplay(\'' + imgNameArr[0] + '\');"></p><img src="' + data + '"><input type="hidden" name="ImgArr[]" value="' + data + '"></a></li>');
+				}
+				var num = $('.pic-group input').length-1;
+				$('#showNum').text(num);
+				if(num==4){//删除上传功能
+					$('#upload_input').hide();	
+				}
+			}else{
+				alert('图片上传异常,请保证在良好的网络状态下操作!');	
+			}
+		}
+	});
+}
+
+function deletedisplay(data){
+	var popUp = document.getElementById("delete_img")
+	var obj = document.getElementById("delete_img");
+	var W = screen.width;//取得屏幕分辨率宽度
+	var H = screen.height;//取得屏幕分辨率高度
+	var yScroll;//取滚动条高度
+	if(self.pageYOffset){
+		yScroll = self.pageYOffset;
+	}else if(document.documentElement && document.documentElement.scrollTop){
+		yScroll = document.documentElement.scrollTop;
+	}else if(document.body) {
+		yScroll = document.body.scrollTop;
+	}
+	obj.style.top= (H/2- 180　+　yScroll) + "px";
+	obj.style.display="block"; 
+	$('.txk_box img').attr('src',$('#img_' + data + ' img').attr('src'));
+	$('.delete').attr('onClick',"document.getElementById('delete_img').style.display='none';delImg('" + data + "');");
+}
+
+function delImg(data){
+	var filename = $('#img_' + data + ' img').attr('src');
+	$('#img_' + data).remove();
+	$.get('index.php?m=release&c=ajaxDelImg&p=main&filename=' + filename);
+	var num = $('.ch_upimg input').length;
+	$('#showNum').text(num);	
+}
+
+
+function getCity(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#P_City').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#P_Province').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+$(function(){
+	$('#smallCate').hide();
+	getProvince(1,{[$dataArr.P_Province]});
+	getCity({[$dataArr.P_Province]},{[$dataArr.P_City]});
+})
+</script>
+</body>
+</html>

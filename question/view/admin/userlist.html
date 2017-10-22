@@ -1,0 +1,138 @@
+<!--{template header,admin}-->
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <h3>{$lang['setting_userlist_manage']}</h3>
+            <ul class="tab-base">
+                <li>
+                    <a class="current">
+                        <span>用户信息列表</span>
+                    </a>
+                    <a href="index.php?admin_usergroup/default{$setting['seo_suffix']}">
+                        <span>用户等级设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed-empty"></div>
+<!--{if isset($message)}-->
+<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+    <div class="alert  alert-warning">{$message}</div>
+<!--{/if}-->
+    <table class="table tb-type2" id="prompt">
+        <tbody>
+        <tr class="space odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+            <th class="nobg" colspan="12"><div class="title"><h5>设置说明</h5><span class="arrow"></span></div></th>
+        </tr>
+        <tr class="odd" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: table-row;">
+            <td>
+                <ul>
+                    <li>{$lang['setting_userfrom_userlist_search_msg']}</li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+<form action="index.php?admin_user/search{$setting['seo_suffix']}" method="post" name="formSearch">
+    <table class="table tb-type2">
+        <tbody>
+        <tr>
+            <td width="10%">{$lang['setting_userfrom_userlist_search_username']}<input type="text" class="txt" name="srchname" value="{$search['srchname']}"/></td>
+            <td width="10%">{$lang['setting_userfrom_userlist_search_uid']}<input type="text" class="txt" name="srchuid" value="{$search['srchuid']}"/></td>
+            <td width="10%">{$lang['setting_userfrom_userlist_search_email']}<input style="width:150px" type="text" class="txt" name="srchemail" value="{$search['srchemail']}"/></td>
+            <td width="10%">
+                {$lang['setting_userfrom_userlist_search_usergroup']}
+                <select name="srchgroupid">
+                    <option value="0">{$lang['setting_userfrom_userlist_search_usergroup_msg']}</option>
+                    <!--{loop $usergrouplist $group}-->
+                    <option {if $search['srchgroupid'] == $group['groupid']}selected{/if} value="{$group['groupid']}">{$group['grouptitle']}</option>
+                    <!--{/loop}-->
+                </select>
+            </td>
+            <td>&nbsp;<br><a href="javascript:document.formSearch.submit()" class="btn-search" title="搜索">&nbsp;</a></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+<form name="userForm" action="index.php?admin_user/remove{$setting['seo_suffix']}" method="post">
+    <table class="table tb-type2">
+        <thead>
+        <tr class="header">
+            <td width="6%"><input class="checkbox" value="chkall" id="chkall" onclick="checkall('uid[]')"
+                                  type="checkbox" name="chkall"><label for="chkall">{$lang['setting_userfrom_userlist_list_checkall']}</label></td>
+            <td width="5%">{$lang['setting_userfrom_userlist_list_uid']}</td>
+            <td width="15%">{$lang['setting_userfrom_userlist_list_username']}</td>
+            <td width="15%">{$lang['setting_userfrom_userlist_list_email']}</td>
+            <td width="10%">{$lang['setting_userfrom_userlist_list_email_bind']}</td>
+            <td width="7%">{$lang['setting_userfrom_userlist_list_empirical_value']}</td>
+            <td width="7%">{$lang['setting_userfrom_userlist_list_median_wealth']}</td>
+            <td width="7%">{$lang['setting_userfrom_userlist_list_quiz']}</td>
+            <td width="7%">{$lang['setting_userfrom_userlist_list_answer']}</td>
+            <td width="7%">{$lang['setting_userfrom_userlist_list_adopt']}</td>
+            <td width="7%">{$lang['setting_userfrom_userlist_list_attention']}</td>
+            <td width="10%">{$lang['setting_userfrom_userlist_list_edit']}</td>
+        </tr>
+        </thead>
+        <!--{loop $userlist $member}-->
+        <tr>
+            <td class="altbg2"><input class="checkbox" type="checkbox" value="{$member['uid']}" name="uid[]"></td>
+            <td class="altbg2"><strong>{$member['uid']}</strong></td>
+            <td class="altbg2"><strong><a href="index.php?user/space/{$member['uid']}{$setting['seo_suffix']}">{$member['member_name']}</a></strong></td>
+            <td class="altbg2">{$member['member_email']}</td>
+            <td class="altbg2">
+                {if $member['member_email_bind']==1}
+                <span class="text-danger"> {$lang['setting_userfrom_userlist_list_authenticated']}</span>
+                {else}
+                {$lang['setting_userfrom_userlist_list_no_authentication']}
+                {/if}
+            </td>
+            <td class="altbg2">{$member['credit1']}</td>
+            <td class="altbg2">{$member['credit2']}</td>
+            <td class="altbg2">{$member['questions']}</td>
+            <td class="altbg2">{$member['answers']}</td>
+            <td class="altbg2">{$member['adopts']}</td>
+            <td class="altbg2">{$member['followers']}</td>
+            <td class="altbg2"><a href="index.php?admin_user/edit/$member['uid']{$setting['seo_suffix']}">{$lang['setting_userfrom_userlist_list_edit']}</a></td>
+        </tr>
+        <!--{/loop}-->
+        <!--{if $departstr}-->
+        <tr class="smalltxt">
+            <td class="altbg2" colspan="8" align="right">
+                <div class="scott">{$departstr}</div>
+            </td>
+        </tr>
+        <!--{/if}-->
+        <tr><td><a href="javascript:void(0)" onclick="remove_user();" class="btnn"><span>{$lang['setting_userfrom_userlist_list_delete']}</span></a></td>
+        </tr>
+    </table>
+</form>
+<br>
+
+<script type="text/javascript">
+    function change_expert(type) {
+        if ($("input[name='uid[]']:checked").length == 0) {
+            alert('$lang["setting_userfrom_userlist_list_notcheck_msg"]');
+            return false;
+        }
+        document.userForm.action = "index.php?admin_user/expert/" + type;
+        document.userForm.submit();
+    }
+
+    function remove_user() {
+        if ($("input[name='uid[]']:checked").length == 0) {
+            alert('{$lang["setting_userfrom_userlist_list_notcheck_msg"]}');
+            return false;
+        }
+        if (confirm('{$lang["setting_userfrom_userlist_list_delete_all_msg"]}') == true) {
+            document.userForm.action = "index.php?admin_user/remove/all{$setting['seo_suffix']}";
+            document.userForm.submit();
+        } else {
+            document.userForm.action = "index.php?admin_user/remove{$setting['seo_suffix']}";
+            document.userForm.submit();
+        }
+    }
+</script>
+<!--{template footer,admin}-->
+
+

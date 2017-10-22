@@ -1,0 +1,50 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{font-weight:400;font-style:normal;font-size:100%}
+sub,sup{font-size:83%}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=submit],input[type=reset],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+
+
+.ganen-wrap{margin:0 auto; color:#fff;text-align:center;font-family:"microsoft yahei"}
+
+
+.photo1 {background: url(../images/ganen_01.jpg) no-repeat center top; height: 462px;}
+.photo2 {background: url(../images/ganen_02.jpg) no-repeat center top; height: 462px;}
+.photo3 {background: url(../images/ganen_03.jpg) no-repeat center top; height: 462px;}
+.photo4 {background: url(../images/ganen_04.jpg) no-repeat center top; height: 461px;}
+.photo5 {background: url(../images/ganen_05.jpg) no-repeat center top; height: 462px;}
+.photo6 {background: url(../images/ganen_06.jpg) no-repeat center top; height: 462px;}
+.photo7 {background: url(../images/ganen_07.jpg) no-repeat center top; height: 462px;}
+.photo8 {background: url(../images/ganen_08.jpg) no-repeat center top; height: 462px;}
+.photo9 {background: url(../images/ganen_09.jpg) no-repeat center top; height: 462px;}
+.photo10 {background: url(../images/ganen_10.jpg) no-repeat center top; height: 462px;}
+.photo11 {background: url(../images/ganen_11.jpg) no-repeat center top; height: 461px;}
+.photo12 {background: url(../images/ganen_12.jpg) no-repeat center top; height: 462px;}
+.photo13 {background: url(../images/ganen_13.jpg) no-repeat center top; height: 462px;}
+.photo14 {background: url(../images/ganen_14.jpg) no-repeat center top; height: 462px;}
+.photo15 {background: url(../images/ganen_15.jpg) no-repeat center top; height: 462px;}
+.photo16 {background: url(../images/ganen_16.jpg) no-repeat center top; height: 462px;}
+.photo17{background: url(../images/ganen_17.jpg) no-repeat center top; height: 461px;}
+.photo18 {background: url(../images/ganen_18.jpg) no-repeat center top; height: 462px;}
+.photo19 {background: url(../images/ganen_19.jpg) no-repeat center top; height: 462px;}
+.photo20 {background: url(../images/ganen_20.jpg) no-repeat center top; height: 462px;}
+.photo21 {background: url(../images/ganen_21.jpg) no-repeat center top; height: 265px;}
+.photo22 {background: url(../images/ganen_22.jpg) no-repeat center top; height: 437px;}

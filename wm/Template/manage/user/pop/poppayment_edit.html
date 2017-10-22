@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>安装支付插件</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="index.php?m=managePayment&p=manage&c=popSubmit" enctype="multipart/form-data">
+    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" class="table">
+      <tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">支付方式名称：</td>
+        <td width="75%" align="left" style="text-align:left; padding-left:10px;"><input name="pay_name" type="text" value="{[$pay.pay_name]}" size="40" />
+        </td>
+      </tr>
+	 <tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">支付方式描述：</td>
+        <td width="75%" align="left" style="text-align:left; padding-left:10px;"><textarea name="pay_desc" cols="60" rows="8">{[$pay.pay_desc]}</textarea>
+        </td>
+      </tr>
+	{[foreach from=$pay.pay_config item=config key=key]}
+		<tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">{[$config.label]}：</td>
+        <td width="75%" align="left" style="text-align:left; padding-left:10px;">
+		 {[if $config.type == "text"]}
+		  <input name="cfg_value[]" type="{[$config.type]}" value="{[$config.value]}" size="40" />
+		 
+		 {[elseif $config.type == "textarea"]}
+		  <textarea name="cfg_value[]" cols="80" rows="5">{[$config.value]}</textarea>
+		 {[elseif $config.type == "select"]}
+		  <select name="cfg_value[]">{[html_options options=$config.range selected=$config.value]}</select>
+		   {[/if]}
+		  <input name="cfg_name[]" type="hidden" value="{[$config.name]}" />
+		  <input name="cfg_type[]" type="hidden" value="{[$config.type]}" />
+		  <input name="cfg_lang[]" type="hidden" value="{[$config.lang]}" />
+		  {[if $config.desc]}
+		  <br /><span class="notice-span" {[if $help_open]}style="display:block" {[else]} style="display:none" {[/if]} id="notice{[$config.name]}">{[$config.desc]}</span>
+		  {[/if]}
+		
+		</td>
+      </tr>
+	{[/foreach]}
+
+
+      <tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">支付手续费：</td>
+        <td width="75%" align="left" style="text-align:left; padding-left:10px;">{[if $pay.is_cod]}<input name="pay_fee" type="hidden" value="{[$pay.pay_fee|default:0]}" />配送决定：
+        {[else]}<input name="pay_fee" type="text" value="{[$pay.pay_fee|default:0]}" />{[/if]}</td>
+      </tr>
+	<tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">货到付款？</td>
+		<td width="75%" align="left" style="text-align:left; padding-left:10px;">{[if $pay.is_cod == "1"]}是{[else]}否{[/if]}</td>
+      </tr>
+	<tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">在线支付？</td>
+		<td width="75%" align="left" style="text-align:left; padding-left:10px;">{[if $pay.is_online == "1"]}是{[else]}否{[/if]}</td>
+      </tr>
+	  <tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">上传图片：</td>
+		<td width="75%" align="left" style="text-align:left; padding-left:10px;"><input type="file" name="P_img"></td>
+      </tr>
+	  {[if $pay.P_img]}
+		<tr class="con con_a">
+        <td width="25%" align="left" style="text-align:left; padding-left:10px;">支付图片：</td>
+		<td width="75%" align="left" style="text-align:left; padding-left:10px;"><img src="{[$pay.P_img]}"></td>
+      </tr>
+	  {[/if]}
+      <tr class="con con_a">
+		  <input type="hidden"  name="pay_id"       value="{[$pay.pay_id]}" />
+		  <input type="hidden"  name="pay_code"     value="{[$pay.pay_code]}" />
+		  <input type="hidden"  name="is_cod"       value="{[$pay.is_cod]}" />
+		  <input type="hidden"  name="is_online"    value="{[$pay.is_online]}" />
+        <td colspan="2" align="center" style="text-align:center"><input type="submit" name="button" id="button" value="提交" /></td>
+      </tr>
+    </table>
+ 
+</form>
+
+</body>
+</html>

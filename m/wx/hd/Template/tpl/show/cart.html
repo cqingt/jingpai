@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画市场 - 购物车</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+</head>
+
+<body>
+<form name="form1" id="form1" method="post" action="index.php?m=cart&c=addOrder&p=main">
+<div class="top_back"><a href="index.php?m=member&p=main">会员首页</a> > <a href="index.php?m=goods&p=main&id={[$pid]}">产品详情</a> > 确认订单</div>
+
+<!---充值 kaishi--->
+<div style="width:96%; margin:0px auto; padding:0px;">
+    <div class="confirmation">
+         <ul>
+            <li>{[$goodsInfo.P_Name]}</li>
+            <li><span>价格</span><span class="jiage" style="color:#e33a3d;">￥{[$goodsInfo.P_Money]}</span></li>
+            <li><span>数量</span><span class="jiage">1</span></li>
+            <!--<li><span>运费</span><span class="jiage">￥10.00</span></li>-->
+            <li id="dizhi1" class="dizhi">
+            	<span>填写收货信息</span>
+           	  <span class="jiage"><a href="javascript:changeAdress(1);">修改信息</a></span>
+              <p id="viewAddress">
+                  {[$addressInfo.A_Consignee]} {[$addressInfo.A_Mobile]}
+                  <br>
+                  {[$addressInfo.province]}{[$addressInfo.city]}{[$addressInfo.A_Address ]}
+              </p>
+           </li>
+            <li id="dizhi2" class="dizhi" style=" display:none;">
+            <span>填写收货信息</span>
+           	  <span class="jiage"><a href="javascript:changeAdress(2);">确定</a></span>
+                <p>
+                  收货人：<input type="text" name="A_Consignee" id="A_Consignee" value="{[$addressInfo.A_Consignee]}" style="width:50px; margin-bottom:5px;">
+                  手机号：<input type="text" name="A_Mobile" id="A_Mobile" value="{[$addressInfo.A_Mobile]}" style="width:100px; margin-bottom:5px;">
+                  <br>
+                  <select name="A_Province" id="A_Province" onChange="getCity(this.value,'{[$addressInfo.A_City]}')" style="width:60px;"></select>
+                  <select name="A_City" id="A_City" style="width:60px;"><option value="">市</option></select>
+                  <input type="text" name="A_Adress" id="A_Adress" style="width:160px;" value="{[$addressInfo.A_Address]}">
+            	</p>
+           </li>
+         </ul>
+       <!--产品信息-->
+      <input type="hidden" name="O_GoodsID" id="O_GoodsID" value="{[$goodsInfo.P_ID]}">
+      <input type="hidden" name="O_GoodsName" id="O_GoodsName" value="{[$goodsInfo.P_Name]}">
+      <input type="hidden" name="O_GoodsMoney" id="O_GoodsMoney" value="{[$goodsInfo.P_Money]}">
+      <input type="hidden" name="O_SellUID" id="O_SellUID" value="{[$goodsInfo.P_UID]}"> 
+      
+      <!--订单信息-->
+      <input type="hidden" name="O_Consignee" id="O_Consignee" value="{[$addressInfo.A_Consignee]}">
+      <input type="hidden" name="O_Mobile" id="O_Mobile" value="{[$addressInfo.A_Mobile]}">
+      <input type="hidden" name="O_Province" id="O_Province" value="{[$addressInfo.A_Province]}">
+      <input type="hidden" name="O_City" id="O_City" value="{[$addressInfo.A_City]}">
+      <input type="hidden" name="O_Address" id="O_Address" value="{[$addressInfo.A_Address]}"> 
+      
+   
+    </div>
+    
+<div id="tabMenu" class="fabu_menu">
+{[foreach from=$buyType item=pay key=k]}
+     <span id="one{[$pay]}" onclick="setTab({[$pay]})" {[if $NumbT > 1]}{[ if $pay==2]}class="hover"{[/if]}{[else]}class="hover"{[/if]}>{[assign var=payID value=$pay]}{[$paymentArr.$payID]}</span>
+{[/foreach]} 
+</div>
+
+   <!--支付信息-->
+      <input type="hidden" name="O_Payment" id="O_Payment" value="{[$pay]}">
+
+<div id="con_one_1" {[if $pay != 1]}style="display:none"{[/if]}>
+友情提示：选择线下交易有风险，建议选择担保交易哦！
+</div>
+
+<div id="con_one_2" {[if $pay == 1]}style="display:none"{[/if]}> 
+    <div class="chongzhi_box3">请选择支付方式</div>
+        <div class="zhifu_box">
+         {[foreach from=$payment item=v]}
+         <dl>
+            <div class="ffbox"><span class="edge"></span><img src="{[$v.P_img]}" alt="{[$v.P_name]}"></div>
+            <dd>{[$v.P_name]}<p>{[$v.P_desc]}</p></dd>
+            <dt><input name="pay_id" id='pay_id' type="radio" value="{[$v.P_id]}"></dt>
+         </dl>
+		{[/foreach]}
+        </div>
+    </div>
+
+    <div class="chongzhi_float_box" id="float">
+        <div class="chongzhi_float2">需支付金额：<span>{[$goodsInfo.P_Money]}</span>元<a href="javascript:fromSubmit();">确认并支付</a></div>
+        <div class="chongzhi_float"></div>
+	</div>
+
+</div>
+<!---充值 jieshu--->
+
+<div style="height:50px;"></div>
+
+</form>
+<script>
+function setTab(id){
+	if(id==1){
+		$('#one1').addClass('hover');	
+		$('#one2').removeClass('hover');
+		$('#con_one_1').show();
+		$('#con_one_2').hide();
+		$('#O_Payment').val(1);//更改支付方式
+		$('.chongzhi_float2').html('订单金额:<span>{[$goodsInfo.P_Money]}</span>元<a href="javascript:fromSubmit();">提交订单</a>');	
+	}else{
+		$('#one2').addClass('hover');	
+		$('#one1').removeClass('hover');
+		$('#con_one_2').show();
+		$('#con_one_1').hide();	
+		$('#O_Payment').val(2);	//更改支付方式
+		$('.chongzhi_float2').html('需支付金额:<span>{[$goodsInfo.P_Money]}</span>元<a href="javascript:fromSubmit();">提交订单</a>');
+	}
+}
+
+function fromSubmit(){
+	var status = true;
+	if($('#O_Payment').val() == 2){
+		var num = $('.zhifu_box input[name="pay_id"]:checked').length;
+		if(num==0){
+			alert('请选择支付方式');
+			return false;	
+		}
+	}
+	$('#form1').submit();	
+}
+
+function changeAdress(type){
+	if(type==1){
+		$('#dizhi1').hide();
+		$('#dizhi2').show();	
+	}else{
+		changeCartInfo();
+		$('#dizhi2').hide();
+		$('#dizhi1').show();		
+	}
+}
+
+//异步修改收获信息
+function changeCartInfo(){
+	$.post('index.php?m=cart&c=changeAddress&p=main',{consignee : $('#A_Consignee').val(), mobile : $('#A_Mobile').val(), province : $('#A_Province').val(), city : $('#A_City').val(), address : $('#A_Adress').val()},function(data){
+		if(data==0){
+			alert('操作异常，请刷新页面从新操作!')	
+		}else{
+			var arr = data.split('|');
+			var consignee = arr[0];
+			var mobile = arr[1];
+			var province = arr[2];
+			var city = arr[3];
+			var address = arr[4];
+			
+			//从新赋值给收货信息隐藏域
+			$('#O_Consignee').val(consignee);
+			$('#O_Mobile').val(mobile);	
+			$('#O_Province').val(province);	
+			$('#O_City').val(city);	
+			$('#O_Address').val(address);	
+			
+			//显示信息的收货信息
+			$('#viewAddress').html(consignee + ' ' + mobile + '<br>' + province + city + address);
+		}
+	})	
+}
+
+function getCity(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#A_City').html('<option value="">市</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#A_Province').html('<option value="">省</option>' + str);	
+	});
+}
+
+$(function(){
+	getProvince(1,'{[$addressInfo.A_Province]}');
+	getCity('{[$addressInfo.A_Province]}','{[$addressInfo.A_City]}');
+})
+</script>
+</body>
+</html>

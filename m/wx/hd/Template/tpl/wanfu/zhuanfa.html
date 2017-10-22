@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>{[$weixinTitle]}</title>
+<meta name="description" content="{[$weixinContent]}" />
+
+<link rel="stylesheet" type="text/css"  href="{[$DIR]}mobel_css.css" /> 
+<script language="JavaScript" src="{[$DIR]}js/jquery-1.7.js"></script> 
+<script language="JavaScript" src="{[$DIR]}js/tab.js"></script> 
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<script>
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    // 通过下面这个API隐藏右上角按钮
+    WeixinJSBridge.call('showOptionMenu');
+});
+</script>
+<script>
+$(function(){
+fabudisplay();
+testMessageBox(event);
+showdiv();	
+})
+function fabudisplay()
+{
+var popUp = document.getElementById("choujiang")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("choujiang");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+
+obj.style.display="block"; 
+}
+function fabudisplay2()
+{
+var popUp = document.getElementById("liquan")
+//document.getElementById('fabu_box').style.display='';
+
+var obj = document.getElementById("liquan");
+var W = screen.width;//取得屏幕分辨率宽度
+var H = screen.height;//取得屏幕分辨率高度
+var yScroll;//取滚动条高度
+if (self.pageYOffset) {
+yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+yScroll = document.body.scrollTop;
+}
+
+//obj.style.marginLeft= (W/2 - 200) + "px";
+obj.style.top= (H/2- 　+　yScroll) + "px";
+obj.style.display="block"; 
+}
+</script>
+</head>
+
+<body>
+<div id="wrap">
+<div id="content">
+      <div class="sc1_banner"><img src="{[$DIR]}images/sc_banner_bg.jpg" /></div>
+      <div class="sc2_zhucfu"><div class="lml_ckzf"><a href="http://weixin.96567.com/hd">查看我的祝福</a></div></div>
+      
+      <div class="dianji">  
+      <div class="annbj">
+            <div class="one">
+            <a href="#tanchu-2">
+            <button type="button"  id="btnshow" class="anniu" onclick="fabudisplay();testMessageBox(event);showdiv();"/>分享集福</button>
+            </a>
+            </div>
+            <div class="two"></div>            
+      </div>  
+      </div>
+      <div class="sc1_cdzf">不要让祝福断了，传递下去，&ldquo;福&rdquo;就是你的！</div> 
+
+      <div id="bg"></div>
+      <div id="choujiang" style="width:100%; height:100%; position:absolute; top:0; left:0; z-index:1000; background-color:none;  display:none; color:#fff">
+            <div class="fenxiang"> 
+            <a name="tanchu-2"></a>  
+            <div class="jiantou"><p><img src="{[$DIR]}images/jiantou.png" /></p></div>
+            <div class="djysj">
+            <span>点击右上角按钮：</span>
+            <span class="s_icon"><img src="{[$DIR]}images/fpy.png" width="30" /></span>
+            <span class="s_icon"><img src="{[$DIR]}images/pyq.png" width="30" /></span>
+            </div>
+      
+            <div class="djysj"><h1>分享给好友，千元福字轻松拿！</h1></div>
+            <div class="djysj">一个好友点击将为你带来1—3个祝福<br />满一百个，千元大礼就是你的啦！</div>
+            <div class="djysj"><h2>朋友和朋友的朋友点击均有效哦</h2></div>
+            </div>
+            <div class="lml_close"><a href="http://weixin.96567.com/hd">×</a></div>
+      </div>  
+
+{[include file="tpl/wanfu/inc/menu.html"]} 
+</div>
+</div>
+
+<div class="zztj">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254040973'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254040973' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+<script type="text/javascript">
+var bhid = 607;
+document.write("<script type=\"text/javascript\" src=\"http://113.106.95.36:8081/aa.js\"><\/script>");
+</script>
+</html>

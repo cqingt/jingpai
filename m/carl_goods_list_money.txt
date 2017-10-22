@@ -1,0 +1,96 @@
+Array
+(
+    [store_cart_list] => Array
+        (
+            [3] => Array
+                (
+                    [0] => Array
+                        (
+                            [cart_id] => 40502
+                            [buyer_id] => 564383
+                            [store_id] => 3
+                            [store_name] => 收藏天下
+                            [goods_id] => 34068
+                            [goods_name] => 孙中山先生诞辰150周年金银纪念币套装 8g金30g银
+                            [goods_price] => 8300.00
+                            [goods_num] => 1
+                            [goods_image] => 3_05294254007845023.jpg
+                            [bl_id] => 0
+                            [state] => 1
+                            [storage_state] => 1
+                            [goods_commonid] => 32820
+                            [gc_id] => 542
+                            [transport_id] => 2
+                            [goods_freight] => 20.00
+                            [goods_vat] => 0
+                            [goods_storage] => 5
+                            [goods_storage_alarm] => 0
+                            [is_fcode] => 0
+                            [have_gift] => 0
+                            [groupbuy_info] => 
+                            [xianshi_info] => 
+                            [miaosha_info] => 
+                            [vipsale_info] => 
+                            [cangdoutuijian_info] => 
+                            [goods_total] => 8300.00
+                            [goods_image_url] => http://images.96567.com/upload/shop/store/goods/3/3_05294254007845023_240.jpg
+                        )
+
+                )
+
+        )
+
+    [store_goods_total] => Array
+        (
+            [3] => 8300.00
+        )
+
+)
+Array
+(
+    [store_cart_list] => Array
+        (
+            [3] => Array
+                (
+                    [0] => Array
+                        (
+                            [cart_id] => 40503
+                            [buyer_id] => 564385
+                            [store_id] => 3
+                            [store_name] => 收藏天下
+                            [goods_id] => 14164
+                            [goods_name] => 2016猴年生肖贺岁纪念币 单枚
+                            [goods_price] => 16.00
+                            [goods_num] => 4
+                            [goods_image] => 3_05047045676274426.jpg
+                            [bl_id] => 0
+                            [state] => 1
+                            [storage_state] => 1
+                            [goods_commonid] => 13753
+                            [gc_id] => 674
+                            [transport_id] => 7
+                            [goods_freight] => 20.00
+                            [goods_vat] => 0
+                            [goods_storage] => 4966
+                            [goods_storage_alarm] => 0
+                            [is_fcode] => 0
+                            [have_gift] => 0
+                            [groupbuy_info] => 
+                            [xianshi_info] => 
+                            [miaosha_info] => 
+                            [vipsale_info] => 
+                            [cangdoutuijian_info] => 
+                            [goods_total] => 64.00
+                            [goods_image_url] => http://images.96567.com/upload/shop/store/goods/3/3_05047045676274426_240.jpg
+                        )
+
+                )
+
+        )
+
+    [store_goods_total] => Array
+        (
+            [3] => 64.00
+        )
+
+)

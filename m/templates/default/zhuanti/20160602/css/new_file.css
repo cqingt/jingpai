@@ -1,0 +1,303 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+}
+body {line-height: 1; font-family: "microsoft yahei"; background: #076b5a;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+a {text-decoration: none;}
+em {font-style: normal;}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+img {
+	vertical-align: top;
+}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {	text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+.w {
+    max-width: 990px;
+    margin: 0 auto;
+}
+.w strong {
+	color: #ffcc01;
+}
+.banner,
+.two,
+.anner-ad,
+.heartbeat {
+	margin: 0 auto;
+	
+}
+
+.headline {
+	position: relative;
+	margin: 0 auto;
+	padding-top: 52px;
+	height: 113px;
+	overflow: hidden;
+}
+.headline img {
+	margin: 0 auto;
+	display: block;
+}
+.headline-h2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 46px;
+}
+a.btn-eye {
+	display: block;
+	color: #fff;
+	margin: 0 auto 34px;
+	width: 228px;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	background: url(../images/eye.png) no-repeat right center;
+}
+p.eye {
+	display: block;
+	color: #fff;
+	margin: 0 auto 34px;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;	
+	color: #333;
+}
+a.btn-eye.eye-red {
+	position: absolute;
+	top: 216px;
+	left: 50%;
+	margin-left: -114px;
+	background: url(../images/eye-red.png) no-repeat right center;
+}
+
+/* banner */
+.banner {
+	width: 100%;
+}
+.banner img {
+	width: 100%;
+}
+
+.two {
+	background: url(../images/two.jpg) no-repeat top center;
+	height: 681px;	
+}
+.two a {
+	display: block;
+	float: left;
+}
+.two a.first {
+	border: 6px #054141 solid;
+	width: 468px;
+	height: 578px;
+}
+.two a.second {
+	width: 500px;
+	height: 595px;
+}
+.banner_ad {
+	background: url(../images/banner_ad.jpg) no-repeat top center;
+	height: 350px;
+	display: block;
+}
+.heartbeat {
+    position: relative;
+}
+.heartbeat img {
+	width: 100%;
+}
+.heartbeat h2 {
+	position: absolute;
+	bottom: 4%;
+	right: 36%;
+	background: url(../images/alarm.png) no-repeat left center;
+	background-size: 20px;
+	padding-left: 23px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	display: block;
+	color: #000;
+}
+.heartbeat h2 em {
+	color: #f22726;
+	font-weight: bold;
+}
+.product img {
+	width: 100%;
+}
+
+
+
+
+
+
+.popup .content {
+  position: fixed;
+  top: 14%;
+  left: 0;
+  border-radius: 10px;
+  z-index: 9;
+  display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 20px 16px;
+  width: 90%;
+  margin: 0 5%;
+  background: #fff;
+}
+
+
+.popup .content input {
+  width: 68%;
+  height: 38px;
+  margin-left: 8px;
+  outline: none -webkit-appearance:none;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+.popup .content .select select {
+  float: left;
+  clear: none;
+  margin-left: 8px;
+  width: 20%;
+  height: 38px;
+  background: #fff;
+  color: #999;
+}
+
+.popup .content .select select:last-child {
+  margin-right: 0
+}
+
+.popup .content textarea {
+  margin-bottom: 0!important;
+  width: 100%;
+  outline: 0;
+  text-align: left;
+  line-height: 20px;
+  -webkit-appearance: none
+}
+
+.popup .content input,.popup .content select,.popup .content textarea {
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 6px;
+  border: 1px #d4d4d4 solid;
+  color: #474747;
+  font-size: 14px
+}
+
+.popup .content input:focus,.popup .content select:focus,.popup .content textarea:focus {
+  border: 1px #999 solid;
+  -webkit-transition: .5s;
+  transition: .5s
+}
+
+.rio-button {
+  width: 100% !important;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 !important;
+  font-size: 20px !important;
+  font-family: "microsoft yahei";
+  background: #ff3c3a;
+  cursor: pointer;
+  border: 0 !important;
+  color: #fff !important;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  width: 41px;
+  height: 40px;
+  background: url(../images/icons.png) no-repeat center;
+  background-size: 65%;
+}
+
+.mask-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: none;
+  width: 100% !important;
+  height: 100%;
+  background: rgba(0,0,0,.3)
+}
+.content h2 {
+	font-size: 36px;
+	color: #ff3c3a;
+}
+.content h4 {
+	font-size: 24px;
+	color: #555;
+	display: block;
+	margin: 20px 0 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px #d4d4d4 solid;
+}
+.content h5 {
+	font-size: 18px;
+	color: #ff3c3a;
+	margin: 10px 0 20px 64px;
+	font-weight: normal;
+}
+.content label {
+	font-size: 16px;
+	float: left;
+	height: 38px;
+	width: 28%;
+	line-height: 38px;
+}
+.row {
+	clear: both;
+}
+.content input.verify {
+	cursor: pointer;
+	width: 26%;
+}
+.content input.submit {
+	width: 37%;
+}
+
+.tab-content h1 {
+	font-size: 20px;
+	font-weight: normal;
+	margin: 10px 0 15px;
+	text-align: center;
+}

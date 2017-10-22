@@ -1,0 +1,59 @@
+.nor-btn {
+    background-color: #f85959;
+}
+
+.head-line .head1:before {
+    background: #f85959 !important;
+}
+
+.head-line .head2 {
+    border-top: 2px solid #f85959 !important;
+}
+
+.head-line .head3:after {
+    border-top: 2px solid #f85959 !important;
+}
+
+.head-line .head4 h2 {
+    border-bottom: 2px solid #f85959 !important;
+}
+
+.tel-btn {
+    background-color: #f85959 !important;
+}
+
+form .btn-i {
+    background-color: #f85959 !important;
+}
+form .btn-jump{
+    background-color: #f85959 !important;
+}
+
+/******************导航样式******************/
+.nav-wrapper .nav-inner {
+    border-bottom-color: #f85959 !important;
+}
+
+.nav-wrapper.item2 .nav-inner {
+    border-bottom-color: #f85959 !important;
+}
+
+.nav-wrapper.item3 .nav-inner {
+    background-color: #f85959 !important;
+}
+
+.nav-wrapper.item1 .cur a{
+    background-color: #f85959 !important;
+}
+
+.nav-wrapper.item2 .cur a{
+    border-bottom-color: #f85959 !important;
+}
+
+.nav-wrapper.item4 .cur a {
+    color: #f85959 !important;
+}
+
+.poll .poll-content .poll-oper a{
+    background-color: #f85959 !important;
+}

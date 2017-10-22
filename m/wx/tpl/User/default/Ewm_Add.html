@@ -1,0 +1,58 @@
+<include file="Public:head"/>
+
+
+<link rel="stylesheet" href="{weixin::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{weixin::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{weixin::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{weixin::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{weixin::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script src="{weixin::C('site_url')}/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="{weixin::C('site_url')}/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+
+<div class="content" style="width:920px; background:none; margin-left:275px; border:none; margin-bottom:30px;" >
+          <div class="cLineB"><h4>新增二维码参数</h4><a href="javascript:history.go(-1);"  class="right btnGrayS vm" style="margin-top:-27px" >返回</a></div>
+         
+          <form method="post"   action="{weixin::U('Ewm/doAdd')}"  enctype="multipart/form-data" >
+          <div class="msgWrap form">
+            <TABLE class="userinfoArea" border="0" cellSpacing="0" cellPadding="0" width="100%">
+ 
+              <TBODY>
+                <tr>
+                  <td><label for="title">回复模式：</label></td>
+                  <td><select name="E_EwmClass" id="">
+                    <option value="1">永久二维码</option>
+                  </select>
+                  </td>
+                </tr>
+               <TR>
+                  <TH><label for="title">场景标题：</label></TH>
+                  <TD><input type="input" class="px" id="title" value="{weixin:$info.E_Name}"    name="E_Name" style="width:580px;"> </TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="text">场景描述：</label></TH>
+                  <TD><textarea  class="px" id="Hfcontent"     name="E_Desc" style="width:580px;  height:100px">{weixin:$info.E_Desc}</textarea><br />限制200字内
+</TD>
+                </TR>
+
+
+
+                <TR>
+                  <TH></TH>
+                  <TD><input type="submit" value="保存" name="sbmt" class="btnGreen left">　<a href="javascript:history.go(-1);"  class="btnGray vm">取消</a></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          </form>
+          
+        </div>     
+ 
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div> 
+<!--底部-->
+  	</div>
+<include file="Public:footer"/>

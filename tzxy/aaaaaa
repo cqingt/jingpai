@@ -1,0 +1,4897 @@
+SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '8985' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '42' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%林存安作品%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%林存安作品%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 0,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '28374' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%外汇兑换卷%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%外汇兑换卷%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 0,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '12290' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '59' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '10338' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '23045' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '69' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '7556' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '57' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '28134' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%看点%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%看点%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 0,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '8701' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '59' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '29433' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%第三套人民币豹子号%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%第三套人民币豹子号%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 0,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '24243' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '59' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%傅增湘作品%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%傅增湘作品%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 0,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '29260' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '5115' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '24' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%看点%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%看点%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 20,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 5,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '9144' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '7560' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '59' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_title LIKE '%翡翠%' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_title LIKE '%翡翠%' ) AND ( article_state = '3' ) ORDER BY article_sort asc, article_id desc LIMIT 0,20  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_class_id = '19' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_class_id = '19' ) AND ( article_state = '3' ) ORDER BY article_publish_time desc LIMIT 0,10  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '11691' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '59' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '29893' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '40' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '11449' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '20' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '28251' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_article` WHERE ( article_id = '8717' ) LIMIT 1  -------SELECT class_name FROM `shop_cms_article_class` WHERE ( class_id = '37' ) LIMIT 1  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------SELECT * FROM `shop_cms_navigation` ORDER BY navigation_sort asc -------SELECT * FROM `shop_cms_article_class` ORDER BY class_sort asc -------SELECT * FROM `shop_cms_picture_class` ORDER BY class_sort asc -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_class_id = '41' ) AND ( article_state = '3' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_class_id = '41' ) AND ( article_state = '3' ) ORDER BY article_publish_time desc LIMIT 0,10  -------SELECT * FROM `shop_cms_tag` ORDER BY tag_sort asc LIMIT 10  -------SELECT COUNT(*) AS nc_count FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) LIMIT 1  -------SELECT * FROM `shop_cms_article` WHERE ( article_commend_image_flag = '1' ) ORDER BY article_id desc LIMIT 0,5  -------SELECT * FROM `shop_cms_article` AS `cms_article` LEFT JOIN `shop_cms_article_class` AS `cms_article_class` ON cms_article.article_class_id = cms_article_class.class_id WHERE ( article_commend_flag = '1' ) ORDER BY article_id desc LIMIT 9  -------Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %1953年的一分纸币%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %1953年的一分纸币%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [order] => article_sort asc, article_id desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %1953年的一分纸币%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %1953年的一分纸币%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [order] => article_sort asc, article_id desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %1953年的一分纸币%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %1953年的一分纸币%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [order] => article_sort asc, article_id desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 10072
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 37
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 9118
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 25840
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 37
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 30635
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 60
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 30635
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 60
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 30736
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 41
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 30736
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 41
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 26339
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 8765
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 37
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_commend_image_flag] => 1
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 16048
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 39
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 69
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 19
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 40
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 60
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 8
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 39
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 20
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 56
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 37
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 38
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 62
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 55
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 42
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 57
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 57
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 59
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 12
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 53
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 12
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 6202
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 20
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 7654
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 55
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 30739
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 41
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 26205
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 55
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 8717
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 37
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 22871
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 11125
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 19
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 6242
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 19
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 18751
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 18751
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 7531
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 12290
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 8770
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 39
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 26292
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 55
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 7577
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 7559
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 26183
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 56
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 10017
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 59
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 27786
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 37
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 14110
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 14110
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 29789
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 41
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 54
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 54
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_commend_image_flag] => 1
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 39
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 69
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 19
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 40
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 60
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 8
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 39
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 20
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 56
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 37
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 38
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 62
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 55
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 6
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 42
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 57
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 57
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 5
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 59
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 12
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_state] => 3
+            [article_class_id] => 53
+        )
+
+    [order] => article_publish_time desc
+    [limit] => 12
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 41
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [where] => Array
+        (
+            [article_id] => 14110
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article_class`
+    [field] => class_name
+    [where] => Array
+        (
+            [class_id] => 69
+        )
+
+    [order] => 
+    [limit] => 1
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 37
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 37
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %名人藏品%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_title] => Array
+                (
+                    [0] => like
+                    [1] => %名人藏品%
+                )
+
+            [article_state] => 3
+        )
+
+    [page] => 20
+    [order] => article_sort asc, article_id desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => navigation_sort asc
+    [table] => `shop_cms_navigation`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_article_class`
+)
+Array
+(
+    [field] => *
+    [where] => 1
+    [order] => class_sort asc
+    [table] => `shop_cms_picture_class`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_class_id] => 37
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_class_id] => 37
+            [article_state] => 3
+        )
+
+    [page] => 10
+    [order] => article_publish_time desc
+    [limit] => 1000
+)
+Array
+(
+    [field] => 
+    [where] => 1
+    [order] => tag_sort asc
+    [limit] => 10
+    [table] => `shop_cms_tag`
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => COUNT(*) AS nc_count
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_cms_article`
+    [field] => *
+    [where] => Array
+        (
+            [article_commend_image_flag] => 1
+        )
+
+    [page] => 5
+    [order] => article_id desc
+    [limit] => 3
+)
+Array
+(
+    [table] => `shop_cms_article` AS `cms_article`,`shop_cms_article_class` AS `cms_article_class`
+    [field] => *
+    [join] => Array
+        (
+            [0] => LEFT JOIN
+        )
+
+    [on] => cms_article.article_class_id = cms_article_class.class_id
+    [where] => Array
+        (
+            [article_commend_flag] => 1
+        )
+
+    [order] => article_id desc
+    [limit] => 9
+)

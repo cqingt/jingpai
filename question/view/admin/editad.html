@@ -1,0 +1,85 @@
+<!--{template header,admin}-->
+<div class="page">
+	<div class="fixed-bar">
+		<div class="item-title">
+			<h3>编辑</h3>
+		</div>
+	</div>
+	<div class="fixed-empty"></div>
+	<form enctype="multipart/form-data" method="post" name="advForm" action="index.php?admin_ad/editInfo{$setting['seo_suffix']}">
+		<input name="id" value="{$id}" type="hidden">
+		<input name="type" value="{$arr['type']}" type="hidden">
+		<input name="form_submit" value="ok" type="hidden">
+		<table class="table tb-type2">
+			<tbody>
+			<tr class="noborder">
+				<td colspan="2" class="required"><label class="validation" for="ad_title">标题:</label></td>
+			</tr>
+			<tr class="noborder" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+				<td class="vatop rowform"><input name="title" id="ad_title" class="txt" value="{$arr['title']}" type="text"></td>
+				<td class="vatop tips">标题为图片的描述性文本</td>
+			</tr>
+			<tr style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+				<td colspan="2" class="required"><label>所属类型:</label></td>
+			</tr>
+			<tr class="noborder" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+				<td class="vatop rowform">{if $arr['type'] == 0}轮播图{else}活动专题{/if}</td>
+				<td class="vatop tips"></td>
+			</tr>
+			<tr id="adv_pic" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+				<input name="mark" value="0" type="hidden">
+				<td colspan="2" class="required"><label for="file_adv_pic">图片上传:</label></td>
+			</tr>
+			<tr class="noborder" style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+				<td class="vatop rowform">
+					<span class="type-file-show">
+						<img class="show_image" src="http://system.96567.com/templates/default/images/preview.png">
+						<div class="type-file-preview" style="display: none;">
+							<img src="{$arr['src']}" {if $arr['type']==0}width="500px;" height="109px;"{else}width="213px;" height="155px;"{/if}>
+						</div>
+					</span>
+					<span class="type-file-box">
+						<input name="textfield" id="textfield1" class="type-file-text" type="text">
+						<input name="button" id="button1" value="" class="type-file-button" type="button">
+						<input class="type-file-file" id="file_adv_pic" name="adv_pic" size="30" type="file">
+					</span>
+				</td>
+				<td class="vatop tips">系统支持的图片格式为:gif,jpg,jpeg,png </td>
+			</tr>
+			<tr style="background: rgb(255, 255, 255) none repeat scroll 0% 0%;">
+				<td colspan="2" class="required"><label for="url">链接地址:</label></td>
+			</tr>
+			<tr class="noborder">
+				<td class="vatop rowform"><input id="url" name="url" value="{$arr['url']}" class="txt" type="text"></td>
+				<td class="vatop tips">请输入完整链接地址</td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr class="tfoot">
+				<td colspan="15"><a href="JavaScript:void(0);" class="btnn" onclick="document.advForm.submit()"><span>提交</span></a></td>
+			</tr>
+			</tfoot>
+		</table>
+	</form>
+</div>
+</div>
+<script type="text/javascript">
+// 模拟网站LOGO上传input type='file'样式
+$(function(){
+	$("#file_adv_pic").change(function(){
+		$("#textfield1").val($(this).val());
+	});
+// 上传图片类型
+$('input[class="type-file-file"]').change(function(){
+	var filepatd=$(this).val();
+	var extStart=filepatd.lastIndexOf(".");
+	var ext=filepatd.substring(extStart,filepatd.lengtd).toUpperCase();		
+		if(ext!=".PNG"&&ext!=".GIF"&&ext!=".JPG"&&ext!=".JPEG"){
+			alert("图片限于png,gif,jpeg,jpg格式");
+				$(this).attr('value','');
+			return false;
+		}
+	});
+});
+</script>
+<!--{template footer,admin}-->

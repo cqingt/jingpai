@@ -1,0 +1,99 @@
+<include file="Public:head"/>
+<div class="content" style="width:920px; background:none; margin-left:275px; border:none; margin-bottom:30px;" >
+         
+          <div class="cLineB">
+              <h4 class="left">自定义回复信息</h4>
+              <div class="clr"></div>
+          </div>
+          <div class="cLine">
+              <div class="pageNavigator left">
+  <a href='{weixin::U("Ewm/add")}' title='新增二维码参数' class='btnGrayS vm bigbtn'><img src="{weixin::RES}/images/text.png" class="vm" />新增二维码参数</a>　
+
+              
+            </div>
+          
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+					
+					<TH  style="width:110px;" class="keywords">二维码参数</TH>
+          <TH  style="width:110px;" class="keywords">关注人数</TH>
+					<TH style="width:150px;" class="answer">场景名称</TH>
+          <TH style="width:300px;" class="category" >二维码图片</TH>
+          <TH  class="time">二维码地址</TH>
+					<TH style="width:150px;" class="edit norightborder">操作</TH>
+                </TR>
+              </THEAD>
+              <TBODY>
+                <TR></TR>
+				<volist name="info" id="vo">
+				<tr>
+                  
+                  <td style="width:110px;">{weixin:$vo.E_Id}</td>
+                  <td style="width:110px;">{weixin:$vo.E_Click}</td>
+                  <td style="width:150px;">{weixin:$vo.E_Name}</td>
+                  <td style="width:300px;"><div class="answer_text"><a href="{weixin:$vo.E_ImgUrl}" target="_blank"><img style="width:215px;height:215px;" src="{weixin:$vo.E_ImgUrl}" class="vm" title="图文自定义内容"></a></div></td>
+                  
+                  <td >{weixin:$vo.E_Url}</td>
+                   
+                   <td style="width:150px;" class="norightborder">
+				   <!--a target="ddd" href="{weixin::U('Wap/Index/content',array('token'=>$_SESSION['token'],'id'=>$vo['id']))}">查看</a--> 
+				   <a href="{weixin::U('Ewm/addContent',array('id'=>$vo['E_Id']))}" title="编辑回复内容">编辑回复内容</a>
+				   <a href="{weixin::U('Ewm/del',array('id'=>$vo['E_Id']))}">删除</a></td>
+          
+                </tr>
+				</volist>
+                              
+              </TBODY>
+            </TABLE>
+
+           <script>
+   function checkvotethis() {
+var aa=document.getElementsByName('del_id[]');
+var mnum = aa.length;
+j=0;
+for(i=0;i<mnum;i++){
+if(aa[i].checked){
+j++;
+}
+}
+if(j>0) {
+document.getElementById('info').submit();
+} else {
+alert('未选中任何文章或回复！')
+}
+}
+
+   </script>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weixin:$page}</div>
+              </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+function checkAll(form, name) {
+for(var i = 0; i < form.elements.length; i++) {
+var e = form.elements[i];
+if(e.name.match(name)) {
+e.checked = form.elements['chkall'].checked;
+}
+}
+}
+
+
+  </script>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>

@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/* Smohan_FaceBox */
+.Smohan_FaceBox {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+textarea.smohan_text {
+	position: relative;
+	display: block;
+	resize: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	height: 78px;
+	outline: none;
+	border: 1px solid #cacaca;
+	background: url(../images/facebg_1.png) 0px 0px repeat-x;
+}
+
+.Smohan_FaceBox p,
+.Smohan_FaceBox-con p {
+	display: block;
+	padding: 10px 0px;
+	width: 100%;
+}
+
+.face {
+	float: left;
+	display: block;
+
+	height: 20px;
+	background: url(../images/facebg_1.png) 0px -100px no-repeat;
+}
+
+.face:hover,.face.in {
+	background-position: 0px -120px;
+}
+
+.button {
+	float: right;
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	border: 0;
+	background: .e43a3d;
+	color: #ffffff;
+	text-align: center;
+	line-height: 24px;
+	cursor: pointer;
+}
+
+/* FaceBox */
+.SmohanFaceBox {
+	position: absolute;
+	top: 130px;
+	left: -50px;
+	z-index: 9999;
+	display: none;
+	width: 352px;
+	background: #fff;
+	height: 187px;
+}
+
+.SmohanFaceBox .Corner {
+	position: absolute;
+	top: 0;
+	left: 45px;
+	z-index: 100;
+	display: block;
+	width: 28px;
+	height: 15px;
+	background: url(../images/facebg_1.png) -32px -100px no-repeat;
+}
+
+.SmohanFaceBox .Content {
+	z-index: 99;
+	display: block;
+	margin: 14px 0px 0px 0px;
+	padding: 10px;
+	width: 350px;
+	height: 185px;
+	border: 1px solid .cfcfcf;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0px 1px 10px rgba(204,204,204,1);
+}
+
+.SmohanFaceBox .Content h3 {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 350px;
+	height: 30px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.SmohanFaceBox .Content h3 span {
+	float: left;
+}
+
+.SmohanFaceBox .Content h3 .close {
+	float: right;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/facebg_1.png) -30px -120px;
+	cursor: pointer;
+}
+
+.SmohanFaceBox .Content h3 .close:hover {
+	background-position: -46px -120px;
+}
+
+.SmohanFaceBox .Content ul {
+	margin: 5px 0px 0px 0px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.SmohanFaceBox .Content ul li {
+	float: left;
+	display: inline-block;
+	padding: 2px;
+	width: 22px;
+	height: 22px;
+	border: 1px solid #f8f8f8;
+}
+
+.SmohanFaceBox .Content ul li:hover {
+	border-color: #6C3;
+}
+/* 解析表情 */
+.Zones {
+	position: relative;
+	display: block;
+	display: none;
+	margin: 30px auto;
+	width: 100%;
+	height: auto;
+	border: 2px dashed #cacaca;
+	background: .fff;
+}
+
+.Smohan_FaceBox h2 {
+	font-size: 16px;
+	color: .333;
+	margin-bottom: 8px;
+}
+
+
+.pl-container {
+  border-top: 1px solid .f1f2f3;
+}
+.pl-container .pl-list {
+  padding: 20px 0;
+  border-bottom: 1px solid #edf1f2;
+}
+.pl-container .pl-list-avator {
+  float: left;
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.pl-container .pl-list-avator img {
+  width: 100%;
+}
+.pl-container .pl-list-main {
+  margin-left: 60px;
+}
+.pl-container .pl-list-nick {
+  line-height: 1.2;
+}
+.pl-container .pl-list-nick a {
+  font-size: 12px;
+  color: .303538;
+}
+.pl-container .pl-list-nick a:hover {
+  color: .14191e;
+}
+.pl-container .pl-list-content {
+  margin-top: 3px;
+  font-size: 14px;
+  color: .14191e;
+  line-height: 24px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+.pl-container .pl-list-btm {
+  font-size: 12px;
+  color: .b5b9bc;
+  margin-top: 15px;
+}
+.pl-none {
+  padding: 100px 0;
+  text-align: center;
+  font-size: 14px;
+  color: .787d82;
+}
+.Smohan_Showface,
+.Smohan_Showface-con {
+	background: #D63C3E;
+	color: #fff;
+}
+.SmohanFaceBox.con {
+	top: 170px;
+	left: -31px;
+}
+
+.close {
+	display: none !important;
+}

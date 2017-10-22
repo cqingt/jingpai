@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<title>书画资料 - 完善资料</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">       
+#preview_wrapper{        
+    display:inline-block;        
+    width:30px;        
+    height:30px;        
+    background-color:#ffffff;        
+}        
+#preview_fake{ /* 该对象用户在IE下显示预览图片 */        
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);        
+}        
+   
+#preview{ /* 该对象用户在FF下显示预览图片 */        
+    width:30px;        
+    height:30px;        
+} 
+
+
+</style>   
+</head>
+
+<body>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&c=mydata&p=main" style="color:#999;">我的资料</a>
+	 <span>&nbsp;</span>
+     <a href="####" style="color:#999;">完善资料</a>
+</div>
+
+<div class="user-main complete-data">
+    <div class="user-table">
+        <form method="post" action="index.php?m=member&c=preserve&p=main" enctype="multipart/form-data">
+		<input type="hidden" name="U_ID" value="{[$dataArr.U_ID]}">
+            <div class="content">
+                                <div><span>
+								<div id="preview_wrapper">       
+									<div id="preview_fake">   
+								<img style="vertical-align:middle;" id="preview" onload="onPreviewLoad(this)" src="{[if $dataArr.U_HeadImg]}{[$dataArr.U_HeadImg]}{[else]}{[$DIR]}images/tx.jpg{[/if]}" alt="">
+								</div>       
+							</div>
+								</span>
+								<input id="upload_img" type="file" style="display:none" onchange="onUploadImgChange(this)" name="U_HeadImg" >
+								<a href="javascript:;" onclick="document.getElementById('upload_img').click();" style="margin-left:10px;">修改头像</a></div>
+                                <div><span class="gray9 label">用户名：</span>{[$dataArr.U_UserName]}</div>
+                <div>
+                    <span class="gray9 label">昵&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
+                    <input type="text" class="comn-input fan-name" placeholder="昵称不超过10个字" value="{[$dataArr.U_nickname]}" size="20" name="nickname" >
+                </div>
+                <div>
+                    <span class="gray9 label">性&nbsp;&nbsp;&nbsp;别：</span>
+                        <span class="gender">
+                            <input type="radio" name="U_sex"  value="1" {[if $dataArr.U_sex == 1]}checked="checked"{[/if]}>男
+                        </span>
+                        <span class="gender">
+                            <input type="radio" name="U_sex" {[if $dataArr.U_sex == 2]}checked="checked"{[/if]} value="2" >女
+                        </span>
+                </div>
+            </div>
+            <input type="submit" class="comn-submit over-submit"  value="保存">
+        </form>
+    </div>
+</div>
+
+<div class="copyright">Copyright 2012-2014 m.96567.com 版权所有</div>
+
+<div style="height:10px;"></div>
+
+
+</body>
+</html>
+<script>
+
+function onUploadImgChange(sender){      
+    if( !sender.value.match( /.jpg|.gif|.png|.bmp/i ) ){        
+        alert('图片格式无效！');   
+        return false;       
+    }                    
+    var objPreview = document.getElementById( 'preview' );        
+    var objPreviewFake = document.getElementById( 'preview_fake' );
+    var file=document.getElementById("upload_img");
+            
+    if( sender.files &&  sender.files[0] ){        
+        objPreview.style.display = 'block';        
+        objPreview.style.width = 'auto';        
+        objPreview.style.height = 'auto';        
+        // Firefox 因安全性问题已无法直接通过 input[file].value 获取完整的文件路径        
+//Firefox7.0以下
+        //objPreview.src = sender.files[0].getAsDataURL();     
+//Firefox8.0
+objPreview.src = window.URL.createObjectURL(file.files[0])
+    }else if( objPreviewFake.filters ){         
+        // IE7,IE8 在设置本地图片地址为 img.src 时出现莫名其妙的后果        
+        //（相同环境有时能显示，有时不显示），因此只能用滤镜来解决                
+        // IE7, IE8因安全性问题已无法直接通过 input[file].value 获取完整的文件路径        
+        sender.select();      
+        var imgSrc = document.selection.createRange().text;        
+        objPreviewFake.filters.item(        
+            'DXImageTransform.Microsoft.AlphaImageLoader').src = imgSrc;        
+        objPreviewSizeFake.filters.item(        
+            'DXImageTransform.Microsoft.AlphaImageLoader').src = imgSrc;        
+                
+        autoSizePreview( objPreviewFake,         
+            objPreviewSizeFake.offsetWidth, objPreviewSizeFake.offsetHeight );        
+        objPreview.style.display = 'none';        
+    }        
+}        
+       
+function onPreviewLoad(sender){
+    autoSizePreview( sender, sender.offsetWidth, sender.offsetHeight );      
+}
+       
+function autoSizePreview( objPre, originalWidth, originalHeight ){     
+    var zoomParam = clacImgZoomParam( 30, 30, originalWidth, originalHeight );        
+    objPre.style.width = zoomParam.width + 'px';        
+    objPre.style.height = zoomParam.height + 'px';        
+    objPre.style.marginTop = zoomParam.top + 'px';        
+    objPre.style.marginLeft = zoomParam.left + 'px';        
+}        
+       
+function clacImgZoomParam( maxWidth, maxHeight, width, height ){        
+    var param = { width:width, height:height, top:0, left:0 };        
+            
+    if( width>maxWidth || height>maxHeight ){        
+        rateWidth = width / maxWidth;        
+        rateHeight = height / maxHeight;        
+                
+        if( rateWidth > rateHeight ){        
+            param.width =  maxWidth;        
+            param.height = height / rateWidth;        
+        }else{        
+            param.width = width / rateHeight;        
+            param.height = maxHeight;        
+        }        
+    }        
+            
+    param.left = (maxWidth - param.width) / 2;        
+    param.top = (maxHeight - param.height) / 2;              
+    return param;        
+}
+</script>

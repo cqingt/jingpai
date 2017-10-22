@@ -1,0 +1,273 @@
+ 
+
+.art-wrapper {width: 1000px; margin: auto; clear: both;}
+
+.art-top,
+.art-from,
+.art-footer {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.art-top {
+	height: 108px;
+	background: #f4f4f2;
+	overflow:  hidden;
+}
+.art-from {
+	padding-top: 60px;
+	padding-bottom: 30px;
+	background: #e5e5e5;
+}
+.art-from h2 {
+	text-align: center;
+	font-size: 30px;
+	line-height: 80px;
+	color: #cc0000;
+}
+.art-footer {
+	background: #fff;
+	height: 720px;
+}
+[class*=photo] {
+	width: 100%;
+}
+.photo2 {
+	background: url(../images/photo_02.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo3 {
+	background: url(../images/photo_03.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo4 {
+	background: url(../images/photo_04.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo5 {
+	background: url(../images/photo_05.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo6 {
+	background: url(../images/photo_06.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo7 {
+	background: url(../images/photo_07.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo8 {
+	background: url(../images/photo_08.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo9 {
+	background: url(../images/photo_09.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo10 {
+	background: url(../images/photo_10.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo11 {
+	background: url(../images/photo_11.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo12 {
+	background: url(../images/photo_12.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo13 {
+	background: url(../images/photo_13.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo14 {
+	background: url(../images/photo_14.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo15 {
+	background: url(../images/photo_15.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo16 {
+	background: url(../images/photo_16.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo17 {
+	background: url(../images/photo_17.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo18 {
+	background: url(../images/photo_18.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo19 {
+	background: url(../images/photo_19.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo20 {
+	background: url(../images/photo_20.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo21 {
+	background: url(../images/photo_21.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo22 {
+	background: url(../images/photo_22.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo23 {
+	background: url(../images/photo_23.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo24 {
+	background: url(../images/photo_24.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo25 {
+	background: url(../images/photo_25.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo26 {
+	background: url(../images/photo_26.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo27 {
+	background: url(../images/photo_27.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo28 {
+	background: url(../images/photo_28.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo29 {
+	background: url(../images/photo_29.jpg) no-repeat top center;
+	height: 288px;
+}
+.photo30 {
+	background: url(../images/photo_30.jpg) no-repeat top center;
+	height: 287px;
+}
+.photo31 {
+	background: url(../images/photo_31.jpg) no-repeat top center;
+	height: 288px;
+}
+.art-from .formtips {
+	clear: both;
+	font-family: "microsoft yahei";
+	font-size: 12px;
+	margin-top: 4px;
+	display: block;
+	padding-left: 4px;
+}
+.art-from .form {
+	overflow: hidden;
+}
+.art-from .case {
+	width: 600px;
+	margin: 0 auto 20px;
+}
+.art-from .case input,
+.art-from .case textarea {
+	font-family: "microsoft yahei";
+	background: #E5E5E5;
+	font-size: 18px;
+	width: 578px;
+	padding: 0 10px;
+	border: 1px #bfbfbf solid;
+}
+.art-from .case input {
+	height: 38px;
+}
+.art-from .case textarea {
+	padding-top: 8px;
+	height: 190px;
+	line-height: 24px;
+}
+.art-from .case .button {
+	width: 598px;
+	line-height: 40px;
+	height: 44px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 30px;
+	background: #cc0000;
+}
+.art-from h5 {
+	text-align: center;
+	width: 778px;
+	font-family: "microsoft yahei";
+	margin: 10px auto 0;
+	font-size: 18px;
+	line-height: 30px;
+	color: #333;
+}
+
+
+
+#art-con {
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.art-record {
+	width: 70%;
+	margin: 0px 15% 40px;
+}
+.art-from h2 {
+	font-size: 30px;
+	color: #333;
+	margin-top: 20px;
+}
+.art-record ul {
+	border-top: 1px #b2b2b2 dotted;
+	position: relative;
+	margin: 0 10px 0px 10px;
+	left: 0;
+	padding: 0;
+}
+.art-record ul li {
+	border-bottom: 1px #b2b2b2 dotted;
+	overflow: hidden;
+	padding: 10px 0;
+	line-height: 28px;
+}
+.art-record ul li h3,
+.art-record ul li h4,
+.art-record ul li p {
+	font-family: 'Microsoft YaHei';
+	float: left;
+	color: #333;
+	font-size: 18px;
+	font-weight: normal;
+	white-space:nowrap; 
+	text-overflow:ellipsis; 
+	-o-text-overflow:ellipsis; 
+	overflow: hidden; 
+}
+.art-record ul li h6 {
+	font-family: 'Microsoft YaHei';
+	float: right;
+	color: #333;
+	font-size: 18px;
+	font-weight: normal;
+}
+.art-record ul li h3 {
+	width: 12%;
+	margin-right: 2%;
+}
+.art-record ul li h4 {
+	width: 15%;
+	margin-right: 2%;
+}
+.art-record ul li p {
+	width: 40%
+}
+.art-record ul li h6 {
+	width: 20%;
+	text-align: right;
+}
+
+
+

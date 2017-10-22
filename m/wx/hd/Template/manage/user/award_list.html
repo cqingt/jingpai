@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>中奖清单</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+
+  <tr  style="height:50px;">
+  	<td bgcolor="#ecf9ff"><span class="title">获奖清单 (中奖人数{[$num]}人)</span></td>
+  </tr>
+</table>
+<div>
+  <form id="form1" name="form1" method="get" action="index.php">
+  <input type="hidden" name="m" id="m" value="award"/>
+  <input type="hidden" name="c" id="c" value="showlist"/>
+  <input type="hidden" name="p" id="p" value="manage"/>
+  <input type="hidden" name="a" id="a" value="search"/>
+  <select name="type" id="type">
+  	  <option value="0">未领奖</option>
+      <option value="1">已领奖</option>
+      <option value="-1">取消领奖</option>
+    </select>
+    <select name="isOrder" id="isOrder">
+   	  <option value="0">未生成订单</option>
+      <option value="1">已生成订单</option>
+    </select>
+    <input type="text" name="key" id="key" />
+    <input type="submit" name="button" id="button" value="提交" />
+  </form>
+</div>
+<input type="hidden" name="number" id="number" value="{[$dataArr.W_Number]}"/>
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="padding">
+
+    
+
+	<tr class="title">
+	  <td width="5%" style=" text-align:center;">微信图片</td>
+	  <td width="15%" style=" text-align:center;">微信昵称</td>
+	  <td width="10%" style=" text-align:center;">中奖手机</td>
+      <td width="10%" style=" text-align:center;">中奖福字数</td>
+	  <td width="10%" style=" text-align:center;">当前福字数</td>
+	  <td width="5%" style=" text-align:center;">公众号</td>
+	  <td width="15%" style=" text-align:center;">中奖时间</td>
+	  <td width="8%" style=" text-align:center;">状态</td>
+	  <td width="8%" style=" text-align:center;">领奖方式</td>
+	  <td width="14%" style=" text-align:center;">操作</td>
+      </tr>
+{[foreach from=$dataArr item=v key=k]}
+    <tr class="con">
+      <td width="5%" style=" text-align:center;"><a href="{[$v.img]}" target="_blank"><img src="{[$v.img]}" width="30px;" height="30px;" border="0"/></a></td>
+	  <td width="15%" style=" text-align:left;">{[$v.nickname]}</td>
+      <td width="10%" style=" text-align:center;">{[$v.mobile]}</td>
+	  <td width="10%" style=" text-align:right; padding-right:10px;">{[$v.fu1]}</td>
+	  <td width="10%" style=" text-align:right; padding-right:10px;">{[$v.fu2]}</td>
+	  <td width="5%" style=" text-align:center;">{[if $v.guanzhu]}已关注{[else]}未关注{[/if]}</td>
+	  <td width="15%" style=" text-align:center;">{[$v.time|date_format:"%Y-%m-%d %H:%M:%S"]}</td>
+	  <td width="8%" style=" text-align:center;">
+      {[if $v.status<0]}取消资格{[/if]}
+      {[if $v.isOrder && $v.status==1]}<span style="color:#F00">已生成订单</span>{[/if]}
+      </td>
+	  <td width="8%" style=" text-align:center;">{[if $v.type==1]}特快专递{[elseif $v.type==2]}上门取货{[/if]}</td>
+	  <td width="14%" style=" text-align:center;">
+      {[if !$v.isOrder && $v.status==1]}
+      	<a href="javascript:createOrder({[$v.id]});">生成订单</a>
+      {[/if]}
+      <a href="javascript:setAward({[$v.id]});">{[if $v.status!=0]}查看资料{[else]}领奖{[/if]}</a>
+	  </td>
+    </tr>
+  {[/foreach]}
+
+	
+	
+  
+  </table>
+  <div id="page" style="text-align:center;">
+{[$pageStr]}
+</div>
+</div>
+<script>
+function setAward(id){
+	$.open({
+		url : 'index.php?m=award&c=setAward&p=manage&id=' + id,
+		width : 700,
+		height : 500,
+		callback : function(action){
+	　　　　if(action == 'close'){
+	　　　　	window.location.reload();
+	　　　　}
+		}
+	});
+}
+
+function getCity(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#W_City').html('<option value="">请选择</option>' + str);	
+	});
+}
+
+function getProvince(rid,sid){
+	$.get('index.php?m=areaAction&c=showOptionStr&p=action&rid=' + rid + "&sid=" + sid,function(str){
+		$('#W_Province').html('<option value="">请选择</option>' + str);	
+	});
+}
+</script>
+
+</body>
+</html>

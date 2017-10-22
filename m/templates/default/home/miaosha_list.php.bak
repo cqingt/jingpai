@@ -1,0 +1,191 @@
+<?php defined('InShopNC') or exit('Access Invalid!');?>
+<link rel="stylesheet" type="text/css" href="<?php echo MOBILE_TEMPLATES_URL;?>/css/reset.css">
+<link rel="stylesheet" type="text/css" href="<?php echo MOBILE_TEMPLATES_URL;?>/css/main.css">
+<link rel="stylesheet" type="text/css" href="<?php echo MOBILE_TEMPLATES_URL;?>/css/member.css">
+<link rel="stylesheet" type="text/css" href="<?php echo MOBILE_TEMPLATES_URL;?>/css/page.css">
+
+
+
+<?php if($output['miaosha']){?>
+
+<?php foreach($output['miaosha']['today'] as $todayk => $todayv){?>
+    <?php foreach($todayv as $k => $v){?>
+    
+    <div class="list_tuangou">
+         <div class="list_tuangou_bt">
+              <a href="<?php echo urlWap('goods','index',array('goods_id'=>$v['goods_id']));?>"><?php echo $v['goods_name'];?></a>
+         </div>
+         <div class="list_tuangou2">
+              <div class="list_tuangou2_img">
+                   <a href="<?php echo urlWap('goods','index',array('goods_id'=>$v['goods_id']));?>">
+                      <img src="<?php echo $v['goods_image'];?>">
+                    </a>
+              </div>
+              <div class="list_tuangou22">
+              <div class="lin_hg">秒杀价：
+                   <span class="a1"><a href="#" style="color:#C00;">￥<?php echo $v['miaosha_price'];?></a></span>
+              </div>
+              <div class="lin_hg">商城价：<span class="a2">￥<?php echo $v['goods_price'];?></span></div>
+
+              <div class="lin_hg">
+                    
+                    <?php if($v['shengyukucun'] < 1){ ?>
+                    <label id = "leftTime2">该秒杀已结束...</label>
+                    <?php }elseif($v['start_time'] > TIMESTAMP){?>
+                    <label id = "leftTime2"  class="leftTime" count_down="<?php echo $v['start_time'] - TIMESTAMP;?>" timestatus="1">载入中,请稍候...</label>
+                    <?php }elseif($v['end_time'] < TIMESTAMP){?>
+                    <label id = "leftTime2"  >该秒杀已结束...</label>
+                    <?php }else{?>
+                    <label id = "leftTime2"  class="leftTime" count_down="<?php echo $v['end_time'] - TIMESTAMP;?>" timestatus="2">载入中,请稍候...</label>
+                    <?php }?>
+
+              </div>
+
+              <div class="lin_hg">
+
+                <?php if($v['shengyukucun'] < 1){ ?>
+                <span class="c9"><a class="input">该秒杀结束</a></span>
+                <?php }elseif($v['start_time'] > TIMESTAMP){?>
+                <span class="c9"><a class="input">即将开始</a></span>
+                <?php }elseif($v['end_time'] < TIMESTAMP){?>
+                <span class="c9"><a class="input">该秒杀结束</a></span>
+                <?php }else{?>
+                <span class="a4"><a href="<?php echo urlWap('goods','index',array('goods_id'=>$v['goods_id']));?>" class="input">立即秒杀</a></span>
+                <?php }?>
+
+              </div>
+              </div>
+         </div>
+    </div>
+
+    <?php }?>
+<?php }?>
+
+
+<?php foreach($output['miaosha']['tomorrow'] as $todayk => $todayv){?>
+    <?php foreach($todayv as $k => $v){?>
+    
+    <div class="list_tuangou">
+         <div class="list_tuangou_bt">
+              <a href="<?php echo urlWap('goods','index',array('goods_id'=>$v['goods_id']));?>"><?php echo $v['goods_name'];?></a>
+         </div>
+         <div class="list_tuangou2">
+              <div class="list_tuangou2_img">
+                   <a href="<?php echo urlWap('goods','index',array('goods_id'=>$v['goods_id']));?>">
+                      <img src="<?php echo $v['goods_image'];?>">
+                    </a>
+              </div>
+              <div class="list_tuangou22">
+              <div class="lin_hg">秒杀价：
+                   <span class="a1"><a href="#" style="color:#C00;">￥<?php echo $v['miaosha_price'];?></a></span>
+              </div>
+              <div class="lin_hg">商城价：<span class="a2">￥<?php echo $v['goods_marketprice'];?></span></div>
+
+              <div class="lin_hg">
+                    
+                    <?php if($v['shengyukucun'] < 1){ ?>
+                    <label id = "leftTime2">该秒杀已结束...</label>
+                    <?php }elseif($v['start_time'] > TIMESTAMP){?>
+                    <label id = "leftTime2"  class="leftTime" count_down="<?php echo $v['start_time'] - TIMESTAMP;?>" timestatus="1">载入中,请稍候...</label>
+                    <?php }elseif($v['end_time'] < TIMESTAMP){?>
+                    <label id = "leftTime2"  >该秒杀已结束...</label>
+                    <?php }else{?>
+                    <label id = "leftTime2"  class="leftTime" count_down="<?php echo $v['end_time'] - TIMESTAMP;?>" timestatus="2">载入中,请稍候...</label>
+                    <?php }?>
+
+              </div>
+
+              <div class="lin_hg">
+
+                <?php if($v['shengyukucun'] < 1){ ?>
+                <span class="c9"><a class="input">该秒杀结束</a></span>
+                <?php }elseif($v['start_time'] > TIMESTAMP){?>
+                <span class="c9"><a class="input">即将开始</a></span>
+                <?php }elseif($v['end_time'] < TIMESTAMP){?>
+                <span class="c9"><a class="input">该秒杀结束</a></span>
+                <?php }else{?>
+                <span class="a4"><a href="<?php echo urlWap('goods','index',array('goods_id'=>$v['goods_id']));?>" class="input">立即秒杀</a></span>
+                <?php }?>
+
+              </div>
+              </div>
+         </div>
+    </div>
+
+    <?php }?>
+<?php }?>
+
+
+
+
+
+
+
+
+<?php }else{?>
+<div class="no-record">暂无记录</div>
+<?php }?>
+
+
+<script>
+    function lepaiclockdone(){
+    setTimeout("lepaiclockdone()", 1000);
+    $(".leftTime").each(function(){
+        var obj = $(this);
+        var tms = obj.attr("count_down");
+        var t = obj.attr("timestatus");
+        if(t == 2){
+            var html = '距结束：剩余 ';
+        }else{
+            var html = '距开始：剩余 ';
+        }
+        if (tms>0) {
+            tms = parseInt(tms)-1;
+            var days = Math.floor(tms / (1 * 60 * 60 * 24));
+            var hours = Math.floor(tms / (1 * 60 * 60)) % 24;
+            var minutes = Math.floor(tms / (1 * 60)) % 60;
+            var seconds = Math.floor(tms / 1) % 60;
+
+            if(days > 0){
+                html += "<span>"+days+"</span>天";
+            }
+            if(hours > 0){
+                html += "<span>"+hours+"</span>时";
+            }
+            if(minutes > 0){
+                html += "<span>"+minutes+"</span>分";
+            }
+            html += "<span>"+parseInt(seconds)+"</span>秒";
+            obj.html(html);
+            obj.attr("count_down",tms);
+        }else{
+            // location.href = location.href;
+        }
+    });
+}
+lepaiclockdone();//启动倒计时
+</script>
+
+
+<?php 
+
+ foreach($output['miaosha']['today'] as $todayk => $todayv){
+    foreach($todayv as $k => $v){
+
+      $result_list = $v;
+break;
+    }
+    break;
+  }
+
+
+
+$array['P']['title'] = $result_list['goods_name'];
+$array['P']['imgUrl'] = $result_list['goods_image'];
+$array['Y']['title'] = $result_list['goods_name'];
+$array['Y']['desc'] = $result_list['goods_name'];
+$array['Y']['imgUrl'] = $result_list['goods_image'];
+
+echo weixinShare($array);
+
+?>

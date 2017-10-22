@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>书画市场 - 我的收藏</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection" />
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script>
+var j = 1;
+$(function(){
+	loadMore();
+})
+$(window).scroll(function(){
+	if($(document).height() - $(this).scrollTop() - $(this).height()<100) loadMore();
+});
+</script>
+<meta charset="gb2312">
+</head>
+
+<body>
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="index.php" style="">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=member&p=main" style="color:#999;">个人中心</a>
+     <span>&nbsp;</span>
+     <a href="###" style="color:#999;">收藏的信息</a>
+</div>
+
+
+<div class="lmlm_list">
+     
+     
+     <div class="lmlm_content" id="lmlm_pic">          
+       
+     </div>
+
+	<div class="lmlm_width" id="loadingsave" style="text-align:center"><img src='static/images/jia.gif' /> 数据努力加载中...</div>
+</div>
+</body>
+<script>
+function loadMore(){
+	$.ajax({
+		type: "GET", cache: false,
+		url : "index.php?m=collection&p=main&c=ajaxlist",
+		data: 'page=' + j,
+		beforeSend:function(XMLHttpRequest){
+			$("#loadingsave").show();
+			$("#loadingsave").html("<img src='static/images/jia.gif' /> 数据努力加载中...");
+ 		},
+		success : function(html){
+			if(html.length>30){
+				$('#lmlm_pic').append(html);
+				$("#loadingsave").html('向下拉加载数据');
+			}else{
+				$("#loadingsave").html('没有数据');
+			}
+		}
+	});
+	j++;
+}
+</script>
+</html>

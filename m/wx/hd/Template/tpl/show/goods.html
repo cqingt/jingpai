@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{[$dataArr.P_Name]} - 出售 - 书画市场</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"></meta>
+<meta content="yes" name="apple-mobile-web-app-capable"></meta>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"></meta>
+<meta name="format-detection" content="telephone=no"></meta>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/jquery-1.7.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/touchScroll.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/touchslider.dev.js"></script>
+<script type="text/javascript" src="{[$DIR]}js/background.js"></script>
+<script>
+function showPOP(webUrl,w,h){
+	$.open({
+		url : webUrl,
+		width : w,
+		height : h,
+		title : ''
+	});	
+}
+</script>
+
+</head>
+
+<body>
+<div class="wj_box">
+{[include file="tpl/show/inc/top.html"]}
+<div class="dqwz" style="border-bottom:1px solid #d5d5d5;">
+     <a href="http://{[$Domain]}">首页</a>
+     <span>&nbsp;</span>
+     <a href="index.php?m=goods&c=goodsList&p=main" style="color:#999;">产品列表</a>
+	 <span>&nbsp;</span>
+     <a href="#####" style="color:#999;">产品详情</a>
+</div>
+{[if $imgArr]}
+   <!--产品轮播 开始-->
+   <div class="index-slide">
+<div class="swipe">
+				<ul id="slider">
+                {[foreach from=$imgArr item=v key=k]}
+                <li style="display:block; text-align:center"><a href="index.php?m=goods&p=main&c=Img&id={[$dataArr.P_ID]}" target="_blank"><img width="320" height="200" src="{[$v.I_Img]}" /></a></li>
+                {[/foreach]}
+				</ul>
+				<div id="pagenavi">
+       {[foreach from=$imgArr item=v key=k]}        
+       <a href="javascript:void(0);"  class="active">{[$k+1]}</a>
+       {[/foreach]}
+				</div>
+			</div>
+            </div>
+<script type="text/javascript">
+var active=0,
+as=document.getElementById('pagenavi').getElementsByTagName('a');
+for(var i=0;i<as.length;i++){
+	(function(){
+		var j=i;
+		as[i].onclick=function(){
+			t2.slide(j);
+			return false;
+		}
+	})();
+}
+var t1=new TouchScroll({id:'wrapper','width':5,'opacity':0.7,color:'#555',minLength:20});
+var t2=new TouchSlider({id:'slider', speed:600, timeout:6000, before:function(index){
+	as[active].className='';
+	active=index;
+	as[active].className='active';
+}});
+</script><!--产品轮播 结束-->
+   {[/if]}
+   <!--产品信息 开始-->
+   <div class="wj_cp">
+      <div class="wj_cpname">
+          {[$dataArr.P_Name]}
+          {[if $dataArr.P_Status]}
+          <span style="font-family:'微软雅黑'; font-size:16px; font-weight:bold">[已售出]</span>
+          {[/if]}
+      </div>  
+      <div class="wj_cpsuc">
+      	<ul>
+        	<li>发布时间</li><li style="color:#666; padding-left:5px;">{[$dataArr.P_Time|date_format:"%Y-%m-%d"]}</li>
+            <li style="padding-left:5px;">浏览量</li>
+            <li style="color:#666; padding-left:3px;">{[$dataArr.P_click_count]}</li>
+            <li style="padding-left:5%; padding-top:2px;">
+            <img src="{[$DIR]}images/fav_{[$isFav]}.jpg" width="56" height="25" {[if !$isFav]}onclick="collection({[$dataArr.P_ID]})"{[/if]} id="collectionImg"/>
+            </li>
+       </ul>
+     </div>
+     </div>
+
+<div class="wj_cp">
+    <ul><li class="li1">价格</li><li class="li3">{[$dataArr.P_Money]}</li></ul>
+    <ul>
+        <li class="li1">区域 </li>
+        <li class="li2">{[if $dataArr.Province==$dataArr.City]}{[$dataArr.City]}{[else]}{[$dataArr.Province]}{[$dataArr.City]}{[/if]}</li>
+    </ul>
+    <ul>
+    	<li class="li1">交易方式</li>
+    	<li class="li2">
+            {[foreach from=$buyType item=pay key=paykey]}
+                {[assign var=payID value=$pay]}
+                {[$paymentArr.$payID]}
+            {[/foreach]}
+    	</li>
+    </ul>
+</div>
+
+<div class="wj_cp">    
+     <h3 class="cph3">详情描述:</h3>
+     <ul><li  class="li1">作者</li><li class="li2">{[$dataArr.P_Author]}</li></ul>
+     <ul><li  class="li1">尺寸</li><li class="li2">{[$P_Size.0]}cm X {[$P_Size.1]}cm （约 {[$P_C]} 平尺）</li></ul>
+     <div class="wj_cpsuc">{[$dataArr.P_Content]}</div>
+   </div>
+<div class="wj_xhs">
+  <ul>
+  <li>联系人：</li><li class="li3">{[$dataArr.P_Contact]}</li>
+  {[if $userArr.U_Type]}
+  <li style="padding-top:5px; padding-left:15px;"><img src="{[$DIR]}images/rz/{[$userArr.U_Type]}.jpg" /></li>
+  {[/if]}
+  <li style=" padding-top:2px; padding-left:5px; font-size:12px; color:#999;">信誉值：{[$userArr.U_Credit]}</li></ul>
+  <ul>
+  	{[if $userArr.U_Status]}
+    	<li class="li4"> 该用户已通过{[if $userArr.U_Type==1]}个人认证{[else]}企业认证{[/if]}，可以放心交易。</li>
+    {[else]}
+    	<li class="li4" style="color:#F00"> 该用户还未经过认证。</li>
+    {[/if]}
+  </ul> 
+   </div>
+
+<div class="wj_sdp"> <h3 class="cph4">商品点评</h3></div>
+<div class="wj_dp1">
+{[foreach from=$dpArr item=v key=k]}
+    <ul>
+        <li>{[$v.D_Content]}</li>
+        <li>
+            <span class="wj_span2"><img src="{[$DIR]}images/wj_xx.jpg" width="11" height="10" /></span>
+            <span class="wj_span">{[$v.Name]}</span><span class="wj_span">{[$v.D_Time|date_format:"%Y-%m-%d"]}</span>
+        </li>
+    </ul>
+{[/foreach]}
+</div>
+
+
+<div class="wj_sdp" style=" margin-top:15px;"> <h3 class="cph4">相关信息</h3></div>
+{[foreach from=$goodsArr item=v key=k]}
+    <div class="wj_dp2">
+        <ul>
+            <li class="dp_li"><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">{[$v.P_Name]}</a></li>
+            <li class="dp_l2"><a href="index.php?m=goods&p=main&id={[$v.P_ID]}">{[$v.P_Money]}</a></li>
+        </ul>
+    </div>
+{[/foreach]}
+<div class="wj_gw" id="float_menu">
+	<ul>
+    {[if $dataArr.P_Money!='询价']}
+      <li class="wj_qr">{[if $dataArr.P_Status==0]}<a href="index.php?m=cart&p=main&pid={[$dataArr.P_ID]}{[$swurl]}"><span></span>直接购买</a>{[else]}已售出{[/if]}</li>
+      <li class="wj_gt"><a href="index.php?m=chat&p=main&pid={[$dataArr.P_ID]}&openid={[$dataArr.OpenID]}{[$swurl]}"><span></span>在线沟通</a></li>
+      <li class="wj_gtlx"><a href="tel:{[$dataArr.P_Mobile]}"><span></span>电话联系</a></li>
+    {[else]} 
+      <li class="wj_gt2"><a href="index.php?m=chat&p=main&pid={[$dataArr.P_ID]}&openid={[$dataArr.OpenID]}{[$swurl]}"><span></span>在线沟通</a></li>
+	  <li class="wj_gtlx2"><a href="tel:{[$dataArr.P_Mobile]}" ><span></span>电话联系</a></li>
+    {[/if]}
+	</ul>  
+</div>
+<!--产品信息 结束-->
+</div>
+</div>
+<div style="height:50px;"></div>
+<script>
+function collection(pid){
+	$.get('index.php?m=goods&c=collection&p=main&pid=' + pid,function(status){
+		if(parseInt(status)){
+			alert('收藏成功!');
+			$('#collectionImg').attr('src','{[$DIR]}images/fav_1.jpg');
+			$('#collectionImg').removeAttr('onclick');
+		}else{
+			alert('收藏失败!');	
+		}
+	})
+}
+
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    window.shareData = {
+        "timeLineLink": "http://m.soocang.com/index.php?m=goods&p=main&id={[$dataArr.P_ID]}{[$swurl]}",    
+        "sendFriendLink": "http://m.soocang.com/index.php?m=goods&p=main&id={[$dataArr.P_ID]}{[$swurl]}",
+        "weiboLink": "http://m.soocang.com/index.php?m=goods&p=main&id={[$dataArr.P_ID]}{[$swurl]}",
+        "tTitle": "{[$dataArr.P_Name]} 作者：{[$dataArr.P_Author]} - 出售 - 书画市场",
+        "tContent": "{[$dataArr.P_Content]}",
+        "fTitle": "{[$dataArr.P_Name]} 作者：{[$dataArr.P_Author]} - 出售 - 书画市场",
+        "fContent": "{[$dataArr.P_Content]}",
+        "wContent": "{[$dataArr.P_Content]}"
+        };
+        // 发送给好友
+        WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+            WeixinJSBridge.invoke('sendAppMessage', {
+                "img_url": "http://m.soocang.com/{[$imgArr.0.I_Img]}",
+                "img_width": "350",
+                "img_height": "350",
+                "link": window.shareData.sendFriendLink,
+                "desc": window.shareData.fContent,
+                "title": window.shareData.fTitle
+            }, function (res) {
+                _report('send_msg', res.err_msg);
+            })
+        });
+        // 分享到朋友圈
+        WeixinJSBridge.on('menu:share:timeline', function (argv) {
+            WeixinJSBridge.invoke('shareTimeline', {
+                "img_url": "http://m.soocang.com/{[$imgArr.0.I_Img]}",
+                "img_width": "350",
+                "img_height": "350",
+                "link": window.shareData.timeLineLink,
+                "desc": window.shareData.tContent,
+                "title": window.shareData.tTitle
+            }, function (res) {
+                _report('timeline', res.err_msg);
+            });
+        });
+ 
+    }, false)
+</script>
+</body>
+</html>

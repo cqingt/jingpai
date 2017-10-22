@@ -1,0 +1,204 @@
+.ui-header .ui-header-left .icon-logo {
+	background: url(../images/icon-logo.png) no-repeat left center;
+	background-size: 30px;
+	color: #f3d793;
+	height: 45px;
+	display: block;
+	padding-left: 35px;
+}
+
+.ui-searchbar-wrap.focus .ui-searchbar .ui-icon-search {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.in-two {
+	width: 80% !important;
+	margin: 0 10% !important;
+}
+.ui-header .tabs a {
+	margin: 0 10px;
+	height: 44px;
+	display: inline-block;
+}
+.ui-header .tabs a.active {
+	color: #c9ac88;
+	border-bottom: 1px #c9ac88 solid;
+}
+.icon-navtc {
+	background: url(../images/icon-navtc.png) no-repeat center;
+	width: 30px;
+	height: 45px;
+	background-size: 30px;
+	display: block;
+}
+
+
+.footerNav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	background: #333;
+	text-align: center;
+	z-index: 12;
+}
+.footerNav.nofixed {
+	position: fixed;
+	top: 45px;
+	left: 0;
+}
+.footerNav.nofixed .ui-row-flex .ui-col {
+	background: #fff;
+	border-bottom: .5px solid #e0e0e0;
+}
+.footerNav .ui-col {
+	padding: 6px 0;
+}
+.footerNav .ui-col-40 {
+	padding: 0;
+}
+.footerNav .ui-col [class*='icon-home-nav'] {
+	background: url(../images/icon-home-nav.png) no-repeat;
+	display: block;
+	background-size: 166px;
+}
+.footerNav .ui-col .icon-home-nav1 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: 4px 0px !important;
+	background-size: 166px;
+}
+.footerNav .ui-col .icon-home-nav2 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -24px 0 !important;
+	background-size: 166px;
+}
+.footerNav .ui-col .icon-home-nav3 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -52px 0px !important;
+	background-size: 166px;
+}
+.footerNav .ui-col .icon-home-nav4 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -82px 0px !important;
+	background-size: 166px;
+}
+.footerNav .ui-col .icon-home-nav5 {
+	height: 24px;
+	width: 29px;
+	margin: 0 auto;
+	background-position: -111px 0px;
+	background-size: 166px;
+}
+.footerNav .ui-col .icon-home-nav6 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -138px 0px;
+	background-size: 166px;
+}
+
+.footerNav .ui-col.active [class*='icon-home-nav'] {
+	background: url(../images/icon-home-nav-active.png) no-repeat;
+	display: block;
+	background-size: 166px;
+}
+.footerNav .ui-col.active .icon-home-nav1 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: 4px 0px;
+	background-size: 166px;
+}
+.footerNav .ui-col.active .icon-home-nav2 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -24px 0;
+	background-size: 166px;
+}
+.footerNav .ui-col.active .icon-home-nav3 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -55px 0px;
+	background-size: 166px;
+}
+.footerNav .ui-col.active .icon-home-nav4 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -86px 0px;
+	background-size: 166px;
+}
+.footerNav .ui-col.active .icon-home-nav5 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -86px 0px;
+	background-size: 166px;
+}
+.footerNav .ui-col.active .icon-home-nav6 {
+	height: 24px;
+	width: 30px;
+	margin: 0 auto;
+	background-position: -86px 0px;
+	background-size: 166px;
+}
+.footerNav .ui-col.active p {
+	color: #f3d793;
+}
+.footerNav .ui-col p {
+	color: #fff;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.emptyBox {
+	overflow: hidden;
+	height: 56px;
+}
+
+
+.footerNav .buy-box {
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	background: #ddc07a;
+}
+.footerNav .buy-box .btn-buy {
+	color: #fff;
+	width: 100%;
+	font-size: 20px;
+}
+
+
+div.footerNav.shop {
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px #e5e5e5 solid;
+}
+div.footerNav .ui-col [class*='icon-home-nav'] {
+	background: url(../images/icon-home-nav-div.png) no-repeat;
+	display: block;
+	background-size: 166px;
+}
+div.footerNav {
+	background: #fafafa;
+	display: none;
+	margin-bottom: 10px;
+}
+div.footerNav .ui-col p {
+	color: #686868;
+	font-size: 12px;
+	margin-top: 4px;
+}

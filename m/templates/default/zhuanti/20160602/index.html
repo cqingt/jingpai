@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>端午节</title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		
+	    <script src="js/jquery-1.9.1.js"></script>
+	    
+	    <script src="js/new_file.js" ></script>
+ 
+	    
+	</head>
+	<body>
+	 
+	 <div class="banner">
+        <img src="images/banner_01.jpg"/>
+        <img src="images/banner_02.jpg"/>
+        <img src="images/banner_03.jpg"/>
+        <img src="images/banner_04.jpg"/>
+        <img src="images/banner_05.jpg"/>
+        <a id="two" href="javascript:;"><img src="images/two.jpg"/></a>
+        <img src="images/three.jpg"/>
+        <img src="images/four.jpg"/>
+	 </div>
+	 
+	 <div class="heartbeat">
+	 	<a href="http://m.96567.com/index.php?act=goods&op=index&goods_id=1237"><img src="images/heartbeat.jpg"/></a>
+	 	<a href="http://www.96567.com/goods-1237.html" target="_blank">
+	 	    <h2>剩余<em>***</em>个名额</h2>
+	 	</a>
+	 </div>
+	 
+	 <div class="product">
+	 	<a href="http://m.96567.com/index.php?act=goods&op=index&goods_id=3131"><img src="images/product1.jpg"/></a>
+	 	<a href="http://m.96567.com/index.php?act=goods&op=index&goods_id=3918"><img src="images/product2.jpg"/></a>
+	 	<a href=""><img src="images/product3.jpg"/></a>
+	 	<a href="http://m.96567.com/index.php?act=goods&op=index&goods_id=18032"><img src="images/product4.jpg"/></a>
+	 	<a href="http://m.96567.com/index.php?act=goods&op=index&goods_id=4076"><img src="images/product5.jpg"/></a>
+	 	<a href="http://m.96567.com/index.php?act=goods&op=index&goods_id=1237"><img src="images/product6.jpg"/></a>
+	 </div>
+	 
+	
+	 
+	<div class="popup">
+	   <!-- 弹窗 -->
+	   <div id="dialog" class="content">
+	     <a class="close" href="javascript:;" onclick="closeBg();"></a>
+             <div class="tab-content">
+	             <form id="register_form" method="post" action="">
+				     <div class="row">
+				         <label for="">用户名</label>
+				         <input type="text" value="">		     	
+				     </div>
+				     <div class="row">
+				         <label for="">设置密码</label>
+				         <input type="password" value="">		     	
+				     </div>
+				     <div class="row">
+				         <label for="">确认密码</label>
+				         <input type="password" value="">		     	
+				     </div>			
+				     <div class="row">
+				         <label for="">手机号</label>
+				         <input type="text" value="">		     	
+				     </div>						     
+				     <div class="row">
+				         <label for="">验证码</label>
+				         <input class="verify" type="text" value="">	
+				         <input class="submit" type="submit" name="" id="" value="获取验证码" />
+				     </div>		   
+				     <input class="rio-button" type="button" id="" value="确认领取">    
+				 </form>           
+             </div>		     
+         </div>
+	</div>
+
+		   <!-- 遮罩层 -->
+		  <a id="fullbg" class="mask-layer" href="javascript:;" onclick="closeBg();"></a>
+		</div>	 
+	 
+	 <script type="text/javascript">
+	 
+	     $('#two').click(function(){
+	     	showBg();
+	     })
+	    
+	 
+	     function showBg() { 
+		  $("#dialog,#fullbg").css({ 
+		    display:"block" 
+		  }); 
+		  $("#dialog,#fullbg").show(); 
+		  } 
+
+		  //关闭灰色 遮罩 
+		  function closeBg() { 
+		    $("#dialog,#fullbg").hide(); 
+		  } 
+
+	 </script>
+	 
+	</body>
+</html>

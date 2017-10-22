@@ -1,0 +1,333 @@
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,th,td{margin:0;padding:0}
+img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+i {font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a{
+    text-decoration: none;
+}
+html,body{
+	height: 100%;
+	font-family: 'microsoft yahei';
+	background-color: #fdfdfd;
+}
+.m-wrap{
+	position: relative;
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto;
+}
+.m-content{
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 101px;
+	max-width: 1900px;
+	margin: 0px auto;
+}
+
+
+.img-stamp0 {
+	background: url(../images/stamp0.jpg);
+	height: 287px;
+}
+.img-stamp1 {
+	background: url(../images/stamp1.jpg);
+	height: 251px;
+}
+.img-stamp2 {
+	background: url(../images/stamp2.jpg);
+	height: 264px;
+}
+.img-stamp3 {
+	background: url(../images/stamp3.jpg);
+	height: 484px;
+}
+.img-stamp4 {
+	background: url(../images/stamp4.jpg);
+	height: 484px;
+}
+.img-stamp5 {
+	background: url(../images/stamp5.jpg);
+	height: 567px;
+}
+.img-stamp6 {
+	background: url(../images/stamp6.jpg);
+	height: 566px;
+	text-align: center;
+}
+.img-stamp6 a {
+	margin: 258px auto 0;
+	display: block;
+}
+.btn-stamp {
+	display: inline-block;
+
+}
+.icon-hand {
+	display: block;
+	margin: 26px auto 0;
+	background: url(../images/icon-hand.png) no-repeat center top;
+	width: 34px;
+	height: 43px;
+	-webkit-animation: test 1s linear infinite;
+	        animation: test 1s linear infinite;
+}
+@-webkit-keyframes test{
+	0%{
+		-webkit-transform: scale(0.8,0.8);
+		        transform: scale(0.8,0.8);
+		opacity: 1;
+	}
+	25%{
+		-webkit-transform: scale(1,1);
+		        transform: scale(1,1);
+		opacity: 0.8;
+	}
+	100%{
+		-webkit-transform: scale(0.8,0.8);
+		        transform: scale(0.8,0.8);
+		opacity: 1;
+	}
+}
+@keyframes test{
+	0%{
+		-webkit-transform: scale(0.8,0.8);
+		        transform: scale(0.8,0.8);
+		opacity: 1;
+	}
+	25%{
+		-webkit-transform: scale(1,1);
+		        transform: scale(1,1);
+		opacity: 0.8;
+	}
+	100%{
+		-webkit-transform: scale(0.8,0.8);
+		        transform: scale(0.8,0.8);
+		opacity: 1;
+	}
+}
+
+.img-stamp7 {
+	background: url(../images/stamp7.jpg);
+	height: 574px;
+}
+.img-stamp8 {
+	background: url(../images/stamp8.jpg);
+	height: 1669px;
+}
+.stamp-list {
+	overflow: hidden;
+}
+.stamp-list li:nth-child(4n+1) {
+	margin-left: 0;
+}
+.stamp-list li {
+	float: left;
+	width: 290px;
+	height: 376px;
+	margin-left: 12px;
+	margin-bottom: 33px;
+	overflow: hidden;
+}
+.stamp-list li .img-box {
+	width: 290px;
+	height: 290px;
+	overflow: hidden;
+}
+.stamp-list li .img-box img {
+	width: 100%;
+}
+.stamp-list li .txt-box {
+	background: #c1aa94;
+	width: 290px;
+	height: 86px;
+}
+.stamp-list li .txt-box p {
+	font-size: 12px;
+	color: #403313;
+	padding: 14px 18px 6px;
+	line-height: 24px;
+	height: 20px;
+	margin-bottom: 6px;
+	overflow: hidden;
+}
+.stamp-list li .txt-box span {
+/*	padding: 0 18px;*/
+	display: block;
+	overflow: hidden;
+}
+.stamp-list li .txt-box span strong {
+	color: #960516;
+	font-size: 20px;
+	line-height: 28px;
+	float: left;
+	display: block;
+	width: 100px;
+	font-weight: bold;
+}
+.stamp-list li .txt-box span i {
+	display: block;
+	font-size: 12px;
+	color: #960516;
+	width: 120px;
+	height: 28px;
+	float: left;
+	text-align: center;
+	line-height: 28px;
+	border: 1px #960516 solid;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+.img-stamp9 {
+	background: url(../images/stamp9.jpg);
+	height: 704px;
+}
+.img-stamp10 {
+	background:#390202 url(../images/stamp10.jpg);
+	padding-bottom: 70px;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.stamp-top {
+	display: block;
+	width: 238px;
+	height: 58px;
+	margin: 70px auto 0; 
+	border: 1px #c1aa94 solid;
+	text-align: center;
+}
+.stamp-top p {
+	text-align: left;
+	margin-left: 70px;
+	color: #c1aa94;
+	font-size: 12px;
+	margin-top: 8px;
+}
+.stamp-top strong {
+	color: #c1aa94;
+	font-size: 20px;
+
+}
+[class*='img-stamp'] {
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 100%;
+ }
+ 
+
+
+.hide_box {
+	position: fixed;
+	top: 120px;
+	left: 50%;
+	margin-left: -400px;
+	width: 800px;
+	height: 553px;
+	overflow: hidden;
+	background: url(../images/tc-stamp.png) no-repeat center top;
+    display: none;
+}
+.hide_box .close-stamp {
+	position: absolute;
+	top: 22px;
+	right: 30px;
+	display: block;
+	background: url(../images/close-stamp.png) no-repeat center top;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+}
+.hide_box .formbox {
+	padding: 28px 24px 40px 40px;
+}
+.hide_box .formbox-title {
+	border-bottom: 1px #f8e5c3 solid;
+	overflow: hidden;
+	height: 40px;
+	margin-bottom: 24px;
+}
+
+.hide_box .formbox-title h2 {
+	font-size: 22px;
+	color: #f8e5c3;
+	line-height: 40px;
+}
+.ul-inof .item {
+	margin-bottom: 14px;
+	clear: both;
+	overflow: hidden;
+}
+.ul-inof label {
+	width: 200px;
+	display: block;
+	float: left;
+	font-size: 16px;
+	text-align: right;
+	margin-right: 6px;
+	line-height: 45px;
+    color: #f8e5c3;
+}
+.ul-inof input.valput1,
+.ul-inof input.valput {
+	width: 355px;
+	height: 43px;
+	background: #f8e5c3;
+	padding: 0 10px;
+	border: 1px #dadada solid;
+}
+.ul-inof input.valput1 {
+	width: 167px;
+	float: left;
+}
+.ul-inof input.valput2 {
+	width: 170px;
+	height: 45px;
+	float: left;
+	margin-left: 15px;
+	font-size: 16px;
+	border-radius: 6px;
+	background: #734405;
+	border: 0;
+	color: #f8e5c3;
+	cursor: pointer;
+	font-family: "microsoft yahei";
+}
+.ul-inof .btn-go {
+	overflow: hidden;
+	margin: 28px 0 0 205px;
+}
+.ul-inof .btn-go input {
+	width: 320px;
+	height: 66px;
+	border: 0;
+	font-size: 30px;
+	cursor: pointer;
+	border-radius: 10px;
+	background: #822404;
+	color: #fff;
+	font-family: "microsoft yahei";
+}
+.ul-inof .btn-go p {
+	font-size: 16px;
+	color: #f8e5c3;
+	margin-top: 14px;
+	margin-left: 78px;
+}
+.ul-inof .btn-go p a {
+	color: #822404;
+	font-size: 22px;
+	text-align: center;
+	margin-left: 6px;
+	text-decoration: underline;
+}
+
+.demo-register {
+	display: none;
+}
+.demo-login {
+	padding-top: 80px;
+}
+.zz {
+	
+}

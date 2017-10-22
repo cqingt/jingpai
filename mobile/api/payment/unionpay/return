@@ -1,0 +1,159 @@
+Array
+(
+)
+Array
+(
+    [accessType] => 0
+    [bizType] => 000201
+    [certId] => 21267647932558653966460913033289351200
+    [currencyCode] => 156
+    [encoding] => utf-8
+    [merId] => 898110148998997
+    [orderId] => 810502568866241000
+    [queryId] => 201512041827462393648
+    [reqReserved] => pd_order
+    [respCode] => 00
+    [respMsg] => success
+    [settleAmt] => 1
+    [settleCurrencyCode] => 156
+    [settleDate] => 1204
+    [signMethod] => 01
+    [signature] => YGcno+aSB+ea5mzcfbEGSMtbJAnwMOsbg/M9wIlfYaNGTdhpR5epZ1hUlYnFLPujawhShUH7iOJZ0CZ8ltlx509uekLQoAuH8+cLeyklsOlguDDnKU//bZ4HhUZ8XjujRuUiVoxopUkBogBhSyzSkUJdj1u3LR96xt49/cWoatJiPvqA/DA7/SNgwy88SEKnlk5nOth+WJSMVaE5vFsuyIoeMalht1ezqQJF0Y6/Cm/O1aFzZ4if4jWpAuResOt/Yl/K09hX8nUo7LYVddWYAJJBzUm2ikbHEdDrqbbcHKSkhvDMH0eRxzv844NkOO8cKSdmOKM78G7H9miPSSApHg==
+    [traceNo] => 239364
+    [traceTime] => 1204182746
+    [txnAmt] => 1
+    [txnSubType] => 01
+    [txnTime] => 20151204182746
+    [txnType] => 01
+    [version] => 5.0.0
+)
+Array
+(
+    [accessType] => 0
+    [bizType] => 000201
+    [certId] => 21267647932558653966460913033289351200
+    [currencyCode] => 156
+    [encoding] => utf-8
+    [merId] => 898110148998997
+    [orderId] => 810502568866241000
+    [queryId] => 201512041827462393648
+    [reqReserved] => pd_order
+    [respCode] => 00
+    [respMsg] => success
+    [settleAmt] => 1
+    [settleCurrencyCode] => 156
+    [settleDate] => 1204
+    [signMethod] => 01
+    [signature] => YGcno+aSB+ea5mzcfbEGSMtbJAnwMOsbg/M9wIlfYaNGTdhpR5epZ1hUlYnFLPujawhShUH7iOJZ0CZ8ltlx509uekLQoAuH8+cLeyklsOlguDDnKU//bZ4HhUZ8XjujRuUiVoxopUkBogBhSyzSkUJdj1u3LR96xt49/cWoatJiPvqA/DA7/SNgwy88SEKnlk5nOth+WJSMVaE5vFsuyIoeMalht1ezqQJF0Y6/Cm/O1aFzZ4if4jWpAuResOt/Yl/K09hX8nUo7LYVddWYAJJBzUm2ikbHEdDrqbbcHKSkhvDMH0eRxzv844NkOO8cKSdmOKM78G7H9miPSSApHg==
+    [traceNo] => 239364
+    [traceTime] => 1204182746
+    [txnAmt] => 1
+    [txnSubType] => 01
+    [txnTime] => 20151204182746
+    [txnType] => 01
+    [version] => 5.0.0
+)
+Array
+(
+    [accessType] => 0
+    [bizType] => 000201
+    [certId] => 21267647932558653966460913033289351200
+    [currencyCode] => 156
+    [encoding] => utf-8
+    [merId] => 898110148998997
+    [orderId] => 730502798573228557
+    [queryId] => 201512071050562404058
+    [reqReserved] => real_order
+    [respCode] => 00
+    [respMsg] => success
+    [settleAmt] => 3800
+    [settleCurrencyCode] => 156
+    [settleDate] => 1207
+    [signMethod] => 01
+    [signature] => iMFDvTytZy1fLl27ARXIe/FtsVYufaL2uzVA2jElaMjLrrFofvy0dMLm65ndh2Mox6tEmxp/KM+YAHt+ei2+jVwr2tyemFsiGt6hm7OtTcLz55FqCMocVjIjT02AO7Ou6P8gGfITBAxT3UoGy7flcFUY0Zwg/UPjf2jzXnXsFKsr2+JkUP9vMZNsesCfZSwgXSrcpPry5Ez5Fcc6J7zHpmEi1sdrmB3IJAF21q7OmV08B3G6slfzvnAi8Uk/uVqHu1wc/k588m6Tb7n9CY8RZViKqWPGD6MZSuwfAzNL2HNEhiTV16+iJKuGYEYVuBjxSdZvwwrmVCTmuTDZ0Yad8Q==
+    [traceNo] => 240405
+    [traceTime] => 1207105056
+    [txnAmt] => 3800
+    [txnSubType] => 01
+    [txnTime] => 20151207105056
+    [txnType] => 01
+    [version] => 5.0.0
+)
+Array
+(
+    [accessType] => 0
+    [bizType] => 000201
+    [certId] => 21267647932558653966460913033289351200
+    [currencyCode] => 156
+    [encoding] => utf-8
+    [merId] => 898110148998997
+    [orderId] => 840502886428537752
+    [queryId] => 201512081040385941328
+    [reqReserved] => real_order
+    [respCode] => 00
+    [respMsg] => success
+    [settleAmt] => 39600
+    [settleCurrencyCode] => 156
+    [settleDate] => 1208
+    [signMethod] => 01
+    [signature] => H/g63MA2ndSs9f+TQku7z2f6d5xhtth8yuBLbv8QZnHpLlEqX3TEhWDn4/aPiFLNNhOI2+OBhddlO7LmhqKQM+Psh/496h2rMB643NcnJA/aCwn5UhKiOgh6AlsPcypxG9gJuFZpQYrRTFvO3KI6D6BDNoA/MzNMNHaSywSPKXPq9AbjydE631+mCvcaBDhGNBDXZs0v4rkveL28MrAN8F1kodwa4pTyRedPfc25yCIqsksbeToycEIXMebG1AUcaQUl5HO8e3XkQl8liFmi0rqsKLMcVHI280GzTSsoQA65OCic1fKJNwO4W+CNmhOmOSzRRPvii/rd4XpY7pO3Rw==
+    [traceNo] => 594132
+    [traceTime] => 1208104038
+    [txnAmt] => 39600
+    [txnSubType] => 01
+    [txnTime] => 20151208104038
+    [txnType] => 01
+    [version] => 5.0.0
+)
+Array
+(
+    [accessType] => 0
+    [bizType] => 000201
+    [certId] => 21267647932558653966460913033289351200
+    [currencyCode] => 156
+    [encoding] => utf-8
+    [merId] => 898110148998997
+    [orderId] => 630502903358776846
+    [queryId] => 201512081522555062348
+    [reqReserved] => real_order
+    [respCode] => 00
+    [respMsg] => success
+    [settleAmt] => 27000
+    [settleCurrencyCode] => 156
+    [settleDate] => 1208
+    [signMethod] => 01
+    [signature] => bRSB4e1dzgOKgA3O+yPgEmn/hsus0Qc9fH731WWT1GJEx3ixD6+FaDg1i/BXaYVvKMW7V1u2TLymU41sWF+QfvKbNf9sD9wgfBSogPgNpE6HWA8bxYe9j3Q0Ex6ZBfm412rY9feOjsKy0RIAzJ2PNKaCyZBJ5s7wxAhOENRzV3StlDjVE+Tp/XhU1v/x/5tkNxmYdZk7X5nVVJxe69hNy1vAPFY6il9nP13+SIuDxb2M/+JsJJ8VD8d/KJy5LegFMwK0iGm2CtG2b3YRRN2PP0dycDaMOEk7K8UcEcAvyKnF4t5unXJTQld4Jy5nMx3CSnxy4oYReXj0LvPa0P8EZQ==
+    [traceNo] => 506234
+    [traceTime] => 1208152255
+    [txnAmt] => 27000
+    [txnSubType] => 01
+    [txnTime] => 20151208152255
+    [txnType] => 01
+    [version] => 5.0.0
+)
+Array
+(
+    [accessType] => 0
+    [bizType] => 000201
+    [certId] => 69597475696
+    [currencyCode] => 156
+    [encoding] => utf-8
+    [merId] => 898110148998997
+    [orderId] => 290503004194522221
+    [queryId] => 201512092153535806938
+    [reqReserved] => real_order
+    [respCode] => 00
+    [respMsg] => success
+    [settleAmt] => 8000
+    [settleCurrencyCode] => 156
+    [settleDate] => 1209
+    [signMethod] => 01
+    [signature] => JKHzdQUonK14KjTWDvIYw4p4yzYHUjnLmQEZokIhJ2K3QWB7Pj+IuVZnZcilmJE49ObNNisPHVvfbt9EC48Tt+m/ZV6zyPFpd+W8VgQ4K8/Bjs5oH/zSjbQfDS2CZRxPVhAiHaXZAGOAlCTL3zBT+Uq5BlcNBSya63CvhOovzaAwBnUIoLqHF/BW4QAZujgJfGujEz3nEslcrG6GDIRdea5HK7evE99NHDHKOuG+Iqhx86uNRNVJmd4lDIUahwkwiKCdIj5tYfLSYHeVbi1e2tX1OtZp6Dr+/Xho1vVz81MBD5f0V5Yr/dKhWry7RPJkKK3yo1OdJHoXb4Kw6gP3rw==
+    [traceNo] => 580693
+    [traceTime] => 1209215353
+    [txnAmt] => 8000
+    [txnSubType] => 01
+    [txnTime] => 20151209215353
+    [txnType] => 01
+    [version] => 5.0.0
+)

@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body{font:12px/1.5 tahoma,arial,\5b8b\4f53; color:#555; font-family:"Microsoft YaHei"; background:#9a0003;}
+em,i{font-style:normal;}
+fieldset,img{border:0;}
+ul,ol,li{list-style:none;}
+a{ color:#555; text-decoration:none;}
+
+.zs_content{ width:100%; margin:0 auto; overflow:hidden;}
+.zs_content ul li{ height:200px;}
+.zs_content ul li.li01{ background:url(../images/zs_01.jpg) no-repeat top center;}
+.zs_content ul li.li02{ background:url(../images/zs_02.jpg) no-repeat top center;}
+.zs_content ul li.li03{ background:url(../images/zs_03.jpg) no-repeat top center;}
+.zs_content ul li.li04{ background:url(../images/zs_04.jpg) no-repeat top center; height:125px;}
+.zs_content ul li.li06{ background:url(../images/zs_06.jpg) no-repeat top center;}
+.zs_content ul li.li08{ background:url(../images/zs_08.jpg) no-repeat top center;}
+.zs_content ul li.li09{ background:url(../images/zs_09.jpg) no-repeat top center;}
+.zs_content ul li.li10{ background:url(../images/zs_10.jpg) no-repeat top center;}
+.zs_content ul li.li11{ background:url(../images/zs_11.jpg) no-repeat top center;}
+.zs_content ul li.li12{ background:url(../images/zs_12.jpg) no-repeat top center;}
+.zs_content ul li.li13{ background:url(../images/zs_13.jpg) no-repeat top center;}
+.zs_content ul li.li14{ background:url(../images/zs_14.jpg) no-repeat top center;}
+.zs_content ul li.li15{ background:url(../images/zs_15.jpg) no-repeat top center;}
+.zs_content ul li.li16{ background:url(../images/zs_16.jpg) no-repeat top center;}
+.zs_content ul li.li17{ background:url(../images/zs_17.jpg) no-repeat top center;}
+.zs_content ul li.li18{ background:url(../images/zs_18.jpg) no-repeat top center;}
+.zs_content ul li.li19{ background:url(../images/zs_19.jpg) no-repeat top center;}
+.zs_content ul li.li20{ background:url(../images/zs_20.jpg) no-repeat top center;}
+.zs_content ul li.li21{ background:url(../images/zs_21.jpg) no-repeat top center;}
+.zs_content ul li.li22{ background:url(../images/zs_22.jpg) no-repeat top center;}
+.zs_content ul li.li23{ background:url(../images/zs_23.jpg) no-repeat top center;}
+.zs_content ul li.li24{ background:url(../images/zs_24.jpg) no-repeat top center;}
+.zs_content ul li.li25{ background:url(../images/zs_25.jpg) no-repeat top center;}
+.zs_content ul li.li26{ background:url(../images/zs_26.jpg) no-repeat top center;}
+.zs_content ul li.li27{ background:url(../images/zs_27.jpg) no-repeat top center;}
+.zs_content ul li.li28{ background:url(../images/zs_28.jpg) no-repeat top center;}
+.zs_content ul li.li29{ background:url(../images/zs_29.jpg) no-repeat top center;}
+.zs_content ul li.li30{ background:url(../images/zs_30.jpg) no-repeat top center;}
+.zs_content ul li.li31{ background:url(../images/zs_31.jpg) no-repeat top center;}
+.zs_content ul li.li32{ background:url(../images/zs_32.jpg) no-repeat top center;}
+.zs_content ul li.li33{ background:url(../images/zs_33.jpg) no-repeat top center;}
+.zs_content ul li.li34{ background:url(../images/zs_34.jpg) no-repeat top center;}
+.zs_content ul li.li35{ background:url(../images/zs_35.jpg) no-repeat top center;}
+.zs_content ul li.li36{ background:url(../images/zs_36.jpg) no-repeat top center;}
+.zs_content ul li.li37{ background:url(../images/zs_37.jpg) no-repeat top center;}
+.zs_content ul li.li38{ background:url(../images/zs_38.jpg) no-repeat top center;}
+.zs_content ul li.li39{ background:url(../images/zs_39.jpg) no-repeat top center;}
+.zs_content ul li.li40{ background:url(../images/zs_40.jpg) no-repeat top center;}
+.zs_content ul li.li41{ background:url(../images/zs_41.jpg) no-repeat top center;}
+.zs_content ul li.li42{ background:url(../images/zs_42.jpg) no-repeat top center;}
+.zs_content ul li.li43{ background:url(../images/zs_43.jpg) no-repeat top center;}
+.zs_content ul li.li44{ background:url(../images/zs_44.jpg) no-repeat top center;}
+.zs_content ul li.li45{ background:url(../images/zs_45.jpg) no-repeat top center;}
+.zs_content ul li.li46{ background:url(../images/zs_46.jpg) no-repeat top center;}
+.zs_content ul li.li47{ background:url(../images/zs_47.jpg) no-repeat top center;}
+.zs_content ul li.li48{ background:url(../images/zs_48.jpg) no-repeat top center;}
+.zs_content ul li.li49{ background:url(../images/zs_49.jpg) no-repeat top center;}
+.zs_content ul li.li50{ background:url(../images/zs_50.jpg) no-repeat top center;}
+.zs_content ul li.li51{ background:url(../images/zs_51.jpg) no-repeat top center;}
+.zs_content ul li.li52{ background:url(../images/zs_52.jpg) no-repeat top center;}
+
+.message{ width:1000px; height:auto; margin:0 auto; overflow:hidden; margin-bottom:50px;}
+.message .title{ display:block; height:60px; text-align:center; font:bold 30px/60px "Microsoft YaHei"; color:#9a0003; background-color:#fbddb9;}
+.message ul li{ clear:both; width:700px; text-align:center; margin:20px 150px 0px 150px; overflow:hidden;}
+.message ul li span{ float:left; margin:0px 10px; font:normal 18px/40px "Microsofr Yahei"; color:#fadcb8;}
+.message ul li span .span_input{ width:370px; height:40px; padding:0px 20px; border:1px solid #fadcb8; background-color:#9a0003;font:normal 18px/40px "Microsofr Yahei"; color:#fadcb8; }
+.message ul li span .span_textarea{ width:370px; height:150px; padding:0px 20px; border:1px solid #fadcb8; background-color:#9a0003;font:normal 18px/40px "Microsofr Yahei"; color:#fadcb8; }
+.message ul li span .span_button{ width:164px; height:40px; text-align:center; margin:0px 0px 0px 75px; border:0; cursor:pointer;  background-color:#fbddb9; font:bold 18px/40px "Microsofr Yahei"; color:#9a0003; }

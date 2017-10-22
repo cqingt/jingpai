@@ -1,0 +1,87 @@
+@charset "utf-8";blockquote,body,button,caption,dd,div,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,html,input,legend,li,menu,ol,p,pre,table,td,textarea,th,ul{margin:0;padding:0}
+body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}
+address,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:400}
+body {
+  background: #F4112D;
+}
+abbr,body,fieldset,html,iframe,img{border:0;vertical-align:top}
+address,cite,dfn,em,i,var{font-style:normal}
+[hidefocus],summary{outline:0}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6,small{font-weight:400;font-style:normal;font-size:100%}
+sub,sup{font-size:83%}
+code,kbd,pre,samp{font-family:inherit}
+q:after,q:before{content:none}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button{cursor:pointer}
+a,a:hover,del,ins,s,u{text-decoration:none}
+.clearfix:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0;content:"."}
+* html .clearfix{height:1%}
+input,textarea{outline:0;-webkit-appearance:none}
+.clearOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+input[type=submit],input[type=reset],nput[type=button]{-webkit-appearance:none}
+textarea{-webkit-appearance:none}
+
+
+.fo-wrap{margin:0 auto;width: 1000px;color:#fff;text-align:center;font-family:"microsoft yahei";}
+
+
+.photo1 {background: url(../images/fo_01.jpg) no-repeat center top;height: 142px;min-width: 1000px;margin: 0 auto;}
+.photo2 {background: url(../images/fo_02.jpg) no-repeat center top;height: 142px;min-width: 1000px;margin: 0 auto;}
+.photo3 {background: url(../images/fo_03.jpg) no-repeat center top;height: 142px;min-width: 1000px;margin: 0 auto;}
+.photo4 {background: url(../images/fo_04.jpg) no-repeat center top;height: 142px;min-width: 1000px;margin: 0 auto;}
+.photo5 {background: url(../images/fo_05.jpg) no-repeat center top;height: 142px;min-width: 1000px;margin: 0 auto;}
+.photo6 {background: url(../images/fo_06.jpg) no-repeat center top;height: 142px;}
+.photo7 {background: url(../images/fo_07.jpg) no-repeat center top;height: 141px;}
+.photo8 {background: url(../images/fo_08.jpg) no-repeat center top; height: 142px;}
+.photo9 {background: url(../images/fo_09.jpg) no-repeat center top; height: 388px;}
+.photo10 {background: url(../images/fo_10.jpg) no-repeat center top;height: 387px;}
+.photo11 {background: url(../images/fo_11.jpg) no-repeat center top; height: 388px;}
+.photo12 {background: url(../images/fo_12.jpg) no-repeat center top;height: 387px;}
+.photo13 {background: url(../images/fo_13.jpg) no-repeat center top;height: 387px;}
+.photo14 {background: url(../images/fo_14.jpg) no-repeat center top; height: 209px;}
+.photo15 {background: url(../images/fo_15.jpg) no-repeat center top; height: 208px;}
+.photo16 {background: url(../images/fo_16.jpg) no-repeat center top;height: 384px;}
+.photo17{background: url(../images/fo_17.jpg) no-repeat center top; height: 383px;}
+.photo18 {background: url(../images/fo_18.jpg) no-repeat center top; height: 384px;}
+.photo19 {background: url(../images/fo_19.jpg) no-repeat center top;height: 384px;}
+.photo20 {background: url(../images/fo_20.jpg) no-repeat center top;height: 384px;}
+.photo21 {background: url(../images/fo_21.jpg) no-repeat center top; height: 378px;}
+.photo22 {background: url(../images/fo_22.jpg) no-repeat center top;height: 384px;}
+.photo23 {background: url(../images/fo_23.jpg) no-repeat center top; height: 242px;}
+.photo24 {background: url(../images/fo_24.jpg) no-repeat center top; height: 242px;}
+.photo25 {background: url(../images/fo_25.jpg) no-repeat center top;height: 367px;}
+.photo26 {background: url(../images/fo_26.jpg) no-repeat center top;height: 367px;}
+.photo27 {background: url(../images/fo_27.jpg) no-repeat center top; height: 366px;}
+.photo28 {background: url(../images/fo_28.jpg) no-repeat center top; height: 367px;}
+.photo29 {background: url(../images/fo_29.jpg) no-repeat center top;height: 367px;}
+.photo30 {background: url(../images/fo_30.jpg) no-repeat center top; height: 346px;}
+.photo31 {background: url(../images/fo_31.jpg) no-repeat center top;height: 148px;}
+.photo32 {background: url(../images/fo_32.jpg) no-repeat center top;height: 79px;display: none;}
+.photo33 {background: url(../images/fo_33.jpg) no-repeat center top;height: 188px;}
+.photo34 {background: url(../images/fo_34.jpg) no-repeat center top; height: 235px;}
+
+[class*=photo] a {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 24%;
+	margin-left: 1%;
+}
+[class*=photo] {
+	padding: 0 54px;
+}
+.photo31 a {
+	display: block;
+	width: 100% !important;
+	height: 100%;
+}
+
+.photo33 a {
+	display: block;
+	width: 100% !important;
+	height: 100%;
+}

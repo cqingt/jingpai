@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>书画平台推荐任务配置 - {[$COMPANY]}</title>
+<link href="{[$DIR]}css/style.css" rel="stylesheet" type="text/css" />
+<link href="static/js/asyncbox/skins/Ext/asyncbox.css" rel="stylesheet" type="text/css" />
+<script src="static/js/jquery-1.7.js"></script>
+<script src="static/js/asyncbox/AsyncBox.v1.4.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="list_main_r">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_title">
+
+  <tr>
+  	<td bgcolor="#ecf9ff"><span class="title">推荐配置</span></td>
+    <td bgcolor="#ecf9ff">
+    <input type="button" value="添加推荐" class="a90-30" onclick="addDep(0);" style="margin-top:10px;margin-right:20px;">
+   	</td>
+  </tr>
+</table>
+
+<input type="hidden" name="number" id="number" value="{[$dataArr.W_Number]}"/>
+  <table class="table" width="100%" border="0" cellspacing="1" cellpadding="0" id="padding">
+
+    
+
+	<tr class="title">
+	<td width="10%" style=" text-align:center;">推荐时效</td>
+	 <td width="10%" style=" text-align:center;">活动标题</td>
+      <td width="10%" style=" text-align:center;">注册送积分数</td>
+	  <td width="10%" style=" text-align:center;">购买送积分数</td>
+	  <td width="10%" style=" text-align:center;">赠送积分上限</td>
+	  <td width="10%" style=" text-align:center;">推荐链接地址</td>
+	  <td width="10%" style=" text-align:center;">赠送范围</td>
+	  <td width="10%" style=" text-align:center;">是否开启</td>
+	  <td width="10%" style=" text-align:center;">操作</td>
+      </tr>
+{[foreach from=$dataArr item=v key=k]}
+    <tr class="con">
+      <td width="10%" style=" text-align:center;">{[$v.expire]}{[if $v.expire_unit == 1]}小时{[elseif $v.expire_unit == 2]}天{[elseif $v.expire_unit == 3]}周{[/if]}</td>
+	  <td width="10%" style=" text-align:left;">{[$v.name]}</td>
+      <td width="10%" style=" text-align:center;">{[$v.level_register_all]}</td>
+	  <td width="10%" style=" text-align:center;">{[$v.order_all]}</td>
+	  <td width="10%" style=" text-align:center;">{[$v.level_register_up]}</td>
+	  <td width="10%" style=" text-align:center;">{[$v.affiliate_like]}</td>
+	  <td width="10%" style=" text-align:center;">{[$v.affiliate_range]}</td>
+	  <td width="10%" style=" text-align:center;">{[if $v.is_k == 1]}是{[else]}否{[/if]}</td>
+	  <td width="10%" style=" text-align:center;"><a href="javascript:;" onclick="addDep({[$v.id]});">编辑</a><a href="index.php?m=manageAffiliate&c=delCategory&p=manage&id={[$v.id]}" onclick="return delConfirm(this)">
+        	删除         
+        </a></td>
+    </tr>
+  {[/foreach]}
+
+	
+	
+  
+  </table>
+  <div id="page" style="text-align:center;">
+{[$pageStr]}
+</div>
+</div>
+<script>
+//添加推荐信息
+function addDep(id){
+	
+	asyncbox.open({
+		url : 'index.php?m=manageAffiliate&c=popAffiliate&p=manage&id=' + id,
+		width : 750,
+		height : 500,
+		title : '添加推荐信息'
+	});	
+}
+
+
+</script>
+
+</body>
+</html>

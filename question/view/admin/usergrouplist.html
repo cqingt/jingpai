@@ -1,0 +1,63 @@
+<!--{template header,admin}-->
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <h3>用户管理</h3>
+            <ul class="tab-base">
+                <li>
+                    <a href="index.php?admin_user/default{$setting['seo_suffix']}">
+                        <span>用户信息列表</span>
+                    </a>
+                    <a class="current">
+                        <span>用户等级设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed-empty"></div>
+<!--{if isset($message)}-->
+<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+<table class="table">
+    <tr>
+        <td class="{$type}">{$message}</td>
+    </tr>
+</table>
+<!--{/if}-->
+<form action="index.php?admin_usergroup/add{$setting['seo_suffix']}" method="post" name="addUsergroup">
+    <table class="table">
+        <tbody>
+            <tr class="header" ><td>用户列表</td></tr>
+            <tr class="altbg1"><td>添加会员组:&nbsp;<input class="txt" type="text" name="grouptitle" >&nbsp;&nbsp;&nbsp;<a href="javascript:document.addUsergroup.submit()" class="btnn"><span>添加</span></a></td></tr>
+        </tbody>
+    </table>
+</form>
+<form name="userForm" action="index.php?admin_usergroup/edit{$setting['seo_suffix']}" method="post">
+    <table class="table tb-type2">
+        <tr class="header">
+            <td>用户组ID</td>
+            <td>用户组</td>
+            <td>经验值下限</td>
+            <td>组权限</td>
+            <td>删除</td>
+        </tr>
+        <!--{loop $usergrouplist $usergroup}-->
+        <tr>
+            <td class="altbg1" width="60"><strong>{$usergroup['groupid']}</strong></td>
+            <td class="altbg1" width="200"><input name="groupid[]" type="hidden" value="$usergroup['groupid']"><input class="txt" type="text" name="grouptitle[]" value="$usergroup['grouptitle']" ></td>
+            <td class="altbg1" width="200"><input name="scorelower[]" value="$usergroup['creditslower']" class="txt" type="text" ></td>
+            <td class="altbg1" width="100"><a href="index.php?admin_usergroup/regular/$usergroup['groupid']{$setting['seo_suffix']}">设置</a></td>
+            <td class="altbg1">
+                <!--{if $usergroup['groupid']>26 }-->
+                <a href="javascript:if(window.confirm('确认删除?'))window.location='index.php?admin_usergroup/remove/$usergroup['groupid']{$setting['seo_suffix']}'">删除</a>
+                <!--{else}-->
+                不能删除
+                <!--{/if}-->
+            </td>
+        </tr>
+        <!--{/loop}-->
+        <tr><td class="altbg1" colspan="5" align="left"><a href="javascript:void(0)" class="btnn" onclick="{$('form:last').submit();}"><span>提交</span></a></td></tr>
+    </table>
+</form>
+<br>
+<!--{template footer,admin}-->

@@ -1,0 +1,696 @@
+SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '455272' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '455272' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '455272' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '455272' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '308373' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '308373' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '308373' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '308373' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '455272' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '455272' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '455272' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '455272' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '456349' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '456349' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '456349' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '456349' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '446186' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '446186' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '446186' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '446186' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '446186' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '446186' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '446186' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '446186' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '446186' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '446186' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '446186' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '446186' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '456349' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '456349' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '456349' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '456349' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '414674' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '414674' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '455324' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '455324' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '456349' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '456349' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '456349' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '456349' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '480224' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '480224' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT COUNT(*) AS nc_count FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) LIMIT 1  -------SELECT * FROM `shop_sns_friend` WHERE ( friend_frommid = '410481' ) ORDER BY friend_addtime desc LIMIT 0,99  -------SELECT count(DISTINCT t_id) as count FROM `shop_chat_msg` WHERE ( f_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------SELECT count(DISTINCT f_id) as count FROM `shop_chat_msg` WHERE ( t_id = '410481' ) AND ( add_time >= '1457280000' ) LIMIT 1  -------Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 455272
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 455272
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 455272
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 455272
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 482192
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 482192
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 455272
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 455272
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 455272
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 455272
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 480224
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 480224
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 453628
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 453628
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 453628
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 453628
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 455272
+        )
+
+    [page] => 99
+    [field] => COUNT(*) AS nc_count
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_sns_friend`
+    [where] => Array
+        (
+            [friend_frommid] => 455272
+        )
+
+    [page] => 99
+    [order] => friend_addtime desc
+    [limit] => 1000
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT t_id) as count
+    [where] => Array
+        (
+            [f_id] => 455272
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)
+Array
+(
+    [table] => `shop_chat_msg`
+    [field] => count(DISTINCT f_id) as count
+    [where] => Array
+        (
+            [t_id] => 455272
+            [add_time] => Array
+                (
+                    [0] => egt
+                    [1] => 1457280000
+                )
+
+        )
+
+    [limit] => 1
+)

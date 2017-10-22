@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+{eval $user=$this->user; $setting=$this->setting;}
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+  
+
+     <title>Ask2后台管理系统</title>
+
+    <link href="{SITE_URL}css/static/css/icheck/all.css" rel="stylesheet" type="text/css" />
+    <link href="{SITE_URL}css/dist/css/zui.min.css" rel="stylesheet" type="text/css" />
+    <link href="{SITE_URL}css/static/js/scojs/sco.message.css" rel="stylesheet" type="text/css" />
+    <link href="{SITE_URL}css/static/js/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="{SITE_URL}css/static/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    
+      <!-- Theme style -->
+    <link href="{SITE_URL}css/admin/mishen.css" rel="stylesheet" type="text/css" />
+    <link href="{SITE_URL}css/admin/skin_0.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="{SITE_URL}css/admin/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <!-- zui -->
+
+
+    <!--[if lt IE 9]>
+    <script src="{SITE_URL}css/dist/lib/ieonly/html5shiv.js"></script>
+    <script src="{SITE_URL}css/dist/lib/ieonly/respond.js"></script>
+    <![endif]-->
+
+    <script src="{SITE_URL}js/jquery-1.11.3.min.js"></script>
+    <!-- ZUI Javascript组件 -->
+    <script src="{SITE_URL}css/dist/js/zui.min.js"></script>
+    <script src="{SITE_URL}js/admin/admincp.js"></script>
+ <script type="text/javascript">var g_site_url = "{SITE_URL}";
+            var g_site_name = "{$setting['site_name']}";
+            var g_prefix = "{$setting['seo_prefix']}";
+            var g_suffix = "{$setting['seo_suffix']}";
+            var query = '?';
+            var g_uid = {$user['uid']};
+            
+           
+            $("input[type=radio]").css("display","inline-block");
+            $("input[type=checkbox]").css("display","inline-block");
+    
+            
+            function checkall(checkname) {
+                var chkall = $("#chkall:checked").val();
+                if (chkall && (chkall === 'chkall')) {
+                    $("input[name^='" + checkname + "']").each(function() {
+                        $(this).prop("checked", "checked");
+                    });
+                } else {
+                    $("input[name^='" + checkname + "']").each(function() {
+                        $(this).removeProp("checked");
+                    });
+                }
+            }
+            </script>
+        
+</head>
+<body class="skin-blue sidebar-mini " >
+<div class="wrapper" >
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+
+
+
