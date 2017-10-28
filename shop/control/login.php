@@ -107,7 +107,7 @@ class loginControl extends BaseHomeControl {
 			if ($_GET['inajax'] == 1){
 			    showDialog('',$_POST['ref_url'] == '' ? 'reload' : $_POST['ref_url'],'js');
 			} else {
-			    redirect($_POST['ref_url']);
+			    redirect(LEPAI_SITE_URL);
 			}
 		}else{
 
@@ -199,7 +199,8 @@ class loginControl extends BaseHomeControl {
 		}else {
 			$ref_url = $_GET['ref_url'];
 		}
-		redirect('index.php?act=login&ref_url='.urlencode($ref_url));
+		redirect(LEPAI_SITE_URL);
+		//redirect('index.php?act=login&ref_url='.urlencode($ref_url));
 	}
 
 	/**
@@ -297,7 +298,7 @@ class loginControl extends BaseHomeControl {
 			Model('goods_browse')->mergebrowse($_SESSION['member_id'],$_SESSION['store_id']);
 
 			$_POST['ref_url']	= (strstr($_POST['ref_url'],'logout')=== false && !empty($_POST['ref_url']) ? $_POST['ref_url'] : 'index.php?act=member_information&op=member');
-			redirect($_POST['ref_url']);
+			redirect(LEPAI_SITE_URL);
         } else {
 			showDialog($member_info['error']);
         }
@@ -347,6 +348,7 @@ class loginControl extends BaseHomeControl {
     public function check_mobileOp() {
         $model_member = Model('member');
         $check_member_mobile	= $model_member->getMemberInfo(array('member_mobile'=>$_GET['mobile']));
+
         if(is_array($check_member_mobile) and count($check_member_mobile)>0) {
             echo 'false';
         } else {

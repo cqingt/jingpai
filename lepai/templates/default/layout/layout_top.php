@@ -55,7 +55,7 @@ if ($output['hidden_nctoolbar'] != 1) {?>
         </dl>
         <?php if(C('captcha_status_login') == '1') { ?>
         <dl>
-          <dt><strong>验证码</strong><a href="javascript:void(0)" class="ml5" onclick="javascript:document.getElementById('codeimage').src='<?php echo SHOP_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash('login','index');?>&t=' + Math.random();">更换验证码</a></dt>
+          <dt><strong>验证码</strong><a href="javascript:void(0)" class="ml5" onclick="javascript:document.getElementById('codeimage').src='<?php echo LEPAI_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash('login','index');?>&t=' + Math.random();">更换验证码</a></dt>
           <dd>
             <input tabindex="3" type="text" name="captcha" autocomplete="off" class="text w130" id="captcha2" maxlength="4" size="10" />
             <img src="" name="codeimage" border="0" id="codeimage" class="vt">
@@ -176,7 +176,7 @@ $(function() {
     // 右侧bar登录
     $('div[nctype="a-barLoginBox"]').click(function(){
         $('div[nctype="barLoginBox"]').toggle();
-        document.getElementById('codeimage').src='<?php echo SHOP_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash('login','index');?>&t=' + Math.random();
+        document.getElementById('codeimage').src='<?php echo LEPAI_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash('login','index');?>&t=' + Math.random();
     });
     $('a[nctype="close-barLoginBox"]').click(function(){
         $('div[nctype="barLoginBox"]').toggle();
@@ -196,37 +196,37 @@ $(function() {
       <?php if ($output['member_info']['level_name']){ ?>
       <div class="nc-grade-mini" style="display:none;cursor:pointer;" onclick="javascript:go('<?php echo urlShop('pointgrade','index');?>');"><?php echo $output['member_info']['level_name'];?></div>
       <?php } ?>
-      </span> <?php echo $lang['nc_comma'],$lang['welcome_to_site'];?> <a href="<?php echo SHOP_SITE_URL;?>"  title="<?php echo $lang['homepage'];?>" alt="<?php echo $lang['homepage'];?>"><span><?php echo $output['setting_config']['site_name']; ?></span></a> <span>[<a href="<?php echo urlShop('login','logout');?>"><?php echo $lang['nc_logout'];?></a>] </span>
+      </span> <?php echo $lang['nc_comma'],$lang['welcome_to_site'];?> <a href="<?php echo LEPAI_SITE_URL;?>"  title="<?php echo $lang['homepage'];?>" alt="<?php echo $lang['homepage'];?>"><span><?php echo $output['setting_config']['site_name']; ?></span></a> <span>[<a href="<?php  echo SHOP_SITE_URL;?>/index.php?act=login&op=logout"><?php echo $lang['nc_logout'];?></a>] </span>
       <?php }else{?>
-      <?php echo $lang['nc_hello'].$lang['nc_comma'].$lang['welcome_to_site'];?> <a href="<?php echo SHOP_SITE_URL;?>" title="<?php echo $lang['homepage'];?>" alt="<?php echo $lang['homepage'];?>"><?php echo $output['setting_config']['site_name']; ?></a> <span>[<a href="<?php echo SHOP_SITE_URL?>/index.php?act=login&op=index"><?php echo $lang['nc_login'];?></a>]</span> <span>[<a href="<?php echo SHOP_SITE_URL;?>/index.php?act=login&op=register"><?php echo $lang['nc_register'];?></a>]</span>
+      <?php echo $lang['nc_hello'].$lang['nc_comma'].$lang['welcome_to_site'];?> <a href="<?php echo LEPAI_SITE_URL;?>" title="<?php echo $lang['homepage'];?>" alt="<?php echo $lang['homepage'];?>"><?php echo $output['setting_config']['site_name']; ?></a> <span>[<a href="<?php echo SHOP_SITE_URL;?>/index.php?act=login&op=index"><?php echo $lang['nc_login'];?></a>]</span> <span>[<a href="<?php echo SHOP_SITE_URL;?>/index.php?act=login&op=register"><?php echo $lang['nc_register'];?></a>]</span>
       <?php }?>
     </div>
     <div class="quick-menu">
 	  <dl style="display: none;">
-        <dt><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=show_joinin&op=index" title="免费开店">免费开店</a><i></i></dt>
+        <dt><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=show_joinin&op=index" title="免费开店">免费开店</a><i></i></dt>
         <dd>
           <ul>
-		    <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=show_joinin&op=index" title="招商入驻">招商入驻</a></li>
+		    <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=show_joinin&op=index" title="招商入驻">招商入驻</a></li>
             <li><a href="<?php echo urlShop('seller_login','show_login');?>" target="_blank" title="登录商家管理中心">商家登录</a></li>
           </ul>
         </dd>
       </dl>
       <dl>
-        <dt><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order">我的订单</a><i></i></dt>
+        <dt><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order">我的订单</a><i></i></dt>
         <dd>
           <ul>
-            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order&state_type=state_new">待付款订单</a></li>
-            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order&state_type=state_send">待确认收货</a></li>
-            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order&state_type=state_noeval">待评价交易</a></li>
+            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order&state_type=state_new">待付款订单</a></li>
+            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order&state_type=state_send">待确认收货</a></li>
+            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order&state_type=state_noeval">待评价交易</a></li>
           </ul>
         </dd>
       </dl>
       <dl>
-        <dt><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_favorites&op=fglist"><?php echo $lang['nc_favorites'];?></a><i></i></dt>
+        <dt><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_favorites&op=fglist"><?php echo $lang['nc_favorites'];?></a><i></i></dt>
         <dd>
           <ul>
-            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_favorites&op=fglist">商品收藏</a></li>
-            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_favorites&op=fslist">店铺收藏</a></li>
+            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_favorites&op=fglist">商品收藏</a></li>
+            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_favorites&op=fslist">店铺收藏</a></li>
           </ul>
         </dd>
       </dl>

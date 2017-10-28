@@ -24,10 +24,9 @@ class memberModel extends Model {
 
     	/*2015-11-09 Add is name Lt 手机号查询时加密*/
     	if($condition['member_mobile']){
-    		$condition['member_mobile'] = JiaMiMobile($condition['member_mobile']);
+    		//$condition['member_mobile'] = JiaMiMobile($condition['member_mobile']);
     	}
     	/*End*/
-
         return $this->table('member')->field($field)->where($condition)->master($master)->find();
     }
 
