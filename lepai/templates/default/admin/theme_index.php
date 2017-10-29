@@ -119,7 +119,7 @@
 <?php }elseif($v['T_Tisheng'] == '1' && $v['T_Shenghe'] == '1' && $v['T_Iswin'] == '0' ){?>
 
   <a class="give" href="JavaScript:del_ti(<?php echo $v['T_Id'];?>);">取消提审</a>
-
+    <a class="edit-add add" href="JavaScript:open3(<?php echo $v['T_Id'];?>);" )>添加拍品</a>
 <?php }elseif($v['T_Tisheng'] == '1' && $v['T_Shenghe'] == '2' && $v['T_Iswin'] == '0' ){?>
 
   <a class="give" href="index.php?act=adminTheme&op=push_tisheng&type=1&id=<?php echo $v['T_Id'];?>">提交审核</a>
