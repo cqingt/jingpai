@@ -259,6 +259,7 @@ class adminGoodsControl extends AdminControl{
 		$info = $this->getGoodsInfoOp($goodsid);
 		/*商品图片*/
 		$img = $this->goodsImgOp($goodsid);
+		$info['G_Atype'] = 3;
 		if($goodsid){
 			if($model->addInfo($info)){
 				/*添加图片*/
