@@ -177,21 +177,21 @@ class adminThemeControl extends AdminControl{
 		$validate_arr = array();
         $validate_arr[] = array("input"=>$_POST["T_Title"], "require"=>"true", "message"=>'专场标题不能为空');
         $validate_arr[] = array("input"=>$_POST["T_Max"], "require"=>"true", "message"=>'拍品数量不能为空');
-        $validate_arr[] = array("input"=>$_POST["T_Max"], "require"=>"true", "validator"=>"Range", "min"=>"10","max"=>"90" , "message"=>'拍品数量不能小于10件、或大于90件');
+        $validate_arr[] = array("input"=>$_POST["T_Max"], "require"=>"true", "validator"=>"Range", "min"=>"1","max"=>"90" , "message"=>'拍品数量不能小于1件、或大于90件');
         $validate_arr[] = array("input"=>$_POST["T_Ktime"], "require"=>"true", "message"=>'开始时间不能为空');
-        $validate_arr[] = array("input"=>$ktime, "require"=>"true", "validator"=>"Range", "min"=>time()+86400*3,"max"=>time()+86400*60 , "message"=>'请选择三天之后为开始时间');
+        //$validate_arr[] = array("input"=>$ktime, "require"=>"true", "validator"=>"Range", "min"=>time()+86400*3,"max"=>time()+86400*60 , "message"=>'请选择三天之后为开始时间');
         $validate_arr[] = array("input"=>$_POST["T_Jtime"], "require"=>"true", "message"=>'结束时间不能为空');
-        $validate_arr[] = array("input"=>$endtime, "require"=>"true", "validator"=>"Range", "min"=>$ktime,"max"=>$ktime+86400*3, "message"=>'专场时间最长为3天');
+        //$validate_arr[] = array("input"=>$endtime, "require"=>"true", "validator"=>"Range", "min"=>$ktime,"max"=>$ktime+86400*3, "message"=>'专场时间最长为3天');
         $validate_arr[] = array("input"=>$_POST["T_Content"], "require"=>"true", "message"=>'专卖描述不能为空');
         }else{
         $validate_arr = array();
         $validate_arr[] = array("input"=>$_POST["T_Title"], "require"=>"true", "message"=>'专场标题不能为空');
         $validate_arr[] = array("input"=>$_POST["T_Max"], "require"=>"true", "message"=>'拍品数量不能为空');
-        $validate_arr[] = array("input"=>$_POST["T_Max"], "require"=>"true", "validator"=>"Range", "min"=>"10","max"=>"90" , "message"=>'拍品数量不能小于10件、或大于90件');
+        $validate_arr[] = array("input"=>$_POST["T_Max"], "require"=>"true", "validator"=>"Range", "min"=>"1","max"=>"90" , "message"=>'拍品数量不能小于1件、或大于90件');
         $validate_arr[] = array("input"=>$_POST["T_Ktime"], "require"=>"true", "message"=>'开始时间不能为空');
-        $validate_arr[] = array("input"=>$ktime, "require"=>"true", "validator"=>"Range", "min"=>time()+86400*3,"max"=>time()+86400*60 , "message"=>'请选择三天之后为开始时间');
+        //$validate_arr[] = array("input"=>$ktime, "require"=>"true", "validator"=>"Range", "min"=>time()+86400*3,"max"=>time()+86400*60 , "message"=>'请选择三天之后为开始时间');
         $validate_arr[] = array("input"=>$_POST["T_Jtime"], "require"=>"true", "message"=>'结束时间不能为空');
-        $validate_arr[] = array("input"=>$endtime, "require"=>"true", "validator"=>"Range", "min"=>$ktime,"max"=>$ktime+86400*3, "message"=>'专场时间最长为3天');
+        //$validate_arr[] = array("input"=>$endtime, "require"=>"true", "validator"=>"Range", "min"=>$ktime,"max"=>$ktime+86400*3, "message"=>'专场时间最长为3天');
         $validate_arr[] = array("input"=>$_POST["T_Topimg"], "require"=>"true", "message"=>'banner图不能为空');
         $validate_arr[] = array("input"=>$_POST["T_Bottonimg"], "require"=>"true", "message"=>'首焦图不能为空');
         $validate_arr[] = array("input"=>$_POST["T_Content"], "require"=>"true", "message"=>'专卖描述不能为空');
