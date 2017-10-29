@@ -128,11 +128,11 @@
 
 <?php }elseif($v['T_Tisheng'] == '1' && $v['T_Shenghe'] == '1' && $v['T_Iswin'] == '1' && time() <= $v['T_Ktime']){?>
 
-    <dd>不可操作</dd>
+    <a class="edit-add add" href="JavaScript:open3(<?php echo $v['T_Id'];?>);" )>添加拍品</a>
 
 <?php }elseif($v['T_Tisheng'] == '1' && $v['T_Shenghe'] == '1' && $v['T_Iswin'] == '1' && time() >= $v['T_Ktime'] && time() <= $v['T_Jtime']){?>
 
-    <dd>不可操作</dd>
+    <a class="edit-add add" href="JavaScript:open3(<?php echo $v['T_Id'];?>);" )>添加拍品</a>
 
 <?php }elseif($v['T_Tisheng'] == '1' && $v['T_Shenghe'] == '1' && $v['T_Iswin'] == '1' && time() >= $v['T_Jtime']){?>
 
