@@ -240,7 +240,7 @@ Dialog.prototype.create = function () {
               </table></td>\
           </tr>\
           <tr>\
-            <td valign="top" align="center"><div id="_Container_' + this.ID + '" style="position: relative; width: ' + this.Width + 'px; height: ' + this.Height + 'px;">\
+            <td valign="top" align="center"><div id="_Container_' + this.ID + '" style="position: relative; width: ' + this.Width + 'px; height: auto' +  ';">\
                 <div style="position: absolute; height: 100%; width: 100%; display: none; background-color:#fff; opacity: 0.5;" id="_Covering_' + this.ID + '">&nbsp;</div>\
 	' + (function (obj) {
         if (obj.InnerHtml) return obj.InnerHtml;
@@ -266,6 +266,7 @@ Dialog.prototype.create = function () {
   </table>\
 </div>\
 '
+    ///*<td valign="top" align="center"><div id="_Container_' + this.ID + '" style="position: relative; width: ' + this.Width + 'px; height: ' + this.Height + 'px;">\*/
     var div = topWin.$id("_DialogDiv_" + this.ID);
     if (!div) {
         div = topDoc.createElement("div");
