@@ -65,7 +65,8 @@ class adminThemeControl extends AdminControl{
 		$id = trim($_GET['themeid']);
 		/*实例拍品数据表*/
 		$model_g = Model('lepai_admin_goods');
-		$result_g = $model_g->selGoods(''," AND G_Isdel<>1  AND (G_Atype = '0'  OR G_Atype='2') ");
+		$result_g = $model_g->selGoods(''," AND G_Isdel<>1 AND G_Atype='3' ");
+		//$result_g = $model_g->selGoods(''," AND G_Isdel<>1  AND (G_Atype = '0'  OR G_Atype='2') ");
 		Tpl::output('result_g',$result_g);
 		Tpl::output('tgid',$id);
 		Tpl::output('page_g',$model_g->showpage(2));
@@ -82,7 +83,7 @@ class adminThemeControl extends AdminControl{
 		/*搜索是否达到提交条件*/
 		$result = $model->selOne($id);
 
-
+        /*
 		if($result['T_Sum'] < 8){
 			showMessage('专题产品小于8件、请添加产品后再提交');
 			exit;
@@ -91,7 +92,7 @@ class adminThemeControl extends AdminControl{
 		if(time()+60*60*72 >=$result['T_Ktime']){
 			showMessage('请选择3天（72小时）之后的时间作为开始时间！');
 			exit;
-		}
+		}*/
 		/*提交数据*/
 		$dataArr['T_Shenghe'] = "0";
 		$dataArr['T_Tisheng'] = "1";
