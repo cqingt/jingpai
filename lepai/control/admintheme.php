@@ -65,7 +65,7 @@ class adminThemeControl extends AdminControl{
 		$id = trim($_GET['themeid']);
 		/*实例拍品数据表*/
 		$model_g = Model('lepai_admin_goods');
-		$result_g = $model_g->selGoods(''," AND G_Isdel<>1 AND G_Atype='3' ");
+		$result_g = $model_g->selGoods(''," AND G_Isdel<>1 AND G_Atype='3' AND G_Tid = 0");
 		//$result_g = $model_g->selGoods(''," AND G_Isdel<>1  AND (G_Atype = '0'  OR G_Atype='2') ");
 		Tpl::output('result_g',$result_g);
 		Tpl::output('tgid',$id);
