@@ -1,4 +1,19 @@
 <!-- wrapper start-->
+<link href="/resource/ueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/resource/ueditor/third-party/jquery.min.js"></script>
+<script type="text/javascript" src="/resource/ueditor/third-party/template.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/resource/ueditor/umeditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/resource/ueditor/umeditor.min.js"></script>
+<script type="text/javascript" src="/resource/ueditor/lang/zh-cn/zh-cn.js"></script>
+<style>
+    #myEditor img{
+        max-width:60%;
+    }
+    .edui-container{
+        top:30px;
+        left:80px;
+    }
+</style>
 <div class="wrapper">
 
      <div class="guide box">
@@ -32,7 +47,7 @@
                            </div>
                            <ul class='diy_select_list'>
                               <?php foreach($output['lepai_class'] as $k=>$v){?>
-                                    
+
                                 <li id="select_goods<?php echo $v['C_Id'];?>" onmousemove="select_goods(<?php echo $v['C_Id'];?>)"><?php echo $v['C_Name'];?></li>
 
                               <?php }?>
@@ -41,162 +56,7 @@
                </div>
 
                <input type="hidden" id="G_Class" name="G_Class" value="">
-<!--
-
-               <div class="issue has-attribute">
-                     <label>拍品属性</label>
-
-                      1邮币卡 
-                     <div id="tab-attr1" class="attribute tab-attr1 tab-boxs">
-                          <span>
-                             <p class="att-p1">
-                              尺寸：长<input type="text" name="I_Chang_y" value="">
-                              X宽<input type="text" name="I_Kuan_y" value="">
-                              X厚<input type="text" name="I_Hou_y" value="">
-                              （单位：毫米）
-                              <strong>小于1毫米请填0 </strong>
-                             </p>
-                             <p class="att-p2">
-                               重量：<input type="text" name="I_Zhong_y" value="">（单位：克）
-                             </p>
-                          </span>
-                     </div>
-
-                      2贵金属 
-                     <div id="tab-attr2" class="attribute tab-attr2 tab-boxs">
-                          <span>
-                             <p class="att-p1">
-                              尺寸：长<input type="text" name="I_Chang_j" value="">
-                              X宽<input type="text" name="I_Kuan_j" value="">
-                              X厚<input type="text" name="I_Hou_j" value="">
-                              （单位：毫米）
-                              <strong>小于1毫米请填0 </strong>
-                             </p>
-                             <p class="att-p2">
-                               重量：<input type="text" name="I_Zhong_j" value="">（单位：克）
-                             </p>
-                          </span>
-                     </div>
-
-                      3书法字画 
-                     <div id="tab-attr3" class="attribute tab-attr3 tab-boxs">
-                          <span>
-                             <p class="att-p0">
-                              作者：<input type="text" name="I_Name_s" value="">
-                             </p>
-                             <p class="att-p3">
-                             <label>作者职称：</label>
-                                <div class='diy_select me-dro'>
-                                     <div class="select-text">
-                                        <input type="hidden" name="ZhiCheng" id="ZhiCheng">
-                                        <input type='hidden' name='I_ZhiCheng' id="I_ZhiCheng" class='diy_select_input' />
-                                        <div class='diy_select_txt'>--请选择--</div>
-                                        <div class='diy_select_btn'></div>
-                                     </div>
-                                     <ul class='diy_select_list'>
-                                      <?php foreach($output['goodsInfo']['sh_zhiwei'] as $k=>$v){?>
-                                        <li onmousemove="select_goods_info('ZhiCheng',<?php echo $v['attr_value_id'];?>)"><?php echo $v['attr_value_name'];?></li>
-                                      <?php }?>
-                                     </ul>
-                                </div>
-                             </p>
-                             <p class="att-p1">
-                              尺寸：长<input type="text" name="I_Chang_s" value="">
-                              X宽<input type="text" name="I_Kuan_s" value="">
-                              X厚<input type="text" name="I_Hou_s" value="">
-                              （单位：毫米）
-                              <strong>小于1毫米请填0 </strong>
-                             </p>
-                             <p class="att-p2">
-                               重量：<input type="text" name="I_Zhong_s" value="">（单位：克）
-                             </p>
-                             <p class="att-p3">
-                             <label>形制：</label>
-                              <div class='diy_select me-dro'>
-                                   <div class="select-text">
-                                      <input type="hidden" name="XingZhi" id="XingZhi">
-                                      <input type='hidden' name='I_XingZhi' id="I_XingZhi" class='diy_select_input' />
-                                      <div class='diy_select_txt'>--请选择--</div>
-                                      <div class='diy_select_btn'></div>
-                                   </div>
-                                   <ul class='diy_select_list'>
-                                      <?php foreach($output['goodsInfo']['sh_xingzhi'] as $k=>$v){?>
-                                        <li onmousemove="select_goods_info('XingZhi',<?php echo $v['attr_value_id'];?>)"><?php echo $v['attr_value_name'];?></li>
-                                      <?php }?>
-                                   </ul>
-                              </div>
-                             </p>
-                          </span>
-                     </div>
-
-                      4玉器珠宝 
-                     <div id="tab-attr4" class="attribute tab-attr4 tab-boxs" style='display: block;'>
-                          <span>
-                             <p class="att-p3">
-                             <label>材质：</label>
-                              <div class='diy_select me-dro'>
-                                   <div class="select-text">
-                                      <input type="hidden" name="Z_XingZhi" id="Z_XingZhi">
-                                      <input type='hidden' name='I_XingZhi' id="d" class='diy_select_input' />
-                                      <div class='diy_select_txt'>--请选择--</div>
-                                      <div class='diy_select_btn'></div>
-                                   </div>
-                                   <ul class='diy_select_list'>
-                                      <?php foreach($output['goodsInfo']['zb_caizhi'] as $k=>$v){?>
-                                        <li onmousemove="select_goods_info('Z_XingZhi',<?php echo $v['attr_value_id'];?>)"><?php echo $v['attr_value_name'];?></li>
-                                      <?php }?>
-                                   </ul>
-                              </div>
-                             </p>
-                          </span>
-                     </div>               
-
-                      5瓷器紫砂  
-                     <div id="tab-attr5" class="attribute tab-attr5 tab-boxs" >
-                          <span>
-                             <p class="att-p0">
-                              作者：<input type="text" name="I_Name_z" value="">
-                             </p>
-                             <p class="att-p3">
-                             <label>容量：</label>
-                                <div class='diy_select me-dro'>
-                                     <div class="select-text">
-                                      <input type="hidden" name="C_XingZhi" id="C_XingZhi">
-                                        <input type='hidden' name='I_XingZhi' id="e" class='diy_select_input' />
-                                        <div class='diy_select_txt'>--请选择--</div>
-                                        <div class='diy_select_btn'></div>
-                                     </div>
-                                     <ul class='diy_select_list'>
-                                        <?php foreach($output['goodsInfo']['cq_rongliang'] as $k=>$v){?>
-                                        <li onmousemove="select_goods_info('C_XingZhi',<?php echo $v['attr_value_id'];?>)"><?php echo $v['attr_value_name'];?></li>
-                                      <?php }?>
-                                     </ul>
-                                </div>
-                             </p>
-                          </span>
-                     </div>  
-
-                       6红木文玩杂项  
-                     <div id="tab-attr6" class="attribute tab-attr6 tab-boxs">
-                          <span>
-                             <p class="att-p0">
-                              作者：<input type="text" name="I_Name_h" value=""> <strong>无作者请填无</strong>
-                             </p>
-                             <p class="att-p2">
-                               尺寸：<input type="text" name="I_Chang_h" value="">（单位：毫米）
-                             </p>
-                             <p class="att-p2">
-                               重量：<input type="text" name="I_Zhong_h" value="">（单位：克）
-                             </p>
-                          </span>
-                     </div>  
-                     
-
-
-               </div>
--->
-
-               <div class="overflow issue has-cover">
+                <div class="overflow issue has-cover">
                      <label>拍品封面</label>
                      <strong>
                     * 必填，拍品第一展示图，同时用于拍卖专题页展示，需尺寸800px*800px的实物图片
@@ -222,7 +82,7 @@
                           <div class="cover-banner" id="divimg2" style="background-size:94px 94px;width:94px;background-image: url(<?php echo LEPAI_CSS_URL;?>/images/admin/img1.jpg)">
                             <input required="required" onchange="uploadImg('imgPhonto2','divimg2','G_MainImg2');" type="file" id="imgPhonto2" name="imgPhonto2"  style="width:94px;height:200px;opacity: 0;"  />
                             <input type="hidden" id="G_MainImg2" name="G_MainImg2" value="">
-                          </div>                          
+                          </div>
                           <a href="javascript:delImg('divimg2','G_MainImg2');">删除</a>
                         </li>
                         <li>
@@ -247,8 +107,11 @@
                </div>
                <div class="overflow issue has-describe">
                      <label>拍品描述</label>
+                   <script type="text/plain" id="myEditor" style="width:1000px;height:360px;">
+                       <?php echo $output['result']['G_Content'];?>
+                   </script>
                      <!-- <textarea  required="required" name="G_Content" id="G_Content" cols="" rows="" placeholder="请输入拍品的描述"></textarea> -->
-                     <?php showEditor('G_Content',$output['result']['G_Content'],'100%','480px','visibility:hidden;',"true");?></td>
+                     <?php //showEditor('G_Content',$output['result']['G_Content'],'100%','480px','visibility:hidden;',"true");?></td>
                      <span class="describe-red">* 描述中的图片宽度不要超过900像素，请如实描述/展品拍品，如有瑕疵或破损请详细描述并展示</span>
                </div>
                <div class="overflow issue has-number">
@@ -277,7 +140,7 @@
                      <label><input id="G_Yanchi" name="G_Yanchi" type="radio" class="time-radio" value="0">不延时</label>
                </div>
                <div class="overflow issue-gobtn"><input type="submit" class="go-btn" value="确认发布"></div>
-               
+
                </form>
           </div>
      </div>
@@ -289,6 +152,9 @@
 <script src="<?php echo LEPAI_JS_URL;?>/js/lepai_admin/attribute.js"></script>
 
 <script>
+    var um = UM.getEditor('myEditor');
+    UM.getEditor('myEditor').setHeight(360);
+    UM.getEditor('myEditor').setWidth(1000);
   function select_goods(id){
     $("#G_Class").val(id);
     for(var i=1;i<=7;i++){

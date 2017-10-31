@@ -294,7 +294,7 @@ class adminGoodsControl extends AdminControl{
 		$validate_arr = array();
         $validate_arr[] = array("input"=>$_POST["G_Name"], "require"=>"true", "message"=>'拍品名称不能为空');
         $validate_arr[] = array("input"=>$_POST["G_Class"], "require"=>"true", "message"=>'拍品分类不能为空');
-        $validate_arr[] = array("input"=>$_POST["G_Content"], "require"=>"true", "message"=>'拍品描述不能为空');
+        $validate_arr[] = array("input"=>$_POST["editorValue"], "require"=>"true", "message"=>'拍品描述不能为空');
         $validate_arr[] = array("input"=>$_POST["G_Qipai"], "require"=>"true", "message"=>'起拍价不能为空');
         $validate_arr[] = array("input"=>$_POST["G_IncMoney"], "require"=>"true", "message"=>'加价幅度不能为空');
         $validate_arr[] = array("input"=>$_POST["G_BaoZhenMoney"], "require"=>"true", "message"=>'保证金不能为空');
@@ -316,7 +316,7 @@ class adminGoodsControl extends AdminControl{
 		$dataArr['G_Name'] = $_POST['G_Name'];
 		$dataArr['G_Class'] = $_POST['G_Class'];
 		$dataArr['G_MainImg'] = $_POST['G_MainImg'];
-		$dataArr['G_Content'] = $_POST['G_Content'];
+		$dataArr['G_Content'] = $_POST['editorValue'];
 		$dataArr['G_Qipai'] = $_POST['G_Qipai'];
 		$dataArr['G_IncMoney'] = $_POST['G_IncMoney'];
 		$dataArr['G_BaoZhenMoney'] = $_POST['G_BaoZhenMoney'];
