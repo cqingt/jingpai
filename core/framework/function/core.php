@@ -528,15 +528,15 @@ function showEditor($id, $value='', $width='700px', $height='300px', $style='vis
 	//图片、Flash、视频、文件的本地上传都可开启。默认只有图片，要启用其它的需要修改resource\kindeditor\php下的upload_json.php的相关参数
 	echo '<textarea id="'. $id .'" name="'. $id .'" style="width:'. $width .';height:'. $height .';'. $style .'">'.$value.'</textarea>';
 	echo '
-<script src="'. RESOURCE_SITE_URL .'/kindeditor/kindeditor-min.js" charset="utf-8"></script>
-<script src="'. RESOURCE_SITE_URL .'/kindeditor/lang/zh_CN.js" charset="utf-8"></script>
+<script src="'. LEPAI_SITE_URL .'/kindeditor/kindeditor-min.js" charset="utf-8"></script>
+<script src="'. LEPAI_SITE_URL .'/kindeditor/lang/zh_CN.js" charset="utf-8"></script>
 <script>
 	var KE;
   KindEditor.ready(function(K) {
         KE = K.create("textarea[name=\''.$id.'\']", {
 						filterMode: false,
 						items : '.$items.',
-						cssPath : "' . RESOURCE_SITE_URL . '/kindeditor/themes/default/default.css",
+						cssPath : "' . LEPAI_SITE_URL . '/kindeditor/themes/default/default.css",
 						allowImageUpload : '.$upload_state.',
 						'.$upload_url.'
 						allowFlashUpload : false,
@@ -2226,7 +2226,7 @@ function urlShop($act = '', $op = '', $args = array(), $store_domain = ''){
         }
     }
 
-    return url($act, $op, $args, $rewrite_flag, BASE_SITE_URL);
+    return url($act, $op, $args, $rewrite_flag, SHOP_SITE_URL);
 }
 
 /**
