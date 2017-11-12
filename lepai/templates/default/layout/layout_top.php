@@ -212,12 +212,12 @@ $(function() {
         </dd>
       </dl>
       <dl>
-        <dt><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order">我的订单</a><i></i></dt>
+        <dt><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order">我的订单</a><i></i></dt>
         <dd>
           <ul>
-            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order&state_type=state_new">待付款订单</a></li>
-            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order&state_type=state_send">待确认收货</a></li>
-            <li><a href="<?php echo LEPAI_SITE_URL;?>/index.php?act=member_order&state_type=state_noeval">待评价交易</a></li>
+            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order&state_type=state_new">待付款订单</a></li>
+            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order&state_type=state_send">待确认收货</a></li>
+            <li><a href="<?php echo SHOP_SITE_URL;?>/index.php?act=member_order&state_type=state_noeval">待评价交易</a></li>
           </ul>
         </dd>
       </dl>
