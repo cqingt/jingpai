@@ -219,7 +219,7 @@
     </div>
 </div>
 <script type="text/javascript">
-    var LEPAI_SITE_URL = '<?php echo BASE_SITE_URL;?>/lepai';
+    //var LEPAI_SITE_URL = '<?php echo LEPAI_SITE_URL;?>/lepai';
     $(function(){
         $(".auction_center_left_top_right2_p_span").mouseover(function(){
             $('.auction_center_left_top_right_entrustc').show();
